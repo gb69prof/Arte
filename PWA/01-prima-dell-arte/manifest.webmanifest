@@ -1,0 +1,14 @@
+{
+  "name": "Prima dell’arte? · Storia dello sguardo",
+  "short_name": "Prima dell’arte?",
+  "description": "Un percorso interattivo sulla nascita della rappresentazione nella Preistoria.",
+  "lang": "it",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d0c0a",
+  "theme_color": "#0d0c0a",
+  "icons": [
+    {"src":"assets/icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}

@@ -13,4 +13,5 @@ I percorsi previsti sono già dichiarati in `assets/app.js`; il collegamento vie
 
 ## Moduli pubblicati
 
+- [01 · Prima dell’arte? — Perché rappresentare ciò che esiste?](./01-prima-dell-arte/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./10-caravaggio/)

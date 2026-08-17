@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0d0c0a">
+  <meta name="description" content="Una PWA didattica sulla nascita della rappresentazione: tracce, corpi, animali e memoria nella Preistoria.">
+  <title>Prima dell’arte? · Perché rappresentare ciò che esiste?</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="topbar">
+    <a class="back" href="../../index.html#m01" aria-label="Torna alla home Storia dello sguardo"><span aria-hidden="true">←</span> Storia dello sguardo</a>
+    <p class="module-mark"><b>01</b><span>Prima dell’arte?</span></p>
+    <div class="top-actions">
+      <span class="journey-state" id="journey-state" aria-live="polite">0 / 10 tappe</span>
+      <button class="evidence-toggle" type="button" aria-controls="evidence-nav" aria-expanded="false">Le tracce <span aria-hidden="true">＋</span></button>
+    </div>
+  </header>
+
+  <nav class="evidence-nav" id="evidence-nav" aria-label="Vai alle testimonianze" hidden>
+    <p class="nav-kicker">Cinque tracce, nessuna risposta definitiva</p>
+    <a href="#blombos"><img src="assets/images/blombos-ochre.svg" alt=""><span><b>Blombos</b><small>Incidere un ordine</small></span></a>
+    <a href="#loewenmensch"><img src="assets/images/loewenmensch.svg" alt=""><span><b>Löwenmensch</b><small>Un essere che non esiste</small></span></a>
+    <a href="#willendorf"><img src="assets/images/venus-willendorf.svg" alt=""><span><b>Willendorf</b><small>Un corpo portatile</small></span></a>
+    <a href="#bhimbetka"><img src="assets/images/bhimbetka.svg" alt=""><span><b>Bhimbetka</b><small>Immagini sopra immagini</small></span></a>
+    <a href="#cueva"><img src="assets/images/cueva-manos.svg" alt=""><span><b>Cueva de las Manos</b><small>Essere presenti nell’assenza</small></span></a>
+  </nav>
+
+  <main id="contenuto">
+    <section class="first-look tracked" id="inizio" data-track="Guarda">
+      <div class="first-image">
+        <img src="assets/images/cueva-manos.svg" alt="Una parete di roccia coperta da numerose sagome di mani chiare, rosse e nere.">
+        <div class="torch-glow" aria-hidden="true"></div>
+        <button class="zoom-button" type="button" data-image="assets/images/cueva-manos.svg" data-caption="La testimonianza iniziale. Titolo, luogo e data vengono rivelati più avanti nel percorso.">Apri la superficie <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="first-copy">
+        <p class="step">01 · Guarda prima di sapere</p>
+        <h1>Perché lasciare<br><em>questo segno?</em></h1>
+        <p class="lead">Non cercare ancora un nome o una data. Guarda la densità delle tracce, le sovrapposizioni, i vuoti. Immagina il gesto prima del reperto.</p>
+        <label for="first-note">Che cosa pensi di vedere? Perché qualcuno ha sentito il bisogno di farlo?</label>
+        <textarea id="first-note" rows="5" placeholder="Vedo… Potrebbe essere… Mi domando…"></textarea>
+        <button class="primary" id="save-first" type="button">Conserva il primo sguardo</button>
+        <p class="saved" id="saved-first" role="status"></p>
+      </div>
+      <a class="scroll-cue" href="#mondo">Entra nel buio <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="world section-pad tracked" id="mondo" data-track="Mondo">
+      <div class="section-index"><span>02</span><p>Il mondo prima dell’immagine</p></div>
+      <div class="split-heading">
+        <div><p class="kicker">Paleolitico · tempi e luoghi differenti</p><h2>Non un’umanità incompleta.<br><em>Un’altra forma di presenza.</em></h2></div>
+        <p class="intro">Le comunità di cacciatori-raccoglitori non costituivano un unico popolo e non vivevano tutte nello stesso modo. Erano gruppi mobili o semimobili, capaci di tecniche, cooperazione, cura, linguaggi e memorie condivise. La scrittura non esisteva; questo non significa che mancassero pensiero, racconto o conoscenza.</p>
+      </div>
+      <div class="context-grid">
+        <article><span aria-hidden="true">01</span><h3>Territorio</h3><p>Animali, corsi d’acqua, stagioni e ripari non erano uno sfondo: decidevano spostamenti, pericoli e possibilità. Conoscere significava ricordare insieme.</p></article>
+        <article><span aria-hidden="true">02</span><h3>Materia</h3><p>Ocra, carbone, manganese, calcite, osso, avorio e pareti rocciose potevano essere raccolti, macinati, raschiati, incisi e trasformati.</p></article>
+        <article><span aria-hidden="true">03</span><h3>Corpo</h3><p>La mano soffia pigmento, il braccio incide, il corpo entra in cavità strette. L’immagine nasce da un’azione fisica, non da uno sguardo disincarnato.</p></article>
+        <article><span aria-hidden="true">04</span><h3>Memoria</h3><p>Senza scrittura, storie, percorsi e appartenenze passavano attraverso voce, gesto, oggetti, luoghi e ripetizione. Un segno poteva durare più di chi lo produceva.</p></article>
+      </div>
+      <aside class="evidence-rule" aria-labelledby="rule-title">
+        <h3 id="rule-title">Tre livelli da non confondere</h3>
+        <div><span class="claim documented">Documentato</span><p>Materiali, tracce di lavorazione, posizione, stratigrafia e datazioni ottenute con metodi dichiarati.</p></div>
+        <div><span class="claim plausible">Interpretazione plausibile</span><p>Un’ipotesi coerente con gli indizi, ma non dimostrabile come un fatto osservato.</p></div>
+        <div><span class="claim open">Domanda aperta</span><p>Ciò che le prove disponibili non permettono ancora di decidere.</p></div>
+      </aside>
+    </section>
+
+    <section class="fracture tracked" id="frattura" data-track="Frattura">
+      <div class="fracture-copy">
+        <p class="step">03 · La frattura</p>
+        <h2>Ciò che non è qui<br><em>può apparire.</em></h2>
+        <p>Un animale lontano, una persona assente, un gesto già compiuto possono diventare presenti attraverso una superficie trasformata. Il segno separa la cosa dalla sua immagine e, proprio grazie a quella distanza, permette di ricordarla, condividerla, forse narrarla.</p>
+        <blockquote>Non nasce soltanto una figura. Nasce una nuova relazione con la realtà.</blockquote>
+      </div>
+      <figure class="fracture-image">
+        <img src="assets/images/blombos-ochre.svg" alt="Piccolo frammento di ocra rossastra attraversato da linee incise che formano un motivo geometrico.">
+        <button class="zoom-button" type="button" data-image="assets/images/blombos-ochre.svg" data-caption="Frammento di ocra inciso, Blombos Cave, Sudafrica · circa 77.000–75.000 anni fa.">Ingrandisci il segno <span aria-hidden="true">↗</span></button>
+        <figcaption>Una pietra larga pochi centimetri può contenere un ordine che sopravvive a chi l’ha tracciato.</figcaption>
+      </figure>
+    </section>
+
+    <section class="traces section-pad tracked" id="testimonianze" data-track="Tracce">
+      <div class="section-index light"><span>04</span><p>Le immagini e gli oggetti</p></div>
+      <div class="traces-heading">
+        <h2>Cinque testimonianze.<br><em>Cinque modi di rendere presente.</em></h2>
+        <p>Non formano una scala che conduce verso l’arte “matura”. Appartengono a luoghi, tempi e comunità differenti; sono accostate per mettere alla prova la stessa domanda.</p>
+      </div>
+
+      <article class="trace" id="blombos">
+        <div class="trace-image compact-image">
+          <img src="assets/images/blombos-ochre.svg" alt="Frammento d’ocra di Blombos con un reticolo di linee incise.">
+          <button class="zoom-button" type="button" data-image="assets/images/blombos-ochre.svg" data-caption="Ocra incisa di Blombos · Sudafrica · circa 77.000–75.000 anni fa · fotografia Chris S. Henshilwood, CC BY-SA 4.0.">Apri <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="trace-copy">
+          <p class="trace-number">01 · Sudafrica</p><h3>Incidere un ordine</h3>
+          <dl><div><dt>Datazione</dt><dd>circa 77.000–75.000 anni fa</dd></div><div><dt>Luogo</dt><dd>Blombos Cave, Western Cape</dd></div><div><dt>Materia</dt><dd>ocra</dd></div><div><dt>Tecnica</dt><dd>superficie preparata e linee incise</dd></div></dl>
+          <p class="look-guide"><b>Osserva</b> Il motivo non imita un animale o un corpo. Nota la ripetizione, gli incroci e i bordi interrotti: il disegno poteva continuare oltre il frammento?</p>
+          <div class="claim-row"><span class="claim documented">Documentato</span><p>Le incisioni sono organizzate e intenzionali; il reperto proviene da livelli datati.</p></div>
+          <div class="claim-row"><span class="claim plausible">Plausibile</span><p>Il motivo poteva registrare o comunicare informazioni, oppure avere un valore simbolico.</p></div>
+          <div class="claim-row"><span class="claim open">Aperto</span><p>Che cosa significassero esattamente quelle linee e chi sapesse leggerle.</p></div>
+          <p class="trace-question">Quando un ordine di linee diventa più di una decorazione?</p>
+          <a class="source-link" href="https://humanorigins.si.edu/evidence/behavior/recording-information/blombos-ocher-plaque" target="_blank" rel="noopener">Fonte scientifica · Smithsonian Human Origins ↗</a>
+        </div>
+      </article>
+
+      <article class="trace reverse" id="loewenmensch">
+        <div class="trace-image portrait">
+          <img src="assets/images/loewenmensch.svg" alt="Statuetta slanciata in avorio che unisce un corpo umano e una testa felina.">
+          <button class="zoom-button" type="button" data-image="assets/images/loewenmensch.svg" data-caption="Löwenmensch · Hohlenstein-Stadel, Germania · 35.000–40.000 anni fa · avorio di mammut · fotografia Dagmar Hollmann, CC BY-SA 4.0.">Apri <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="trace-copy">
+          <p class="trace-number">02 · Germania</p><h3>Immaginare un essere che non esiste</h3>
+          <dl><div><dt>Datazione</dt><dd>circa 35.000–40.000 anni fa</dd></div><div><dt>Ritrovamento</dt><dd>grotta di Hohlenstein-Stadel</dd></div><div><dt>Conservazione</dt><dd>Museum Ulm</dd></div><div><dt>Tecnica</dt><dd>avorio di mammut intagliato e levigato</dd></div></dl>
+          <p class="look-guide"><b>Osserva</b> Non è la copia di un corpo incontrato nel mondo: combina attributi umani e felini. La rappresentazione può dunque costruire l’inesistente.</p>
+          <div class="claim-row"><span class="claim documented">Documentato</span><p>La figura fu ricomposta da numerosi frammenti; il materiale e la lavorazione richiesero tempo e abilità.</p></div>
+          <div class="claim-row"><span class="claim plausible">Plausibile</span><p>La creatura poteva appartenere a racconti, pratiche rituali o modi condivisi di pensare il rapporto con gli animali.</p></div>
+          <div class="claim-row"><span class="claim open">Aperto</span><p>Non sappiamo se raffiguri una divinità, una trasformazione, un personaggio o altro ancora.</p></div>
+          <p class="trace-question">Perché dedicare tanto lavoro a un corpo che nessuno poteva incontrare?</p>
+          <a class="source-link" href="https://museumulm.de/en/collections/archaeology/" target="_blank" rel="noopener">Fonte museale · Museum Ulm ↗</a>
+        </div>
+      </article>
+
+      <article class="trace" id="willendorf">
+        <div class="trace-image portrait warm">
+          <img src="assets/images/venus-willendorf.svg" alt="Piccola figura femminile in calcare con forme corporee accentuate e volto non definito.">
+          <button class="zoom-button" type="button" data-image="assets/images/venus-willendorf.svg" data-caption="Figura femminile di Willendorf · Austria · circa 29.500 anni fa · calcare oolitico con tracce d’ocra · fotografia Matthias Kabel, CC BY 2.5.">Apri <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="trace-copy">
+          <p class="trace-number">03 · Austria</p><h3>Un corpo che sta in una mano</h3>
+          <dl><div><dt>Datazione</dt><dd>circa 29.500 anni fa</dd></div><div><dt>Ritrovamento</dt><dd>Willendorf, Bassa Austria</dd></div><div><dt>Conservazione</dt><dd>Naturhistorisches Museum Wien</dd></div><div><dt>Materia</dt><dd>calcare oolitico, tracce d’ocra rossa</dd></div></dl>
+          <p class="look-guide"><b>Osserva</b> Il volto non è definito, mentre ventre, seni e cosce sono accentuati. Le dimensioni ridotte permettevano di trasportarla.</p>
+          <div class="claim-row"><span class="claim documented">Documentato</span><p>Analisi scientifiche chiariscono materiale, pigmento e lavorazione; la pietra non proviene dall’area immediata del ritrovamento.</p></div>
+          <div class="claim-row"><span class="claim plausible">Plausibile</span><p>L’accento sul corpo poteva collegarsi a identità, vita, trasformazione o appartenenza.</p></div>
+          <div class="claim-row"><span class="claim open">Aperto</span><p>Chiamarla “dea della fertilità” è un’ipotesi moderna, non un nome o una funzione documentati.</p></div>
+          <p class="trace-question">Che cosa sceglie di mostrare questo corpo, e che cosa rifiuta di mostrarci?</p>
+          <a class="source-link" href="https://www.nhm-wien.ac.at/en/research/prehistory/research/venus-research" target="_blank" rel="noopener">Fonte museale · NHM Vienna ↗</a>
+        </div>
+      </article>
+
+      <article class="trace reverse" id="bhimbetka">
+        <div class="trace-image landscape">
+          <img src="assets/images/bhimbetka.svg" alt="Parete rocciosa con figure umane e animali dipinte in epoche diverse e sovrapposte.">
+          <button class="zoom-button" type="button" data-image="assets/images/bhimbetka.svg" data-caption="Pitture rupestri di Bhimbetka · India centrale · fasi dal Mesolitico all’età storica · fotografia Yann, CC BY-SA 4.0.">Apri <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="trace-copy">
+          <p class="trace-number">04 · India</p><h3>Immagini sopra immagini</h3>
+          <dl><div><dt>Datazione</dt><dd>fasi dal Mesolitico all’età storica</dd></div><div><dt>Luogo</dt><dd>ripari rocciosi di Bhimbetka, Madhya Pradesh</dd></div><div><dt>Supporto</dt><dd>pareti e soffitti di arenaria</dd></div><div><dt>Temi</dt><dd>animali, cacce, danze, figure umane</dd></div></dl>
+          <p class="look-guide"><b>Osserva</b> Colori e scale differenti si sovrappongono. La parete non è una pagina vuota: generazioni diverse hanno visto, aggiunto e forse reinterpretato.</p>
+          <div class="claim-row"><span class="claim documented">Documentato</span><p>Oltre quattrocento ripari presentano pitture; il complesso conserva una lunga continuità culturale.</p></div>
+          <div class="claim-row"><span class="claim plausible">Plausibile</span><p>Le sovrapposizioni possono indicare usi ripetuti dei luoghi e trasformazioni di temi e comunità.</p></div>
+          <div class="claim-row"><span class="claim open">Aperto</span><p>Molte pitture non sono state datate direttamente: non è corretto assegnare una data precisa alle figure fotografate.</p></div>
+          <p class="trace-question">Un’immagine nuova cancella quella precedente o entra in dialogo con essa?</p>
+          <a class="source-link" href="https://whc.unesco.org/en/list/925/" target="_blank" rel="noopener">Fonte istituzionale · UNESCO ↗</a>
+        </div>
+      </article>
+
+      <article class="trace" id="cueva">
+        <div class="trace-image landscape">
+          <img src="assets/images/cueva-manos.svg" alt="Molte sagome di mani ottenute spruzzando pigmento intorno alle dita su una parete di roccia.">
+          <button class="zoom-button" type="button" data-image="assets/images/cueva-manos.svg" data-caption="Cueva de las Manos, Río Pinturas · Patagonia argentina · lunga sequenza iniziata nel X millennio BP · fotografia Mariano, CC BY-SA 3.0 / GFDL.">Apri <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="trace-copy">
+          <p class="trace-number">05 · Argentina</p><h3>Essere presenti nell’assenza</h3>
+          <dl><div><dt>Sequenza</dt><dd>iniziata nel X millennio BP, con fasi successive</dd></div><div><dt>Luogo</dt><dd>Cueva de las Manos, Río Pinturas</dd></div><div><dt>Materiali</dt><dd>pigmenti minerali di più colori</dd></div><div><dt>Tecnica</dt><dd>stencil: pigmento spruzzato intorno alla mano</dd></div></dl>
+          <p class="look-guide"><b>Osserva</b> La mano reale non è dipinta: è il vuoto lasciato dal corpo. L’immagine nasce dall’assenza e conserva insieme individualità e appartenenza al gruppo.</p>
+          <div class="claim-row"><span class="claim documented">Documentato</span><p>Le analisi distinguono fasi, pigmenti e sovrapposizioni; compaiono anche guanachi e scene di caccia.</p></div>
+          <div class="claim-row"><span class="claim plausible">Plausibile</span><p>Il gesto poteva costruire memoria, legame con il luogo o partecipazione a un’azione collettiva.</p></div>
+          <div class="claim-row"><span class="claim open">Aperto</span><p>Non conosciamo il nome delle persone né il significato attribuito da loro a ciascuna mano.</p></div>
+          <p class="trace-question">La sagoma dice “io ero qui” oppure “noi apparteniamo a questo luogo”?</p>
+          <a class="source-link" href="https://whc.unesco.org/en/list/936/" target="_blank" rel="noopener">Fonte istituzionale · UNESCO ↗</a>
+        </div>
+      </article>
+
+      <aside class="dating-alert">
+        <p class="step">La cronologia non è chiusa · 2026</p>
+        <h3>“Il più antico” è sempre una formula provvisoria.</h3>
+        <p>Una ricerca pubblicata su <cite>Nature</cite> ha datato a <b>un’età minima di 67.800 ± 3.800 anni</b> una mano a stencil nell’isola di Muna, presso Sulawesi. “Età minima” significa che il deposito minerale sopra il pigmento ha almeno quell’età: l’immagine può essere più antica. La scoperta amplia la geografia nota, ma non autorizza a dichiarare dove o una sola volta sia “nata l’arte”.</p>
+        <a class="source-link" href="https://www.nature.com/articles/s41586-025-09968-y" target="_blank" rel="noopener">Ricerca · Oktaviana et al., Nature 2026 ↗</a>
+      </aside>
+    </section>
+
+    <section class="participation section-pad tracked" id="partecipare" data-track="Partecipare">
+      <div class="section-index"><span>05</span><p>Chi guarda e chi partecipa?</p></div>
+      <div class="split-heading"><div><p class="kicker">Il luogo cambia l’immagine</p><h2>Non tutto era fatto<br><em>per essere visto da tutti.</em></h2></div><p class="intro">Alcune immagini si trovano in ripari aperti e attraversati; altre in cavità profonde, strette o difficili da raggiungere. Non esiste perciò una sola risposta valida per ogni sito.</p></div>
+      <div class="hypotheses">
+        <article><span class="claim documented">Indizio</span><h3>Accesso</h3><p>La posizione e la difficoltà del percorso possono limitare chi vede o chi agisce.</p><strong>Ma non dimostrano, da sole, l’esistenza di sacerdoti o iniziati.</strong></article>
+        <article><span class="claim plausible">Ipotesi</span><h3>Gesto</h3><p>Preparare pigmenti, illuminare, incidere o soffiare colore poteva contare quanto il risultato finale.</p><strong>L’immagine potrebbe essere il resto visibile di un’azione condivisa.</strong></article>
+        <article><span class="claim plausible">Ipotesi</span><h3>Racconto</h3><p>Figure e segni potevano accompagnare narrazioni, memorie, regole, appartenenze o pratiche rituali.</p><strong>Senza le parole che li circondavano, il loro significato resta incompleto.</strong></article>
+        <article><span class="claim open">Domanda</span><h3>Destinatari</h3><p>Bambini, adulti, tutto il gruppo, pochi specialisti, persone future o presenze non umane?</p><strong>L’archeologia ricostruisce possibilità, non può interrogare i partecipanti.</strong></article>
+      </div>
+    </section>
+
+    <section class="visible section-pad tracked" id="visibile" data-track="Visibile">
+      <div class="section-index light"><span>06</span><p>Che cosa rende visibile?</p></div>
+      <h2>L’immagine non copia soltanto.<br><em>Seleziona, trasforma, trattiene.</em></h2>
+      <div class="visible-grid">
+        <article><span>01</span><h3>Animali</h3><p>Non semplici risorse: presenze osservate, temute, inseguite e immaginate.</p></article>
+        <article><span>02</span><h3>Corpo</h3><p>Mani, sessualità, postura e ibridazione rendono il corpo oggetto di pensiero.</p></article>
+        <article><span>03</span><h3>Memoria</h3><p>Il segno conserva qualcosa oltre il momento e oltre la vita di chi lo produce.</p></article>
+        <article><span>04</span><h3>Paura e desiderio</h3><p>L’immagine dà forma a ciò che attrae, minaccia o non può essere controllato.</p></article>
+        <article><span>05</span><h3>Appartenenza</h3><p>Ripetere un gesto o condividere un motivo può costruire un “noi”.</p></article>
+        <article><span>06</span><h3>Assenza</h3><p>La cosa non è qui, ma una forma la rende di nuovo presente.</p></article>
+      </div>
+    </section>
+
+    <section class="echoes section-pad tracked" id="echi" data-track="Echi">
+      <div class="section-index"><span>07</span><p>Echi futuri</p></div>
+      <div class="echoes-grid">
+        <div><p class="kicker">Nessuna linea retta fino a noi</p><h2>Il bisogno resta.<br><em>I significati cambiano.</em></h2></div>
+        <div class="echo-list">
+          <article><span>Presenza / assenza</span><p>Ogni immagine rende presente qualcosa che non coincide con la sua materia.</p></article>
+          <article><span>Originale / rappresentazione</span><p>Una figura non è la cosa reale: la seleziona e la sostituisce soltanto in alcuni aspetti.</p></article>
+          <article><span>Segno / identità</span><p>Lasciare una traccia può dire “io”, “noi”, “questo luogo” o qualcosa che non sappiamo più nominare.</p></article>
+          <article><span>Esperienza / memoria</span><p>Trasformare ciò che si vive in immagine permette di trasmetterlo, ma anche di reinterpretarlo.</p></article>
+        </div>
+      </div>
+      <p class="caution"><b>Attenzione:</b> una mano preistorica non “anticipa” un selfie, e una parete dipinta non anticipa il cinema. Il confronto è legittimo soltanto sul problema persistente: perché l’essere umano affida una parte dell’esperienza a un’immagine?</p>
+    </section>
+
+    <section class="second-look tracked" id="guarda-di-nuovo" data-track="Rilettura">
+      <div class="second-image">
+        <img src="assets/images/cueva-manos.svg" alt="La parete con le sagome di mani osservata all’inizio del percorso.">
+        <button class="zoom-button" type="button" data-image="assets/images/cueva-manos.svg" data-caption="Cueva de las Manos, Río Pinturas, Argentina. Ora l’opera ritorna con il proprio contesto.">Apri di nuovo <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="memory">
+        <p class="step">08 · Guarda di nuovo</p><h2>Che cosa vedi ora<br><em>che prima non vedevi?</em></h2>
+        <div class="first-memory-wrap"><span>Il tuo primo sguardo</span><blockquote id="first-memory">Non hai ancora scritto nulla.</blockquote></div>
+        <label for="second-note">Non riassumere la lezione: descrivi come è cambiato il tuo sguardo.</label>
+        <textarea id="second-note" rows="5" placeholder="Prima pensavo… Ora noto… Resta aperta la domanda…"></textarea>
+        <button class="primary dark-button" id="save-second" type="button">Salva la rilettura</button>
+        <p class="saved dark-saved" id="saved-second" role="status"></p>
+      </div>
+    </section>
+
+    <section class="quiz section-pad tracked" id="verifica" data-track="Verifica">
+      <div class="section-index light"><span>09</span><p>Verifica e recupero</p></div>
+      <div class="quiz-heading"><h2>Collega gli indizi.<br><em>Non indovinare etichette.</em></h2><p>Ogni errore indica la traccia o il passaggio da riaprire. La correzione serve a tornare a guardare.</p></div>
+      <form id="quiz-form">
+        <fieldset data-answer="b" data-review="#blombos"><legend><span>01</span>Che cosa possiamo affermare con maggiore sicurezza sull’ocra di Blombos?</legend><label><input type="radio" name="q1" value="a"> Era certamente un calendario di caccia.</label><label><input type="radio" name="q1" value="b"> Le linee furono incise intenzionalmente secondo un ordine.</label><label><input type="radio" name="q1" value="c"> Era esposta in una grotta aperta a tutti.</label><p class="feedback" aria-live="polite"></p></fieldset>
+        <fieldset data-answer="c" data-review="#willendorf"><legend><span>02</span>Perché “dea della fertilità” non va presentato come un fatto?</legend><label><input type="radio" name="q2" value="a"> Perché la figura non rappresenta un corpo.</label><label><input type="radio" name="q2" value="b"> Perché l’ocra elimina ogni significato simbolico.</label><label><input type="radio" name="q2" value="c"> Perché è un’interpretazione moderna e non possediamo il nome o la funzione originari.</label><p class="feedback" aria-live="polite"></p></fieldset>
+        <fieldset data-answer="a" data-review="#cueva"><legend><span>03</span>Nello stencil di una mano, che cosa produce direttamente la figura?</legend><label><input type="radio" name="q3" value="a"> Il vuoto protetto dalla mano mentre il pigmento si deposita intorno.</label><label><input type="radio" name="q3" value="b"> L’incisione delle dita nella roccia.</label><label><input type="radio" name="q3" value="c"> La stampa ottenuta immergendo la mano nel carbone.</label><p class="feedback" aria-live="polite"></p></fieldset>
+        <fieldset data-answer="b" data-review="#bhimbetka"><legend><span>04</span>Che cosa insegna il problema della datazione a Bhimbetka?</legend><label><input type="radio" name="q4" value="a"> Tutte le figure della parete furono dipinte nello stesso momento.</label><label><input type="radio" name="q4" value="b"> Un sito può avere molte fasi e una singola figura non va datata senza prove specifiche.</label><label><input type="radio" name="q4" value="c"> Le immagini più chiare sono sempre le più antiche.</label><p class="feedback" aria-live="polite"></p></fieldset>
+        <fieldset data-answer="c" data-review="#partecipare"><legend><span>05</span>Perché la posizione profonda di alcune immagini non prova da sola una funzione rituale?</legend><label><input type="radio" name="q5" value="a"> Perché nel Paleolitico non esistevano riti.</label><label><input type="radio" name="q5" value="b"> Perché tutte le cavità erano illuminate dal sole.</label><label><input type="radio" name="q5" value="c"> Perché l’accesso difficile è un indizio compatibile con più spiegazioni, non una testimonianza diretta delle intenzioni.</label><p class="feedback" aria-live="polite"></p></fieldset>
+        <button class="primary quiz-submit" type="submit">Verifica i collegamenti</button>
+        <div class="quiz-result" id="quiz-result" role="status"></div>
+      </form>
+    </section>
+
+    <section class="final-question tracked" id="conclusione" data-track="Conclusione">
+      <p class="step">10 · La domanda resta</p>
+      <h2>Se nessuno avesse lasciato immagini,<br><em>che cosa potremmo sapere dell’umanità che ci ha preceduto?</em></h2>
+      <p>Forse conosceremmo strumenti, ossa, alimenti e spostamenti. Ma sapremmo molto meno della capacità di rendere presente l’assente, inventare creature, selezionare corpi e affidare una traccia al futuro.</p>
+      <a href="#inizio">Torna al primo segno <span aria-hidden="true">↑</span></a>
+    </section>
+
+    <section class="sources section-pad" id="fonti">
+      <div class="section-index"><span>∞</span><p>Fonti, crediti e limiti</p></div>
+      <div class="sources-grid">
+        <div><h2>Fonti scientifiche e istituzionali</h2><ol>
+          <li><a href="https://humanorigins.si.edu/evidence/behavior/recording-information/blombos-ocher-plaque" target="_blank" rel="noopener">Smithsonian Human Origins · Blombos Ocher Plaque</a></li>
+          <li><a href="https://humanorigins.si.edu/human-characteristics/language-symbols" target="_blank" rel="noopener">Smithsonian Human Origins · Language &amp; Symbols</a></li>
+          <li><a href="https://museumulm.de/en/collections/archaeology/" target="_blank" rel="noopener">Museum Ulm · Archaeology / Lion Man</a></li>
+          <li><a href="https://www.nhm-wien.ac.at/en/research/prehistory/research/venus-research" target="_blank" rel="noopener">Naturhistorisches Museum Wien · Venus Research</a></li>
+          <li><a href="https://whc.unesco.org/en/list/925/" target="_blank" rel="noopener">UNESCO · Rock Shelters of Bhimbetka</a></li>
+          <li><a href="https://whc.unesco.org/document/1440" target="_blank" rel="noopener">ICOMOS · Bhimbetka evaluation, limiti di datazione diretta</a></li>
+          <li><a href="https://whc.unesco.org/en/list/936/" target="_blank" rel="noopener">UNESCO · Cueva de las Manos, Río Pinturas</a></li>
+          <li><a href="https://www.nature.com/articles/s41586-025-09968-y" target="_blank" rel="noopener">Oktaviana et al., Nature 2026 · Rock art from at least 67,800 years ago in Sulawesi</a></li>
+        </ol></div>
+        <div><h2>Immagini e licenze</h2><ol>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Blombo.jpg" target="_blank" rel="noopener">Ocra di Blombos</a> · Chris S. Henshilwood · CC BY-SA 4.0.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Loewenmensch1.jpg" target="_blank" rel="noopener">Löwenmensch</a> · Dagmar Hollmann · CC BY-SA 4.0.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Venus_of_Willendorf_frontview_retouched_2.jpg" target="_blank" rel="noopener">Venere di Willendorf</a> · Matthias Kabel · CC BY 2.5.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Rock_paintings,_Bhimbetka,_Raisen_district,_MP,_India.jpg" target="_blank" rel="noopener">Pitture di Bhimbetka</a> · Yann · CC BY-SA 4.0.</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:SantaCruz-CuevaManos-P2210651b.jpg" target="_blank" rel="noopener">Cueva de las Manos</a> · Mariano · CC BY-SA 3.0 / GFDL (opera raffigurata in pubblico dominio).</li>
+        </ol><p class="license-note">Le immagini sono archiviate localmente come riproduzioni WebP inserite in contenitori SVG, senza filtri cromatici. Il ritaglio responsive non modifica il file aperto a pieno schermo. Le licenze ShareAlike si applicano alle rispettive immagini e agli eventuali adattamenti.</p></div>
+      </div>
+      <p class="method-note"><b>Limite dichiarato:</b> non possediamo le parole e le intenzioni delle persone che produssero queste testimonianze. La lezione separa perciò dati materiali, ipotesi argomentate e domande aperte. “Arte” è qui una categoria di lavoro moderna: non sappiamo se le comunità considerate distinguessero immagini, oggetti, riti e vita quotidiana come facciamo noi.</p>
+    </section>
+  </main>
+
+  <footer><a href="../../index.html#m01"><span aria-hidden="true">S</span><b>Storia dello sguardo</b></a><p>Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" hidden>
+    <div class="lightbox-toolbar">
+      <p id="lightbox-caption"></p>
+      <div><button type="button" data-action="minus" aria-label="Riduci immagine">−</button><button type="button" data-action="reset" aria-label="Reimposta ingrandimento">100%</button><button type="button" data-action="plus" aria-label="Ingrandisci immagine">＋</button><button class="close" type="button" data-action="close" aria-label="Chiudi immagine">×</button></div>
+    </div>
+    <div class="lightbox-stage" id="lightbox-stage"><img id="lightbox-image" src="" alt=""></div>
+  </div>
+</body>
+</html>
