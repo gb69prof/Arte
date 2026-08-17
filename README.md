@@ -2,6 +2,8 @@
 
 Home generale del percorso di Storia dell’arte ideato da gbprof.
 
+**Sito pubblico:** https://gb69prof.github.io/Arte/
+
 Non una successione di artisti, opere e date, ma una storia dell’uomo attraverso ciò che ha avuto bisogno di rappresentare. La struttura prepara cinque gallerie e venticinque PWA autonome, collegate logicamente alla home e tra loro.
 
 ## Architettura
