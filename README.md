@@ -19,4 +19,7 @@ La directory `PWA/` descrive il contratto di navigazione che dovrà essere conse
 ## Moduli pubblicati
 
 - [01 · Prima dell’arte? — Perché rappresentare ciò che esiste?](./PWA/01-prima-dell-arte/)
+- [02 · Dare forma all’ordine — Quando l’immagine diventa potere?](./PWA/02-mesopotamia-egitto/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./PWA/10-caravaggio/)
+
+Il modulo 02 mette in relazione la nascita delle città e degli Stati con scrittura, gerarchie, monumentalità e costruzione visiva dell’autorità. Comprende osservazione iniziale, analisi stratificata delle opere, confronto Mesopotamia/Egitto, salvataggi locali, verifica con recupero, installabilità e uso offline.
