@@ -9,4 +9,8 @@ Contratto di navigazione per ogni PWA:
 - le domande permanenti conservano gli stessi nomi e la stessa identità grafica;
 - la home attiva il collegamento soltanto quando la PWA è completa.
 
-I percorsi previsti sono già dichiarati in `assets/app.js` tramite l’attributo `data-future-path`.
+I percorsi previsti sono già dichiarati in `assets/app.js`; il collegamento viene attivato quando il modulo è pubblicato.
+
+## Moduli pubblicati
+
+- [10 · Caravaggio — Quando il sacro entra nella strada](./10-caravaggio/)

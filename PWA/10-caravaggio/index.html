@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0a09">
+  <meta name="description" content="Una PWA didattica per entrare nello sguardo di Caravaggio attraverso quattro opere.">
+  <title>Caravaggio · Quando il sacro entra nella strada</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+  <header class="topbar">
+    <a class="back" href="../../index.html#m10" aria-label="Torna a Storia dello sguardo"><span>←</span> Storia dello sguardo</a>
+    <p><b>10</b> · Caravaggio</p>
+    <button class="works-toggle" type="button" aria-controls="works-nav" aria-expanded="false">Le opere <span>＋</span></button>
+  </header>
+
+  <nav class="works-nav" id="works-nav" aria-label="Vai alle opere" hidden>
+    <a href="#vocazione"><img src="../../caravaggio/vocazione.webp" alt=""><span>Vocazione di san Matteo</span></a>
+    <a href="#madonna"><img src="../../caravaggio/madonna-pellegrini.webp" alt=""><span>Madonna dei pellegrini</span></a>
+    <a href="#morte"><img src="../../caravaggio/morte-vergine.webp" alt=""><span>Morte della Vergine</span></a>
+    <a href="#david"><img src="../../caravaggio/david-golia.webp" alt=""><span>David con la testa di Golia</span></a>
+  </nav>
+
+  <main>
+    <section class="first-look" id="inizio" aria-labelledby="first-title">
+      <div class="first-image">
+        <img src="../../caravaggio/vocazione.webp" alt="Un gruppo di uomini raccolto intorno a un tavolo in una stanza buia; un fascio di luce attraversa la scena da destra.">
+        <button class="zoom-button" type="button" data-image="../../caravaggio/vocazione.webp" data-caption="Michelangelo Merisi da Caravaggio, Vocazione di san Matteo, 1599–1600 · San Luigi dei Francesi, Roma">Apri l’opera <span>↗</span></button>
+      </div>
+      <div class="first-copy">
+        <p class="step">01 · Guarda prima di sapere</p>
+        <h1 id="first-title">Non cercare ancora<br><em>il titolo.</em></h1>
+        <p class="lead">Lascia che sia l’immagine a porre la prima domanda. Dove cade la luce? Chi la vede? In quale istante sembra cambiare tutto?</p>
+        <label for="first-note">Scrivi ciò che l’opera ti fa pensare, prima delle informazioni.</label>
+        <textarea id="first-note" rows="4" placeholder="Vedo… Mi sembra che… La luce…"></textarea>
+        <button class="primary" id="save-first" type="button">Conserva il primo sguardo</button>
+        <p class="saved" id="saved-first" role="status"></p>
+      </div>
+      <a class="scroll-cue" href="#mondo">Entra nella storia <span>↓</span></a>
+    </section>
+
+    <section class="context section-pad" id="mondo">
+      <div class="section-index"><span>02</span><p>Il mondo precedente</p></div>
+      <div class="context-title">
+        <p class="kicker">Roma, intorno al 1600</p>
+        <h2>Le immagini devono<br><em>parlare con chiarezza.</em></h2>
+      </div>
+      <div class="context-grid">
+        <article><span>01</span><h3>Una città che persuade</h3><p>Dopo il Concilio di Trento la Chiesa cattolica attribuisce alle immagini un compito decisivo: rendere comprensibile la fede, muovere gli affetti, coinvolgere chi guarda. Non è una regola capace di spiegare ogni opera, ma è la pressione culturale entro cui Caravaggio lavora.</p></article>
+        <article><span>02</span><h3>Un artista dipende</h3><p>Chiese, confraternite, cardinali e collezionisti privati commissionano, pagano e giudicano. Il quadro non nasce in uno spazio neutro: deve entrare in una cappella, rispondere a un contratto, superare il controllo di chi lo ha richiesto.</p></article>
+        <article><span>03</span><h3>Un linguaggio si incrina</h3><p>Alla grazia artificiosa e alle anatomie eleganti del tardo Manierismo, Caravaggio oppone una presenza che sembra accadere davanti a noi. I santi hanno mani segnate, abiti contemporanei, piedi sporchi. Il sacro non abbandona il mondo: vi irrompe.</p></article>
+      </div>
+      <aside class="fact"><p>1592 circa</p><span>Michelangelo Merisi arriva a Roma. Nel 1595 il cardinale Francesco Maria del Monte riconosce il suo talento e lo introduce nel sistema delle commissioni.</span></aside>
+    </section>
+
+    <section class="fracture" id="frattura">
+      <div class="fracture-image"><img src="../../caravaggio/madonna-pellegrini.webp" alt="La Madonna con il Bambino appare sulla soglia mentre due pellegrini inginocchiati mostrano piedi nudi e sporchi."><button class="zoom-button light" type="button" data-image="../../caravaggio/madonna-pellegrini.webp" data-caption="Caravaggio, Madonna dei pellegrini, 1604–1606 circa · Basilica di Sant’Agostino in Campo Marzio, Roma">Apri l’opera <span>↗</span></button></div>
+      <div class="fracture-copy">
+        <p class="step">03 · La frattura</p>
+        <h2>La polvere<br><em>entra nel sacro.</em></h2>
+        <p>Due pellegrini sono inginocchiati davanti a Maria. Caravaggio non attenua la loro stanchezza: mostra le cuffie povere, i vestiti logori, soprattutto i piedi sporchi in primo piano.</p>
+        <p>Non è un dettaglio pittoresco. È una scelta su chi merita visibilità. La devozione non viene affidata a corpi ideali, ma alla verità fisica di persone comuni.</p>
+        <div class="look-prompt"><span>Fermati</span><p>La soglia divide davvero il quotidiano dal sacro, oppure li fa coincidere?</p></div>
+      </div>
+    </section>
+
+    <section class="light-study section-pad" id="luce">
+      <div class="section-index"><span>04</span><p>La luce come significato</p></div>
+      <div class="light-heading"><h2>Non illumina la scena.<br><em>La fa accadere.</em></h2><p>Caravaggio radicalizza il chiaroscuro: il buio elimina ciò che non serve, la luce seleziona gesti e volti, costruisce il tempo della rivelazione. Segui il fascio luminoso nella <i>Vocazione</i>.</p></div>
+      <figure class="anatomy" id="vocazione">
+        <div class="anatomy-image">
+          <img src="../../caravaggio/vocazione.webp" alt="Vocazione di san Matteo di Caravaggio.">
+          <button class="hotspot h1" type="button" aria-label="Osserva la luce" data-note="La luce entra da destra e attraversa la stanza come una direzione narrativa: conduce lo sguardo verso Matteo.">1</button>
+          <button class="hotspot h2" type="button" aria-label="Osserva Cristo" data-note="Cristo resta quasi fuori scena. Il suo gesto riprende, rovesciandola, la mano di Adamo nella Creazione di Michelangelo.">2</button>
+          <button class="hotspot h3" type="button" aria-label="Osserva Matteo" data-note="Il gesto interrogativo — «proprio io?» — trasforma un episodio sacro in un istante psicologico riconoscibile.">3</button>
+          <div class="hotspot-note" id="hotspot-note" aria-live="polite">Tocca un punto numerato per seguire la costruzione dell’immagine.</div>
+          <button class="zoom-button light" type="button" data-image="../../caravaggio/vocazione.webp" data-caption="Caravaggio, Vocazione di san Matteo, 1599–1600 · Cappella Contarelli, San Luigi dei Francesi, Roma">Apri l’opera <span>↗</span></button>
+        </div>
+        <figcaption><b>Vocazione di san Matteo</b><span>1599–1600 · Olio su tela · Cappella Contarelli, Roma</span><p>Il miracolo non sospende la realtà: prende la forma di una decisione improvvisa dentro una stanza comune.</p></figcaption>
+      </figure>
+    </section>
+
+    <section class="works" id="opere">
+      <header class="works-heading section-pad"><p class="step">05 · Quattro opere, quattro tensioni</p><h2>Il significato<br><em>ha un corpo.</em></h2><p>Apri le immagini, avvicinati ai dettagli, poi torna alla distanza dell’insieme. La conoscenza comincia in questo movimento.</p></header>
+
+      <article class="work" id="madonna">
+        <div class="work-art portrait"><img src="../../caravaggio/madonna-pellegrini.webp" alt="Madonna dei pellegrini di Caravaggio."><button class="zoom-button light" type="button" data-image="../../caravaggio/madonna-pellegrini.webp" data-caption="Caravaggio, Madonna dei pellegrini, 1604–1606 circa · Sant’Agostino, Roma">Apri l’opera <span>↗</span></button></div>
+        <div class="work-copy"><p class="work-no">I</p><p class="date">1604–1606 circa</p><h3>Madonna<br>dei pellegrini</h3><p class="thesis">La dignità non dipende dalla bellezza ideale.</p><p>Maria non appare su un trono, ma sulla soglia di una casa. La composizione porta i piedi dei pellegrini vicinissimi allo spettatore. La fede si misura nella distanza annullata tra il corpo reale e l’immagine sacra.</p><dl><div><dt>Guarda</dt><dd>i piedi, la soglia, il peso del Bambino</dd></div><div><dt>Domanda</dt><dd>chi viene accolto dentro l’immagine?</dd></div></dl></div>
+      </article>
+
+      <article class="work reverse" id="morte">
+        <div class="work-art portrait"><img src="../../caravaggio/morte-vergine.webp" alt="Morte della Vergine di Caravaggio."><button class="zoom-button light" type="button" data-image="../../caravaggio/morte-vergine.webp" data-caption="Caravaggio, Morte della Vergine, 1601–1606 · Musée du Louvre, Parigi">Apri l’opera <span>↗</span></button></div>
+        <div class="work-copy"><p class="work-no">II</p><p class="date">1601–1606</p><h3>Morte<br>della Vergine</h3><p class="thesis">Il lutto non ha bisogno di retorica.</p><p>Gli apostoli non assistono a una gloria celeste: si raccolgono intorno a un corpo abbandonato, pesante, umano. Il grande drappo rosso concentra la tensione e la luce dà forma al silenzio. Commissionata per Santa Maria della Scala, l’opera fu rifiutata dai religiosi.</p><dl><div><dt>Guarda</dt><dd>il corpo, le mani, il rosso sospeso</dd></div><div><dt>Domanda</dt><dd>quando il realismo diventa inaccettabile?</dd></div></dl></div>
+      </article>
+
+      <article class="work" id="david">
+        <div class="work-art portrait"><img src="../../caravaggio/david-golia.webp" alt="David con la testa di Golia di Caravaggio."><button class="zoom-button light" type="button" data-image="../../caravaggio/david-golia.webp" data-caption="Caravaggio, David con la testa di Golia, 1609–1610 circa · Galleria Borghese, Roma">Apri l’opera <span>↗</span></button></div>
+        <div class="work-copy"><p class="work-no">III</p><p class="date">1609–1610 circa</p><h3>David con la<br>testa di Golia</h3><p class="thesis">La vittoria può avere il volto della compassione.</p><p>David non esulta. Guarda la testa recisa con un’espressione trattenuta; nel volto di Golia la tradizione riconosce un autoritratto del pittore. Il contrasto luminoso non separa semplicemente bene e male: li lega in una scena di colpa, pietà e possibile perdono.</p><dl><div><dt>Guarda</dt><dd>i due volti, la spada, il buio che li unisce</dd></div><div><dt>Domanda</dt><dd>chi viene davvero giudicato?</dd></div></dl></div>
+      </article>
+    </section>
+
+    <section class="power section-pad" id="potere">
+      <div class="section-index"><span>06</span><p>Chi decide?</p></div>
+      <div class="power-grid"><div><p class="kicker">Committenza, decoro, rifiuto</p><h2>Un’opera non è mai<br><em>sola davanti al pubblico.</em></h2></div><div class="power-body"><p>Tra artista e spettatore agiscono contratti, luoghi, istituzioni, attese. La <i>Morte della Vergine</i> non fallì come pittura: entrò in conflitto con l’idea di decoro di chi doveva accoglierla.</p><p>Il rifiuto rende visibile il potere delle immagini. Se un corpo troppo vero può disturbare, allora la forma non è un involucro neutro: decide che cosa una società è disposta a riconoscere.</p></div></div>
+      <div class="decision-line"><span>Chi commissiona</span><i>→</i><span>Chi rappresenta</span><i>→</i><span>Chi controlla</span><i>→</i><span>Chi guarda</span></div>
+    </section>
+
+    <section class="echo" id="echi">
+      <div class="echo-copy"><p class="step">07 · Echi futuri</p><h2>Un fotogramma<br><em>prima del cinema.</em></h2><p>Caravaggio non “inventa” la fotografia o il cinema. Ma la sua regia — luce laterale, tagli ravvicinati, gesti sospesi, spettatore dentro l’azione — offre ai linguaggi visivi successivi una grammatica potente.</p><blockquote>Il quadro non racconta tutto. Sceglie l’istante in cui tutto può cambiare.</blockquote></div>
+      <div class="echo-strip" aria-label="Dettagli delle opere"><img src="../../caravaggio/vocazione.webp" alt="Dettaglio della Vocazione di san Matteo"><img src="../../caravaggio/morte-vergine.webp" alt="Dettaglio della Morte della Vergine"><img src="../../caravaggio/david-golia.webp" alt="Dettaglio del David con la testa di Golia"></div>
+    </section>
+
+    <section class="second-look section-pad" id="riguarda">
+      <div class="section-index"><span>08</span><p>Guarda di nuovo</p></div>
+      <div class="second-grid">
+        <div><p class="kicker">La stessa opera, uno sguardo diverso</p><h2>Torna<br><em>all’inizio.</em></h2><p>Riapri la <i>Vocazione</i>. Adesso non cercare soltanto la luce: osserva come il divino resta quasi marginale, mentre il dubbio occupa il centro.</p><button class="primary inverse zoom-button" type="button" data-image="../../caravaggio/vocazione.webp" data-caption="Caravaggio, Vocazione di san Matteo, 1599–1600">Guarda a pieno schermo</button></div>
+        <div class="memory"><p>Il tuo primo sguardo</p><blockquote id="first-memory">Non hai ancora scritto nulla.</blockquote><label for="second-note">Che cosa vedi ora che prima non vedevi?</label><textarea id="second-note" rows="5" placeholder="Ora noto… Il significato cambia perché…"></textarea><button class="text-button" id="save-second" type="button">Salva la rilettura →</button><p class="saved" id="saved-second" role="status"></p></div>
+      </div>
+    </section>
+
+    <section class="quiz section-pad" id="verifica">
+      <div class="quiz-intro"><p class="step">09 · Metti alla prova lo sguardo</p><h2>Non ricordare<br><em>soltanto i nomi.</em></h2><p>Verifica se riesci a collegare forma, contesto e significato.</p></div>
+      <form id="quiz-form">
+        <fieldset data-answer="b"><legend><span>1</span> Nella <i>Vocazione di san Matteo</i>, la luce ha soprattutto la funzione di…</legend><label><input type="radio" name="q1" value="a"> rendere visibili tutti i dettagli della stanza.</label><label><input type="radio" name="q1" value="b"> costruire la direzione e il tempo della chiamata.</label><label><input type="radio" name="q1" value="c"> separare lo sfondo dai personaggi.</label><p class="feedback"></p></fieldset>
+        <fieldset data-answer="c"><legend><span>2</span> Perché i piedi dei pellegrini sono una scelta decisiva?</legend><label><input type="radio" name="q2" value="a"> dimostrano che Caravaggio non sapeva idealizzare.</label><label><input type="radio" name="q2" value="b"> servono soltanto a rendere la scena curiosa.</label><label><input type="radio" name="q2" value="c"> portano il corpo e la dignità delle persone comuni nel sacro.</label><p class="feedback"></p></fieldset>
+        <fieldset data-answer="a"><legend><span>3</span> Che cosa mostra il rifiuto della <i>Morte della Vergine</i>?</legend><label><input type="radio" name="q3" value="a"> che il realismo può entrare in conflitto con il decoro richiesto dall’istituzione.</label><label><input type="radio" name="q3" value="b"> che il dipinto era tecnicamente incompleto.</label><label><input type="radio" name="q3" value="c"> che il pubblico romano rifiutava ogni pittura religiosa.</label><p class="feedback"></p></fieldset>
+        <button class="primary" type="submit">Verifica le risposte</button><div class="quiz-result" id="quiz-result" role="status"></div>
+      </form>
+    </section>
+
+    <section class="final-question" id="conclusione">
+      <p class="step">10 · La domanda resta aperta</p><h2>La dignità dipende<br>da <em>come</em> veniamo rappresentati?</h2><p>Caravaggio costringe il suo tempo a vedere corpi che l’immagine sacra tendeva a correggere. Oggi quali corpi vengono ancora idealizzati, esclusi o resi invisibili?</p><a href="#inizio">Ricomincia dallo sguardo ↑</a>
+    </section>
+
+    <section class="sources section-pad"><h2>Fonti e opere</h2><div><p>I testi didattici sono stati costruiti a partire dalle schede e dagli approfondimenti della <a href="https://www.nationalgallery.org.uk/artists/michelangelo-merisi-da-caravaggio" target="_blank" rel="noreferrer">National Gallery</a>, del <a href="https://www.metmuseum.org/toah/ht/08/eusts.html" target="_blank" rel="noreferrer">Metropolitan Museum of Art</a>, del <a href="https://collections.louvre.fr/ark:/53355/cl010062304" target="_blank" rel="noreferrer">Musée du Louvre</a>, della <a href="https://www.collezionegalleriaborghese.it/en/opere/david-with-the-head-of-goliath" target="_blank" rel="noreferrer">Galleria Borghese</a> e di <a href="https://smarthistory.org/caravaggio-calling-of-st-matthew/" target="_blank" rel="noreferrer">Smarthistory</a>.</p><p>Riproduzioni digitali di opere in pubblico dominio o CC0 tramite Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Caravaggio,_Michelangelo_Merisi_da_-_The_Calling_of_Saint_Matthew_-_1599-1600_(hi_res).jpg" target="_blank" rel="noreferrer">Vocazione</a>, <a href="https://commons.wikimedia.org/wiki/File:Caravaggio_%E2%80%94_Madonna_di_Loreto.jpg" target="_blank" rel="noreferrer">Madonna</a>, <a href="https://commons.wikimedia.org/wiki/File:Death_of_the_Virgin-Caravaggio_(1606).jpg" target="_blank" rel="noreferrer">Morte della Vergine</a>, <a href="https://commons.wikimedia.org/wiki/File:David_with_the_Head_of_Goliath-Caravaggio_(1610).jpg" target="_blank" rel="noreferrer">David e Golia</a>.</p></div></section>
+  </main>
+
+  <footer><a href="../../index.html#percorso"><span class="footer-mark">S</span><span><b>Storia dello sguardo</b><br>Continua il percorso</span></a><p>Progetto didattico gbprof · direzione e cura di gbprof<br>Ideazione e sviluppo dialogico con Libera (ChatGPT)</p></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Opera a pieno schermo" hidden>
+    <div class="lightbox-controls"><button type="button" data-action="minus" aria-label="Riduci">−</button><button type="button" data-action="reset">100%</button><button type="button" data-action="plus" aria-label="Ingrandisci">＋</button><button class="close" type="button" data-action="close" aria-label="Chiudi">×</button></div>
+    <div class="lightbox-stage"><img id="lightbox-image" src="" alt="Opera ingrandita"></div><p id="lightbox-caption"></p>
+  </div>
+</body>
+</html>
