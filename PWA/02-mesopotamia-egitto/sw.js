@@ -1,4 +1,4 @@
-const CACHE = "storia-sguardo-02-v1";
+const CACHE = "storia-sguardo-02-v2";
 const CACHE_PREFIX = "storia-sguardo-02-";
 const ASSETS = [
   "./", "./index.html", "./styles.css", "./app.js", "./manifest.webmanifest",
