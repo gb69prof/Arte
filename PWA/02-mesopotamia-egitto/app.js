@@ -103,7 +103,7 @@ function openLightbox(trigger){
   lightboxTrigger = trigger; lightboxImage.src = trigger.dataset.image; lightboxCaption.textContent = trigger.dataset.caption || "Opera ingrandita";
   lightbox.hidden = false; document.body.classList.add("locked"); setLightboxScale(1); lightboxClose.focus();
 }
-function closeLightbox(){ lightbox.hidden = true; lightboxImage.src = ""; document.body.classList.remove("locked"); if(lightboxTrigger) lightboxTrigger.focus(); }
+function closeLightbox(){ lightbox.hidden = true; lightboxImage.removeAttribute("src"); document.body.classList.remove("locked"); if(lightboxTrigger) lightboxTrigger.focus(); }
 document.querySelectorAll("[data-image]").forEach(button => button.addEventListener("click", () => openLightbox(button)));
 lightboxClose.addEventListener("click", closeLightbox);
 document.querySelectorAll("[data-zoom]").forEach(button => button.addEventListener("click", () => {
