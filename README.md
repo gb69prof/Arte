@@ -15,3 +15,8 @@ Non una successione di artisti, opere e date, ma una storia dell’uomo attraver
 - **Le immagini che ci abitano** — dal Dopoguerra all’arte digitale e all’IA
 
 La directory `PWA/` descrive il contratto di navigazione che dovrà essere conservato in ogni futura lezione.
+
+## Moduli pubblicati
+
+- [01 · Prima dell’arte? — Perché rappresentare ciò che esiste?](./PWA/01-prima-dell-arte/)
+- [10 · Caravaggio — Quando il sacro entra nella strada](./PWA/10-caravaggio/)
