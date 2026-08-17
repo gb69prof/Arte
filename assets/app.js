@@ -13,7 +13,8 @@ const galleries = [
 
 const liveModules = {
   "01": { href: "PWA/01-prima-dell-arte/index.html", label: "modulo pubblicato" },
-  "02": { href: "PWA/02-mesopotamia-egitto/index.html", label: "nuovo modulo" },
+  "02": { href: "PWA/02-mesopotamia-egitto/index.html", label: "modulo pubblicato" },
+  "03": { href: "PWA/03-grecia/index.html", label: "nuovo modulo" },
   "10": { href: "PWA/10-caravaggio/index.html", label: "modulo pubblicato" }
 };
 
