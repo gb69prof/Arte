@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#193244">
+  <meta name="description" content="Chi merita di essere rappresentato? PWA didattica sul Realismo, il lavoro e la responsabilità dello sguardo.">
+  <title>13 · Chi merita di essere rappresentato? — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="topbar">
+    <a class="back" href="../../index.html#m13"><span aria-hidden="true">←</span> Storia dello sguardo</a>
+    <div class="top-actions"><span id="progressText">0 di 13 tappe</span><button id="menuButton" type="button" aria-expanded="false" aria-controls="chapterMenu">Indice</button></div>
+    <progress id="readingProgress" max="13" value="0" aria-label="Avanzamento nel modulo"></progress>
+  </header>
+
+  <aside class="chapter-menu" id="chapterMenu" hidden aria-label="Indice delle tredici sezioni">
+    <div class="menu-head"><p>Chi merita di essere rappresentato?</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#prima"><span>01</span>Prima di sapere</a></li>
+      <li><a href="#mondo"><span>02</span>Il mondo precedente</a></li>
+      <li><a href="#frattura"><span>03</span>Il presente irrompe</a></li>
+      <li><a href="#definizione"><span>04</span>Che cosa significa Realismo?</a></li>
+      <li><a href="#specchio"><span>05</span>La realtà non è uno specchio</a></li>
+      <li><a href="#courbet"><span>06</span>Courbet: la scala dello scandalo</a></li>
+      <li><a href="#millet"><span>07</span>Millet: il lavoro entra nel quadro</a></li>
+      <li><a href="#daumier"><span>08</span>Classe, città, circolazione</a></li>
+      <li><a href="#fotografia"><span>09</span>Fotografia: prova o costruzione?</a></li>
+      <li><a href="#europa"><span>10</span>Realismi plurali</a></li>
+      <li><a href="#responsabilita"><span>11</span>Chi guarda chi?</a></li>
+      <li><a href="#confronto"><span>12</span>La dignità dell'immagine</a></li>
+      <li><a href="#ritorno"><span>13</span>Ritorno all'immagine</a></li>
+    </ol></nav>
+    <button class="reset-state" id="resetState" type="button">Azzera tutto sul dispositivo</button>
+  </aside>
+  <div class="menu-scrim" id="menuScrim" hidden></div>
+
+  <main id="contenuto">
+    <section class="opening tracked" id="prima" data-step="1" aria-labelledby="openingTitle">
+      <figure class="opening-art zoomable">
+        <img src="assets/images/millet-spigolatrici.webp" width="1800" height="1347" alt="Tre donne curve raccolgono spighe in primo piano; sullo sfondo, covoni e carri colmi separano la fatica dall'abbondanza.">
+        <button class="open-image" type="button">Apri l'opera</button>
+      </figure>
+      <div class="opening-copy">
+        <p class="eyebrow">13 · Realismo — prima di sapere</p>
+        <h1 id="openingTitle">Chi merita di essere rappresentato?</h1>
+        <p class="opening-lead">Per ora niente titolo, autore o spiegazione. Guarda chi occupa il primo piano, come si muove e quale parte del mondo resta lontana.</p>
+        <ul class="look-list">
+          <li>Chi occupa il centro e chi resta sullo sfondo?</li><li>Il gesto è eroico, ripetuto o faticoso?</li><li>Vediamo individui o tipi sociali?</li><li>Il punto di vista avvicina o mantiene distanza?</li><li>La scena nobilita, denuncia o osserva?</li><li>Che cosa non vediamo della loro vita?</li><li>Dove si trova l'abbondanza?</li><li>Perché questo soggetto poteva disturbare?</li>
+        </ul>
+        <label class="note-label" for="openingNote"><span>Il tuo primo sguardo</span><small>Resta soltanto su questo dispositivo.</small></label>
+        <textarea id="openingNote" rows="8" placeholder="All'inizio vedo...&#10;Il lavoro mi appare...&#10;La distanza fra primo piano e sfondo...&#10;Questa scena potrebbe disturbare perché..."></textarea>
+        <p class="save-status" id="openingSave" role="status" aria-live="polite"></p>
+        <a class="scroll-link" href="#mondo">Entra nella domanda ↓</a>
+      </div>
+    </section>
+
+    <section class="tracked section-pad previous" id="mondo" data-step="2">
+      <div class="section-index"><span>02</span><p>Il mondo precedente: dall'eccezione al presente quotidiano</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Dal modulo 12</p><h2>Il Romanticismo aveva portato il popolo nella grande immagine. <em>Ma come evento eccezionale.</em></h2></div><p>Rivoluzione, naufragio e trauma avevano infranto la misura neoclassica. Il Realismo compie un altro spostamento: non chiede soltanto che cosa supera l'uomo, ma quali vite ordinarie la cultura considera degne di essere viste.</p></div>
+      <div class="image-compare">
+        <figure class="zoomable"><img src="assets/images/delacroix-liberta.webp" width="1900" height="1520" loading="lazy" alt="La Libertà guida una folla armata oltre una barricata, fra fumo e cadaveri."><button class="open-image" type="button">Apri Delacroix</button><figcaption>Eugène Delacroix, <i>La Libertà che guida il popolo</i>, 1830, Musée du Louvre.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/millet-spigolatrici.webp" width="1800" height="1347" loading="lazy" alt="Tre spigolatrici curve lavorano in un campo dopo il raccolto."><button class="open-image" type="button">Apri Millet</button><figcaption>Jean-François Millet, <i>Le spigolatrici</i>, 1857, Musée d'Orsay.</figcaption></figure>
+      </div>
+      <div class="compare-table" role="region" aria-label="Confronto fra Romanticismo e Realismo"><table><thead><tr><th>Passaggio</th><th>Evento romantico</th><th>Presente realista</th></tr></thead><tbody>
+        <tr><td>Soggetto</td><td>Rivoluzione, naufragio, destino.</td><td>Lavoro, comunità, viaggio, condizione sociale.</td></tr>
+        <tr><td>Popolo</td><td>Simbolo collettivo e protagonista della storia.</td><td>Corpi situati in rapporti materiali e gerarchie.</td></tr>
+        <tr><td>Tempo</td><td>Istante decisivo ed eccezionale.</td><td>Ripetizione quotidiana e presente contemporaneo.</td></tr>
+        <tr><td>Politica</td><td>L'allegoria mobilita.</td><td>La scelta di chi rendere visibile prende posizione.</td></tr>
+      </tbody></table></div>
+      <p class="bridge-question">Che cosa accade quando l'arte rinuncia all'eccezione e guarda il presente sociale?</p>
+    </section>
+
+    <section class="tracked section-pad iron" id="frattura" data-step="3">
+      <div class="section-index light"><span>03</span><p>Il presente irrompe: cronologia della frattura realista</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Cronologia e rete causale</p><h2>Il Realismo non nasce dall'occhio soltanto. <em>Nasce da una società che cambia scala e velocità.</em></h2></div><p>Rivoluzioni, lavoro salariato, città, ferrovie, stampa illustrata, fotografia, Salon e pubblico borghese modificano insieme ciò che l'immagine può mostrare e il modo in cui circola.</p></div>
+      <div class="timeline" id="timeline" role="group" aria-label="Cronologia interattiva della frattura realista"></div>
+      <article class="timeline-reading" id="timelineReading" aria-live="polite"></article>
+      <button class="lab-reset" id="timelineReset" type="button">Ripristina la cronologia</button>
+      <div class="causal-lab"><h3>Rete causale esplorabile</h3><p>Seleziona un nodo: nessuna causa basta da sola.</p><div class="causal-nodes" id="causalNodes"></div><article id="causalReading" class="lab-reading inverse" aria-live="polite"></article></div>
+      <button class="lab-reset" id="causalReset" type="button">Ripristina la rete</button>
+    </section>
+
+    <section class="tracked section-pad term" id="definizione" data-step="4">
+      <div class="section-index"><span>04</span><p>Che cosa significa “realismo”?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Una parola, quattro prospettive</p><h2>Il vero non cade da solo sulla tela. <em>È scelto, costruito e discusso.</em></h2></div><p>“Realismo” può indicare un movimento storico francese, una scelta di soggetti contemporanei, una costruzione dello sguardo oppure una famiglia plurale di risposte europee.</p></div>
+      <div class="term-layout"><div class="perspective-tabs" id="termTabs" role="tablist" aria-label="Quattro prospettive sul Realismo"></div><article class="term-reading" id="termReading" aria-live="polite"></article></div>
+      <button class="lab-reset" id="termReset" type="button">Ripristina le prospettive</button>
+      <div class="word-strip" aria-label="Distinzioni lessicali"><p><b>Vero</b><span>pretesa di rapporto con il mondo</span></p><p><b>Verosimile</b><span>ciò che appare credibile</span></p><p><b>Naturale</b><span>effetto culturale di spontaneità</span></p><p><b>Quotidiano</b><span>ciò che si ripete</span></p><p><b>Sociale</b><span>relazioni, ruoli, poteri</span></p><p><b>Contemporaneo</b><span>il presente dell'artista</span></p></div>
+    </section>
+
+    <section class="tracked section-pad mirror" id="specchio" data-step="5">
+      <div class="section-index"><span>05</span><p>La realtà non è uno specchio</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Laboratorio di costruzione</p><h2>Ogni immagine include. <em>Ogni immagine esclude.</em></h2></div><p>Modifica soggetto, scala, punto di vista, titolo e pubblico. La scena di partenza resta la stessa, ma la sua funzione cambia: non esiste immagine senza posizione.</p></div>
+      <div class="mirror-lab">
+        <figure class="mirror-stage zoomable" id="mirrorStage"><img src="assets/images/millet-spigolatrici.webp" width="1800" height="1347" loading="lazy" alt="Le spigolatrici usate per un laboratorio su inquadratura, scala e punto di vista."><span class="frame-guide" aria-hidden="true"></span><span class="distance-mark" aria-hidden="true"></span><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div id="mirrorControls" class="parameter-controls"></div><article id="mirrorReading" class="lab-reading" aria-live="polite"></article><p class="equivalent" id="mirrorEquivalent"></p><button class="lab-reset" id="mirrorReset" type="button">Azzera la costruzione</button></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad dark" id="courbet" data-step="6">
+      <div class="section-index light"><span>06</span><p>Courbet: la scala dello scandalo</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Un funerale a Ornans · 1849–1850</p><h2>Una comunità comune occupa lo spazio della grande storia.</h2></div><p>Il formato monumentale non celebra un eroe antico. Volti riconoscibili, morte ordinaria, paesaggio locale e materia pittorica affrontano lo spettatore alla scala riservata ai generi più nobili.</p></div>
+      <div class="analysis-lab">
+        <figure class="analysis-stage courbet-stage zoomable" id="courbetStage"><img src="assets/images/courbet-funerale.webp" width="2400" height="1103" loading="lazy" alt="Il lungo corteo di Un funerale a Ornans, con la fossa al centro e il paesaggio del luogo sullo sfondo."><div class="courbet-overlays" aria-hidden="true"><span class="horizon"></span><span class="grave"></span><span class="line"></span><span class="crowd"></span><span class="viewer"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="courbetButtons"></div><button class="lab-reset" id="courbetReset" type="button">Azzera Courbet</button><article class="lab-reading inverse" id="courbetReading" aria-live="polite"></article><p class="equivalent" id="courbetEquivalent">Nessuno strato attivo.</p></div>
+      </div>
+      <div class="stone-row"><figure class="zoomable"><img src="assets/images/courbet-spaccapietre.webp" width="1315" height="800" loading="lazy" alt="Due lavoratori frantumano pietre lungo una strada, senza mostrarci chiaramente i volti."><button class="open-image" type="button">Apri la riproduzione</button><figcaption>Gustave Courbet, <i>Gli spaccapietre</i>, 1849. L'originale, già a Dresda, fu distrutto nel 1945; questa è una riproduzione storica dell'opera perduta.</figcaption></figure><div><p class="eyebrow">Pavillon du Réalisme · 1855</p><h3>Esporre è parte dell'opera.</h3><p>Dopo il rifiuto di lavori destinati all'Esposizione universale, Courbet finanziò uno spazio autonomo. La “verità” dipende anche da chi controlla l'accesso al pubblico, dal Salon e dal mercato.</p></div></div>
+      <p class="decisive">Che cosa cambia quando una comunità comune occupa lo spazio riservato alla grande storia?</p>
+    </section>
+
+    <section class="tracked section-pad earth" id="millet" data-step="7">
+      <div class="section-index"><span>07</span><p>Millet: il lavoro entra nel quadro</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Le spigolatrici · 1857</p><h2>Tre gesti minimi diventano monumentali. <em>La ricchezza resta lontana.</em></h2></div><p>Le donne raccolgono le spighe rimaste dopo la mietitura. Il quadro non è una statistica sulla povertà: mette in relazione schiena, mani, terra, orizzonte, raccolto e distanza sociale.</p></div>
+      <div class="analysis-lab light-lab">
+        <figure class="analysis-stage millet-stage zoomable" id="milletStage"><img src="assets/images/millet-spigolatrici.webp" width="1800" height="1347" loading="lazy" alt="Le spigolatrici analizzate attraverso sovrapposizioni didattiche sul gesto e sulla distribuzione della ricchezza."><div class="millet-overlays" aria-hidden="true"><span class="backs"></span><span class="hands"></span><span class="soil"></span><span class="wealth"></span><span class="horizon"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="milletButtons"></div><button class="lab-reset" id="milletReset" type="button">Azzera Millet</button><article class="lab-reading" id="milletReading" aria-live="polite"></article><p class="equivalent" id="milletEquivalent">Nessuno strato attivo.</p></div>
+      </div>
+      <div class="tension-table" role="region" aria-label="Tensioni nella rappresentazione del lavoro"><table><thead><tr><th>Il quadro rende visibile</th><th>Ma lascia aperto</th></tr></thead><tbody><tr><td>la competenza di un gesto ripetuto</td><td>la voce e la biografia delle lavoratrici</td></tr><tr><td>la distanza fra scarsità e raccolto</td><td>le strutture economiche che la producono</td></tr><tr><td>la dignità dei corpi</td><td>il rischio di monumentalizzarli per un pubblico diverso</td></tr></tbody></table></div>
+      <p class="decisive">Rendere monumentale la fatica significa restituire dignità o parlare al posto di chi lavora?</p>
+    </section>
+
+    <section class="tracked section-pad carriage" id="daumier" data-step="8">
+      <div class="section-index"><span>08</span><p>Daumier: classe, città, circolazione</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Il vagone di terza classe · 1864</p><h2>La ferrovia unisce lo spazio. <em>La classe continua a dividerlo.</em></h2></div><p>Il vagone comprime età, maternità, stanchezza e anonimato. Daumier lavora anche nella stampa: la critica sociale non vive soltanto nel museo, ma circola tra lettori e immagini riproducibili.</p></div>
+      <div class="analysis-lab">
+        <figure class="analysis-stage daumier-stage zoomable" id="daumierStage"><img src="assets/images/daumier-terza-classe.webp" width="1800" height="1302" loading="lazy" alt="Passeggeri di terza classe siedono in un vagone affollato; una donna anziana, una madre e un bambino occupano il primo piano."><div class="daumier-overlays" aria-hidden="true"><span class="front"></span><span class="compression"></span><span class="gazes"></span><span class="grid"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="daumierButtons"></div><button class="lab-reset" id="daumierReset" type="button">Azzera Daumier</button><article class="lab-reading" id="daumierReading" aria-live="polite"></article><p class="equivalent" id="daumierEquivalent">Nessuno strato attivo.</p></div>
+      </div>
+      <p class="decisive">Essere visibili nello spazio moderno significa essere davvero riconosciuti?</p>
+    </section>
+
+    <section class="tracked section-pad photo" id="fotografia" data-step="9">
+      <div class="section-index light"><span>09</span><p>La fotografia: prova o costruzione?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Daguerre · Boulevard du Temple · 1838</p><h2>La macchina registra la luce. <em>Non elimina la scelta.</em></h2></div><p>Una lunga esposizione rende quasi vuoto un boulevard trafficato: ciò che si muove non resta, mentre poche figure ferme diventano visibili. La tecnica produce presenza e cancellazione.</p></div>
+      <div class="photo-lab">
+        <figure class="photo-stage zoomable" id="photoStage"><img src="assets/images/daguerre-boulevard.webp" width="1600" height="1149" loading="lazy" alt="Veduta dagherrotipica del Boulevard du Temple; la strada appare quasi vuota e poche figure ferme restano visibili."><span class="photo-crop" aria-hidden="true"></span><div class="ghost-traffic" aria-hidden="true"></div><button class="open-image" type="button">Apri il dagherrotipo</button></figure>
+        <div><div class="range-control"><label for="exposureRange">Tempo di esposizione simulato <output id="exposureOutput">5 minuti</output></label><input id="exposureRange" type="range" min="0" max="2" step="1" value="2"></div><div class="mode-buttons" id="frameModes"></div><article class="lab-reading inverse" id="photoReading" aria-live="polite"></article><p class="equivalent" id="photoEquivalent"></p><p class="simulation-note">Simulazione didattica: non ricostruisce otticamente il dagherrotipo.</p><button class="lab-reset" id="photoReset" type="button">Azzera fotografia</button></div>
+      </div>
+      <p class="decisive light-text">Una macchina vede senza scegliere?</p>
+    </section>
+
+    <section class="tracked section-pad europe" id="europa" data-step="10">
+      <div class="section-index"><span>10</span><p>Realismi plurali</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Francia e Inghilterra, dentro e oltre Courbet</p><h2>Non esiste un unico Realismo europeo. <em>Cambiano pubblico, tecnica e politica.</em></h2></div><p>Confronta una grande scena urbana britannica, un'immagine agricola commissionata dallo Stato francese e il Realismo conflittuale di Courbet. “Lavoro” non significa la stessa cosa in ogni contesto.</p></div>
+      <div class="europe-lab"><div class="europe-tabs" id="europeTabs" role="tablist" aria-label="Linee del Realismo europeo"></div><article id="europeReading" aria-live="polite"></article><button class="lab-reset" id="europeReset" type="button">Ripristina il confronto</button></div>
+      <div class="image-compare">
+        <figure class="zoomable"><img src="assets/images/brown-work.webp" width="1800" height="1225" loading="lazy" alt="Una strada londinese è occupata da scavatori, passanti, bambini, venditori e osservatori di classi diverse."><button class="open-image" type="button">Apri Work</button><figcaption>Ford Madox Brown, <i>Work</i>, 1852–1865, Manchester Art Gallery.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/bonheur-aratura.webp" width="2000" height="1023" loading="lazy" alt="Due squadre di buoi arano un ampio campo; uomini e animali sono immersi nella terra lavorata."><button class="open-image" type="button">Apri l'Aratura</button><figcaption>Rosa Bonheur, <i>Aratura nel Nivernais</i>, 1849, Musée d'Orsay.</figcaption></figure>
+      </div>
+      <div class="warning-card"><b>Non una scala di progresso.</b><p>Bonheur può nobilitare il lavoro e insieme costruire un'immagine armonica della campagna; Brown può rendere visibile la divisione sociale e insieme ordinare la città come teatro morale. Il Realismo resta selezione e stile.</p></div>
+    </section>
+
+    <section class="tracked section-pad responsibility" id="responsabilita" data-step="11">
+      <div class="section-index light"><span>11</span><p>Chi guarda chi? Limiti e assenze</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Laboratorio di responsabilità</p><h2>Rappresentare gli esclusi non elimina la distanza.</h2></div><p>Un'immagine è una relazione: qualcuno la produce, qualcuno vi appare, qualcuno la compra, qualcuno la guarda. E qualcuno continua a mancare.</p></div>
+      <div class="responsibility-lab"><div class="role-map" id="roleMap"></div><article class="lab-reading inverse" id="roleReading" aria-live="polite"></article><div class="responsibility-checks" id="responsibilityChecks"></div><p id="responsibilitySummary" class="equivalent" aria-live="polite"></p><button class="lab-reset" id="responsibilityReset" type="button">Azzera responsabilità</button></div>
+      <div class="absence-grid"><article><b>Sguardo di classe</b><p>L'artista e il pubblico possono osservare il lavoro da una posizione protetta.</p></article><article><b>Genere</b><p>Il lavoro femminile appare nei campi, mentre quello domestico resta spesso senza immagine.</p></article><article><b>Tipo sociale</b><p>L'anonimato rende comune una condizione, ma può cancellare l'individuo.</p></article><article><b>Colonialismo</b><p>Il presunto universale europeo lascia ai margini popoli, lavori e violenze dell'espansione coloniale.</p></article><article><b>Istituzioni</b><p>Salon, mercato, critica e censura decidono quale “realtà” incontra il pubblico.</p></article><article><b>Consenso</b><p>Posa, rapporto con il soggetto e diritto alla propria immagine restano questioni aperte.</p></article></div>
+    </section>
+
+    <section class="tracked section-pad compare-section" id="confronto" data-step="12">
+      <div class="section-index"><span>12</span><p>Laboratorio conclusivo: come cambia la dignità dell'immagine?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Quattro opere, diciotto categorie</p><h2>Non cercare il vincitore. <em>Segui le trasformazioni.</em></h2></div><p>Dal popolo come evento al corpo sociale, dal lavoro alla città moderna, fino alla fotografia che seleziona attraverso il tempo: ogni immagine ridefinisce verità, pubblico e responsabilità.</p></div>
+      <div class="compare-categories" id="compareCategories"></div><div class="compare-grid" id="compareGrid"></div><button class="lab-reset" id="compareReset" type="button">Ripristina il confronto</button>
+    </section>
+
+    <section class="tracked section-pad return" id="ritorno" data-step="13">
+      <div class="section-index"><span>13</span><p>Ritorno all'immagine</p></div>
+      <div class="return-grid">
+        <figure class="zoomable"><img src="assets/images/millet-spigolatrici.webp" width="1800" height="1347" loading="lazy" alt="Le spigolatrici di Millet ripresentate senza sovrapposizioni."><button class="open-image" type="button">Riapri l'opera</button><figcaption>Jean-François Millet, <i>Le spigolatrici</i>, 1857, olio su tela, 83,5 × 110 cm, Musée d'Orsay.</figcaption></figure>
+        <div><p class="eyebrow">Il primo sguardo resta visibile</p><blockquote id="openingMemory">Non hai ancora scritto un'annotazione.</blockquote><label class="note-label" for="returnNote"><span>Il tuo secondo sguardo</span><small>Usa soltanto ciò che hai davvero osservato.</small></label><textarea id="returnNote" rows="12" placeholder="All'inizio vedevo...&#10;Ora riconosco...&#10;Il lavoro entra nel quadro quando...&#10;Rappresentare non significa soltanto...&#10;Il punto di vista è politico perché...&#10;Restano invisibili...&#10;La fotografia non è neutrale perché...&#10;Per me merita di essere rappresentato..."></textarea><p class="save-status" id="returnSave" role="status" aria-live="polite"></p></div>
+      </div>
+      <article id="personalSynthesis" class="personal-synthesis" aria-live="polite"></article>
+
+      <div class="threshold"><p class="eyebrow">Soglia verso il modulo 14</p><h2>Il Realismo ha scelto il presente. <em>Ora il presente cambia velocità.</em></h2><p>La città si affolla, la luce muta, il tempo della visione si accorcia. La prossima domanda non sarà più soltanto chi merita di essere rappresentato, ma che cosa accade quando la realtà diventa un istante.</p><a href="../../index.html#m14">Vai alla soglia del modulo 14 →</a></div>
+
+      <section class="quiz-section" aria-labelledby="quizTitle"><div class="quiz-head"><div><p class="eyebrow">Verifica con recupero</p><h2 id="quizTitle">Dodici nuclei, nessuna risposta lasciata indietro</h2></div><div><progress id="quizMeter" max="12" value="0" aria-label="Avanzamento verifica"></progress><span id="quizCount">Domanda 1 di 12</span></div></div><div id="quizArea" aria-live="polite"></div></section>
+
+      <details class="sources"><summary>Fonti storico-artistiche e registro delle immagini</summary>
+        <p>Le schede di musei e collezioni fondano dati, collocazioni e interpretazioni; Wikimedia Commons è usato come deposito tecnico delle riproduzioni in pubblico dominio. Tutti i file sono conservati localmente.</p>
+        <div class="source-list">
+          <article><h3>Jean-François Millet · <i>Le spigolatrici</i>, 1857</h3><p>Olio su tela, 83,5 × 110 cm, Musée d'Orsay, Parigi. File: <code>millet-spigolatrici.webp</code>. <a href="https://www.musee-orsay.fr/en/artworks/des-glaneuses-342">Scheda dell'opera</a> · <a href="https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Gustave Courbet · <i>Un funerale a Ornans</i>, 1849–1850</h3><p>Olio su tela, circa 315 × 668 cm, Musée d'Orsay. File: <code>courbet-funerale.webp</code>. <a href="https://www.musee-orsay.fr/fr/oeuvres/un-enterrement-ornans-924">Scheda dell'opera</a> · <a href="https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project_2.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Gustave Courbet · <i>Gli spaccapietre</i>, 1849</h3><p>Olio su tela, 170 × 240 cm, già Gemäldegalerie di Dresda; originale distrutto nel 1945. File: <code>courbet-spaccapietre.webp</code>. <a href="https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_The_Stonebreakers_-_WGA05457.jpg">Riproduzione storica</a>, pubblico dominio; non è fotografia di un originale conservato.</p></article>
+          <article><h3>Honoré Daumier · <i>Il vagone di terza classe</i>, 1864</h3><p>Olio su tela, 65,4 × 90,2 cm, The Metropolitan Museum of Art, New York. File: <code>daumier-terza-classe.webp</code>. <a href="https://www.metmuseum.org/art/collection/search/436095">Scheda e dati Open Access</a> · <a href="https://commons.wikimedia.org/wiki/File:Honor%C3%A9_Daumier_(French,_Marseilles_1808%E2%80%931879_Valmondois)_-_The_Third-Class_Carriage_-_Google_Art_Project.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Louis Daguerre · <i>Boulevard du Temple</i>, 1838</h3><p>Dagherrotipo, trittico donato a Ludwig I di Baviera, oggi nella raccolta del Münchner Stadtmuseum. File: <code>daguerre-boulevard.webp</code>. <a href="https://www.metmuseum.org/essays/daguerre-1787-1851-and-the-invention-of-photography">Contesto storico</a> · <a href="https://commons.wikimedia.org/wiki/File:Boulevard_du_Temple_by_Daguerre.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Ford Madox Brown · <i>Work</i>, 1852–1865</h3><p>Olio su tela, Manchester Art Gallery. File: <code>brown-work.webp</code>. <a href="https://manchesterartgallery.org/unlocking-work-by-ford-madox-brown/">Approfondimento del museo</a> · <a href="https://commons.wikimedia.org/wiki/File:Ford_Madox_Brown_-_Work_-_Google_Art_Project.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Rosa Bonheur · <i>Aratura nel Nivernais</i>, 1849</h3><p>Olio su tela, 133 × 260 cm, Musée d'Orsay. File: <code>bonheur-aratura.webp</code>. <a href="https://www.musee-orsay.fr/en/artworks/labourage-nivernais-68">Scheda dell'opera</a> · <a href="https://commons.wikimedia.org/wiki/File:Rosa_Bonheur_-_Ploughing_in_Nevers_-_Google_Art_Project.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Eugène Delacroix · <i>La Libertà che guida il popolo</i>, 1830</h3><p>Olio su tela, 260 × 325 cm, Musée du Louvre. File: <code>delacroix-liberta.webp</code>. <a href="https://www.louvre.fr/en/explore/the-palace/think-big">Scheda del Louvre</a> · riproduzione fedele di opera in pubblico dominio, già verificata nel modulo 12.</p></article>
+        </div>
+      </details>
+
+      <nav class="module-nav" aria-label="Navigazione fra moduli"><a href="../12-romanticismo/">← 12 · Romanticismo</a><a href="../../index.html#m14">14 · Impressionismo (spazio predisposto) →</a></nav>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption" hidden>
+    <div class="lightbox-bar"><p id="lightboxCaption"></p><div><button id="zoomOut" type="button" aria-label="Riduci immagine">−</button><button id="zoomReset" type="button" aria-label="Ripristina ingrandimento">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci immagine">+</button><button id="lightboxClose" type="button" aria-label="Chiudi immagine">×</button></div></div>
+    <div class="lightbox-stage" id="lightboxStage"><img id="lightboxImage" src="assets/images/millet-spigolatrici.webp" width="1800" height="1347" alt=""></div>
+  </div>
+</body>
+</html>
