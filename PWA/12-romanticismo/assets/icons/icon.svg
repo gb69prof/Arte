@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">L'infinito inquieta la ragione</title>
+  <desc id="desc">Un piccolo viandante davanti a nebbia, orizzonte e profondità per il modulo sul Romanticismo.</desc>
+  <rect width="512" height="512" fill="#101820"/>
+  <path d="M0 166c86-34 160-32 236 2s152 40 276-10v76c-94 42-176 40-252 6S102 204 0 252z" fill="#dbe2dc" opacity=".88"/>
+  <path d="M0 286c78-24 134-18 202 10s146 40 310-8v116H0z" fill="#203f36"/>
+  <path d="M0 374c110-44 206-44 288-8s142 44 224 4v142H0z" fill="#071017"/>
+  <path d="M76 158h360" stroke="#a88d57" stroke-width="12" stroke-linecap="round" opacity=".85"/>
+  <path d="M254 246c-22 0-38 18-38 42v104h78V288c0-24-17-42-40-42z" fill="#f8fbf7"/>
+  <circle cx="255" cy="219" r="24" fill="#f8fbf7"/>
+  <path d="M226 336h58l34 88H194z" fill="#a64236"/>
+  <path d="M214 288c-30 24-54 52-72 84M294 288c33 22 58 50 76 84" stroke="#f8fbf7" stroke-width="14" stroke-linecap="round"/>
+</svg>

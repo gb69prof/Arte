@@ -29,6 +29,7 @@ La directory `PWA/` descrive il contratto di navigazione che dovrà essere conse
 - [09 · La forma perde la quiete — Manierismo: la crisi dell’equilibrio](./PWA/09-manierismo/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./PWA/10-caravaggio/)
 - [11 · La bellezza diventa virtù — Neoclassicismo: arte, ragione, cittadinanza](./PWA/11-neoclassicismo/)
+- [12 · L’infinito inquieta la ragione — Romanticismo: sublime, individuo, storia](./PWA/12-romanticismo/)
 
 Il modulo 02 mette in relazione la nascita delle città e degli Stati con scrittura, gerarchie, monumentalità e costruzione visiva dell’autorità. Comprende osservazione iniziale, analisi stratificata delle opere, confronto Mesopotamia/Egitto, salvataggi locali, verifica con recupero, installabilità e uso offline.
 
@@ -51,3 +52,5 @@ Il modulo 09 segue la crisi dell’equilibrio rinascimentale nel Manierismo. Pon
 Il modulo 10 affronta Caravaggio e il Barocco come soglia in cui il sacro entra nella strada. Corpi comuni, luce selettiva, decoro, committenza e rifiuto mostrano che l’immagine non illustra soltanto: coinvolge, persuade, include o disturba. La conclusione lascia aperta la domanda che il modulo 11 riprende: se l’immagine può persuadere, può anche educare?
 
 Il modulo 11 studia il Neoclassicismo come progetto educativo, morale e politico della bellezza. David, Winckelmann, Canova, Angelica Kauffman, Marat, Napoleone, museo moderno e soglia goyesca mostrano che la forma ordinata può rendere visibili disciplina, sacrificio, cittadinanza e virtù, ma anche esclusioni, propaganda, mito imperiale e spoliazione. Comprende tredici sezioni, cronologia interattiva, rete causale, laboratori su composizione morale, linea, corpo ideale, virtù di genere, Marat, immagine napoleonica, circolazione museale, confronto conclusivo, due taccuini persistenti, lightbox accessibile, verifica bloccante con dodici recuperi e uso offline.
+
+Il modulo 12 chiude la seconda galleria, **Inventare l’uomo moderno**, mostrando il punto in cui la ragione entra in crisi davanti all’infinito, alla natura, alla storia e all’interiorità. Friedrich, Turner, Constable, Goya, Delacroix, Géricault e Füssli costruiscono una lezione sul sublime come esperienza di attrazione e timore, sull’individuo fragile, sul popolo come soggetto e immagine, sulla storia come ferita e sulla soglia verso il Realismo. Comprende tredici sezioni, cronologia interattiva, rete causale, laboratorio sul sublime, laboratori stratificati sulle opere, confronto finale per quindici categorie, due taccuini persistenti, lightbox accessibile, verifica bloccante con dodici recuperi e uso offline con chiave `storia-sguardo-12-state`.

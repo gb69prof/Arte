@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101820">
+  <meta name="description" content="L'infinito inquieta la ragione: PWA didattica sul Romanticismo, fra sublime, individuo e storia.">
+  <title>12 · L'infinito inquieta la ragione — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="topbar">
+    <a class="back" href="../../index.html#m12"><span aria-hidden="true">←</span> Storia dello sguardo</a>
+    <div class="top-actions"><span id="progressText">0 di 13 tappe</span><button id="menuButton" type="button" aria-expanded="false" aria-controls="chapterMenu">Indice</button></div>
+    <progress id="readingProgress" max="13" value="0" aria-label="Avanzamento nel modulo"></progress>
+  </header>
+
+  <aside class="chapter-menu" id="chapterMenu" hidden aria-label="Indice delle tredici sezioni">
+    <div class="menu-head"><p>L'infinito inquieta la ragione</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#prima"><span>01</span>Prima di sapere</a></li>
+      <li><a href="#mondo"><span>02</span>Il mondo precedente</a></li>
+      <li><a href="#frattura"><span>03</span>Dopo la misura</a></li>
+      <li><a href="#romantico"><span>04</span>Che cosa significa romantico?</a></li>
+      <li><a href="#sublime"><span>05</span>Il sublime</a></li>
+      <li><a href="#friedrich"><span>06</span>Friedrich</a></li>
+      <li><a href="#natura"><span>07</span>La natura non è uno sfondo</a></li>
+      <li><a href="#goya"><span>08</span>La storia diventa ferita</a></li>
+      <li><a href="#popolo"><span>09</span>Il popolo entra nell'immagine</a></li>
+      <li><a href="#medusa"><span>10</span>Il naufragio della ragione</a></li>
+      <li><a href="#incubo"><span>11</span>Visione, incubo, interiorità</a></li>
+      <li><a href="#confronto"><span>12</span>Che cosa supera la ragione?</a></li>
+      <li><a href="#ritorno"><span>13</span>Ritorno all'immagine</a></li>
+    </ol></nav>
+    <button class="reset-state" id="resetState" type="button">Azzera tutto sul dispositivo</button>
+  </aside>
+  <div class="menu-scrim" id="menuScrim" hidden></div>
+
+  <main id="contenuto">
+    <section class="opening tracked" id="prima" data-step="1" aria-labelledby="openingTitle">
+      <figure class="opening-art zoomable">
+        <img src="assets/images/friedrich-viandante.webp" width="1700" height="2177" alt="Un uomo visto di spalle sta su una roccia e guarda un mare di nebbia fra montagne lontane.">
+        <button class="open-image" type="button">Apri l'opera</button>
+      </figure>
+      <div class="opening-copy">
+        <p class="eyebrow">12 · Romanticismo — prima di sapere</p>
+        <h1 id="openingTitle">Possiamo abitare ciò che ci supera?</h1>
+        <p class="opening-lead">Non leggere ancora titolo e autore. Guarda la distanza. Qui l'immagine non offre una misura: apre una vertigine.</p>
+        <ul class="look-list">
+          <li>Dove si trova l'uomo rispetto allo spazio?</li><li>Guarda qualcosa o è guardato da qualcosa?</li><li>La natura accoglie o minaccia?</li><li>Lo spazio è misurabile?</li><li>Il personaggio domina il paesaggio o ne è assorbito?</li><li>Perché lo vediamo di spalle?</li><li>La scena produce pace, inquietudine o entrambe?</li><li>Che cosa significa trovarsi davanti all'infinito?</li>
+        </ul>
+        <label class="note-label" for="openingNote"><span>Il tuo primo sguardo</span><small>Salvato solo su questo dispositivo.</small></label>
+        <textarea id="openingNote" rows="8" placeholder="All'inizio vedo...&#10;Lo spazio mi sembra...&#10;L'uomo di spalle...&#10;Davanti all'infinito provo..."></textarea>
+        <p class="save-status" id="openingSave" role="status" aria-live="polite"></p>
+        <a class="scroll-link" href="#mondo">Entra nella domanda ↓</a>
+      </div>
+    </section>
+
+    <section class="tracked section-pad previous" id="mondo" data-step="2">
+      <div class="section-index"><span>02</span><p>Il mondo precedente: la ragione prova a dare forma</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Dal modulo 11</p><h2>Il Neoclassicismo aveva disciplinato l'immagine. <em>La storia reale eccede quella misura.</em></h2></div><p>Bellezza regolata, virtù civica, forma chiara, ordine morale e fiducia nella ragione avevano trasformato l'arte in progetto educativo. Ma rivoluzione, guerra, natura, dolore, popolo, solitudine e infinito non restano obbedienti dentro una forma regolata.</p></div>
+      <div class="image-compare">
+        <figure class="zoomable"><img src="assets/images/orazi.webp" width="1292" height="1001" loading="lazy" alt="David, Il giuramento degli Orazi: composizione frontale, archi, braccia tese verso le spade."><button class="open-image" type="button">Apri David</button><figcaption>Jacques-Louis David, <i>Il giuramento degli Orazi</i>, 1784, Musée du Louvre.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/friedrich-viandante.webp" width="1700" height="2177" loading="lazy" alt="Friedrich, Viandante sul mare di nebbia: figura di spalle davanti a nebbia e montagne."><button class="open-image" type="button">Apri Friedrich</button><figcaption>Caspar David Friedrich, <i>Viandante sul mare di nebbia</i>, 1818, Hamburger Kunsthalle.</figcaption></figure>
+      </div>
+      <div class="compare-table" role="region" aria-label="Confronto fra Neoclassicismo e Romanticismo">
+        <table><thead><tr><th>Categoria</th><th>Neoclassicismo</th><th>Romanticismo</th></tr></thead><tbody>
+          <tr><td>Forma</td><td>Chiarezza, contorno, architettura morale.</td><td>Instabilità, atmosfera, profondità non completamente dominabile.</td></tr>
+          <tr><td>Individuo</td><td>Cittadino chiamato al dovere.</td><td>Soggetto fragile davanti a natura, storia e interiorità.</td></tr>
+          <tr><td>Storia</td><td>Esempio, virtù, memoria politica ordinata.</td><td>Ferita, trauma, rivoluzione, destino incerto.</td></tr>
+          <tr><td>Natura</td><td>Scenario regolato o modello ideale.</td><td>Forza autonoma: attrae, minaccia, assorbe.</td></tr>
+          <tr><td>Spettatore</td><td>Giudica un modello.</td><td>Entra in una soglia emotiva e percettiva.</td></tr>
+        </tbody></table>
+      </div>
+    </section>
+
+    <section class="tracked section-pad dark" id="frattura" data-step="3">
+      <div class="section-index light"><span>03</span><p>Dopo la misura: cronologia della frattura romantica</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Cronologia e rete</p><h2>Il Romanticismo non nasce da una moda malinconica. <em>Nasce da una frattura storica.</em></h2></div><p>La ragione illuministica resta presente, ma incontra ciò che non riesce più a contenere: rivoluzioni, Terrore, guerre napoleoniche, Restaurazione, nazioni, industria, nuove scienze, memoria medievale, rovine e pubblico borghese.</p></div>
+      <div class="timeline" id="timeline" role="group" aria-label="Cronologia interattiva del Romanticismo"></div>
+      <article class="timeline-reading" id="timelineReading" aria-live="polite"></article>
+      <button class="lab-reset" id="timelineReset" type="button">Ripristina la cronologia</button>
+      <div class="causal-lab"><h3>Rete causale esplorabile</h3><p>Seleziona un nodo. Il Romanticismo è una costellazione: filosofia, guerra, natura, nazione, mercato, letteratura e scienza agiscono insieme.</p><div class="causal-nodes" id="causalNodes"></div><article id="causalReading" class="lab-reading inverse" aria-live="polite"></article></div>
+      <button class="lab-reset" id="causalReset" type="button">Ripristina la rete causale</button>
+    </section>
+
+    <section class="tracked section-pad term" id="romantico" data-step="4">
+      <div class="section-index"><span>04</span><p>Che cosa significa "romantico"?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Una parola, tre prospettive</p><h2>Romantico non significa soltanto sentimentale. <em>È una crisi della misura.</em></h2></div><p>La parola raccoglie fenomeni diversi. In Germania la natura può diventare soglia spirituale; in Francia la storia contemporanea esplode nel quadro; in Inghilterra paesaggio, atmosfera e industria cambiano la visione; in Spagna Goya mostra la ragione ferita; in Italia il problema nazionale e storico assume forme specifiche.</p></div>
+      <div class="term-grid">
+        <figure class="zoomable"><img src="assets/images/friedrich-monaco.webp" width="1174" height="750" loading="lazy" alt="Friedrich, Monaco in riva al mare: una piccola figura davanti a mare e cielo immensi."><button class="open-image" type="button">Apri il Monaco</button><figcaption>Caspar David Friedrich, <i>Monaco in riva al mare</i>, 1808-1810, Alte Nationalgalerie, Berlino.</figcaption></figure>
+        <div>
+          <div class="perspective-tabs" id="termTabs" role="tablist" aria-label="Tre prospettive sul Romanticismo"></div>
+          <article class="term-reading" id="termReading" aria-live="polite"></article>
+          <button class="lab-reset" id="termReset" type="button">Ripristina le prospettive</button>
+          <div class="warning-card"><b>Formula da evitare.</b><p>Non è "sentimento contro ragione". Il Romanticismo mostra il punto in cui la ragione deve riconoscere il proprio limite davanti all'infinito, alla storia e all'interiorità.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad sublime-section" id="sublime" data-step="5">
+      <div class="section-index"><span>05</span><p>Il sublime: bello, paura, infinito</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Laboratorio</p><h2>Il sublime non consola. <em>Attrae e spaventa nello stesso momento.</em></h2></div><p>Burke insiste sulla forza dell'immenso, del terribile e dell'incontrollabile; Kant sposta l'accento sull'esperienza del soggetto che si scopre piccolo, ma capace di pensare ciò che lo supera. Qui lo traduciamo in strumenti di osservazione.</p></div>
+      <div class="sublime-lab">
+        <div class="sublime-stage" id="sublimeStage" role="img" aria-labelledby="sublimeEquivalent"><span class="small-person"></span><span class="horizon-line"></span><span class="storm-mass"></span><span class="distance-grid"></span></div>
+        <div><div class="mode-buttons" id="sublimeModes"></div><button class="lab-reset" id="sublimeReset" type="button">Azzera il sublime</button><article class="lab-reading" id="sublimeReading" aria-live="polite"></article><p class="equivalent" id="sublimeEquivalent">Equivalente testuale: il bello ordina la distanza; il sublime la rende insufficiente.</p><p class="simulation-note">Simulazione didattica, non opera autentica.</p></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad dark" id="friedrich" data-step="6">
+      <div class="section-index light"><span>06</span><p>Friedrich: l'uomo davanti all'infinito</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Figura di spalle</p><h2>La domanda non è che cosa rappresenta il quadro. <em>È che cosa succede a noi quando guardiamo con lui.</em></h2></div><p>La figura di spalle non chiude il significato: ci presta un posto. Lo spettatore guarda insieme al personaggio, ma non possiede ciò che vede. Nebbia, orizzonte e scala rendono la natura una soglia.</p></div>
+      <div class="analysis-lab">
+        <figure class="analysis-stage friedrich-stage zoomable" id="friedrichStage"><img src="assets/images/friedrich-viandante.webp" width="1700" height="2177" loading="lazy" alt="Viandante sul mare di nebbia analizzato con sovrapposizioni didattiche."><div class="friedrich-overlays" aria-hidden="true"><span class="back"></span><span class="horizon"></span><span class="fog"></span><span class="scale"></span><span class="threshold"></span><span class="viewpoint"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="friedrichButtons"></div><button class="lab-reset" id="friedrichReset" type="button">Azzera Friedrich</button><article class="lab-reading inverse" id="friedrichReading" aria-live="polite"></article><p class="equivalent" id="friedrichEquivalent">Equivalente testuale: nessuna sovrapposizione attiva.</p></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad nature" id="natura" data-step="7">
+      <div class="section-index"><span>07</span><p>La natura non è uno sfondo</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Turner e Constable</p><h2>Il paesaggio romantico non sta dietro all'uomo. <em>Agisce.</em></h2></div><p>Turner rende visibile energia, instabilità, luce e movimento; Constable studia nubi, umidità, lavoro rurale e memoria del luogo. La natura non è decorazione: è processo, atmosfera, tempo meteorologico.</p></div>
+      <div class="image-compare">
+        <figure class="zoomable"><img src="assets/images/turner-annibale.webp" width="1213" height="750" loading="lazy" alt="Turner, Tempesta di neve: Annibale e il suo esercito attraversano le Alpi."><button class="open-image" type="button">Apri Turner</button><figcaption>J. M. W. Turner, <i>Tempesta di neve: Annibale e il suo esercito attraversano le Alpi</i>, 1812, Tate Britain.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/constable-carro-fieno.webp" width="1800" height="1241" loading="lazy" alt="Constable, Il carro da fieno: carro in acqua, casa, alberi, cielo nuvoloso e campagna."><button class="open-image" type="button">Apri Constable</button><figcaption>John Constable, <i>Il carro da fieno</i>, 1821, National Gallery, Londra.</figcaption></figure>
+      </div>
+      <div class="nature-lab"><div class="nature-controls" id="natureControls"></div><button class="lab-reset" id="natureReset" type="button">Azzera natura e atmosfera</button><article class="lab-reading" id="natureReading" aria-live="polite"></article><p class="equivalent" id="natureEquivalent">Equivalente testuale: seleziona un fenomeno.</p></div>
+    </section>
+
+    <section class="tracked section-pad dark" id="goya" data-step="8">
+      <div class="section-index light"><span>08</span><p>La storia diventa ferita</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Goya · 3 maggio 1808</p><h2>La storia educa o ferisce? <em>Goya non ci lascia una risposta comoda.</em></h2></div><p>Rispetto a David, il corpo illuminato non offre un modello ordinato di virtù. È vittima, individuo, simbolo e accusa. I soldati diventano macchina anonima; la luce non salva, denuncia.</p></div>
+      <div class="analysis-lab">
+        <figure class="analysis-stage goya-stage zoomable" id="goyaStage"><img src="assets/images/goya-3-maggio.webp" width="1800" height="1373" loading="lazy" alt="Goya, Il 3 maggio 1808 analizzato con sovrapposizioni didattiche."><div class="goya-overlays" aria-hidden="true"><span class="victim"></span><span class="machine"></span><span class="lamp"></span><span class="dead"></span><span class="night"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="goyaButtons"></div><button class="lab-reset" id="goyaReset" type="button">Azzera Goya</button><article class="lab-reading inverse" id="goyaReading" aria-live="polite"></article><p class="equivalent" id="goyaEquivalent">Equivalente testuale: nessuno strato attivo.</p></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad people" id="popolo" data-step="9">
+      <div class="section-index"><span>09</span><p>Il popolo entra nell'immagine</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Delacroix · 1830</p><h2>Il popolo diventa protagonista. <em>Ma anche immagine costruita.</em></h2></div><p>La Libertà è allegoria e donna concreta, idea politica e corpo. Le barricate raccolgono classi sociali diverse, cadaveri, fumo, mito nazionale, violenza e ambiguità. Non basta chiamarla icona patriottica.</p></div>
+      <div class="analysis-lab">
+        <figure class="analysis-stage delacroix-stage zoomable" id="delacroixStage"><img src="assets/images/delacroix-liberta.webp" width="1900" height="1520" loading="lazy" alt="Delacroix, La Libertà che guida il popolo analizzata con sovrapposizioni didattiche."><div class="delacroix-overlays" aria-hidden="true"><span class="liberty"></span><span class="flag"></span><span class="classes"></span><span class="dead"></span><span class="smoke"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="delacroixButtons"></div><button class="lab-reset" id="delacroixReset" type="button">Azzera Delacroix</button><article class="lab-reading" id="delacroixReading" aria-live="polite"></article><p class="equivalent" id="delacroixEquivalent">Equivalente testuale: nessuno strato attivo.</p></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad dark medusa" id="medusa" data-step="10">
+      <div class="section-index light"><span>10</span><p>Il naufragio della ragione</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Géricault · La zattera della Medusa</p><h2>Che cosa resta dell'eroismo quando la storia diventa naufragio?</h2></div><p>Un fatto contemporaneo, uno scandalo politico, corpi veri e studiati, speranza e disperazione nella stessa diagonale. La pittura di storia non celebra un eroe antico: costringe il presente a guardare la propria responsabilità.</p></div>
+      <div class="analysis-lab">
+        <figure class="analysis-stage medusa-stage zoomable" id="medusaStage"><img src="assets/images/gericault-medusa.webp" width="1900" height="1291" loading="lazy" alt="Géricault, La zattera della Medusa analizzata con sovrapposizioni didattiche."><div class="medusa-overlays" aria-hidden="true"><span class="raft"></span><span class="dead"></span><span class="hope"></span><span class="sail"></span><span class="diagonal"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="medusaButtons"></div><button class="lab-reset" id="medusaReset" type="button">Azzera la zattera</button><article class="lab-reading inverse" id="medusaReading" aria-live="polite"></article><p class="equivalent" id="medusaEquivalent">Equivalente testuale: nessuno strato attivo.</p></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad vision" id="incubo" data-step="11">
+      <div class="section-index"><span>11</span><p>Visione, incubo, interiorità</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Füssli, Blake, Goya</p><h2>Il Romanticismo non guarda solo fuori. <em>Guarda anche dentro.</em></h2></div><p>Sogno, incubo, immaginazione, paura e mostruoso mostrano un'altra crisi della ragione: non tutto ciò che ci abita è trasparente a noi stessi.</p></div>
+      <div class="vision-grid">
+        <figure class="zoomable"><img src="assets/images/fuseli-incubo.webp" width="1604" height="1300" loading="lazy" alt="Füssli, L'incubo: una donna dorme mentre una figura mostruosa pesa sul corpo e un cavallo appare nel buio."><button class="open-image" type="button">Apri Füssli</button><figcaption>Henry Fuseli, <i>L'incubo</i>, 1781, Detroit Institute of Arts.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/goya-sonno-ragione.webp" width="1190" height="1800" loading="lazy" alt="Goya, Il sonno della ragione genera mostri: una figura addormentata circondata da animali notturni."><button class="open-image" type="button">Apri Goya</button><figcaption>Francisco Goya, <i>Il sonno della ragione genera mostri</i>, 1797-1799, da <i>Los Caprichos</i>.</figcaption></figure>
+      </div>
+      <div class="vision-lab"><div class="vision-controls" id="visionControls"></div><button class="lab-reset" id="visionReset" type="button">Azzera visione e incubo</button><article class="lab-reading" id="visionReading" aria-live="polite"></article></div>
+    </section>
+
+    <section class="tracked section-pad dark compare" id="confronto" data-step="12">
+      <div class="section-index light"><span>12</span><p>Laboratorio conclusivo: che cosa supera la ragione?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Quattro opere · una categoria per volta</p><h2>Non una classifica. <em>Una trasformazione della funzione dell'immagine.</em></h2></div><p>Confronta una forma neoclassica, un paesaggio sublime, una storia romantica e un'opera che prepara il Realismo. La domanda è come cambiano pubblico, realtà e responsabilità dello sguardo.</p></div>
+      <div class="compare-categories" id="compareCategories"></div>
+      <div class="compare-grid" id="compareGrid" aria-live="polite"></div>
+      <button class="lab-reset" id="compareReset" type="button">Ripristina il confronto</button>
+    </section>
+
+    <section class="tracked section-pad return" id="ritorno" data-step="13">
+      <div class="section-index"><span>13</span><p>Ritorno all'immagine</p></div>
+      <div class="split-heading"><div><p class="eyebrow">La stessa opera · un altro sguardo</p><h2>Ora l'infinito non è più soltanto scenario. <em>È una domanda sull'uomo.</em></h2></div><p>Riguarda il <i>Viandante</i> senza sovrapposizioni. Che cosa riconosci ora che all'inizio restava soltanto intuizione?</p></div>
+      <div class="return-grid">
+        <figure class="zoomable"><img src="assets/images/friedrich-viandante.webp" width="1700" height="2177" loading="lazy" alt="Caspar David Friedrich, Viandante sul mare di nebbia, opera completa senza diagrammi."><button class="open-image" type="button">Guarda di nuovo</button><figcaption>Caspar David Friedrich, <i>Viandante sul mare di nebbia</i>, 1818, olio su tela, Hamburger Kunsthalle.</figcaption></figure>
+        <div><div class="memory-card"><span>Il tuo primo sguardo</span><p id="openingMemory">Non hai ancora scritto un'annotazione.</p></div><label class="note-label" for="returnNote"><span>Il secondo sguardo</span><small>Confrontalo con il primo.</small></label><textarea id="returnNote" rows="13" placeholder="All'inizio vedevo...&#10;Ora riconosco...&#10;L'uomo davanti all'infinito...&#10;La natura non è solo...&#10;La ragione entra in crisi quando...&#10;Il sublime produce...&#10;La storia diventa ferita quando...&#10;Il Romanticismo prepara il Realismo perché..."></textarea><p class="save-status" id="returnSave" role="status" aria-live="polite"></p><article class="personal-synthesis" id="personalSynthesis"><h3>La tua sintesi</h3><p>Completa almeno un laboratorio e il secondo taccuino per generare una sintesi personale.</p></article></div>
+      </div>
+    </section>
+
+    <section class="quiz section-pad" id="verifica" aria-labelledby="quizTitle">
+      <div class="quiz-intro"><p class="eyebrow">Verifica · 12 nuclei, 12 recuperi</p><h2 id="quizTitle">Riesci a distinguere infinito, storia e immagine?</h2><p>Ogni errore apre una microlezione specifica e blocca il passaggio finché il recupero non viene superato. Lo stato resta salvato anche dopo la ricarica.</p><progress id="quizMeter" max="12" value="0" aria-label="Avanzamento della verifica"></progress><p id="quizCount">Domanda 1 di 12</p></div>
+      <div id="quizArea" aria-live="polite"></div>
+    </section>
+
+    <section class="conclusion section-pad" aria-labelledby="conclusionTitle">
+      <p class="eyebrow">Chiusura della galleria II</p>
+      <h2 id="conclusionTitle">La ragione non scompare. <em>Scopre il proprio limite.</em></h2>
+      <p>Con il Romanticismo si chiude la galleria <b>Inventare l'uomo moderno</b>. L'uomo è diventato centro, misura, cittadino, soggetto morale; ora si riconosce esposto a natura, storia, popolo, sogno, morte e infinito. Da qui il passo successivo non potrà più ignorare la realtà sociale: il modulo 13 aprirà il Realismo.</p>
+      <a class="next-module" href="../../index.html#m13"><span>Modulo successivo predisposto</span><b>13 — Chi merita di essere rappresentato?</b><small>Realismo · Il lavoro entra nel quadro</small></a>
+    </section>
+
+    <section class="sources section-pad" aria-labelledby="sourcesTitle">
+      <div><p class="eyebrow">Ricerca e trasparenza</p><h2 id="sourcesTitle">Fonti, opere, <em>licenze.</em></h2><p>Le interpretazioni sono costruite su musei, istituzioni culturali e risorse storico-artistiche attendibili. Wikimedia Commons è usata come deposito tecnico delle riproduzioni e delle licenze quando necessario.</p></div>
+      <div class="source-columns">
+        <div><h3>Fonti storico-artistiche</h3>
+          <p><a href="https://www.smb.museum/en/exhibitions/detail/the-monk-has-returned/">Staatliche Museen zu Berlin · Friedrich, Monaco in riva al mare</a></p>
+          <p><a href="https://www.tate.org.uk/art/artworks/turner-snow-storm-hannibal-and-his-army-crossing-the-alps-n00490">Tate · Turner, Snow Storm: Hannibal</a></p>
+          <p><a href="https://www.nationalgallery.org.uk/paintings/john-constable-the-hay-wain">National Gallery · Constable, The Hay Wain</a></p>
+          <p><a href="https://www.museodelprado.es/en/the-collection/art-work/the-3rd-of-may-1808-in-madrid-or-the-executions/5e177409-2993-4240-97fb-847a02c6496c">Museo del Prado · Goya, 3 maggio 1808</a></p>
+          <p><a href="https://collections.louvre.fr/en/ark:/53355/cl010065872">Musée du Louvre · Delacroix, La Libertà che guida il popolo</a></p>
+          <p><a href="https://collections.louvre.fr/en/ark:/53355/cl010059199">Musée du Louvre · Géricault, La zattera della Medusa</a></p>
+          <p><a href="https://dia.org/collection/nightmare-45573">Detroit Institute of Arts · Füssli, The Nightmare</a></p>
+          <p><a href="https://www.museodelprado.es/en/the-collection/art-work/the-sleep-of-reason-produces-monsters/e4845219-9365-4b36-8c89-3146dc34f280">Museo del Prado · Goya, Il sonno della ragione</a></p>
+          <p><a href="https://www.bl.uk/collection-items/burkes-enquiry-into-the-sublime-and-beautiful">British Library · Burke, Sublime and Beautiful</a></p>
+          <p><a href="https://www.tate.org.uk/art/research-publications/the-sublime/the-romantic-sublime-r1109221">Tate Research · The Romantic Sublime</a></p>
+        </div>
+        <div class="works-register"><h3>Registro delle immagini locali</h3><div class="register-scroll"><table><thead><tr><th>File</th><th>Opera</th><th>Fonte e licenza</th></tr></thead><tbody>
+          <tr><td>friedrich-viandante.webp</td><td>Caspar David Friedrich, <i>Viandante sul mare di nebbia</i>, 1818, Hamburger Kunsthalle</td><td>Commons, riproduzione di opera in pubblico dominio.</td></tr>
+          <tr><td>friedrich-monaco.webp</td><td>Caspar David Friedrich, <i>Monaco in riva al mare</i>, 1808-1810, Alte Nationalgalerie</td><td>Commons, pubblico dominio; fonte interpretativa SMB.</td></tr>
+          <tr><td>orazi.webp</td><td>Jacques-Louis David, <i>Il giuramento degli Orazi</i>, 1784, Louvre</td><td>Copia locale dal modulo 11; pubblico dominio.</td></tr>
+          <tr><td>turner-annibale.webp</td><td>J. M. W. Turner, <i>Snow Storm: Hannibal...</i>, 1812, Tate</td><td>Commons, pubblico dominio; fonte Tate.</td></tr>
+          <tr><td>constable-carro-fieno.webp</td><td>John Constable, <i>The Hay Wain</i>, 1821, National Gallery</td><td>Commons, pubblico dominio; fonte National Gallery.</td></tr>
+          <tr><td>goya-3-maggio.webp</td><td>Francisco Goya, <i>Il 3 maggio 1808</i>, 1814, Prado</td><td>Copia locale dal modulo 11; pubblico dominio; fonte Prado.</td></tr>
+          <tr><td>delacroix-liberta.webp</td><td>Eugène Delacroix, <i>La Libertà che guida il popolo</i>, 1830, Louvre</td><td>Commons, pubblico dominio; fonte Louvre.</td></tr>
+          <tr><td>gericault-medusa.webp</td><td>Théodore Géricault, <i>La zattera della Medusa</i>, 1818-1819, Louvre</td><td>Commons, pubblico dominio; fonte Louvre.</td></tr>
+          <tr><td>fuseli-incubo.webp</td><td>Henry Fuseli, <i>The Nightmare</i>, 1781, Detroit Institute of Arts</td><td>Commons, pubblico dominio; fonte DIA.</td></tr>
+          <tr><td>goya-sonno-ragione.webp</td><td>Francisco Goya, <i>Il sonno della ragione genera mostri</i>, 1797-1799</td><td>Commons, pubblico dominio; fonte Prado.</td></tr>
+        </tbody></table></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-project"><span aria-hidden="true">S</span><p><b>Storia dello sguardo</b><br>12 · L'infinito inquieta la ragione</p></div><nav aria-label="Moduli"><a href="../11-neoclassicismo/">← 11 · Neoclassicismo</a><a href="../../index.html#m12">Home del percorso</a><a href="../../index.html#m13">13 · Realismo →</a></nav><p>Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lightbox-controls"><h2 id="lightboxTitle" class="sr-only">Visualizzatore dell'opera</h2><button id="zoomOut" type="button" aria-label="Riduci">−</button><button id="zoomReset" type="button">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci">+</button><button id="lightboxClose" type="button" aria-label="Chiudi">×</button></div>
+    <div class="lightbox-stage" id="lightboxStage"><img id="lightboxImage" src="assets/images/friedrich-viandante.webp" width="1700" height="2177" alt=""></div><p id="lightboxCaption"></p>
+  </div>
+</body>
+</html>
