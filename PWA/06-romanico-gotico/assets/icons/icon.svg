@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Arco gotico attraversato da luce blu, rossa e oro">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171716"/><stop offset="1" stop-color="#263b55"/></linearGradient><linearGradient id="glass" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#214c88"/><stop offset=".52" stop-color="#9f3548"/><stop offset="1" stop-color="#d2a44d"/></linearGradient></defs>
+  <rect width="512" height="512" rx="86" fill="url(#bg)"/>
+  <path d="M106 430V230Q256 55 406 230V430" fill="none" stroke="#d7c8b4" stroke-width="34" stroke-linecap="round"/>
+  <path d="M151 430V247Q256 112 361 247V430Z" fill="url(#glass)" opacity=".95"/>
+  <path d="M256 126V430M158 287H354" fill="none" stroke="#171716" stroke-width="15" opacity=".75"/>
+  <path d="M92 446H420" stroke="#d2a44d" stroke-width="16" stroke-linecap="round"/>
+</svg>

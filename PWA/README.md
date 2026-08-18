@@ -18,4 +18,5 @@ I percorsi previsti sono già dichiarati in `assets/app.js`; il collegamento vie
 - [03 · Inventare la misura — Il corpo tra realtà e ideale](./03-grecia/)
 - [04 · Il volto dell’impero — Individuo, propaganda, monumentalità](./04-ellenismo-roma/)
 - [05 · Rendere visibile l’invisibile — L’immagine come soglia](./05-cristianesimo-medioevo/)
+- [06 · La città sale verso la luce — Spazio sacro e nuova società urbana](./06-romanico-gotico/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./10-caravaggio/)

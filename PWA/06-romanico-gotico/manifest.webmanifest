@@ -1,0 +1,16 @@
+{
+  "name": "06 — La città sale verso la luce · Romanico e Gotico",
+  "short_name": "Pietra e luce",
+  "description": "Come può una città trasformare il peso della pietra in un’esperienza di luce?",
+  "lang": "it",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#171716",
+  "theme_color": "#171716",
+  "icons": [
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
