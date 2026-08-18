@@ -1,0 +1,16 @@
+{
+  "name": "07 — Quando l’uomo torna ad abitare lo spazio · Giotto",
+  "short_name": "Giotto · spazio",
+  "description": "Che cosa deve cambiare in un’immagine perché un corpo possa davvero abitarla?",
+  "lang": "it",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0d2235",
+  "theme_color": "#102b46",
+  "icons": [
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}

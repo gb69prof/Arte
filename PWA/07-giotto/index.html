@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#102b46">
+  <meta name="description" content="Giotto e la costruzione di uno spazio che i corpi possono abitare: una lezione interattiva di Storia dello sguardo.">
+  <title>07 — Quando l’uomo torna ad abitare lo spazio · Giotto</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="project-link" href="../../index.html#m07"><span class="project-mark" aria-hidden="true">S</span><span>Storia dello sguardo</span></a>
+    <p class="module-sign"><b>07</b><span>Giotto · La rivoluzione dello sguardo</span></p>
+    <div class="top-actions"><span id="progressText">0 di 13 tappe</span><button id="menuButton" type="button" aria-expanded="false" aria-controls="chapterMenu">Indice</button></div>
+    <progress id="readingProgress" max="13" value="0" aria-label="Avanzamento nel modulo"></progress>
+  </header>
+
+  <aside class="chapter-menu" id="chapterMenu" hidden>
+    <div class="menu-head"><p>Il percorso</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <ol>
+      <li><a href="#guarda" data-menu-step="1"><span>01</span>Guarda prima di sapere</a></li>
+      <li><a href="#dalla-cattedrale" data-menu-step="2"><span>02</span>Dalla cattedrale alla scena</a></li>
+      <li><a href="#citta" data-menu-step="3"><span>03</span>Città, denaro, pubblici</a></li>
+      <li><a href="#prima-di-giotto" data-menu-step="4"><span>04</span>Prima di Giotto</a></li>
+      <li><a href="#giotto-storico" data-menu-step="5"><span>05</span>Un nome, molte storie</a></li>
+      <li><a href="#parete" data-menu-step="6"><span>06</span>Una cappella come racconto</a></li>
+      <li><a href="#sotto-colore" data-menu-step="7"><span>07</span>Sotto il colore</a></li>
+      <li><a href="#corpi" data-menu-step="8"><span>08</span>Fai abitare la scena</a></li>
+      <li><a href="#spazio" data-menu-step="9"><span>09</span>Spazio credibile</a></li>
+      <li><a href="#spettatore" data-menu-step="10"><span>10</span>La scena ti fa posto</a></li>
+      <li><a href="#gesto" data-menu-step="11"><span>11</span>Prima il volto o il gesto?</a></li>
+      <li><a href="#confronto" data-menu-step="12"><span>12</span>Prima/Dopo?</a></li>
+      <li><a href="#verifica" data-menu-step="13"><span>13</span>Verifica e recupero</a></li>
+    </ol>
+  </aside>
+  <div class="menu-scrim" id="menuScrim" hidden></div>
+
+  <main>
+    <section class="first-look tracked" id="guarda" data-step="1">
+      <figure class="opening-art zoomable">
+        <img src="assets/images/opening-scene.webp" width="1000" height="925" alt="Una scena di lutto: figure raccolte attorno a un corpo, una roccia diagonale e presenze agitate nel cielo.">
+        <button class="open-image" type="button" aria-label="Ingrandisci la scena iniziale">Osserva da vicino <span aria-hidden="true">↗</span></button>
+      </figure>
+      <div class="first-copy">
+        <p class="step">01 · Guarda prima di sapere</p>
+        <h1>Che cosa deve cambiare perché un corpo possa <em>abitare un’immagine?</em></h1>
+        <div class="opening-questions" aria-label="Domande di osservazione">
+          <p>Dove cade per primo il tuo sguardo?</p><p>Quale figura senti più vicina?</p><p>I corpi sembrano appoggiati a terra?</p><p>La scena ti lascia fuori oppure ti fa posto?</p>
+        </div>
+        <label class="note-label" for="openingNote"><span>Il tuo primo sguardo</span><small>Resta soltanto su questo dispositivo.</small></label>
+        <textarea id="openingNote" rows="7" placeholder="Vedo…&#10;Il corpo centrale sembra…&#10;Lo spazio mi appare…&#10;Il gesto che mi coinvolge di più è…&#10;Io, rispetto alla scena, mi sento…"></textarea>
+        <p class="save-status" id="openingSave" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="threshold tracked section-pad" id="dalla-cattedrale" data-step="2">
+      <div class="section-index"><span>02</span><p>Dalla cattedrale alla scena</p></div>
+      <div class="wide-heading"><div><p class="eyebrow">Dal modulo 06</p><h2>La pietra aveva costruito uno spazio per il corpo.<br><em>Ora la pittura deve farlo apparire.</em></h2></div><p>La cattedrale organizza il peso reale, la luce reale e il movimento fisico della comunità. Una parete, invece, resta piatta. Eppure può diventare il luogo credibile di un incontro, di un tradimento, di una nascita o di un lutto.</p></div>
+      <div class="four-spaces">
+        <article><b>1</b><h3>Parete</h3><p>Una superficie materiale: intonaco, pigmenti, giunti, lacune.</p></article>
+        <article><b>2</b><h3>Scena</h3><p>Uno spazio rappresentato: piani, volumi, distanze e architetture.</p></article>
+        <article><b>3</b><h3>Spettatore</h3><p>Un corpo reale davanti all’immagine, collocato a una certa altezza e distanza.</p></article>
+        <article><b>4</b><h3>Evento</h3><p>Un tempo mentale: ciò che è appena accaduto e ciò che sta per accadere.</p></article>
+      </div>
+      <blockquote>Il cambiamento non porta «dalla religione all’uomo». Trasforma il modo in cui il sacro diventa presente: non soltanto icona, ma azione condivisa.</blockquote>
+    </section>
+
+    <section class="city tracked" id="citta" data-step="3">
+      <div class="city-copy section-pad">
+        <div class="section-index light"><span>03</span><p>L’Italia delle città, del denaro e dei nuovi pubblici</p></div>
+        <p class="eyebrow">XIII–XIV secolo · nessuna modernità senza conflitto</p>
+        <h2>La nuova scena nasce in una società che <em>moltiplica gli sguardi.</em></h2>
+        <p>Comuni e signorie competono; mercanti, banchieri, notai e corporazioni acquistano peso; ordini mendicanti e confraternite parlano a pubblici urbani; chiese, cappelle e palazzi diventano luoghi di devozione, memoria familiare e prestigio.</p>
+        <p>Non è una marcia pacifica verso il Rinascimento: guerre, disuguaglianze, debiti e rivalità accompagnano la crescita. Proprio per questo le immagini devono rendere leggibili azioni, responsabilità e conseguenze.</p>
+      </div>
+      <div class="city-network" aria-label="Rete di attori della città comunale">
+        <article><span>Chi paga</span><h3>Committenti</h3><p>Comuni, famiglie, ordini religiosi, confraternite e corporazioni chiedono memoria e visibilità.</p></article>
+        <article><span>Chi produce</span><h3>Botteghe</h3><p>Maestri, assistenti e artigiani organizzano disegno, intonaco, pigmenti, ponteggi e tempi.</p></article>
+        <article><span>Chi guarda</span><h3>Pubblici</h3><p>Religiosi e laici, élite e cittadini, pellegrini e devoti non vedono tutti nello stesso modo.</p></article>
+        <article><span>Che cosa circola</span><h3>Modelli</h3><p>Artisti, materiali e soluzioni viaggiano tra Firenze, Siena, Roma, Assisi, Rimini e Padova.</p></article>
+      </div>
+    </section>
+
+    <section class="before tracked section-pad" id="prima-di-giotto" data-step="4">
+      <div class="section-index"><span>04</span><p>Prima di Giotto non c’è un vuoto</p></div>
+      <div class="wide-heading"><div><p class="eyebrow">Funzione prima di abilità</p><h2>Un fondo oro non è uno spazio <em>fallito.</em></h2></div><p>La pittura medievale precedente non era «incapace» di imitare la realtà. Organizzava visibilità, gerarchia e presenza secondo funzioni liturgiche e devozionali. Cimabue, Duccio e Pietro Cavallini partecipano a trasformazioni già in corso: Giotto non cade nella storia come un meteorite.</p></div>
+      <div class="before-grid">
+        <figure class="work-card zoomable"><img src="assets/images/cimabue-maesta.webp" width="782" height="1400" loading="lazy" alt="La Madonna in trono di Cimabue, circondata da angeli e profeti su fondo oro."><button class="open-image" type="button">Ingrandisci</button><figcaption><b>Cimabue</b> · Maestà di Santa Trinita, 1290–1300 circa. Il trono costruisce profondità e gerarchia insieme.</figcaption></figure>
+        <figure class="work-card zoomable"><img src="assets/images/duccio-rucellai.webp" width="981" height="1400" loading="lazy" alt="La Madonna Rucellai di Duccio, in trono con angeli disposti simmetricamente su fondo oro."><button class="open-image" type="button">Ingrandisci</button><figcaption><b>Duccio</b> · Madonna Rucellai, 1285 circa. Linea, colore e ritmo producono una presenza diversa, non «incompleta».</figcaption></figure>
+        <figure class="work-card zoomable caution"><img src="assets/images/assisi-renunciation.webp" width="652" height="746" loading="lazy" alt="San Francesco rinuncia ai beni: figure divise in due gruppi davanti ad architetture dipinte."><button class="open-image" type="button">Ingrandisci</button><figcaption><b>Tradizionalmente attribuito a Giotto e bottega</b> · Rinuncia ai beni, Basilica superiore di Assisi. L’attribuzione del ciclo francescano è discussa: il dubbio è un dato, non un difetto.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="history tracked section-pad" id="giotto-storico" data-step="5">
+      <div class="section-index light"><span>05</span><p>Giotto storico, Giotto leggendario</p></div>
+      <p class="eyebrow">Documento · attribuzione · racconto</p>
+      <h2>Un grande nome può nascondere <em>una bottega e molti dubbi.</em></h2>
+      <div class="evidence-grid">
+        <article><span>Racconto successivo</span><h3>La pecora di Vasari</h3><p>Il giovane pastore che disegna una pecora «dal vero» e viene scoperto da Cimabue è una potente costruzione biografica. Spiega un’idea di naturalismo; non è un verbale contemporaneo.</p></article>
+        <article><span>Testimonianza precoce</span><h3>Una fama reale</h3><p>Dante, Boccaccio e cronache trecentesche attestano quanto presto Giotto diventò il nome del rinnovamento pittorico. La fama è documentata; ogni aneddoto, no.</p></article>
+        <article><span>Questione aperta</span><h3>Assisi</h3><p>Fonti antiche collegano Giotto ad Assisi, ma l’autografia del ciclo superiore di san Francesco resta discussa. Stile, tecnica e organizzazione di bottega non danno una risposta unanime.</p></article>
+        <article><span>Pratica materiale</span><h3>Non dipinge da solo</h3><p>Un ciclo vasto richiede progetto, giornate di lavoro e collaboratori. «Giotto» può indicare invenzione, direzione e interventi personali entro un’impresa collettiva.</p></article>
+      </div>
+    </section>
+
+    <section class="chapel tracked" id="parete" data-step="6">
+      <figure class="chapel-art zoomable"><img src="assets/images/chapel-interior.webp" width="1400" height="1082" loading="lazy" alt="Interno della Cappella degli Scrovegni: pareti interamente affrescate, volta blu e scene disposte in registri."><button class="open-image" type="button">Entra con lo sguardo <span aria-hidden="true">↗</span></button></figure>
+      <div class="chapel-copy section-pad">
+        <div class="section-index light"><span>06</span><p>Una cappella come racconto</p></div>
+        <p class="eyebrow">Padova · 1303–1305</p>
+        <h2>La parete non contiene scene isolate.<br><em>Costruisce un tempo attraversabile.</em></h2>
+        <p>Enrico Scrovegni commissionò la decorazione della cappella dedicata a Santa Maria della Carità. L’usura e la salvezza sono importanti per interpretarne il programma, ma ridurre l’impresa a una sola «espiazione» cancella devozione, memoria dinastica, prestigio e politica urbana.</p>
+        <ol class="cycle-path"><li><span>01</span>Storie di Gioacchino e Anna</li><li><span>02</span>Storie di Maria</li><li><span>03</span>Vita e Passione di Cristo</li><li><span>04</span>Vizi e Virtù</li><li><span>05</span>Giudizio universale</li></ol>
+        <p class="caution-note"><b>Dato e interpretazione.</b> La cappella e il ciclo sono documenti materiali; la lettura unitaria del programma nasce dal rapporto fra immagini, liturgia, spazio, committente e pubblico.</p>
+      </div>
+    </section>
+
+    <section class="material tracked section-pad" id="sotto-colore" data-step="7">
+      <div class="section-index"><span>07</span><p>Interazione · Sotto il colore</p></div>
+      <div class="interaction-heading"><div><p class="eyebrow">Parete, tempo, bottega</p><h2>Scopri ciò che l’immagine <em>non lascia vedere.</em></h2></div><p>Attiva gli strati nell’ordine. Lo schema è una ricostruzione didattica: materiali e procedure potevano variare, e molte finiture venivano aggiunte a secco.</p></div>
+      <div class="material-lab">
+        <div class="wall-stage" id="wallStage" aria-label="Schema stratificato di una parete affrescata">
+          <div class="wall-layer masonry"><span>Muratura</span></div><div class="wall-layer arriccio"><span>Arriccio</span></div><div class="wall-layer drawing"><span>Disegno preparatorio</span></div><div class="wall-layer intonaco"><span>Intonaco della giornata</span></div><div class="wall-layer pigment"><span>Pigmento su intonaco umido</span></div><div class="wall-layer secco"><span>Finiture a secco e metalli</span></div>
+        </div>
+        <div class="lab-controls"><div id="materialButtons" class="material-buttons" aria-label="Strati dell’affresco"></div><div class="lab-reading" id="materialReading" role="status" aria-live="polite"><p>Scegli il primo strato: la parete dipinta comincia molto prima del colore.</p></div></div>
+      </div>
+    </section>
+
+    <section class="inhabit tracked" id="corpi" data-step="8">
+      <div class="inhabit-copy section-pad">
+        <div class="section-index light"><span>08</span><p>Interazione · Fai abitare la scena</p></div>
+        <p class="eyebrow">Non una formula, ma relazioni coordinate</p>
+        <h2>Un corpo diventa credibile quando <em>risponde agli altri corpi.</em></h2>
+        <p>Attiva progressivamente cinque condizioni. Nessuna, da sola, produce lo spazio giottesco: è la loro cooperazione a trasformare la superficie in evento.</p>
+        <div id="inhabitButtons" class="inhabit-buttons"></div><div id="inhabitReading" class="inhabit-reading" role="status" aria-live="polite"></div>
+      </div>
+      <figure class="inhabit-stage zoomable" id="inhabitStage"><img src="assets/images/nativity.webp" width="774" height="782" loading="lazy" alt="Natività dipinta da Giotto: Maria distesa verso il neonato, figure e animali organizzati su piani sovrapposti."><div class="scene-overlay" aria-hidden="true"><span class="ground-line"></span><span class="volume volume-a"></span><span class="volume volume-b"></span><span class="overlap-line"></span><span class="gaze gaze-a"></span><span class="gaze gaze-b"></span><span class="gesture-line"></span></div><button class="open-image" type="button">Ingrandisci l’opera</button><figcaption>Giotto e bottega, <i>Natività</i>, Cappella degli Scrovegni, 1303–1305 circa. Le sovrapposizioni non obbediscono ancora a un unico sistema prospettico.</figcaption></figure>
+    </section>
+
+    <section class="space-lab tracked section-pad" id="spazio" data-step="9">
+      <div class="section-index"><span>09</span><p>Laboratorio · Credibile non significa misurato</p></div>
+      <div class="wide-heading"><div><p class="eyebrow">Osserva le relazioni</p><h2>Come nasce uno spazio senza un unico punto di fuga?</h2></div><p>Attiva gli indizi sulla scena. Le linee sono sovrapposizioni didattiche: rendono visibili orientamenti, non correggono il dipinto.</p></div>
+      <div class="space-workbench">
+        <figure class="space-figure zoomable" id="spaceFigure"><img src="assets/images/golden-gate.webp" width="694" height="676" loading="lazy" alt="Incontro di Gioacchino e Anna alla Porta Aurea: due figure si abbracciano davanti a una porta cittadina, circondate da altri personaggi."><div class="space-overlay" aria-hidden="true"><span data-space="architecture"></span><span data-space="ground"></span><span data-space="overlap"></span><span data-space="scale"></span><span data-space="axes"></span></div><button class="open-image" type="button">Ingrandisci l’opera</button><figcaption>Giotto e bottega, <i>Incontro alla Porta Aurea</i>, Cappella degli Scrovegni.</figcaption></figure>
+        <div><div id="spaceButtons" class="space-buttons"></div><div id="spaceReading" class="space-reading" role="status" aria-live="polite">Attiva un indizio e verifica che cosa rende la scena coerente.</div><p class="caution-note">L’architettura suggerisce un luogo, ma non tutte le sue linee convergono geometricamente. Chiamarla «prospettiva sbagliata» significa giudicarla con una regola non ancora formulata.</p></div>
+      </div>
+    </section>
+
+    <section class="viewer tracked" id="spettatore" data-step="10">
+      <figure class="viewer-art zoomable"><img src="assets/images/opening-scene.webp" width="1000" height="925" loading="lazy" alt="La scena iniziale: figure in lutto attorno a un corpo, disposte lungo una diagonale rocciosa."><div class="viewer-lines" aria-hidden="true"><span></span><span></span><span></span></div><button class="open-image" type="button">Osserva la composizione</button></figure>
+      <div class="viewer-copy section-pad"><div class="section-index light"><span>10</span><p>La scena ti fa posto</p></div><p class="eyebrow">Il dolore come regia dello sguardo</p><h2>Non guardi un simbolo da lontano.<br><em>Arrivi davanti a un evento.</em></h2><p>La roccia scende verso il volto del corpo; gli angeli amplificano il moto; le figure di schiena chiudono il primo piano senza chiuderci fuori. Volti, gesti e masse costruiscono una corrente che porta lo sguardo al centro del dolore.</p><p>Questa emozione non coincide ancora con la psicologia individuale moderna. È un linguaggio pubblico dell’affetto: rende leggibile un rapporto e invita lo spettatore a partecipare.</p></div>
+    </section>
+
+    <section class="gesture tracked section-pad" id="gesto" data-step="11">
+      <div class="section-index"><span>11</span><p>Interazione · Prima il volto o il gesto?</p></div>
+      <div class="interaction-heading"><div><p class="eyebrow">Isola, poi ricomponi</p><h2>L’emozione non abita <em>un solo dettaglio.</em></h2></div><p>Seleziona ciò che vuoi isolare. Alla fine torna all’immagine intera: il significato nasce dalle relazioni fra viso, mani, postura, distanza e direzione degli sguardi.</p></div>
+      <div class="gesture-lab">
+        <figure class="gesture-stage zoomable" id="gestureStage"><img src="assets/images/kiss-of-judas.webp" width="1400" height="1365" loading="lazy" alt="Il Bacio di Giuda: Cristo e Giuda si fronteggiano al centro di una folla serrata, tra lance, torce e gesti concitati."><div class="gesture-mask" aria-hidden="true"></div><div class="gesture-guides" aria-hidden="true"><span class="faces"></span><span class="hands"></span><span class="looks"></span><span class="posture"></span><span class="distance"></span></div><button class="open-image" type="button">Ingrandisci l’opera</button><figcaption>Giotto e bottega, <i>Bacio di Giuda</i>, Cappella degli Scrovegni.</figcaption></figure>
+        <div><div id="gestureButtons" class="gesture-buttons"></div><div id="gestureReading" class="gesture-reading" role="status" aria-live="polite"></div></div>
+      </div>
+    </section>
+
+    <section class="comparison tracked" id="confronto" data-step="12">
+      <div class="comparison-copy section-pad"><div class="section-index light"><span>12</span><p>Confronto · Prima/Dopo?</p></div><p class="eyebrow">Tre Maestà · oggi agli Uffizi</p><h2>La storia dell’arte non è una gara verso <em>la fotografia.</em></h2><p>Cimabue, Duccio e Giotto affrontano problemi in parte comuni con soluzioni differenti. Scegli un’opera e una categoria: il confronto mette in luce continuità, funzione storica e limite di una lettura puramente evolutiva.</p></div>
+      <div class="comparison-lab section-pad">
+        <div class="comparison-tabs" id="comparisonTabs" role="tablist" aria-label="Scegli l’opera"></div>
+        <div class="comparison-display"><figure class="zoomable"><img id="comparisonImage" src="assets/images/cimabue-maesta.webp" width="782" height="1400" loading="lazy" alt=""><button class="open-image" type="button">Ingrandisci</button><figcaption id="comparisonCaption"></figcaption></figure><div><div class="category-buttons" id="categoryButtons" aria-label="Categorie di confronto"></div><article class="comparison-reading" id="comparisonReading" aria-live="polite"></article></div></div>
+      </div>
+    </section>
+
+    <section class="return-look section-pad" id="ritorno">
+      <div class="return-heading"><p class="eyebrow">Ritorno all’immagine iniziale</p><h2>Ora l’opera può <em>dire il proprio nome.</em></h2></div>
+      <div class="return-grid"><figure class="zoomable"><img src="assets/images/opening-scene.webp" width="1000" height="925" loading="lazy" alt="Giotto e bottega, Compianto sul Cristo morto, Cappella degli Scrovegni, Padova."><button class="open-image" type="button">Ingrandisci</button><figcaption>Giotto e bottega, <i>Compianto sul Cristo morto</i>, Cappella degli Scrovegni, Padova, 1303–1305 circa. Affresco con finiture a secco; il ciclo ha conosciuto restauri e monitoraggio conservativo.</figcaption></figure><div class="return-copy"><div class="memory-card"><span>Il tuo primo sguardo</span><p id="openingMemory">Non avevi ancora scritto un’annotazione.</p></div><label class="note-label" for="finalNote"><span>Il tuo secondo sguardo</span><small>Confrontalo con il primo.</small></label><textarea id="finalNote" rows="9" placeholder="Avevo visto correttamente…&#10;Avevo interpretato troppo presto…&#10;Ora riconosco il peso in…&#10;Lo spazio nasce da…&#10;Il dolore è costruito attraverso…&#10;La mia posizione davanti alla scena è…"></textarea><p class="save-status" id="finalSave" role="status" aria-live="polite"></p></div></div>
+    </section>
+
+    <section class="quiz tracked section-pad" id="verifica" data-step="13">
+      <div class="quiz-intro"><p class="eyebrow">13 · Verifica e recupero</p><h2>Ricostruisci le <em>relazioni.</em></h2><p>Dodici domande, non dodici date. Un errore apre un passaggio di recupero diverso: il percorso riparte soltanto quando il nodo è stato compreso.</p><progress class="quiz-meter" id="quizMeter" max="12" value="0"></progress><p class="quiz-count" id="quizCount">Domanda 1 di 12</p></div>
+      <div class="quiz-panel" id="quizPanel" aria-live="polite"></div>
+    </section>
+
+    <section class="conclusion section-pad" id="conclusione">
+      <p class="step">La soglia successiva</p><h2>I corpi acquistano peso. I gesti producono relazioni. Lo spazio accoglie un evento.</h2><p>La rivoluzione non consiste nell’abbandonare il sacro né nel copiare improvvisamente la natura. Giotto e la sua bottega organizzano la parete affinché lo spettatore possa prendere parte a ciò che vede.</p><p class="next-line">L’uomo è tornato ad abitare lo spazio. Ora dovrà imparare a misurarlo.</p><div class="next-module"><span>08 · Prossimamente</span><b>Misurare il mondo</b><small>Rinascimento · Prospettiva, individuo, ragione</small></div><a href="../06-romanico-gotico/">← Torna al modulo 06</a></section>
+
+    <section class="sources section-pad" id="fonti">
+      <div><p class="eyebrow">Fonti e trasparenza</p><h2>Ciò che sappiamo.<br><em>Ciò che discutiamo.</em></h2><p>Le attribuzioni, le date e le letture delicate sono formulate con prudenza. Wikimedia Commons è usato per le riproduzioni, non come fonte storica centrale.</p></div>
+      <div class="source-columns">
+        <div><h3>Storia, monumento, conservazione</h3><p><a href="https://cappellascrovegni.padovamusei.it/en/cappella-giotto/history">Musei Civici di Padova · History</a></p><p><a href="https://cappellascrovegni.padovamusei.it/it/cappella-giotto/il-restauro-tra-otto-novecento">Cappella degli Scrovegni · restauri e conservazione</a></p><p><a href="https://whc.unesco.org/en/list/1623/">UNESCO · Padua’s fourteenth-century fresco cycles</a></p><p><a href="https://cultura.gov.it/comunicato/giotto-e-la-cappella-scrovegni-restauro-dei-dipinti-murali">Ministero della Cultura · tecnica pittorica e restauro</a></p><p><a href="https://www.treccani.it/enciclopedia/giotto_%28Enciclopedia-dell%27-Arte-Medievale%29/">Treccani · Giotto, Enciclopedia dell’Arte Medievale</a></p></div>
+        <div><h3>Opere e confronti</h3><p><a href="https://www.uffizi.it/opere/madonna-col-bambino-in-trono-e-profeti-maesta-di-santa-trinita">Uffizi · Maestà di Santa Trinita</a></p><p><a href="https://www.uffizi.it/opere/madonna-col-bambino-in-trono-e-angeli-detta-madonna-rucellai">Uffizi · Madonna Rucellai</a></p><p><a href="https://www.uffizi.it/opere/madonna-col-bambino-in-trono-angeli-e-santi-maesta-di-ognissanti">Uffizi · Maestà di Ognissanti</a></p><p><a href="https://www.metmuseum.org/essays/italian-painting-of-the-later-middle-ages">Metropolitan Museum · Italian Painting of the Later Middle Ages</a></p><p><a href="https://smarthistory.org/giotto-arena-scrovegni-chapel-part-1-of-4/">Smarthistory · Arena Chapel</a></p></div>
+      </div>
+      <div class="works-register"><h3>Registro delle immagini locali</h3><div class="register-scroll"><table><thead><tr><th>File locale</th><th>Opera / soggetto</th><th>Fonte e licenza</th></tr></thead><tbody>
+        <tr><td>opening-scene.webp</td><td>Giotto, <i>Compianto</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Giotto_-_Scrovegni_-_-36-_-_Lamentation_(The_Mourning_of_Christ)_adj.jpg">Wikimedia Commons</a> · Public Domain Mark</td></tr>
+        <tr><td>kiss-of-judas.webp</td><td>Giotto, <i>Bacio di Giuda</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Giotto_-_Scrovegni_-_-31-_-_Kiss_of_Judas.jpg">Wikimedia Commons</a> · pubblico dominio</td></tr>
+        <tr><td>golden-gate.webp</td><td>Giotto, <i>Incontro alla Porta Aurea</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Giotto_-_Scrovegni_-_-06-_-_Meeting_at_the_Golden_Gate.jpg">Wikimedia Commons</a> · pubblico dominio</td></tr>
+        <tr><td>nativity.webp</td><td>Giotto, <i>Natività</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Giotto_-_Scrovegni_-_-17-_-_Nativity,_Birth_of_Jesus.jpg">Wikimedia Commons</a> · pubblico dominio</td></tr>
+        <tr><td>chapel-interior.webp</td><td>Interno della Cappella degli Scrovegni</td><td><a href="https://commons.wikimedia.org/wiki/File:Padova_Cappella_degli_Scrovegni_Innen_Langhaus_Ost_2.jpg">Zairon / Wikimedia Commons</a> · CC BY-SA 4.0</td></tr>
+        <tr><td>cimabue-maesta.webp</td><td>Cimabue, <i>Maestà di Santa Trinita</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Cimabue_-_Maest%C3%A0_di_Santa_Trinita_-_Google_Art_Project.jpg">Wikimedia Commons / Google Art Project</a> · pubblico dominio</td></tr>
+        <tr><td>duccio-rucellai.webp</td><td>Duccio, <i>Madonna Rucellai</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Duccio_-_Rucellai_Madonna.jpg">Gleb Simonov / Wikimedia Commons</a> · pubblico dominio</td></tr>
+        <tr><td>giotto-ognissanti.webp</td><td>Giotto, <i>Maestà di Ognissanti</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Giotto_Ognissanti_Madonna.jpg">Wikimedia Commons</a> · pubblico dominio</td></tr>
+        <tr><td>assisi-renunciation.webp</td><td><i>Rinuncia ai beni</i>, Assisi</td><td><a href="https://commons.wikimedia.org/wiki/File:Giotto_-_Legend_of_St_Francis_-_-05-_-_Renunciation_of_Wordly_Goods.jpg">Wikimedia Commons</a> · pubblico dominio; attribuzione discussa</td></tr>
+      </tbody></table></div></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-project"><span class="project-mark" aria-hidden="true">S</span><p><b>Storia dello sguardo</b><br>07 · Giotto</p></div><nav><a href="../../index.html#m07">Home del percorso</a><a href="../06-romanico-gotico/">← Modulo 06</a><span>Modulo 08 · non ancora attivo</span></nav><p>Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizzatore dell’opera" hidden><div class="lightbox-controls"><button id="zoomOut" type="button" aria-label="Riduci">−</button><button id="zoomReset" type="button" aria-label="Ripristina zoom">1:1</button><button id="zoomIn" type="button" aria-label="Ingrandisci">+</button><button id="lightboxClose" class="lightbox-close" type="button" aria-label="Chiudi">×</button></div><div class="lightbox-stage" id="lightboxStage"><img id="lightboxImage" src="assets/images/opening-scene.webp" alt=""></div><p id="lightboxCaption"></p></div>
+</body>
+</html>

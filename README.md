@@ -24,6 +24,7 @@ La directory `PWA/` descrive il contratto di navigazione che dovrà essere conse
 - [04 · Il volto dell’impero — Individuo, propaganda, monumentalità](./PWA/04-ellenismo-roma/)
 - [05 · Rendere visibile l’invisibile — L’immagine come soglia](./PWA/05-cristianesimo-medioevo/)
 - [06 · La città sale verso la luce — Spazio sacro e nuova società urbana](./PWA/06-romanico-gotico/)
+- [07 · Quando l’uomo torna ad abitare lo spazio — Giotto, la rivoluzione dello sguardo](./PWA/07-giotto/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./PWA/10-caravaggio/)
 
 Il modulo 02 mette in relazione la nascita delle città e degli Stati con scrittura, gerarchie, monumentalità e costruzione visiva dell’autorità. Comprende osservazione iniziale, analisi stratificata delle opere, confronto Mesopotamia/Egitto, salvataggi locali, verifica con recupero, installabilità e uso offline.
@@ -36,4 +37,6 @@ Il modulo 05 parte dalla frontalità monumentale di Costantino e segue la sua tr
 
 Il modulo 06 segue il passaggio dall’immagine sacra allo spazio costruito. Romanico e Gotico sono letti attraverso pellegrinaggi, reliquie, città, cantieri, committenze, lavoro, struttura e luce, senza ridurli all’opposizione fra peso e leggerezza. Le interazioni “Solleva la città” e “Muro, struttura, luce” mostrano come i carichi vengano redistribuiti e come le varianti francesi, inglesi e italiane trasformino un sistema comune; taccuino, avanzamento, verifica bloccante con recupero e uso offline restano sul dispositivo.
 
-Con il modulo 06 si conclude la prima galleria, **Nascere all’immagine**: dopo che l’immagine è diventata città, muro, struttura e luce, il modulo 07 aprirà il passaggio a Giotto e al corpo umano che torna ad abitare lo spazio rappresentato.
+Con il modulo 06 si conclude la prima galleria, **Nascere all’immagine**: l’immagine è diventata città, muro, struttura e luce.
+
+Il modulo 07 apre la seconda galleria, **Inventare l’uomo moderno**. Giotto è studiato senza la scorciatoia del “realismo inventato”: città, nuovi pubblici, committenza, bottega, affresco, corpo, gesto e sguardo concorrono a rendere percettivamente abitabile la parete. Le interazioni “Sotto il colore”, “Fai abitare la scena”, il laboratorio sullo spazio, l’isolamento di gesti e sguardi e il confronto fra le tre Maestà degli Uffizi conducono alla soglia del modulo 08: uno spazio credibile dovrà diventare misurabile.
