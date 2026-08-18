@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#342735">
+  <meta name="description" content="La forma perde la quiete: un laboratorio visuale e interattivo sul Manierismo, la regola e l’instabilità.">
+  <title>09 · La forma perde la quiete — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="topbar">
+    <a class="back" href="../../index.html#m09"><span aria-hidden="true">←</span> Storia dello sguardo</a>
+    <div class="top-actions"><span id="progressText">0 di 13 tappe</span><button id="menuButton" type="button" aria-expanded="false" aria-controls="chapterMenu">Indice</button></div>
+    <progress id="readingProgress" max="13" value="0" aria-label="Avanzamento nel modulo"></progress>
+  </header>
+
+  <aside class="chapter-menu" id="chapterMenu" hidden aria-label="Indice delle tredici sezioni">
+    <div class="menu-head"><p>La forma perde la quiete</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#immagine"><span>01</span>Un’immagine che non riesce a fermarsi</a></li>
+      <li><a href="#equilibrio"><span>02</span>Il mondo precedente</a></li>
+      <li><a href="#storia"><span>03</span>Il centro storico si moltiplica</a></li>
+      <li><a href="#maniera"><span>04</span>Che cosa significa “maniera”?</a></li>
+      <li><a href="#spazio"><span>05</span>Uno spazio senza riposo</a></li>
+      <li><a href="#corpo"><span>06</span>Il corpo supera la misura</a></li>
+      <li><a href="#colore"><span>07</span>Il colore disobbedisce</a></li>
+      <li><a href="#architettura"><span>08</span>L’architettura disobbedisce</a></li>
+      <li><a href="#corte"><span>09</span>La corte e la maschera</a></li>
+      <li><a href="#sacro"><span>10</span>Il sacro sotto pressione</a></li>
+      <li><a href="#viaggio"><span>11</span>Una forma che viaggia</a></li>
+      <li><a href="#laboratorio"><span>12</span>Dalla misura all’instabilità</a></li>
+      <li><a href="#ritorno"><span>13</span>Ritorno all’immagine</a></li>
+    </ol></nav>
+    <button class="reset-state" id="resetState" type="button">Azzera il percorso sul dispositivo</button>
+  </aside>
+  <div class="menu-scrim" id="menuScrim" hidden></div>
+
+  <main id="contenuto">
+    <section class="opening tracked" id="immagine" data-step="1" aria-labelledby="openingTitle">
+      <figure class="opening-art zoomable">
+        <img src="assets/images/pontormo-deposizione.webp" width="591" height="936" alt="Gruppo di figure dai colori rosa, azzurri e verdi sostiene il corpo di Cristo; i corpi sembrano sospesi e privi di un terreno stabile.">
+        <button class="open-image" type="button">Ingrandisci l’opera</button>
+      </figure>
+      <div class="opening-copy">
+        <p class="eyebrow">09 · Manierismo — prima di sapere</p>
+        <h1 id="openingTitle">Perché rompere un equilibrio che si è appena imparato a costruire?</h1>
+        <p class="opening-lead">Non cercare ancora il titolo. Cerca un appoggio, una profondità, una luce, un punto in cui l’occhio possa fermarsi.</p>
+        <ul class="look-list"><li>Dove si trova il peso dei corpi?</li><li>I piedi poggiano davvero?</li><li>Esiste un centro stabile?</li><li>Da dove proviene la luce?</li><li>Perché il colore non sembra naturale?</li></ul>
+        <label class="note-label" for="openingNote"><span>Il tuo primo sguardo</span><small>Resta soltanto su questo dispositivo.</small></label>
+        <textarea id="openingNote" rows="9" placeholder="Il mio occhio cerca un punto fermo in…&#10;Il corpo più instabile è…&#10;Non riesco a capire dove si trovi…&#10;Questi colori rendono la scena…&#10;La forma ha perso la quiete perché…"></textarea>
+        <p class="save-status" id="openingSave" role="status" aria-live="polite"></p>
+        <a class="scroll-link" href="#equilibrio">Attraversa la frattura ↓</a>
+      </div>
+    </section>
+
+    <section class="previous tracked section-pad" id="equilibrio" data-step="2">
+      <div class="section-index"><span>02</span><p>Il mondo precedente: la conquista dell’equilibrio</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Dal modulo 08</p><h2>La regola non viene dimenticata.<br><em>Diventa visibile come regola.</em></h2></div><p>Prospettiva, proporzione, centralità e spazio coerente avevano assegnato all’osservatore un posto. Gli artisti del Cinquecento conoscono quel sistema; proprio per questo possono torcerlo senza perderne il controllo.</p></div>
+      <div class="previous-grid">
+        <figure class="zoomable"><img src="assets/images/piero-flagellazione.webp" width="1328" height="936" loading="lazy" alt="Piero della Francesca, Flagellazione: architettura prospettica rigorosa e figure distribuite in due gruppi."><button class="open-image" type="button">Ingrandisci</button><figcaption>Piero della Francesca, <i>Flagellazione di Cristo</i>, 1455–1460 circa, Galleria Nazionale delle Marche, Urbino.</figcaption></figure>
+        <div class="order-cards"><article><b>Prospettiva</b><p>Le linee convergono e rendono confrontabili le distanze.</p></article><article><b>Proporzione</b><p>Il corpo è relazione leggibile fra parti.</p></article><article><b>Centralità</b><p>La composizione promette un ordine riconoscibile.</p></article><article><b>Osservatore</b><p>Un punto di vista organizza ciò che appare.</p></article><article><b>Spazio</b><p>Corpi e architetture sembrano appartenere allo stesso ambiente.</p></article><article><b>Fiducia</b><p>Il visibile appare costruibile, anche se non neutrale.</p></article></div>
+      </div>
+      <blockquote>Il Manierismo nasce dentro una competenza piena, non fuori di essa.</blockquote>
+    </section>
+
+    <section class="history tracked section-pad dark" id="storia" data-step="3">
+      <div class="section-index light"><span>03</span><p>Quando il centro storico si moltiplica</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Eventi, reti, scelte</p><h2>La crisi non dipinge.<br><em>Rende disponibili nuove forme.</em></h2></div><p>Le guerre d’Italia, il Sacco di Roma, le corti, la Riforma e la mobilità degli artisti non producono automaticamente corpi allungati. Modificano pubblici, occasioni, paure, ambizioni e percorsi professionali.</p></div>
+      <div class="timeline" id="timeline" role="group" aria-label="Cronologia interattiva del Cinquecento"></div>
+      <article class="timeline-reading" id="timelineReading" aria-live="polite"></article>
+      <div class="causal-lab"><h3>Società → Corte e committenza → Artista → Forma → Spettatore</h3><p>Seleziona un nodo: la forma nasce da una rete, non da un interruttore storico.</p><div class="causal-nodes" id="causalNodes"></div><article id="causalReading" class="lab-reading" aria-live="polite"></article></div>
+    </section>
+
+    <section class="term tracked section-pad" id="maniera" data-step="4">
+      <div class="section-index"><span>04</span><p>Che cosa significa “maniera”?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Una parola, tre problemi</p><h2>“Manierismo” non è il nome che gli artisti davano <em>a un movimento compatto.</em></h2></div><p>Nel Cinquecento <i>maniera</i> può indicare il modo di fare, lo stile personale, la grazia appresa, la padronanza tecnica. Vasari elogia la <i>maniera moderna</i>; la categoria “Manierismo” viene costruita e trasformata dagli storici molto più tardi.</p></div>
+      <div class="perspective-tabs" id="mannerTabs" role="tablist" aria-label="Tre significati di maniera"></div>
+      <article class="term-reading" id="mannerReading" aria-live="polite"></article>
+      <div class="term-warning"><b>Attenzione alla scorciatoia.</b><p>Raggruppare Pontormo, Rosso, Parmigianino, Bronzino, Giulio Romano e Giambologna aiuta a confrontare alcuni problemi; non significa che lavorino allo stesso modo o formino una scuola uniforme.</p></div>
+    </section>
+
+    <section class="space tracked section-pad dark" id="spazio" data-step="5">
+      <div class="section-index light"><span>05</span><p>Uno spazio senza riposo</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Esperimento · Trova un centro che non c’è</p><h2>L’instabilità non è casuale.<br><em>È costruita.</em></h2></div><p>Attiva una lettura alla volta. Il centro geometrico esiste, ma non coincide con un unico centro narrativo o emotivo; direzioni, appoggi e sguardi spostano continuamente l’attenzione.</p></div>
+      <div class="center-lab">
+        <figure class="analysis-stage zoomable" id="centerStage"><img src="assets/images/pontormo-deposizione.webp" width="591" height="936" loading="lazy" alt="Pontormo, Deposizione o Trasporto di Cristo, analizzata con sovrapposizioni didattiche."><div class="center-overlays" aria-hidden="true"><span class="geo-center"></span><span class="emotion e1"></span><span class="emotion e2"></span><span class="diag d1"></span><span class="diag d2"></span><span class="gaze g1"></span><span class="gaze g2"></span><span class="support s1"></span><span class="support s2"></span><span class="flat-zone"></span></div><button class="open-image" type="button">Ingrandisci senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="centerButtons"></div><button class="lab-reset" id="centerReset" type="button">Ripristina l’analisi</button><article class="lab-reading inverse" id="centerReading" aria-live="polite"></article><p class="equivalent" id="centerEquivalent">Equivalente testuale: nessuna sovrapposizione è attiva.</p></div>
+      </div>
+      <figure class="secondary-work zoomable"><img src="assets/images/rosso-deposizione.webp" width="567" height="936" loading="lazy" alt="Rosso Fiorentino, Deposizione di Volterra: una scala verticale affolla la superficie con figure tese."><button class="open-image" type="button">Ingrandisci Rosso Fiorentino</button><figcaption>Rosso Fiorentino, <i>Deposizione dalla croce</i>, 1521, Pinacoteca e Museo Civico di Volterra. La verticalità della tavola comprime scala, corpi e vuoti in una tensione diversa da Pontormo.</figcaption></figure>
+    </section>
+
+    <section class="body tracked section-pad" id="corpo" data-step="6">
+      <div class="section-index"><span>06</span><p>Il corpo supera la propria misura</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Esperimento · Allunga la misura</p><h2>Un corpo deformato non è necessariamente <em>un corpo sbagliato.</em></h2></div><p>La proporzione naturalistica è una scelta possibile; allungamento, torsione e figura serpentinata producono grazia, virtuosismo, instabilità e molteplici punti di vista.</p></div>
+      <div class="body-lab">
+        <div class="body-simulator" id="bodySimulator" data-mode="natural"><svg viewBox="0 0 360 560" role="img" aria-labelledby="bodyTitle bodyDesc"><title id="bodyTitle">Figura didattica trasformabile</title><desc id="bodyDesc">Una figura schematica cambia proporzione, contrapposto e torsione per rendere leggibili diverse scelte formali.</desc><g class="figure-shape"><ellipse cx="180" cy="70" rx="36" ry="45"/><path d="M160 112 C120 170 135 245 154 290 L120 465 L155 470 L180 315 L213 470 L245 464 L207 286 C226 220 233 162 200 112 Z"/><path d="M154 135 L80 270 L108 288 L178 185 M205 137 L280 255 L255 278 L190 190"/></g></svg><p id="bodyEquivalent">Figura proporzionata, frontale, con peso distribuito.</p></div>
+        <div><div class="mode-buttons" id="bodyModes"></div><button class="lab-reset" id="bodyReset" type="button">Ripristina la proporzione</button><article class="lab-reading" id="bodyReading" aria-live="polite"></article></div>
+      </div>
+      <div class="work-pair">
+        <figure class="zoomable"><img src="assets/images/parmigianino-madonna.webp" width="606" height="936" loading="lazy" alt="Parmigianino, Madonna dal collo lungo: la Vergine ha collo, dita e corpo deliberatamente allungati."><button class="open-image" type="button">Ingrandisci</button><figcaption>Parmigianino, <i>Madonna col Bambino e angeli, detta Madonna dal collo lungo</i>, 1534–1540, Uffizi. La pala rimase incompiuta.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/giambologna-sabina.webp" width="703" height="936" loading="lazy" alt="Giambologna, Ratto della Sabina: tre corpi ruotano verso l’alto in una composizione serpentinata."><button class="open-image" type="button">Ingrandisci</button><figcaption>Giambologna, <i>Ratto della Sabina</i>, 1579–1583, Loggia dei Lanzi, Firenze. Il titolo narrativo fu associato alla scultura mentre l’opera era in via di compimento.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="colour tracked section-pad" id="colore" data-step="7">
+      <div class="section-index"><span>07</span><p>Il colore smette di obbedire alla natura</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Esperimento · Sposta il colore</p><h2>La luce può diventare <em>mentale e artificiale.</em></h2></div><p>Il laboratorio non ricolora un’opera: usa una scena astratta dichiaratamente didattica. Cambia tavolozza e osserva come il colore unisce, separa, allontana o tende le forme.</p></div>
+      <div class="colour-lab">
+        <div class="colour-stage" id="colourStage" data-palette="natural" role="img" aria-labelledby="colourTitle colourEquivalent"><h3 id="colourTitle" class="sr-only">Simulazione cromatica</h3><span class="shape sh1"></span><span class="shape sh2"></span><span class="shape sh3"></span><span class="shape sh4"></span><span class="shape sh5"></span></div>
+        <div><div class="palette-buttons" id="paletteButtons"></div><button class="lab-reset" id="colourReset" type="button">Ripristina la tavolozza</button><article class="lab-reading" id="colourReading" aria-live="polite"></article><p class="equivalent" id="colourEquivalent">Tavolozza naturalistica: terre, incarnati e azzurro moderato formano una luce plausibile.</p><p class="simulation-note">Simulazione didattica, non alterazione digitale di un’opera.</p></div>
+      </div>
+      <div class="palette-strip" aria-label="Tavolozza osservata nella Deposizione di Pontormo"><span style="--sw:#e7a6b5">rosa polveroso</span><span style="--sw:#8db4cf">azzurro freddo</span><span style="--sw:#91b987">verde chiaro</span><span style="--sw:#eee0c6">avorio</span><span style="--sw:#d45945">vermiglione</span></div>
+    </section>
+
+    <section class="architecture tracked section-pad dark" id="architettura" data-step="8">
+      <div class="section-index light"><span>08</span><p>L’architettura disobbedisce all’ordine</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Giulio Romano · Palazzo Te</p><h2>Per violare una regola in modo significativo <em>bisogna conoscerla.</em></h2></div><p>La corte di Federico II Gonzaga non chiede un manuale neutro dell’antico, ma una villa capace di sorprendere un pubblico competente. Bugnato, architravi, triglifi, ritmo e simmetria diventano materia di gioco controllato.</p></div>
+      <div class="architecture-grid">
+        <figure class="zoomable"><img src="assets/images/palazzo-te-cortile.webp" width="1363" height="621" loading="lazy" alt="Cortile di Palazzo Te a Mantova, con ordine dorico, bugnato e variazioni intenzionali del ritmo architettonico."><button class="open-image" type="button">Ingrandisci Palazzo Te</button><figcaption>Giulio Romano e collaboratori, Palazzo Te, 1525–1535 circa, Mantova; villa suburbana per Federico II Gonzaga.</figcaption></figure>
+        <div class="facade-lab"><svg id="facadeSvg" viewBox="0 0 800 460" role="img" aria-labelledby="facadeTitle facadeDesc"><title id="facadeTitle">Facciata classica trasformabile</title><desc id="facadeDesc">Una facciata ordinata può ricevere triglifi abbassati, chiavi sovradimensionate e rotture del ritmo.</desc><rect class="wall" x="40" y="35" width="720" height="380"/><path class="cornice" d="M35 85 H765 M35 120 H765"/><g class="triglyphs"><rect x="80" y="88" width="28" height="38"/><rect x="225" y="88" width="28" height="38"/><rect x="370" y="88" width="28" height="38"/><rect x="515" y="88" width="28" height="38"/><rect x="660" y="88" width="28" height="38"/></g><g class="columns"><path d="M95 150 V390 M235 150 V390 M375 150 V390 M515 150 V390 M655 150 V390"/></g><g class="arches"><path d="M115 390 V265 Q165 205 215 265 V390 M255 390 V265 Q305 205 355 265 V390 M395 390 V265 Q445 205 495 265 V390 M535 390 V265 Q585 205 635 265 V390"/></g><g class="keystones"><path d="M157 240 l8 -30 8 30z M297 240 l8 -30 8 30z M437 240 l8 -30 8 30z M577 240 l8 -30 8 30z"/></g></svg><div class="architecture-steps" id="architectureSteps"></div><button class="lab-reset" id="architectureReset" type="button">Ricostruisci l’ordine</button><article class="lab-reading inverse" id="architectureReading" aria-live="polite"></article><p class="equivalent" id="architectureEquivalent">Facciata ordinata: cinque campate, ritmo regolare, triglifi allineati e chiavi contenute.</p></div>
+      </div>
+    </section>
+
+    <section class="court tracked section-pad" id="corte" data-step="9">
+      <div class="section-index"><span>09</span><p>La corte e la maschera</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Esperimento · Costruisci la distanza</p><h2>Il volto pubblico non è una diagnosi psicologica.<br><em>È una relazione politica.</em></h2></div><p>Abito, postura, tessuto, oggetti, spazio e sguardo costruiscono rango e accessibilità. L’assenza di sorriso non prova “freddezza”: può dichiarare controllo, cultura e distanza sociale.</p></div>
+      <div class="portrait-compare">
+        <figure class="zoomable"><img src="assets/images/piero-urbino.webp" width="1363" height="936" loading="lazy" alt="Piero della Francesca, dittico dei duchi di Urbino: due profili netti contro un paesaggio continuo."><button class="open-image" type="button">Ingrandisci il dittico</button><figcaption>Piero della Francesca, <i>Federico da Montefeltro e Battista Sforza</i>, 1465–1472 circa, Uffizi: profilo, territorio e memoria dinastica.</figcaption></figure>
+        <figure class="portrait-stage zoomable"><img src="assets/images/bronzino-ritratto.webp" width="743" height="936" loading="lazy" alt="Bronzino, Ritratto di giovane: abito nero elaborato, posa controllata, libro e ambiente con mascheroni."><div class="portrait-overlays" aria-hidden="true"><span class="po clothes">abito</span><span class="po hand">posa</span><span class="po book">libro</span><span class="po face">volto</span><span class="po masks">maschere</span></div><button class="open-image" type="button">Ingrandisci Bronzino</button><figcaption>Bronzino, <i>Ritratto di giovane</i>, anni 1530, Metropolitan Museum of Art, New York.</figcaption></figure>
+      </div>
+      <div class="portrait-controls" id="portraitControls"></div><button class="lab-reset" id="portraitReset" type="button">Azzera gli indizi</button><article class="lab-reading" id="portraitReading" aria-live="polite"></article>
+    </section>
+
+    <section class="sacred tracked section-pad dark" id="sacro" data-step="10">
+      <div class="section-index light"><span>10</span><p>Il sacro sotto pressione</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Riforma, dibattito, immagini</p><h2>Non esiste un interruttore chiamato <em>Concilio di Trento.</em></h2></div><p>Il <i>Giudizio universale</i> di Michelangelo fu dipinto fra 1536 e 1541; le coperture di Daniele da Volterra iniziarono nel 1565. Pontormo e Rosso precedono il decreto tridentino sulle immagini del 1563. Date, commissioni, polemiche e interventi non vanno compressi in una causa unica.</p></div>
+      <div class="sacred-grid">
+        <figure class="zoomable"><img src="assets/images/pontormo-deposizione.webp" width="591" height="936" loading="lazy" alt="Pontormo, Deposizione: scena sacra affollata e cromaticamente irreale."><button class="open-image" type="button">Ingrandisci Pontormo</button></figure>
+        <figure class="zoomable"><img src="assets/images/rosso-deposizione.webp" width="567" height="936" loading="lazy" alt="Rosso Fiorentino, Deposizione: scena sacra tesa su scale e diagonali."><button class="open-image" type="button">Ingrandisci Rosso</button></figure>
+        <div><div class="sacred-buttons" id="sacredButtons"></div><article class="lab-reading inverse" id="sacredReading" aria-live="polite"></article><button class="lab-reset" id="sacredReset" type="button">Ripristina il confronto</button></div>
+      </div>
+      <p class="boundary-note"><b>Distinzione necessaria.</b> Chiarezza narrativa, complessità formale, partecipazione emotiva e controllo istituzionale sono dimensioni diverse. Possono incontrarsi, ma non coincidono automaticamente.</p>
+    </section>
+
+    <section class="travel tracked section-pad" id="viaggio" data-step="11">
+      <div class="section-index"><span>11</span><p>Una forma che viaggia</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Artisti, fogli, stampe, corti</p><h2>Il Manierismo diventa <em>una rete internazionale.</em></h2></div><p>Il Sacco di Roma accelera spostamenti già in corso; disegni e incisioni moltiplicano i modelli. A Fontainebleau gli artisti italiani lavorano con artigiani francesi in un programma di corte che integra pittura, stucco, legno e architettura.</p></div>
+      <div class="network-lab"><div class="network-map" id="networkMap" role="group" aria-label="Rete dei centri manieristi"></div><article class="network-reading" id="networkReading" aria-live="polite"></article></div>
+      <figure class="wide-work zoomable"><img src="assets/images/fontainebleau-galleria.webp" width="1216" height="912" loading="lazy" alt="Dettaglio della Galleria di Francesco I a Fontainebleau, con legni intagliati, stucchi, emblemi e decorazione pittorica."><button class="open-image" type="button">Ingrandisci Fontainebleau</button><figcaption>Galleria di Francesco I, Château de Fontainebleau, decorazione avviata negli anni 1530 con Rosso Fiorentino e poi Francesco Primaticcio: un’impresa collettiva di corte.</figcaption></figure>
+    </section>
+
+    <section class="compare tracked section-pad dark" id="laboratorio" data-step="12">
+      <div class="section-index light"><span>12</span><p>Laboratorio conclusivo: dalla misura all’instabilità</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Quattro opere · una categoria per volta</p><h2>L’ordine non scompare.<br><em>Cambia il rapporto con chi guarda.</em></h2></div><p>Seleziona una categoria: le quattro opere restano affiancate. Non leggere una successione di “miglioramenti”; osserva trasformazioni di funzione, forma e presenza.</p></div>
+      <div class="compare-categories" id="compareCategories"></div>
+      <div class="compare-grid" id="compareGrid" aria-live="polite"></div>
+      <div class="synthesis-line"><span>Società</span><i>→</i><span>Arte</span><i>→</i><span>Nuova immagine del mondo</span><i>→</i><span>Futuro</span></div>
+    </section>
+
+    <section class="return tracked section-pad" id="ritorno" data-step="13">
+      <div class="section-index"><span>13</span><p>Ritorno all’immagine iniziale</p></div>
+      <div class="split-heading"><div><p class="eyebrow">La stessa opera · un altro sguardo</p><h2>Ora puoi dare un nome <em>alla tensione.</em></h2></div><p>L’opera viene spesso chiamata <i>Deposizione</i>, <i>Trasporto di Cristo</i> o <i>Compianto</i>: perfino il momento narrativo non è del tutto pacificato. Pontormo la realizzò per la cappella Capponi in Santa Felicita, Firenze, fra 1525 e 1528 circa.</p></div>
+      <div class="return-grid">
+        <figure class="zoomable"><img src="assets/images/pontormo-deposizione.webp" width="591" height="936" loading="lazy" alt="Pontormo, Deposizione o Trasporto di Cristo, cappella Capponi, Santa Felicita, Firenze."><button class="open-image" type="button">Guarda di nuovo</button><figcaption>Jacopo Pontormo, <i>Deposizione (o Trasporto di Cristo)</i>, 1525–1528 circa, tempera grassa o olio su tavola, cappella Capponi, Santa Felicita, Firenze.</figcaption></figure>
+        <div><div class="memory-card"><span>Il tuo primo sguardo</span><p id="openingMemory">Non hai ancora scritto un’annotazione.</p></div><label class="note-label" for="returnNote"><span>Il secondo sguardo</span><small>Resta soltanto su questo dispositivo.</small></label><textarea id="returnNote" rows="12" placeholder="All’inizio pensavo che…&#10;Ora riconosco che il centro…&#10;I corpi non sono deformati per errore perché…&#10;Il colore produce…&#10;La società di corte entra nella forma attraverso…&#10;La forma perde la quiete quando…&#10;L’instabilità non distrugge la regola: la rende…"></textarea><p class="save-status" id="returnSave" role="status" aria-live="polite"></p><article class="personal-synthesis" id="personalSynthesis"><h3>La tua sintesi</h3><p>Completa almeno un laboratorio e il secondo taccuino per costruire una sintesi del percorso.</p></article></div>
+      </div>
+    </section>
+
+    <section class="quiz section-pad" id="verifica" aria-labelledby="quizTitle">
+      <div class="quiz-intro"><p class="eyebrow">Verifica · dodici nuclei, dodici recuperi</p><h2 id="quizTitle">La regola è diventata <em>problema?</em></h2><p>Un errore apre una microlezione specifica e blocca il passaggio. Il recupero resta attivo anche se ricarichi la pagina.</p><progress id="quizMeter" max="12" value="0" aria-label="Avanzamento della verifica"></progress><p id="quizCount">Domanda 1 di 12</p></div>
+      <div id="quizArea" aria-live="polite"></div>
+    </section>
+
+    <section class="conclusion section-pad" aria-labelledby="conclusionTitle">
+      <p class="eyebrow">Soglia · verso il modulo 10</p><h2 id="conclusionTitle">Il Manierismo non dimentica l’ordine rinascimentale: <em>lo conosce troppo bene per considerarlo ancora naturale.</em></h2><p>Il corpo si allunga, lo spazio perde il centro, il colore si emancipa e la regola diventa artificio. La tensione non scomparirà: con il Barocco entrerà nello spazio dello spettatore e diventerà luce, azione, corpo e persuasione.</p>
+      <a class="next-module" href="../10-caravaggio/"><span>Modulo successivo</span><b>10 — Quando il sacro entra nella strada</b><small>Caravaggio · Barocco — Corpi reali, luce, persuasione</small></a>
+    </section>
+
+    <section class="sources section-pad" aria-labelledby="sourcesTitle">
+      <div><p class="eyebrow">Ricerca e trasparenza</p><h2 id="sourcesTitle">Fonti, opere, <em>licenze.</em></h2><p>Le schede storico-artistiche si fondano su musei, istituzioni e risorse accademiche. Wikimedia Commons è usata come deposito delle riproduzioni e delle licenze, non come unica autorità interpretativa.</p></div>
+      <div class="source-columns">
+        <div><h3>Fonti storico-artistiche</h3>
+          <p><a href="https://www.metmuseum.org/essays/mannerism-bronzino-1503-1572-and-his-contemporaries">Metropolitan Museum · Mannerism, Bronzino and his contemporaries</a></p>
+          <p><a href="https://www.metmuseum.org/art/collection/search/435802">Metropolitan Museum · Bronzino, Portrait of a Young Man</a></p>
+          <p><a href="https://www.uffizi.it/opere/parmigianino-madonna-collo-lungo">Gallerie degli Uffizi · Madonna dal collo lungo</a></p>
+          <p><a href="https://www.friendsofflorence.org/projects/pontormo-deposition-cross-1525-8-capponi-chapel-church-santa-felicita-florence/">Friends of Florence · Pontormo, cappella Capponi</a></p>
+          <p><a href="https://www.centropalazzote.it/en/fondazione-palazzo-te/">Fondazione Palazzo Te · storia e ambienti</a></p>
+          <p><a href="https://www.galleriaaccademiafirenze.it/en/artworks/ratto-delle-sabine-giambologna/">Galleria dell’Accademia di Firenze · Giambologna</a></p>
+          <p><a href="https://www.metmuseum.org/essays/fontainebleau">Metropolitan Museum · Fontainebleau</a></p>
+          <p><a href="https://smarthistory.org/the-council-of-trent-and-the-call-to-reform-art/">Smarthistory · Concilio di Trento e riforma delle immagini</a></p>
+          <p><a href="https://gndm.it/opere/flagellazione/">Galleria Nazionale delle Marche · Flagellazione</a></p>
+          <p><a href="https://www.uffizi.it/en/artworks/the-duke-and-duchess-of-urbino-federico-da-montefeltro-and-battista-sforza">Gallerie degli Uffizi · Duchi di Urbino</a></p>
+        </div>
+        <div class="works-register"><h3>Registro delle immagini locali</h3><div class="register-scroll"><table><thead><tr><th>File</th><th>Opera, data, collocazione</th><th>Provenienza e licenza</th></tr></thead><tbody>
+          <tr><td>pontormo-deposizione.webp</td><td>Pontormo, <i>Deposizione / Trasporto</i>, 1525–1528, Santa Felicita</td><td><a href="https://commons.wikimedia.org/wiki/File:Jacopo_Pontormo_-_Kreuzabnahme_Christi.jpg">Commons</a> · pubblico dominio</td></tr>
+          <tr><td>piero-flagellazione.webp</td><td>Piero della Francesca, <i>Flagellazione</i>, 1455–1460 ca., Urbino</td><td><a href="https://commons.wikimedia.org/wiki/File:Piero_della_Francesca_042.jpg">Commons</a> · pubblico dominio</td></tr>
+          <tr><td>rosso-deposizione.webp</td><td>Rosso Fiorentino, <i>Deposizione</i>, 1521, Volterra</td><td><a href="https://commons.wikimedia.org/wiki/File:Rosso_fiorentino,_deposizione,_1521_(volterra,_pinacoteca_civica)_01.jpg">Commons</a> · CC BY-SA 4.0, foto Sailko</td></tr>
+          <tr><td>parmigianino-madonna.webp</td><td>Parmigianino, <i>Madonna dal collo lungo</i>, 1534–1540, Uffizi</td><td><a href="https://commons.wikimedia.org/wiki/File:Parmigianino_-_Madonna_dal_collo_lungo_-_Google_Art_Project.jpg">Commons</a> · pubblico dominio</td></tr>
+          <tr><td>giambologna-sabina.webp</td><td>Giambologna, <i>Ratto della Sabina</i>, 1579–1583, Firenze</td><td><a href="https://commons.wikimedia.org/wiki/File:Rape_of_the_Sabine_Women_1583_by_Giambologna_at_the_Loggia_dei_Lanzi_in_Florence_Italy_MH_02.jpg">Commons</a> · CC BY-SA 4.0, foto Mary Harrsch</td></tr>
+          <tr><td>palazzo-te-cortile.webp</td><td>Giulio Romano, Palazzo Te, 1525–1535 ca., Mantova</td><td><a href="https://commons.wikimedia.org/wiki/File:Palazzo_Te_courtyard.jpg">Commons</a> · CC BY-SA 4.0, foto Zovskj</td></tr>
+          <tr><td>piero-urbino.webp</td><td>Piero della Francesca, <i>Dittico di Urbino</i>, 1465–1472 ca., Uffizi</td><td><a href="https://commons.wikimedia.org/wiki/File:Double_portrait_of_the_Dukes_of_Urbino.jpg">Commons</a> · CC BY-SA 4.0</td></tr>
+          <tr><td>bronzino-ritratto.webp</td><td>Bronzino, <i>Ritratto di giovane</i>, anni 1530, New York</td><td><a href="https://www.metmuseum.org/art/collection/search/435802">Met Open Access</a> · CC0 / pubblico dominio</td></tr>
+          <tr><td>fontainebleau-galleria.webp</td><td>Galleria di Francesco I, decorazione anni 1530, Fontainebleau</td><td><a href="https://commons.wikimedia.org/wiki/File:Fontainebleau_interior_francois_I_gallery_05.JPG">Commons</a> · CC BY-SA 3.0, foto Mattis</td></tr>
+          <tr><td>caravaggio-vocazione.webp</td><td>Caravaggio, <i>Vocazione di san Matteo</i>, 1599–1600, Roma</td><td><a href="https://commons.wikimedia.org/wiki/File:Caravaggio,_Michelangelo_Merisi_da_-_The_Calling_of_Saint_Matthew_-_1599-1600_(hi_res).jpg">Commons</a> · pubblico dominio</td></tr>
+        </tbody></table></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-project"><span aria-hidden="true">S</span><p><b>Storia dello sguardo</b><br>09 · La forma perde la quiete</p></div><nav aria-label="Moduli"><a href="../08-rinascimento/">← 08 · Rinascimento</a><a href="../10-caravaggio/">10 · Caravaggio →</a><a href="../../index.html#m09">Home del percorso</a></nav><p>Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lightbox-controls"><h2 id="lightboxTitle" class="sr-only">Visualizzatore dell’opera</h2><button id="zoomOut" type="button" aria-label="Riduci">−</button><button id="zoomReset" type="button">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci">+</button><button id="lightboxClose" type="button" aria-label="Chiudi">×</button></div>
+    <div class="lightbox-stage" id="lightboxStage"><img id="lightboxImage" src="assets/images/pontormo-deposizione.webp" alt=""></div><p id="lightboxCaption"></p>
+  </div>
+</body>
+</html>

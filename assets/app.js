@@ -19,7 +19,8 @@ const liveModules = {
   "05": { href: "PWA/05-cristianesimo-medioevo/index.html", label: "modulo pubblicato" },
   "06": { href: "PWA/06-romanico-gotico/index.html", label: "modulo pubblicato" },
   "07": { href: "PWA/07-giotto/index.html", label: "modulo pubblicato" },
-  "08": { href: "PWA/08-rinascimento/index.html", label: "nuovo modulo" },
+  "08": { href: "PWA/08-rinascimento/index.html", label: "modulo pubblicato" },
+  "09": { href: "PWA/09-manierismo/index.html", label: "nuovo modulo" },
   "10": { href: "PWA/10-caravaggio/index.html", label: "modulo pubblicato" }
 };
 

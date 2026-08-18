@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Icona astratta del modulo: un centro si sdoppia fra diagonali">
+  <rect width="512" height="512" rx="96" fill="#342735"/>
+  <path d="M-30 420 350-25" stroke="#d99aa9" stroke-width="52" opacity=".9"/>
+  <path d="M170 540 540 105" stroke="#a8cda5" stroke-width="35" opacity=".9"/>
+  <circle cx="212" cy="252" r="76" fill="none" stroke="#fff6e8" stroke-width="17"/>
+  <circle cx="307" cy="252" r="76" fill="none" stroke="#91b9d0" stroke-width="17"/>
+  <path d="M256 130v250" stroke="#c84f3d" stroke-width="13" stroke-dasharray="20 18"/>
+</svg>

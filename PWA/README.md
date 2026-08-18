@@ -21,6 +21,7 @@ I percorsi previsti sono già dichiarati in `assets/app.js`; il collegamento vie
 - [06 · La città sale verso la luce — Spazio sacro e nuova società urbana](./06-romanico-gotico/)
 - [07 · Quando l’uomo torna ad abitare lo spazio — Giotto, la rivoluzione dello sguardo](./07-giotto/)
 - [08 · Misurare il mondo — Rinascimento: prospettiva, individuo, ragione](./08-rinascimento/)
+- [09 · La forma perde la quiete — Manierismo: la crisi dell’equilibrio](./09-manierismo/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./10-caravaggio/)
 
 Il modulo 07 inaugura la galleria **Inventare l’uomo moderno**. Mantiene osservazione iniziale, taccuino locale, avanzamento, lightbox accessibile, verifica bloccante con recupero e funzionamento offline; introduce inoltre la scoperta stratificata della tecnica d’affresco, la costruzione progressiva di una scena abitabile, l’analisi degli indizi spaziali, l’isolamento di volto/mani/sguardi/postura/distanza e un confronto per categorie fra Cimabue, Duccio e Giotto.

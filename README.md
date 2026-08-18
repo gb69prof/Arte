@@ -26,6 +26,7 @@ La directory `PWA/` descrive il contratto di navigazione che dovrà essere conse
 - [06 · La città sale verso la luce — Spazio sacro e nuova società urbana](./PWA/06-romanico-gotico/)
 - [07 · Quando l’uomo torna ad abitare lo spazio — Giotto, la rivoluzione dello sguardo](./PWA/07-giotto/)
 - [08 · Misurare il mondo — Rinascimento: prospettiva, individuo, ragione](./PWA/08-rinascimento/)
+- [09 · La forma perde la quiete — Manierismo: la crisi dell’equilibrio](./PWA/09-manierismo/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./PWA/10-caravaggio/)
 
 Il modulo 02 mette in relazione la nascita delle città e degli Stati con scrittura, gerarchie, monumentalità e costruzione visiva dell’autorità. Comprende osservazione iniziale, analisi stratificata delle opere, confronto Mesopotamia/Egitto, salvataggi locali, verifica con recupero, installabilità e uso offline.
