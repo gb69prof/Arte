@@ -1,5 +1,5 @@
 "use strict";
-const CACHE="storia-sguardo-13-v1";
+const CACHE="storia-sguardo-13-v2";
 const PRECACHE=[
   "./","./index.html","./styles.css","./app.js","./manifest.webmanifest",
   "./assets/icons/icon-192.png","./assets/icons/icon-512.png",
