@@ -16,4 +16,5 @@ I percorsi previsti sono già dichiarati in `assets/app.js`; il collegamento vie
 - [01 · Prima dell’arte? — Perché rappresentare ciò che esiste?](./01-prima-dell-arte/)
 - [02 · Dare forma all’ordine — Quando l’immagine diventa potere?](./02-mesopotamia-egitto/)
 - [03 · Inventare la misura — Il corpo tra realtà e ideale](./03-grecia/)
+- [04 · Il volto dell’impero — Individuo, propaganda, monumentalità](./04-ellenismo-roma/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./10-caravaggio/)

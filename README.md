@@ -21,8 +21,11 @@ La directory `PWA/` descrive il contratto di navigazione che dovrà essere conse
 - [01 · Prima dell’arte? — Perché rappresentare ciò che esiste?](./PWA/01-prima-dell-arte/)
 - [02 · Dare forma all’ordine — Quando l’immagine diventa potere?](./PWA/02-mesopotamia-egitto/)
 - [03 · Inventare la misura — Il corpo tra realtà e ideale](./PWA/03-grecia/)
+- [04 · Il volto dell’impero — Individuo, propaganda, monumentalità](./PWA/04-ellenismo-roma/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./PWA/10-caravaggio/)
 
 Il modulo 02 mette in relazione la nascita delle città e degli Stati con scrittura, gerarchie, monumentalità e costruzione visiva dell’autorità. Comprende osservazione iniziale, analisi stratificata delle opere, confronto Mesopotamia/Egitto, salvataggi locali, verifica con recupero, installabilità e uso offline.
 
 Il modulo 03 segue il passaggio dall’ordine che discende dal sovrano alla misura come relazione fra le parti. Attraverso sei testimonianze autentiche della Grecia geometrica, arcaica e classica, interroga il corpo come costruzione religiosa, sociale, politica ed estetica. L’interazione “Dove cade il peso?” confronta simmetria, prima ponderazione e contrapposto; annotazioni, avanzamento, verifica e recuperi restano sul dispositivo.
+
+Il modulo 04 trasferisce la misura greca dentro il sistema politico romano e segue l’allargamento progressivo dal volto al corpo, dal monumento alla città e all’impero. Sei testimonianze mostrano come età, giovinezza, gesto, famiglia, conquista e scala costruiscano l’autorità. L’interazione “Smonta il volto del potere” analizza l’Augusto di Prima Porta; il confronto “Vero, autorevole, divino” distingue dato fisiognomico, selezione, idealizzazione e monumentalità.
