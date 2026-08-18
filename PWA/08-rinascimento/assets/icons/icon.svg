@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Misurare il mondo</title>
+  <desc id="desc">Una finestra prospettica color avorio attraversata da linee che convergono in un punto dorato.</desc>
+  <rect width="512" height="512" rx="92" fill="#123b3a"/>
+  <rect x="76" y="76" width="360" height="360" rx="12" fill="#f2eadb" stroke="#b35b45" stroke-width="18"/>
+  <path d="M76 436 256 256 436 436M76 76l180 180L436 76M76 256h360M256 76v360" fill="none" stroke="#1e2928" stroke-width="11" opacity=".82"/>
+  <circle cx="256" cy="256" r="23" fill="#c99c3c" stroke="#123b3a" stroke-width="9"/>
+</svg>

@@ -25,6 +25,7 @@ La directory `PWA/` descrive il contratto di navigazione che dovrà essere conse
 - [05 · Rendere visibile l’invisibile — L’immagine come soglia](./PWA/05-cristianesimo-medioevo/)
 - [06 · La città sale verso la luce — Spazio sacro e nuova società urbana](./PWA/06-romanico-gotico/)
 - [07 · Quando l’uomo torna ad abitare lo spazio — Giotto, la rivoluzione dello sguardo](./PWA/07-giotto/)
+- [08 · Misurare il mondo — Rinascimento: prospettiva, individuo, ragione](./PWA/08-rinascimento/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./PWA/10-caravaggio/)
 
 Il modulo 02 mette in relazione la nascita delle città e degli Stati con scrittura, gerarchie, monumentalità e costruzione visiva dell’autorità. Comprende osservazione iniziale, analisi stratificata delle opere, confronto Mesopotamia/Egitto, salvataggi locali, verifica con recupero, installabilità e uso offline.
@@ -40,3 +41,5 @@ Il modulo 06 segue il passaggio dall’immagine sacra allo spazio costruito. Rom
 Con il modulo 06 si conclude la prima galleria, **Nascere all’immagine**: l’immagine è diventata città, muro, struttura e luce.
 
 Il modulo 07 apre la seconda galleria, **Inventare l’uomo moderno**. Giotto è studiato senza la scorciatoia del “realismo inventato”: città, nuovi pubblici, committenza, bottega, affresco, corpo, gesto e sguardo concorrono a rendere percettivamente abitabile la parete. Le interazioni “Sotto il colore”, “Fai abitare la scena”, il laboratorio sullo spazio, l’isolamento di gesti e sguardi e il confronto fra le tre Maestà degli Uffizi conducono alla soglia del modulo 08: uno spazio credibile dovrà diventare misurabile.
+
+Il modulo 08 segue la trasformazione dello spazio abitabile in spazio costruito da una regola. Le tavolette perdute di Brunelleschi, il *De pictura* di Alberti e la *Trinità* di Masaccio conducono all’interazione in sette passaggi “Costruisci lo spazio”. Architettura, rilievo, ritratto e città mostrano che la misura produce conoscenza e bellezza, ma assegna anche un posto all’osservatore e può rendere visibili gerarchie e poteri. Due taccuini, confronti per categorie, verifica bloccante con dodici recuperi, accessibilità e uso offline restano sul dispositivo. Il modulo 09 rimane predisposto ma inattivo.

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#123b3a">
+  <meta name="description" content="Prospettiva, individuo e ragione nel Rinascimento: un laboratorio interattivo sul punto di vista.">
+  <title>08 — Misurare il mondo · Rinascimento</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="project-link" href="../../index.html#m08"><span class="project-mark" aria-hidden="true">S</span><span>Storia dello sguardo</span></a>
+    <p class="module-sign"><b>08</b><span>Rinascimento · Prospettiva, individuo, ragione</span></p>
+    <div class="top-actions"><span id="progressText">0 di 13 tappe</span><button id="menuButton" type="button" aria-expanded="false" aria-controls="chapterMenu">Indice</button></div>
+    <progress id="readingProgress" max="13" value="0" aria-label="Avanzamento nel modulo"></progress>
+  </header>
+
+  <aside class="chapter-menu" id="chapterMenu" hidden>
+    <div class="menu-head"><p>Il percorso</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <ol>
+      <li><a href="#guarda" data-menu-step="1"><span>01</span>Guarda prima di sapere</a></li>
+      <li><a href="#misurare" data-menu-step="2"><span>02</span>Da abitare a misurare</a></li>
+      <li><a href="#attori" data-menu-step="3"><span>03</span>Città, corti, denaro e sapere</a></li>
+      <li><a href="#regola" data-menu-step="4"><span>04</span>La ragione ha una storia</a></li>
+      <li><a href="#brunelleschi" data-menu-step="5"><span>05</span>Un esperimento perduto</a></li>
+      <li><a href="#alberti" data-menu-step="6"><span>06</span>La pittura come costruzione</a></li>
+      <li><a href="#costruisci" data-menu-step="7"><span>07</span>Costruisci lo spazio</a></li>
+      <li><a href="#trinità" data-menu-step="8"><span>08</span>La parete diventa architettura</a></li>
+      <li><a href="#fuori-quadro" data-menu-step="9"><span>09</span>La misura esce dal quadro</a></li>
+      <li><a href="#individuo" data-menu-step="10"><span>10</span>L’individuo entra nell’immagine?</a></li>
+      <li><a href="#città" data-menu-step="11"><span>11</span>Misurare la città, mostrare il potere</a></li>
+      <li><a href="#punti-vista" data-menu-step="12"><span>12</span>Un solo punto di vista?</a></li>
+      <li><a href="#verifica" data-menu-step="13"><span>13</span>Verifica e recupero</a></li>
+    </ol>
+  </aside>
+  <div class="menu-scrim" id="menuScrim" hidden></div>
+
+  <main>
+    <section class="first-look tracked" id="guarda" data-step="1">
+      <figure class="opening-art zoomable">
+        <img src="assets/images/opening-architecture.webp" width="1178" height="2200" alt="Una struttura architettonica dipinta racchiude figure collocate su livelli differenti; due persone sono inginocchiate ai lati, un gruppo occupa il centro e uno scheletro appare nella zona inferiore.">
+        <button class="open-image" type="button" aria-label="Ingrandisci la scena iniziale">Osserva da vicino <span aria-hidden="true">↗</span></button>
+      </figure>
+      <div class="first-copy">
+        <p class="step">01 · Guarda prima di sapere</p>
+        <h1>Che cosa accade quando un’immagine pretende di <em>misurare il mondo?</em></h1>
+        <div class="opening-questions" role="group" aria-label="Domande di osservazione">
+          <p>Dove cade per primo il tuo sguardo?</p><p>La parete sembra ancora una superficie?</p><p>Quale figura senti più vicina?</p><p>Dove immagini di trovarti?</p><p>Da quale altezza sembra costruito lo spazio?</p><p>Le figure appartengono allo stesso luogo?</p><p>L’architettura invita a entrare?</p><p>C’è un punto che sembra ordinare tutto?</p>
+        </div>
+        <label class="note-label" for="openingNote"><span>Il tuo primo sguardo</span><small>Resta soltanto su questo dispositivo.</small></label>
+        <textarea id="openingNote" rows="9" placeholder="Vedo…&#10;La parete mi sembra…&#10;Il punto che sembra ordinare la scena è…&#10;Credo di guardare da…&#10;Le figure più vicine a me sono…&#10;L’immagine mi invita a…&#10;Il rapporto fra spazio e corpi mi appare…"></textarea>
+        <p class="save-status" id="openingSave" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="threshold tracked section-pad" id="misurare" data-step="2">
+      <div class="section-index"><span>02</span><p>Da abitare a misurare</p></div>
+      <div class="wide-heading"><div><p class="eyebrow">Dal modulo 07</p><h2>Giotto aveva dato peso ai corpi.<br><em>Ora le distanze diventano verificabili.</em></h2></div><p>La scena giottesca usa piani, sovrapposizioni, scorci, gesti e dimensioni relative. È abitabile senza dipendere da un unico punto di fuga. Il Quattrocento non corregge un errore: formula un problema nuovo, costruire distanze prevedibili da una posizione precisa.</p></div>
+      <div class="memory-bridge">
+        <figure class="zoomable"><img src="assets/images/giotto-memory.webp" width="694" height="676" loading="lazy" alt="Giotto, Incontro alla Porta Aurea: due figure si abbracciano davanti a una porta cittadina."><button class="open-image" type="button">Ingrandisci</button><figcaption>Memoria dal modulo 07 · Uno spazio coerente attraverso piani, corpi, architettura e gesti, senza un solo sistema geometrico.</figcaption></figure>
+        <ol class="change-chain"><li><b>Corpi</b><span>acquistano peso</span></li><li><b>Spazio</b><span>diventa credibile</span></li><li><b>Distanze</b><span>chiedono una regola</span></li><li><b>Immagine</b><span>costruisce un osservatore</span></li></ol>
+      </div>
+      <div class="four-spaces"><article><b>Superficie</b><p>Il muro resta materiale: intonaco, pigmento, limite.</p></article><article><b>Giotto</b><p>Indizi coordinati rendono la scena percorribile con lo sguardo.</p></article><article><b>Prospettiva</b><p>Orizzonte, ortogonali e intervalli organizzano le distanze.</p></article><article><b>Spettatore</b><p>Il corpo reale viene assegnato a una posizione ideale.</p></article></div>
+    </section>
+
+    <section class="actors tracked section-pad dark" id="attori" data-step="3">
+      <div class="section-index light"><span>03</span><p>Città, corti, denaro e sapere</p></div>
+      <div class="wide-heading"><div><p class="eyebrow">Quattrocento · molte Italie</p><h2>Le opere nascono da <em>reti di dipendenze.</em></h2></div><p>Firenze repubblicana, Venezia, Urbino, Mantova, Roma e altri centri competono e circolano. Famiglie, corporazioni, istituzioni religiose, corti e governi finanziano cantieri; botteghe e artigiani trasformano risorse in immagini. La visibilità resta diseguale.</p></div>
+      <div class="actor-layout"><div class="actor-map" id="actorMap" role="group" aria-label="Rete degli attori del Rinascimento"></div><article class="actor-reading" id="actorReading" aria-live="polite"><p>Seleziona un attore. Il “genio” non sparirà, ma tornerà dentro il lavoro, i contratti e le relazioni che lo rendono possibile.</p></article></div>
+      <p class="boundary-note"><b>Un limite sociale.</b> Donne, lavoratori, poveri, stranieri e gruppi subordinati partecipano alla città, ma raramente controllano la committenza o ottengono una memoria monumentale. “L’individuo rinascimentale” non coincide con ogni essere umano.</p>
+    </section>
+
+    <section class="origins tracked section-pad" id="regola" data-step="4">
+      <div class="section-index"><span>04</span><p>La ragione non nasce nel Quattrocento</p></div>
+      <div class="interaction-heading"><div><p class="eyebrow">Diagramma didattico · non genealogia certa</p><h2>Da dove viene <em>una regola?</em></h2></div><p>Geometria antica, ottica, traduzioni, misurazione del terreno, cantiere e bottega preparano problemi comuni. Ibn al-Haytham elaborò una teoria della visione tradotta nel mondo latino; questo documenta una lunga circolazione dell’ottica, non una linea diretta e dimostrata fino a Brunelleschi.</p></div>
+      <div class="roots-lab"><div class="roots-diagram" id="rootsDiagram" role="img" aria-label="Diagramma delle sorgenti culturali della prospettiva"><span class="root-core">Regola<br>pittorica</span></div><div><div class="root-buttons" id="rootButtons"></div><div class="lab-reading" id="rootReading" role="status" aria-live="polite">Attiva i sette nodi. Le connessioni indicano convergenze possibili, non rapporti causali automatici.</div></div></div>
+      <div class="evidence-legend"><span><i class="document"></i>testo o oggetto conservato</span><span><i class="continuity"></i>continuità culturale</span><span><i class="hypothesis"></i>ipotesi storiografica</span></div>
+    </section>
+
+    <section class="experiment tracked" id="brunelleschi" data-step="5">
+      <figure class="experiment-art zoomable"><img src="assets/images/florence-baptistery.webp" width="1600" height="1357" loading="lazy" alt="Il Battistero di San Giovanni a Firenze visto dalla piazza, con rivestimento geometrico in marmo bianco e verde."><button class="open-image" type="button">Ingrandisci il Battistero</button><figcaption>Il Battistero di Firenze, soggetto della prima tavoletta ricordata dalle fonti. Fotografia contemporanea, non l’oggetto sperimentale perduto.</figcaption></figure>
+      <div class="experiment-copy section-pad dark">
+        <div class="section-index light"><span>05</span><p>Brunelleschi · un esperimento che non possediamo più</p></div>
+        <p class="eyebrow">Firenze · prima metà del Quattrocento</p><h2>Funziona soltanto <em>da qui.</em></h2>
+        <p>Antonio Manetti, negli anni Ottanta del Quattrocento, descrive una piccola tavola del Battistero osservata dal retro attraverso un foro e riflessa in uno specchio. Le tavolette non sono conservate; ricostruiamo procedura e significato confrontando testimonianze successive.</p>
+        <div class="reconstruction-label">Ricostruzione didattica basata sulle testimonianze disponibili; l’originale non è conservato.</div>
+        <div class="mirror-lab"><div class="mirror-stage" id="mirrorStage" data-position="side"><span class="viewer-dot" aria-hidden="true"></span><span class="panel-shape" aria-hidden="true">tavola<br>+ foro</span><span class="mirror-shape" aria-hidden="true">specchio</span><span class="building-shape" aria-hidden="true">Battistero</span></div><div><div class="position-buttons" id="positionButtons"></div><div class="lab-reading inverse" id="positionReading" role="status" aria-live="polite"></div></div></div>
+      </div>
+    </section>
+
+    <section class="alberti tracked section-pad" id="alberti" data-step="6">
+      <div class="section-index"><span>06</span><p>Alberti · la pittura come costruzione</p></div>
+      <div class="alberti-grid">
+        <div><p class="eyebrow">De pictura · 1435 in latino, 1436 circa in volgare</p><h2>Una finestra è anche <em>un confine.</em></h2><p>Alberti organizza in un trattato destinato a grande influenza il rapporto fra piramide visiva, piano dell’immagine, pavimento, proporzione delle figure e composizione della storia. Non “inventa tutto”: traduce problemi teorici e pratici in un metodo comunicabile.</p><p>La superficie è pensata come intersezione della piramide visiva. La metafora della finestra comporta selezione: stabilisce un davanti e un dietro, rende visibile una parte del mondo e ne lascia un’altra fuori.</p>
+          <div class="vision-diagram" role="img" aria-label="Diagramma teorico del principio albertiano"><span class="eye">occhio</span><span class="picture-plane">piano<br>dell’immagine</span><span class="world">spazio<br>costruito</span><i class="ray r1"></i><i class="ray r2"></i><i class="ray r3"></i></div><p class="diagram-note">Diagramma teorico: le linee rappresentano relazioni geometriche, non raggi fisici visibili nell’aria.</p>
+        </div>
+        <figure class="zoomable"><img src="assets/images/alberti-facade.webp" width="1067" height="1600" loading="lazy" alt="Facciata di Santa Maria Novella a Firenze, rivestita di marmo bianco e verde e organizzata da proporzioni geometriche."><button class="open-image" type="button">Ingrandisci</button><figcaption>Leon Battista Alberti, completamento della facciata di Santa Maria Novella, su commissione di Giovanni Rucellai, dal 1458 circa. La geometria unisce parti costruite in epoche diverse.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="perspective tracked section-pad dark" id="costruisci" data-step="7">
+      <div class="section-index light"><span>07</span><p>Interazione principale · Costruisci lo spazio</p></div>
+      <div class="interaction-heading"><div><p class="eyebrow">Sette decisioni</p><h2>La profondità non compare.<br><em>La costruisci.</em></h2></div><p>Procedi per passaggi, poi altera orizzonte e punto di fuga. Ogni operazione è tecnica e culturale insieme: stabilisce che cosa diventa coerente e da dove deve essere guardato.</p></div>
+      <div class="perspective-lab">
+        <div class="perspective-stage" id="perspectiveStage" role="group" aria-label="Ambiente prospettico in costruzione">
+          <svg id="perspectiveSvg" viewBox="0 0 900 620" role="img" aria-labelledby="perspectiveTitle perspectiveDesc">
+            <title id="perspectiveTitle">Costruzione interattiva di un ambiente prospettico</title><desc id="perspectiveDesc">Una cornice, un orizzonte, un punto di fuga e linee geometriche organizzano un pavimento e figure di dimensioni decrescenti.</desc>
+            <rect class="frame-line" x="70" y="55" width="760" height="500" rx="4"/>
+            <line class="horizon-line" x1="70" x2="830" y1="260" y2="260"/>
+            <g class="orthogonal-lines"></g><g class="transversal-lines"></g>
+            <circle class="vanishing-point" cx="450" cy="260" r="10"/>
+            <g class="lab-figures"><path d="M235 430a22 22 0 1 0 0-44 22 22 0 0 0 0 44m-30 105 12-92h36l12 92z"/><path d="M600 350a12 12 0 1 0 0-24 12 12 0 0 0 0 24m-17 58 7-49h20l7 49z"/></g>
+            <text class="viewer-label" x="450" y="600" text-anchor="middle">posizione dello spettatore</text><path class="viewer-mark" d="M430 580h40m-20-20v40"/>
+          </svg>
+          <p class="stage-status" id="perspectiveEquivalent">La cornice è visibile; gli altri elementi attendono di essere costruiti.</p>
+        </div>
+        <div class="perspective-controls">
+          <div class="step-meter"><span id="buildCount">0 / 7 passaggi completati</span><button id="buildReset" type="button">Ripristina</button></div>
+          <ol class="build-steps" id="buildSteps"></ol>
+          <fieldset><legend>Altezza dell’orizzonte</legend><div id="horizonControls" class="segmented"></div></fieldset>
+          <fieldset><legend>Posizione del punto di fuga</legend><div id="vanishingControls" class="segmented"></div></fieldset>
+          <div class="lab-toggles"><button id="toggleOrtho" type="button" aria-pressed="true">Ortogonali</button><button id="toggleTrans" type="button" aria-pressed="true">Trasversali</button><button id="toggleCoherence" type="button" aria-pressed="false">Rendi incoerente</button></div>
+          <article class="rule-reading" id="buildReading" aria-live="polite"><h3>Costruisci il primo passaggio</h3><p>Scegli “cornice” per distinguere la superficie reale dal mondo rappresentato.</p></article>
+        </div>
+      </div>
+      <blockquote>La prospettiva non si limita ad aggiungere profondità. Costruisce il mondo rappresentato in relazione a un osservatore determinato. Un unico punto di fuga è una regola storica potente, non il modo naturale e inevitabile di vedere.</blockquote>
+    </section>
+
+    <section class="trinity tracked section-pad" id="trinità" data-step="8">
+      <div class="section-index"><span>08</span><p>La parete diventa architettura</p></div>
+      <div class="wide-heading"><div><p class="eyebrow">Ritorno all’opera · identificazione ancora sospesa</p><h2>Dove devi stare perché <em>la parete si apra?</em></h2></div><p>La geometria non è una dimostrazione separata dal significato. Collega pavimento reale, committenti, spazio sacro e sepolcro; fa coincidere il luogo del fedele con una successione verticale fra morte e salvezza.</p></div>
+      <div class="trinity-lab">
+        <figure class="trinity-stage zoomable" id="trinityStage"><img src="assets/images/opening-architecture.webp" width="1178" height="2200" loading="lazy" alt="Una grande architettura dipinta contiene una scena sacra sopra un sepolcro con scheletro; due figure inginocchiate stanno ai margini."><div class="trinity-overlay" aria-hidden="true"><span data-trinity="floor"></span><span data-trinity="eye"></span><span data-trinity="vanish"></span><span data-trinity="orthogonals"></span><span data-trinity="donors"></span><span data-trinity="sacred"></span><span data-trinity="tomb"></span></div><button class="open-image" type="button">Ingrandisci l’opera</button></figure>
+        <div><div class="layer-buttons" id="trinityButtons"></div><article class="lab-reading" id="trinityReading" aria-live="polite">Attiva il pavimento reale della chiesa: l’illusione comincia mettendo in rapporto immagine e corpo.</article><p class="boundary-note"><b>Dato e interpretazione.</b> La convergenza delle linee può essere verificata; il modo in cui essa articola morte, mediazione e salvezza richiede una lettura storica. L’identità dei committenti non è accertata definitivamente.</p></div>
+      </div>
+    </section>
+
+    <section class="media tracked section-pad" id="fuori-quadro" data-step="9">
+      <div class="section-index"><span>09</span><p>La misura esce dal quadro</p></div>
+      <div class="interaction-heading"><div><p class="eyebrow">Confronto · La profondità senza una tela</p><h2>Una cultura visuale attraversa <em>materie diverse.</em></h2></div><p>Architettura, rilievo e pittura condividono proporzione e organizzazione dello spazio, ma non diventano la stessa cosa. Scegli il caso e la categoria.</p></div>
+      <div class="media-lab"><div class="media-tabs" id="mediaTabs" role="tablist" aria-label="Opere da confrontare"></div><div class="media-display"><figure class="zoomable"><img id="mediaImage" src="assets/images/innocenti-loggia.webp" width="1800" height="1013" loading="lazy" alt="Loggiato dell’Ospedale degli Innocenti a Firenze, scandito da colonne e archi regolari."><button class="open-image" type="button">Ingrandisci</button><figcaption id="mediaCaption"></figcaption></figure><div><div class="category-buttons" id="mediaCategories"></div><article class="comparison-reading" id="mediaReading" aria-live="polite"></article></div></div></div>
+    </section>
+
+    <section class="portrait tracked" id="individuo" data-step="10">
+      <figure class="portrait-art zoomable"><img src="assets/images/urbino-diptych.webp" width="2000" height="1366" loading="lazy" alt="Due ritratti di profilo, una donna e un uomo riccamente vestiti, si fronteggiano davanti a un paesaggio continuo."><div class="portrait-guides" aria-hidden="true"><span data-portrait="face"></span><span data-portrait="dress"></span><span data-portrait="landscape"></span><span data-portrait="pair"></span><span data-portrait="absence"></span></div><button class="open-image" type="button">Ingrandisci il dittico</button><figcaption>Piero della Francesca, Federico da Montefeltro e Battista Sforza, 1465–1472 circa, tempera su tavola, Gallerie degli Uffizi. Il retro reca trionfi allegorici e iscrizioni latine.</figcaption></figure>
+      <div class="portrait-copy section-pad dark"><div class="section-index light"><span>10</span><p>L’individuo entra nell’immagine?</p></div><p class="eyebrow">Persona, ruolo o immagine?</p><h2>Il ritratto non consegna una persona <em>senza mediazioni.</em></h2><p>Profilo, abiti, paesaggio, iscrizioni e relazione fra i coniugi costruiscono rango, territorio, memoria dinastica e virtù. Il volto non autorizza una diagnosi psicologica.</p><div class="portrait-buttons" id="portraitButtons"></div><article class="lab-reading inverse" id="portraitReading" aria-live="polite">Isola un elemento e chiedi non soltanto “chi è?”, ma “che cosa questa immagine vuole rendere credibile?”.</article></div>
+    </section>
+
+    <section class="power tracked section-pad" id="città" data-step="11">
+      <div class="section-index"><span>11</span><p>Misurare la città, rappresentare il potere</p></div>
+      <figure class="city-art zoomable"><img src="assets/images/ideal-city.webp" width="2200" height="633" loading="lazy" alt="Una piazza perfettamente ordinata dalla pavimentazione prospettica, con edificio circolare al centro e palazzi simmetrici ai lati; quasi nessuna persona è presente."><div class="city-guides" aria-hidden="true"><span data-city="center"></span><span data-city="axes"></span><span data-city="access"></span><span data-city="void"></span><span data-city="margins"></span></div><button class="open-image" type="button">Ingrandisci la città</button><figcaption>Anonimo artista dell’Italia centrale, cosiddetta <i>Città ideale</i>, ultimo quarto del XV secolo, tempera e olio su tavola, Galleria Nazionale delle Marche. L’attribuzione a Piero della Francesca non è accettata come certezza.</figcaption></figure>
+      <div class="power-grid"><div><p class="eyebrow">Ordinare significa anche governare?</p><h2>La piazza è vuota.<br><em>Il potere, no.</em></h2><p>Assi, accessi, edifici dominanti e proporzioni rendono lo spazio leggibile e celebrabile. Non sappiamo se la tavola descrivesse un progetto realizzabile: può elaborare un ideale politico e visivo più che un piano urbanistico.</p><p>Misurare può rendere costruibile, comunicabile e bello; può anche stabilire gerarchie. Prospettiva, cartografia e dominio politico non sono la stessa cosa, ma possono entrare nella medesima cultura dell’ordine.</p></div><div><div class="city-buttons" id="cityButtons"></div><article class="lab-reading" id="cityReading" aria-live="polite">Seleziona un elemento della piazza. Cerca anche ciò che manca.</article></div></div>
+    </section>
+
+    <section class="viewpoints tracked section-pad dark" id="punti-vista" data-step="12">
+      <div class="section-index light"><span>12</span><p>Un solo punto di vista?</p></div>
+      <div class="wide-heading"><div><p class="eyebrow">Quattro opere · nessuna classifica</p><h2>La coerenza geometrica non coincide con <em>la qualità artistica.</em></h2></div><p>Ogni opera seleziona regole coerenti con funzione, supporto e pubblico. Anche una costruzione rigorosa può restare semanticamente enigmatica; ciò che sfugge al sistema non è necessariamente un errore.</p></div>
+      <div class="final-compare"><div class="work-tabs" id="workTabs" role="tablist" aria-label="Opere del confronto conclusivo"></div><div class="final-display"><figure class="zoomable"><img id="finalImage" src="assets/images/giotto-memory.webp" width="694" height="676" loading="lazy" alt="Scena di Giotto davanti a una porta cittadina."><button class="open-image" type="button">Ingrandisci</button><figcaption id="finalCaption"></figcaption></figure><div><div class="category-buttons" id="finalCategories"></div><article class="comparison-reading" id="finalReading" aria-live="polite"></article></div></div></div>
+      <blockquote>Se il mondo dipende dal luogo dal quale viene guardato, quanto può essere davvero universale la sua misura?</blockquote>
+
+      <div class="return-look">
+        <div class="return-heading"><p class="eyebrow">Ritorno all’immagine iniziale</p><h2>Ora l’opera può <em>dire il proprio nome.</em></h2></div>
+        <div class="return-grid"><figure class="zoomable"><img src="assets/images/opening-architecture.webp" width="1178" height="2200" loading="lazy" alt="Masaccio, Trinità: affresco con architettura prospettica, figure sacre e committenti sopra un sepolcro con scheletro."><button class="open-image" type="button">Ingrandisci la Trinità</button><figcaption><b>Masaccio, <i>Trinità</i></b>, 1425–1426 circa, affresco, Basilica di Santa Maria Novella, Firenze. Nascosta nel XVI secolo dietro un altare vasariano, riscoperta nell’Ottocento e ricomposta nella posizione attuale nel 1952. Identità dei committenti e assetto originario restano discussi.</figcaption></figure><div class="return-copy"><div class="memory-card"><span>Il tuo primo sguardo</span><p id="openingMemory">Non hai ancora scritto un’annotazione.</p></div><label class="note-label" for="returnNote"><span>Guarda di nuovo</span><small>Resta soltanto su questo dispositivo.</small></label><textarea id="returnNote" rows="12" placeholder="Avevo riconosciuto…&#10;Avevo interpretato troppo presto…&#10;Ora individuo il punto di fuga in…&#10;La posizione assegnata allo spettatore è…&#10;La geometria rende visibile…&#10;La geometria lascia fuori…&#10;Le figure appartengono allo stesso spazio perché…&#10;La misura produce significato quando…&#10;Ora penso che “misurare il mondo” significhi…"></textarea><p class="save-status" id="returnSave" role="status" aria-live="polite"></p></div></div>
+      </div>
+    </section>
+
+    <section class="quiz tracked section-pad" id="verifica" data-step="13">
+      <div class="quiz-intro"><div class="section-index"><span>13</span><p>Verifica e recupero</p></div><p class="eyebrow">Dodici relazioni, non dodici date</p><h2>Hai trovato <em>il tuo punto?</em></h2><p>Un errore apre un recupero diverso e blocca la prosecuzione finché il collegamento non viene ricostruito. Il blocco resta attivo anche dopo il reload.</p><progress id="quizMeter" class="quiz-meter" max="12" value="0" aria-label="Avanzamento della verifica"></progress><p class="quiz-count" id="quizCount">Domanda 1 di 12</p></div>
+      <div id="quizArea" aria-live="polite"></div>
+    </section>
+
+    <section class="conclusion section-pad" aria-labelledby="conclusionTitle"><p class="step">Soglia · verso il modulo 09</p><h2 id="conclusionTitle">Il Rinascimento ha dato al mondo una misura e all’osservatore un posto.</h2><p>Lo spazio viene costruito attraverso regole che collegano immagine, distanza e posizione di chi guarda. Il mondo appare ordinabile, ma quell’ordine dipende sempre da dove qualcuno viene collocato.</p><p class="next-line">Ogni ordine contiene già la possibilità di essere spezzato.</p><div class="next-module" aria-disabled="true"><span>Prossimo modulo · non ancora attivo</span><b>09 — La forma perde la quiete</b><small>Manierismo · La crisi dell’equilibrio</small></div><a href="../../index.html#m08">Torna a Storia dello sguardo</a></section>
+
+    <section class="sources section-pad" aria-labelledby="sourcesTitle">
+      <div><p class="eyebrow">Ricerca e trasparenza</p><h2 id="sourcesTitle">Fonti, opere, <em>licenze.</em></h2><p>Le fonti distinguono oggetti conservati, documenti, testimonianze successive e interpretazioni. Wikimedia Commons è usato per reperire riproduzioni e licenze, non come fondamento storico.</p></div>
+      <div class="source-columns">
+        <div><h3>Fonti storico-artistiche</h3>
+          <p><a href="https://www.smn.it/en/artworks/masaccios-holy-trinity/">Santa Maria Novella · Trinità di Masaccio</a></p>
+          <p><a href="https://www.nationalgallery.org.uk/research/publications/exhibition-catalogues/building-the-picture/place-making/introduction">National Gallery · Brunelleschi, Manetti e le tavolette perdute</a></p>
+          <p><a href="https://wwwhomes.uni-bielefeld.de/jgrave/publ/brunelleschi_alt.pdf">Università di Bielefeld · Brunelleschi’s perspective panels</a></p>
+          <p><a href="https://employees.oneonta.edu/farberas/arth/arth213/alberti_on_painting.html">SUNY Oneonta · Alberti, <i>On Painting</i>, estratti</a></p>
+          <p><a href="https://www.uffizi.it/en/online-exhibitions/vanished-florence">Gallerie degli Uffizi · facciata di Santa Maria Novella</a></p>
+          <p><a href="https://www.museodegliinnocenti.it/">Museo degli Innocenti · percorso architettura</a></p>
+          <p><a href="https://operaduomo.siena.it/il-restauro-del-fonte-battesimale-di-jacopo-della-quercia/">Opera del Duomo di Siena · fonte battesimale e Donatello</a></p>
+          <p><a href="https://www.nationalgallery.org.uk/paintings/paolo-uccello-the-battle-of-san-romano">National Gallery · Paolo Uccello, Battaglia di San Romano</a></p>
+          <p><a href="https://gndm.it/opere/flagellazione/">Galleria Nazionale delle Marche · Flagellazione</a></p>
+          <p><a href="https://gndm.it/opere/citta-ideale/">Galleria Nazionale delle Marche · Città ideale</a></p>
+          <p><a href="https://www.uffizi.it/en/artworks/the-duke-and-duchess-of-urbino-federico-da-montefeltro-and-battista-sforza">Gallerie degli Uffizi · Federico e Battista</a></p>
+        </div>
+        <div><h3>Storia della visione e contesto</h3>
+          <p><a href="https://plato.stanford.edu/archives/fall2025/entries/skepticism-medieval/">Stanford Encyclopedia of Philosophy · Ibn al-Haytham e ricezione latina</a></p>
+          <p><a href="https://www.cambridge.org/core/journals/european-review/article/perspective-arab-mathematics-and-renaissance-western-art/A6765BA6B15BDDE3E839B36964EE4860">Cambridge University Press · ottica araba e prospettiva</a></p>
+          <p><a href="https://www.metmuseum.org/toah/ht/08/eustc">Metropolitan Museum · Firenze e Italia centrale, 1400–1600</a></p>
+          <p><a href="https://www.nationalgallery.org.uk/behind-the-scenes/behind-the-scenes-in-conservation-uccello-s-the-battle-of-san-romano">National Gallery · conservazione della Battaglia di San Romano</a></p>
+          <p><a href="https://operaduomo.siena.it/il-fonte-battesimale-di-siena-il-restauro/">Opera del Duomo di Siena · conservazione del Banchetto di Erode</a></p>
+        </div>
+        <div class="works-register"><h3>Registro delle immagini locali</h3><div class="register-scroll"><table><thead><tr><th>File locale</th><th>Opera / soggetto</th><th>Fonte e licenza</th></tr></thead><tbody>
+          <tr><td>opening-architecture.webp</td><td>Masaccio, <i>Trinità</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Masaccio_-_Trinity_-_Santa_Maria_Novella.jpg">Wikimedia Commons</a> · pubblico dominio</td></tr>
+          <tr><td>giotto-memory.webp</td><td>Giotto e bottega, <i>Incontro alla Porta Aurea</i></td><td><a href="https://commons.wikimedia.org/">Wikimedia Commons</a> · pubblico dominio; già registrata nel modulo 07</td></tr>
+          <tr><td>florence-baptistery.webp</td><td>Battistero di Firenze</td><td><a href="https://commons.wikimedia.org/wiki/File:Battistero_Firenze.jpg">Wikimedia Commons</a> · CC BY-SA 3.0</td></tr>
+          <tr><td>innocenti-loggia.webp</td><td>Ospedale degli Innocenti</td><td><a href="https://commons.wikimedia.org/wiki/File:Ospedale_degli_Innocenti_-_Exterior_arcade.jpg">Wikimedia Commons</a> · CC BY-SA 4.0</td></tr>
+          <tr><td>alberti-facade.webp</td><td>Facciata di Santa Maria Novella</td><td><a href="https://commons.wikimedia.org/wiki/File:Firenze_-_Florence_-_Piazza_Santa_Maria_Novella_-_Basilica_di_Santa_Maria_Novella_-_Fa%C3%A7ade_1470_by_Leon_Battista_Alberti_-_April_2010_02.jpg">Wikimedia Commons</a> · CC BY-SA 4.0</td></tr>
+          <tr><td>donatello-feast.webp</td><td>Donatello, <i>Banchetto di Erode</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Donatello,_banchetto_di_erode,_1427,_11.JPG">Wikimedia Commons</a> · CC BY 3.0</td></tr>
+          <tr><td>uccello-san-romano.webp</td><td>Paolo Uccello, <i>Battaglia di San Romano</i></td><td><a href="https://commons.wikimedia.org/wiki/File:San_Romano_Battle_(Paolo_Uccello,_London)_01.jpg">Wikimedia Commons</a> · pubblico dominio</td></tr>
+          <tr><td>piero-flagellation.webp</td><td>Piero della Francesca, <i>Flagellazione</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Piero_della_Francesca_042.jpg">Wikimedia Commons</a> · pubblico dominio</td></tr>
+          <tr><td>urbino-diptych.webp</td><td>Piero della Francesca, Federico e Battista</td><td><a href="https://commons.wikimedia.org/wiki/File:Double_portrait_of_the_Dukes_of_Urbino.jpg">Wikimedia Commons</a> · CC BY-SA 4.0</td></tr>
+          <tr><td>ideal-city.webp</td><td>Anonimo, <i>Città ideale</i></td><td><a href="https://commons.wikimedia.org/wiki/File:Formerly_Piero_della_Francesca_-_Ideal_City_-_Galleria_Nazionale_delle_Marche_Urbino.jpg">Wikimedia Commons</a> · pubblico dominio</td></tr>
+        </tbody></table></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-project"><span class="project-mark" aria-hidden="true">S</span><p><b>Storia dello sguardo</b><br>08 · Misurare il mondo</p></div><nav aria-label="Moduli"><a href="../07-giotto/">← 07 · Giotto</a><span aria-disabled="true">09 · Manierismo — non attivo</span><a href="../../index.html#m08">Home del percorso</a></nav><p>Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lightbox-controls"><h2 id="lightboxTitle" class="sr-only">Visualizzatore dell’opera</h2><button id="zoomOut" type="button" aria-label="Riduci">−</button><button id="zoomReset" type="button">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci">+</button><button id="lightboxClose" class="lightbox-close" type="button" aria-label="Chiudi">×</button></div>
+    <div class="lightbox-stage" id="lightboxStage"><img id="lightboxImage" src="assets/images/opening-architecture.webp" alt=""></div><p id="lightboxCaption"></p>
+  </div>
+</body>
+</html>

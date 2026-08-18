@@ -1,0 +1,16 @@
+{
+  "name": "08 — Misurare il mondo · Rinascimento",
+  "short_name": "Misurare il mondo",
+  "description": "Che cosa accade quando un’immagine pretende di misurare il mondo?",
+  "lang": "it",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f2eadb",
+  "theme_color": "#123b3a",
+  "icons": [
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
