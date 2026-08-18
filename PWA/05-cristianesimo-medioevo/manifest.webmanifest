@@ -1,0 +1,16 @@
+{
+  "name": "05 — Rendere visibile l’invisibile · Cristianesimo e primo Medioevo",
+  "short_name": "L’immagine come soglia",
+  "description": "Come può una materia visibile rinviare a una realtà che non coincide interamente con la materia?",
+  "lang": "it",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#171714",
+  "theme_color": "#171714",
+  "icons": [
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
