@@ -9,8 +9,8 @@ Non una successione di artisti, opere e date, ma una storia dell’uomo attraver
 ## Architettura
 
 - **Nascere all’immagine** — dalla Preistoria al Gotico
-- **Inventare l’uomo moderno** — da Giotto al Barocco
-- **Rivoluzioni dello sguardo** — dal Neoclassicismo al Postimpressionismo
+- **Inventare l’uomo moderno** — da Giotto al Romanticismo
+- **Rivoluzioni dello sguardo** — dal Realismo al Postimpressionismo
 - **Frammentare il reale** — dalle avanguardie ai totalitarismi
 - **Le immagini che ci abitano** — dal Dopoguerra all’arte digitale e all’IA
 
@@ -28,6 +28,7 @@ La directory `PWA/` descrive il contratto di navigazione che dovrà essere conse
 - [08 · Misurare il mondo — Rinascimento: prospettiva, individuo, ragione](./PWA/08-rinascimento/)
 - [09 · La forma perde la quiete — Manierismo: la crisi dell’equilibrio](./PWA/09-manierismo/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./PWA/10-caravaggio/)
+- [11 · La bellezza diventa virtù — Neoclassicismo: arte, ragione, cittadinanza](./PWA/11-neoclassicismo/)
 
 Il modulo 02 mette in relazione la nascita delle città e degli Stati con scrittura, gerarchie, monumentalità e costruzione visiva dell’autorità. Comprende osservazione iniziale, analisi stratificata delle opere, confronto Mesopotamia/Egitto, salvataggi locali, verifica con recupero, installabilità e uso offline.
 
@@ -43,4 +44,10 @@ Con il modulo 06 si conclude la prima galleria, **Nascere all’immagine**: l’
 
 Il modulo 07 apre la seconda galleria, **Inventare l’uomo moderno**. Giotto è studiato senza la scorciatoia del “realismo inventato”: città, nuovi pubblici, committenza, bottega, affresco, corpo, gesto e sguardo concorrono a rendere percettivamente abitabile la parete. Le interazioni “Sotto il colore”, “Fai abitare la scena”, il laboratorio sullo spazio, l’isolamento di gesti e sguardi e il confronto fra le tre Maestà degli Uffizi conducono alla soglia del modulo 08: uno spazio credibile dovrà diventare misurabile.
 
-Il modulo 08 segue la trasformazione dello spazio abitabile in spazio costruito da una regola. Le tavolette perdute di Brunelleschi, il *De pictura* di Alberti e la *Trinità* di Masaccio conducono all’interazione in sette passaggi “Costruisci lo spazio”. Architettura, rilievo, ritratto e città mostrano che la misura produce conoscenza e bellezza, ma assegna anche un posto all’osservatore e può rendere visibili gerarchie e poteri. Due taccuini, confronti per categorie, verifica bloccante con dodici recuperi, accessibilità e uso offline restano sul dispositivo. Il modulo 09 rimane predisposto ma inattivo.
+Il modulo 08 segue la trasformazione dello spazio abitabile in spazio costruito da una regola. Le tavolette perdute di Brunelleschi, il *De pictura* di Alberti e la *Trinità* di Masaccio conducono all’interazione in sette passaggi “Costruisci lo spazio”. Architettura, rilievo, ritratto e città mostrano che la misura produce conoscenza e bellezza, ma assegna anche un posto all’osservatore e può rendere visibili gerarchie e poteri. Due taccuini, confronti per categorie, verifica bloccante con dodici recuperi, accessibilità e uso offline restano sul dispositivo.
+
+Il modulo 09 segue la crisi dell’equilibrio rinascimentale nel Manierismo. Pontormo, Rosso Fiorentino, Parmigianino, Bronzino, Giulio Romano, Giambologna e Fontainebleau mostrano che la regola non viene dimenticata: viene resa instabile, artificiale, colta, cortigiana e problematica. Laboratori su centro, corpo, colore, architettura, ritratto e confronto finale preparano il modulo 10: la tensione entrerà nello spazio dello spettatore come luce, corpo reale e persuasione.
+
+Il modulo 10 affronta Caravaggio e il Barocco come soglia in cui il sacro entra nella strada. Corpi comuni, luce selettiva, decoro, committenza e rifiuto mostrano che l’immagine non illustra soltanto: coinvolge, persuade, include o disturba. La conclusione lascia aperta la domanda che il modulo 11 riprende: se l’immagine può persuadere, può anche educare?
+
+Il modulo 11 studia il Neoclassicismo come progetto educativo, morale e politico della bellezza. David, Winckelmann, Canova, Angelica Kauffman, Marat, Napoleone, museo moderno e soglia goyesca mostrano che la forma ordinata può rendere visibili disciplina, sacrificio, cittadinanza e virtù, ma anche esclusioni, propaganda, mito imperiale e spoliazione. Comprende tredici sezioni, cronologia interattiva, rete causale, laboratori su composizione morale, linea, corpo ideale, virtù di genere, Marat, immagine napoleonica, circolazione museale, confronto conclusivo, due taccuini persistenti, lightbox accessibile, verifica bloccante con dodici recuperi e uso offline.

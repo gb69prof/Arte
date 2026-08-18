@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#171717">
+  <meta name="description" content="La bellezza diventa virtù: PWA didattica sul Neoclassicismo, fra arte, ragione e cittadinanza.">
+  <title>11 · La bellezza diventa virtù — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="topbar">
+    <a class="back" href="../../index.html#m11"><span aria-hidden="true">←</span> Storia dello sguardo</a>
+    <div class="top-actions"><span id="progressText">0 di 13 tappe</span><button id="menuButton" type="button" aria-expanded="false" aria-controls="chapterMenu">Indice</button></div>
+    <progress id="readingProgress" max="13" value="0" aria-label="Avanzamento nel modulo"></progress>
+  </header>
+
+  <aside class="chapter-menu" id="chapterMenu" hidden aria-label="Indice delle tredici sezioni">
+    <div class="menu-head"><p>La bellezza diventa virtù</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#prima"><span>01</span>Prima di sapere</a></li>
+      <li><a href="#mondo"><span>02</span>Il mondo precedente</a></li>
+      <li><a href="#settecento"><span>03</span>Il Settecento reinventa l’antico</a></li>
+      <li><a href="#neoclassico"><span>04</span>Che cosa significa neoclassico?</a></li>
+      <li><a href="#orazi"><span>05</span>Laboratorio della composizione morale</a></li>
+      <li><a href="#linea"><span>06</span>La linea disciplina il corpo</a></li>
+      <li><a href="#canova"><span>07</span>Il corpo ideale</a></li>
+      <li><a href="#virtu"><span>08</span>Chi può rappresentare la virtù?</a></li>
+      <li><a href="#marat"><span>09</span>La Rivoluzione costruisce le proprie immagini</a></li>
+      <li><a href="#potere"><span>10</span>Dalla virtù al potere</a></li>
+      <li><a href="#museo"><span>11</span>Museo, accademia e cittadino</a></li>
+      <li><a href="#confronto"><span>12</span>Laboratorio conclusivo: quale virtù?</a></li>
+      <li><a href="#ritorno"><span>13</span>Ritorno all’immagine</a></li>
+    </ol></nav>
+    <button class="reset-state" id="resetState" type="button">Azzera tutto sul dispositivo</button>
+  </aside>
+  <div class="menu-scrim" id="menuScrim" hidden></div>
+
+  <main id="contenuto">
+    <section class="opening tracked" id="prima" data-step="1" aria-labelledby="openingTitle">
+      <figure class="opening-art zoomable">
+        <img src="assets/images/orazi.webp" width="1292" height="1001" alt="Tre uomini tendono il braccio verso tre spade rette da un padre; a destra alcune donne sedute si raccolgono nel dolore.">
+        <button class="open-image" type="button">Apri l’opera</button>
+      </figure>
+      <div class="opening-copy">
+        <p class="eyebrow">11 · Neoclassicismo — prima di sapere</p>
+        <h1 id="openingTitle">Può la bellezza insegnarci come vivere?</h1>
+        <p class="opening-lead">Non leggere ancora titolo e autore. Guarda il gesto. Qui l’immagine non chiede solo di provare emozione: chiede di prendere posizione.</p>
+        <ul class="look-list">
+          <li>Quale gesto governa la scena?</li><li>Dove sono concentrate le linee?</li><li>Perché uomini e donne occupano spazi differenti?</li><li>Il dolore è pubblico o privato?</li><li>L’architettura partecipa alla decisione?</li><li>Quale valore pesa di più: famiglia o città?</li>
+        </ul>
+        <label class="note-label" for="openingNote"><span>Il tuo primo sguardo</span><small>Salvato solo su questo dispositivo.</small></label>
+        <textarea id="openingNote" rows="8" placeholder="All’inizio vedo...&#10;Il gesto centrale mi sembra...&#10;Gli uomini e le donne sono separati perché...&#10;La scena mi chiede di..."></textarea>
+        <p class="save-status" id="openingSave" role="status" aria-live="polite"></p>
+        <a class="scroll-link" href="#mondo">Entra nella domanda ↓</a>
+      </div>
+    </section>
+
+    <section class="tracked section-pad previous" id="mondo" data-step="2">
+      <div class="section-index"><span>02</span><p>Il mondo precedente: piacere, luce, persuasione</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Dal modulo 10</p><h2>Il Barocco aveva trasformato l’immagine in presenza. <em>Ora la persuasione viene messa sotto disciplina.</em></h2></div><p>Il Neoclassicismo non nasce come semplice “ritorno all’antico”. Nasce dentro una domanda più severa: se l’immagine può muovere gli affetti, può anche educare? Può formare un cittadino?</p></div>
+      <div class="rococo-compare">
+        <figure class="zoomable"><img src="assets/images/fragonard-altalena.webp" width="1434" height="1800" loading="lazy" alt="Fragonard, L'altalena: una giovane donna in abito rosa oscilla in un giardino, osservata da un giovane nascosto."><button class="open-image" type="button">Apri Fragonard</button><figcaption>Jean-Honoré Fragonard, <i>L’altalena</i>, 1767, The Wallace Collection, Londra.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/orazi.webp" width="1292" height="1001" loading="lazy" alt="David, Il giuramento degli Orazi: gesto solenne, architettura scandita, gruppi separati."><button class="open-image" type="button">Apri David</button><figcaption>Jacques-Louis David, <i>Il giuramento degli Orazi</i>, 1784, Musée du Louvre, Parigi.</figcaption></figure>
+      </div>
+      <div class="compare-table" role="region" aria-label="Confronto fra Rococò e Neoclassicismo">
+        <table><thead><tr><th>Categoria</th><th>Rococò</th><th>Neoclassicismo</th></tr></thead><tbody>
+          <tr><td>Spazio</td><td>Giardino privato, schermato, mobile.</td><td>Architettura frontale, misurata, pubblica.</td></tr>
+          <tr><td>Linea</td><td>Curve, fronde, diagonali leggere.</td><td>Assi netti, braccia tese, archi ordinatori.</td></tr>
+          <tr><td>Colore</td><td>Seduzione cromatica, rosa e verde vaporosi.</td><td>Toni contenuti, contrasto fra carne, pietra e rosso.</td></tr>
+          <tr><td>Gesto</td><td>Gioco, allusione, desiderio.</td><td>Giuramento, sacrificio, dovere.</td></tr>
+          <tr><td>Pubblico implicito</td><td>Élite aristocratica e conversazione privata.</td><td>Spettatore chiamato a giudicare un modello morale.</td></tr>
+        </tbody></table>
+      </div>
+    </section>
+
+    <section class="tracked section-pad dark" id="settecento" data-step="3">
+      <div class="section-index light"><span>03</span><p>Il Settecento reinventa l’antico</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Cronologia e rete</p><h2>Gli scavi non producono da soli uno stile. <em>Modificano un intero ecosistema dello sguardo.</em></h2></div><p>Archeologia, Grand Tour, accademie, mercato, musei, filosofia illuministica e rivoluzioni costruiscono un nuovo uso dell’antico. Non una causa unica, ma una rete.</p></div>
+      <div class="timeline" id="timeline" role="group" aria-label="Cronologia interattiva del Neoclassicismo"></div>
+      <article class="timeline-reading" id="timelineReading" aria-live="polite"></article>
+      <button class="lab-reset" id="timelineReset" type="button">Ripristina la cronologia</button>
+      <div class="causal-lab"><h3>Rete causale esplorabile</h3><p>Seleziona un nodo. L’antico non viene trovato “puro”: viene studiato, venduto, copiato, insegnato, esposto, usato politicamente.</p><div class="causal-nodes" id="causalNodes"></div><article id="causalReading" class="lab-reading inverse" aria-live="polite"></article></div>
+      <button class="lab-reset" id="causalReset" type="button">Ripristina la rete causale</button>
+    </section>
+
+    <section class="tracked section-pad term" id="neoclassico" data-step="4">
+      <div class="section-index"><span>04</span><p>Che cosa significa “neoclassico”?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Una parola, tre prospettive</p><h2>Il Neoclassicismo è insieme scelta, ideale e <em>costruzione storiografica.</em></h2></div><p>Winckelmann cerca una bellezza regolata e attribuisce all’arte greca una grandezza morale. Ma conosce molte opere attraverso copie romane, e l’antichità che immagina non coincide perfettamente con la Grecia storica.</p></div>
+      <div class="winckelmann-grid">
+        <figure class="zoomable"><img src="assets/images/winckelmann.webp" width="960" height="1328" loading="lazy" alt="Ritratto di Johann Joachim Winckelmann seduto con libro e penna."><button class="open-image" type="button">Apri il ritratto</button><figcaption>Anton von Maron, <i>Johann Joachim Winckelmann</i>, 1768 circa.</figcaption></figure>
+        <div>
+          <div class="perspective-tabs" id="termTabs" role="tablist" aria-label="Tre prospettive sul Neoclassicismo"></div>
+          <article class="term-reading" id="termReading" aria-live="polite"></article>
+          <button class="lab-reset" id="termReset" type="button">Ripristina le prospettive</button>
+          <div class="warning-card"><b>Formula da capire, non da ripetere.</b><p>“Nobile semplicità e quieta grandezza” non significa freddezza. Significa dominio della passione attraverso la forma. Ma quel dominio è anche una scelta culturale moderna, non una fotografia dell’antico.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad dark" id="orazi" data-step="5">
+      <div class="section-index light"><span>05</span><p>Laboratorio della composizione morale</p></div>
+      <div class="split-heading"><div><p class="eyebrow">David · Il giuramento degli Orazi</p><h2>La morale non è solo nel soggetto. <em>È costruita dalla composizione.</em></h2></div><p>Attiva gli strati: archi, gruppi, linee, braccia, spade, sguardi e zone di luce non decorano la scena. Ordinano il conflitto fra affetti familiari e dovere civico.</p></div>
+      <div class="analysis-lab">
+        <figure class="analysis-stage zoomable" id="horatiiStage"><img src="assets/images/orazi.webp" width="1292" height="1001" loading="lazy" alt="Il giuramento degli Orazi analizzato con sovrapposizioni didattiche."><div class="horatii-overlays" aria-hidden="true"><span class="arch a1"></span><span class="arch a2"></span><span class="arch a3"></span><span class="axis swords"></span><span class="axis arms"></span><span class="zone men"></span><span class="zone women"></span><span class="light l1"></span><span class="tri t1"></span><span class="tri t2"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="horatiiButtons"></div><button class="lab-reset" id="horatiiReset" type="button">Azzera il laboratorio</button><article class="lab-reading inverse" id="horatiiReading" aria-live="polite"></article><p class="equivalent" id="horatiiEquivalent">Equivalente testuale: nessuna sovrapposizione attiva.</p></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad line-lab-section" id="linea" data-step="6">
+      <div class="section-index"><span>06</span><p>La linea disciplina il corpo</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Simulazione dichiarata</p><h2>Il contorno può trasformare il corpo in <em>un esempio leggibile.</em></h2></div><p>Questa non è un’opera alterata: è un modello didattico autonomo. Cambia modalità e osserva come linea, volume, colore, chiaroscuro e postura orientino il giudizio.</p></div>
+      <div class="line-lab">
+        <div class="body-model" id="lineModel" data-mode="line" role="img" aria-labelledby="lineModelTitle lineEquivalent"><h3 id="lineModelTitle" class="sr-only">Modello didattico del corpo neoclassico</h3><span class="figure-head"></span><span class="figure-torso"></span><span class="figure-arm left"></span><span class="figure-arm right"></span><span class="figure-leg left"></span><span class="figure-leg right"></span><span class="gesture-line"></span></div>
+        <div><div class="mode-buttons" id="lineModes"></div><button class="lab-reset" id="lineReset" type="button">Ripristina il contorno</button><article class="lab-reading" id="lineReading" aria-live="polite"></article><p class="equivalent" id="lineEquivalent">Contorno netto: il gesto è separato dallo sfondo e diventa leggibile.</p><p class="simulation-note">Simulazione didattica, non manipolazione di un’opera autentica.</p></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad canova" id="canova" data-step="7">
+      <div class="section-index"><span>07</span><p>Il corpo ideale</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Antonio Canova</p><h2>Il marmo non è soltanto levigatezza. <em>È una macchina di luce, desiderio e prestigio.</em></h2></div><p>Canova lavora attraverso disegni, modelli in creta, gessi, traduzione in marmo e finitura di superficie. L’ideale nasce da una bottega concreta e da un pubblico che sa riconoscere mito, corpo e status.</p></div>
+      <div class="canova-grid">
+        <figure class="zoomable"><img src="assets/images/canova-amore-psiche.webp" width="1222" height="1800" loading="lazy" alt="Canova, Amore e Psiche: due corpi in marmo si avvicinano in un abbraccio circolare."><button class="open-image" type="button">Apri Amore e Psiche</button><figcaption>Antonio Canova, <i>Psiche rianimata dal bacio di Amore</i>, 1787–1793, Musée du Louvre.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/paolina-borghese.webp" width="1800" height="1004" loading="lazy" alt="Canova, Paolina Borghese come Venere vincitrice: figura femminile distesa su un triclinio marmoreo."><button class="open-image" type="button">Apri Paolina</button><figcaption>Antonio Canova, <i>Paolina Borghese come Venere vincitrice</i>, 1805–1808, Galleria Borghese, Roma.</figcaption></figure>
+      </div>
+      <div class="canova-lab"><div class="sculpture-controls" id="sculptureControls"></div><button class="lab-reset" id="sculptureReset" type="button">Azzera il corpo ideale</button><article class="lab-reading" id="sculptureReading" aria-live="polite"></article><p class="equivalent" id="sculptureEquivalent">Equivalente testuale: seleziona un aspetto della scultura.</p></div>
+    </section>
+
+    <section class="tracked section-pad virtue" id="virtu" data-step="8">
+      <div class="section-index"><span>08</span><p>Chi può rappresentare la virtù?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Angelica Kauffman</p><h2>La cittadinanza morale include le donne. <em>La cittadinanza politica spesso le esclude.</em></h2></div><p>Le immagini attribuiscono alle donne un ruolo essenziale: educare, custodire, sacrificare, formare cittadini. Ma questo riconoscimento morale non coincide con pieno accesso alla sfera politica.</p></div>
+      <div class="virtue-grid">
+        <figure class="zoomable"><img src="assets/images/kauffman-cornelia.webp" width="1538" height="1217" loading="lazy" alt="Angelica Kauffman, Cornelia indica i figli come i suoi tesori davanti a una donna che mostra gioielli."><button class="open-image" type="button">Apri Cornelia</button><figcaption>Angelica Kauffman, <i>Cornelia, madre dei Gracchi, indica i figli come i suoi tesori</i>, circa 1785, Virginia Museum of Fine Arts.</figcaption></figure>
+        <div class="gender-lab"><div class="gender-controls" id="genderControls"></div><article class="lab-reading" id="genderReading" aria-live="polite"></article><button class="lab-reset" id="genderReset" type="button">Ripristina il confronto</button></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad dark marat" id="marat" data-step="9">
+      <div class="section-index light"><span>09</span><p>La Rivoluzione costruisce le proprie immagini</p></div>
+      <div class="split-heading"><div><p class="eyebrow">David · La morte di Marat</p><h2>Documenta una morte o <em>costruisce una memoria politica?</em></h2></div><p>David elimina quasi tutto: fondo, oggetti inutili, rumore della stanza, assassina. Restano corpo, ferita, lettera, cassa, firma. La morte diventa lutto pubblico e culto civile.</p></div>
+      <div class="analysis-lab">
+        <figure class="analysis-stage marat-stage zoomable" id="maratStage"><img src="assets/images/morte-marat.webp" width="1399" height="1800" loading="lazy" alt="David, La morte di Marat analizzata con sovrapposizioni didattiche."><div class="marat-overlays" aria-hidden="true"><span class="void"></span><span class="letter"></span><span class="wound"></span><span class="box"></span><span class="body"></span><span class="signature"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="maratButtons"></div><button class="lab-reset" id="maratReset" type="button">Azzera Marat</button><article class="lab-reading inverse" id="maratReading" aria-live="polite"></article><p class="equivalent" id="maratEquivalent">Equivalente testuale: nessuno strato attivo.</p></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad power" id="potere" data-step="10">
+      <div class="section-index"><span>10</span><p>Dalla virtù al potere</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Repubblica, Impero, mito</p><h2>La stessa lingua della virtù può diventare <em>lingua dell’Impero.</em></h2></div><p>David non è solo “il pittore della Rivoluzione”. Attraversa monarchia, Repubblica, Terrore e Impero. La forma chiara può educare, commemorare, ma anche costruire obbedienza e mito politico.</p></div>
+      <div class="power-grid">
+        <figure class="zoomable"><img src="assets/images/napoleone-gran-san-bernardo.webp" width="1512" height="1800" loading="lazy" alt="David, Napoleone valica il Gran San Bernardo: Napoleone su cavallo impennato indica la vetta."><button class="open-image" type="button">Apri Napoleone</button><figcaption>Jacques-Louis David, <i>Bonaparte valica il Gran San Bernardo</i>, 1801 circa, Kunsthistorisches Museum, Vienna.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/incoronazione-napoleone.webp" width="1800" height="1125" loading="lazy" alt="David, Incoronazione di Napoleone: cerimonia monumentale a Notre-Dame con folla, imperatore e imperatrice."><button class="open-image" type="button">Apri l’incoronazione</button><figcaption>Jacques-Louis David, <i>L’incoronazione di Napoleone</i>, 1805–1807, Musée du Louvre.</figcaption></figure>
+      </div>
+      <div class="napoleon-lab"><div class="napoleon-controls" id="napoleonControls"></div><button class="lab-reset" id="napoleonReset" type="button">Azzera l’immagine del potere</button><article class="lab-reading" id="napoleonReading" aria-live="polite"></article><p class="equivalent" id="napoleonEquivalent">Equivalente testuale: seleziona un simbolo o una strategia.</p></div>
+    </section>
+
+    <section class="tracked section-pad museum" id="museo" data-step="11">
+      <div class="section-index"><span>11</span><p>Museo, accademia e cittadino</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Pubblico moderno</p><h2>Il museo promette accesso universale. <em>Nasce anche dentro conflitti di possesso.</em></h2></div><p>Salon, accademie, critica, incisioni, Grand Tour, musei e requisizioni napoleoniche trasformano l’opera in bene pubblico, oggetto di studio, merce, trofeo e patrimonio conteso.</p></div>
+      <div class="flow-lab" id="flowLab" role="group" aria-label="Mappa della circolazione di opere, modelli e istituzioni"></div>
+      <article class="lab-reading" id="flowReading" aria-live="polite"></article>
+      <button class="lab-reset" id="flowReset" type="button">Ripristina la mappa</button>
+    </section>
+
+    <section class="tracked section-pad dark compare" id="confronto" data-step="12">
+      <div class="section-index light"><span>12</span><p>Laboratorio conclusivo: quale virtù?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Quattro opere · una categoria per volta</p><h2>Non una classifica. <em>Una trasformazione storica dello sguardo.</em></h2></div><p>Confronta Barocco, Rococò, David e Goya. La domanda non è quale sia “migliore”, ma quale idea di corpo, pubblico, potere e realtà rende possibile.</p></div>
+      <div class="compare-categories" id="compareCategories"></div>
+      <div class="compare-grid" id="compareGrid" aria-live="polite"></div>
+      <button class="lab-reset" id="compareReset" type="button">Ripristina il confronto</button>
+    </section>
+
+    <section class="tracked section-pad return" id="ritorno" data-step="13">
+      <div class="section-index"><span>13</span><p>Ritorno all’immagine</p></div>
+      <div class="split-heading"><div><p class="eyebrow">La stessa opera · un altro sguardo</p><h2>Ora il gesto centrale non è più soltanto bello. <em>È una scelta morale e politica.</em></h2></div><p>Riguarda <i>Il giuramento degli Orazi</i> senza sovrapposizioni. Che cosa riesci a vedere ora che all’inizio restava implicito?</p></div>
+      <div class="return-grid">
+        <figure class="zoomable"><img src="assets/images/orazi.webp" width="1292" height="1001" loading="lazy" alt="Jacques-Louis David, Il giuramento degli Orazi, opera completa senza diagrammi."><button class="open-image" type="button">Guarda di nuovo</button><figcaption>Jacques-Louis David, <i>Il giuramento degli Orazi</i>, 1784, olio su tela, Musée du Louvre.</figcaption></figure>
+        <div><div class="memory-card"><span>Il tuo primo sguardo</span><p id="openingMemory">Non hai ancora scritto un’annotazione.</p></div><label class="note-label" for="returnNote"><span>Il secondo sguardo</span><small>Confrontalo con il primo.</small></label><textarea id="returnNote" rows="13" placeholder="All’inizio vedevo...&#10;Ora riconosco...&#10;Il gesto centrale costruisce...&#10;Gli uomini e le donne occupano...&#10;La città entra nella scena attraverso...&#10;La bellezza diventa virtù quando...&#10;Ma la virtù diventa propaganda quando...&#10;La ragione non riesce a controllare completamente..."></textarea><p class="save-status" id="returnSave" role="status" aria-live="polite"></p><article class="personal-synthesis" id="personalSynthesis"><h3>La tua sintesi</h3><p>Completa almeno un laboratorio e il secondo taccuino per generare una sintesi personale.</p></article></div>
+      </div>
+    </section>
+
+    <section class="quiz section-pad" id="verifica" aria-labelledby="quizTitle">
+      <div class="quiz-intro"><p class="eyebrow">Verifica · 12 nuclei, 12 recuperi</p><h2 id="quizTitle">La bellezza è diventata <em>argomento?</em></h2><p>Ogni errore apre una microlezione specifica e blocca il passaggio finché il recupero non viene superato. Lo stato resta salvato anche dopo la ricarica.</p><progress id="quizMeter" max="12" value="0" aria-label="Avanzamento della verifica"></progress><p id="quizCount">Domanda 1 di 12</p></div>
+      <div id="quizArea" aria-live="polite"></div>
+    </section>
+
+    <section class="conclusion section-pad" aria-labelledby="conclusionTitle">
+      <p class="eyebrow">Soglia · verso il Romanticismo</p>
+      <h2 id="conclusionTitle">La ragione tenta di dare forma alla storia. <em>La storia però non resta dentro la misura.</em></h2>
+      <p>Il Neoclassicismo vuole educare lo sguardo: disciplina, sacrificio, cittadinanza, bellezza universale. Ma rivoluzione, violenza, desiderio, esclusione, propaganda, natura e infinito aprono crepe che il Romanticismo renderà impossibili da ignorare.</p>
+      <a class="next-module" href="../../index.html#m12"><span>Modulo successivo predisposto</span><b>12 — L’infinito inquieta la ragione</b><small>Romanticismo · Sublime, individuo, storia</small></a>
+    </section>
+
+    <section class="sources section-pad" aria-labelledby="sourcesTitle">
+      <div><p class="eyebrow">Ricerca e trasparenza</p><h2 id="sourcesTitle">Fonti, opere, <em>licenze.</em></h2><p>Le interpretazioni sono costruite su musei, istituzioni culturali e risorse storico-artistiche attendibili. Wikimedia Commons è usata come deposito tecnico delle riproduzioni e delle licenze quando necessario.</p></div>
+      <div class="source-columns">
+        <div><h3>Fonti storico-artistiche</h3>
+          <p><a href="https://www.louvre.fr/en/explore/the-palace/from-palace-to-museum">Musée du Louvre · dal palazzo al museo</a></p>
+          <p><a href="https://www.louvre.fr/en/explore/the-palace/the-coronation-of-napoleon">Musée du Louvre · L’incoronazione di Napoleone</a></p>
+          <p><a href="https://collections.louvre.fr/en/ark:/53355/cl010065426">Musée du Louvre · Il giuramento degli Orazi</a></p>
+          <p><a href="https://fine-arts-museum.be/en/the-collection/jacques-louis-david-marat-assassinated">Royal Museums of Fine Arts Belgium · Marat assassiné</a></p>
+          <p><a href="https://www.wallacecollection.org/explore/collection/search-the-collection/les-hazards-heureux-de-lescarpolette-swing/">The Wallace Collection · The Swing</a></p>
+          <p><a href="https://www.vmfa.museum/artworks/cornelia-mother-of-the-gracchi-pointing-to-her-children-as-her-treasures-71832">Virginia Museum of Fine Arts · Kauffman, Cornelia</a></p>
+          <p><a href="https://www.louvre.fr/en/explore/visitor-trails/the-louvre-s-masterpieces/bringing-marble-to-life">Musée du Louvre · Canova, Amore e Psiche</a></p>
+          <p><a href="https://www.collezionegalleriaborghese.it/en/opere/pauline-borghese-as-venus-victrix">Galleria Borghese · Paolina Borghese</a></p>
+          <p><a href="https://www.museodelprado.es/en/the-collection/art-work/the-3rd-of-may-1808-in-madrid-or-the-executions/5e177409-2993-4240-97fb-847a02c6496c">Museo del Prado · Goya, 3 maggio 1808</a></p>
+          <p><a href="https://www.metmuseum.org/toah/hd/neoc_1/hd_neoc_1.htm">Metropolitan Museum · Neoclassicism</a></p>
+        </div>
+        <div class="works-register"><h3>Registro delle immagini locali</h3><div class="register-scroll"><table><thead><tr><th>File</th><th>Opera</th><th>Fonte e licenza</th></tr></thead><tbody>
+          <tr><td>orazi.webp</td><td>Jacques-Louis David, <i>Il giuramento degli Orazi</i>, 1784, Louvre</td><td>Commons da opera in pubblico dominio; fonte interpretativa Louvre.</td></tr>
+          <tr><td>fragonard-altalena.webp</td><td>Jean-Honoré Fragonard, <i>L’altalena</i>, 1767, Wallace Collection</td><td>Commons pubblico dominio; scheda Wallace Collection.</td></tr>
+          <tr><td>winckelmann.webp</td><td>Anton von Maron, <i>Johann Joachim Winckelmann</i>, 1768 circa</td><td>Commons pubblico dominio.</td></tr>
+          <tr><td>canova-amore-psiche.webp</td><td>Antonio Canova, <i>Amore e Psiche</i>, 1787–1793, Louvre</td><td>Commons, pubblico dominio/opera antica; fonte Louvre.</td></tr>
+          <tr><td>paolina-borghese.webp</td><td>Antonio Canova, <i>Paolina Borghese come Venere vincitrice</i>, 1805–1808, Galleria Borghese</td><td>Commons, pubblico dominio per l’opera; fonte Galleria Borghese.</td></tr>
+          <tr><td>kauffman-cornelia.webp</td><td>Angelica Kauffman, <i>Cornelia...</i>, circa 1785, VMFA</td><td>Commons pubblico dominio; fonte VMFA.</td></tr>
+          <tr><td>morte-marat.webp</td><td>Jacques-Louis David, <i>La morte di Marat</i>, 1793, Bruxelles</td><td>Commons pubblico dominio; fonte Royal Museums of Fine Arts Belgium.</td></tr>
+          <tr><td>napoleone-gran-san-bernardo.webp</td><td>Jacques-Louis David, <i>Bonaparte valica il Gran San Bernardo</i>, 1801, Vienna</td><td>Commons pubblico dominio.</td></tr>
+          <tr><td>incoronazione-napoleone.webp</td><td>Jacques-Louis David, <i>L’incoronazione di Napoleone</i>, 1805–1807, Louvre</td><td>Commons pubblico dominio; fonte Louvre.</td></tr>
+          <tr><td>goya-3-maggio.webp</td><td>Francisco Goya, <i>Il 3 maggio 1808</i>, 1814, Prado</td><td>Commons pubblico dominio; fonte Prado.</td></tr>
+          <tr><td>caravaggio-vocazione.webp</td><td>Caravaggio, <i>Vocazione di san Matteo</i>, 1599–1600, Roma</td><td>Copia locale dal modulo 09; pubblico dominio.</td></tr>
+        </tbody></table></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-project"><span aria-hidden="true">S</span><p><b>Storia dello sguardo</b><br>11 · La bellezza diventa virtù</p></div><nav aria-label="Moduli"><a href="../10-caravaggio/">← 10 · Caravaggio</a><a href="../../index.html#m11">Home del percorso</a><a href="../../index.html#m12">12 · Romanticismo →</a></nav><p>Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lightbox-controls"><h2 id="lightboxTitle" class="sr-only">Visualizzatore dell’opera</h2><button id="zoomOut" type="button" aria-label="Riduci">−</button><button id="zoomReset" type="button">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci">+</button><button id="lightboxClose" type="button" aria-label="Chiudi">×</button></div>
+    <div class="lightbox-stage" id="lightboxStage"><img id="lightboxImage" src="assets/images/orazi.webp" width="1292" height="1001" alt=""></div><p id="lightboxCaption"></p>
+  </div>
+</body>
+</html>

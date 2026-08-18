@@ -23,7 +23,14 @@ I percorsi previsti sono già dichiarati in `assets/app.js`; il collegamento vie
 - [08 · Misurare il mondo — Rinascimento: prospettiva, individuo, ragione](./08-rinascimento/)
 - [09 · La forma perde la quiete — Manierismo: la crisi dell’equilibrio](./09-manierismo/)
 - [10 · Caravaggio — Quando il sacro entra nella strada](./10-caravaggio/)
+- [11 · La bellezza diventa virtù — Neoclassicismo: arte, ragione, cittadinanza](./11-neoclassicismo/)
 
 Il modulo 07 inaugura la galleria **Inventare l’uomo moderno**. Mantiene osservazione iniziale, taccuino locale, avanzamento, lightbox accessibile, verifica bloccante con recupero e funzionamento offline; introduce inoltre la scoperta stratificata della tecnica d’affresco, la costruzione progressiva di una scena abitabile, l’analisi degli indizi spaziali, l’isolamento di volto/mani/sguardi/postura/distanza e un confronto per categorie fra Cimabue, Duccio e Giotto.
 
 Il modulo 08 trasforma lo spazio credibile in un problema di misura. Mantiene tredici tappe, taccuini e avanzamento locali, visualizzatore accessibile, verifica bloccante e PWA offline; introduce la rete degli attori, il diagramma prudente sulla trasmissione dei saperi, la ricostruzione dichiarata dell’esperimento di Brunelleschi, “Costruisci lo spazio” in sette passaggi, la lettura geometrica e teologica della *Trinità*, confronti fra architettura/rilievo/pittura, laboratori su ritratto e città e un confronto finale fra quattro modi di costruire lo spazio.
+
+Il modulo 09 mostra come la forma perda la quiete senza perdere competenza. Mantiene tredici tappe, taccuini, avanzamento locale, lightbox, verifica bloccante e PWA offline; introduce cronologia, rete causale, laboratori su spazio, corpo, colore, architettura, ritratto, sacro e circolazione internazionale del Manierismo.
+
+Il modulo 10 segue Caravaggio e il Barocco come ingresso del sacro nella strada. È più compatto, fondato su quattro opere, taccuini, luce, committenza, decoro, rifiuto e visualizzatore; conclude aprendo la domanda del modulo 11: se l’immagine può persuadere, può anche educare?
+
+Il modulo 11 studia il Neoclassicismo come progetto educativo, morale e politico della bellezza. Mantiene tredici sezioni, indice, avanzamento, localStorage con chiave `storia-sguardo-11-state`, taccuini, lightbox accessibile con zoom e trascinamento, cronologia interattiva, rete causale, laboratori su Orazi, linea, Canova, virtù maschile/femminile, Marat, immagine napoleonica, museo, confronto finale per categorie, verifica bloccante con dodici recuperi e cache offline.

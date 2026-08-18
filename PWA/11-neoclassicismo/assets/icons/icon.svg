@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">La bellezza diventa virtù</title>
+  <desc id="desc">Un segno geometrico con archi, spade e rosso pompeiano per il modulo sul Neoclassicismo.</desc>
+  <rect width="512" height="512" fill="#f2eee5"/>
+  <path d="M68 432h376" stroke="#171717" stroke-width="18" stroke-linecap="square"/>
+  <path d="M118 408V171a78 78 0 0 1 156 0v237" fill="none" stroke="#171717" stroke-width="18"/>
+  <path d="M238 408V171a78 78 0 0 1 156 0v237" fill="none" stroke="#171717" stroke-width="18"/>
+  <path d="M256 86v315" stroke="#a63a2a" stroke-width="16"/>
+  <path d="M169 118l87 56 87-56" fill="none" stroke="#263d66" stroke-width="16" stroke-linejoin="round"/>
+  <circle cx="256" cy="174" r="20" fill="#b59b63"/>
+  <path d="M176 432 256 250l80 182" fill="none" stroke="#171717" stroke-width="18" stroke-linejoin="round"/>
+</svg>
