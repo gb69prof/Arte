@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#213b43">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Quando la realtà diventa un istante: PWA didattica sull’Impressionismo, la luce, la metropoli e la percezione moderna.">
+  <title>14 · Quando la realtà diventa un istante — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="topbar">
+    <a class="back" href="../../index.html#m14"><span aria-hidden="true">←</span> Storia dello sguardo</a>
+    <div class="top-actions">
+      <span id="progressText">0 di 13 tappe</span>
+      <button id="notesButton" type="button" aria-expanded="false" aria-controls="notesDrawer">Taccuino</button>
+      <button id="menuButton" type="button" aria-expanded="false" aria-controls="chapterMenu">Indice</button>
+    </div>
+    <progress id="readingProgress" max="13" value="0" aria-label="Avanzamento nel modulo"></progress>
+  </header>
+
+  <aside class="chapter-menu" id="chapterMenu" hidden aria-label="Indice delle tredici sezioni">
+    <div class="menu-head"><p>Quando la realtà diventa un istante</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#prima"><span>01</span>Prima di sapere</a></li>
+      <li><a href="#passaggio"><span>02</span>Dal presente alla percezione</a></li>
+      <li><a href="#mondo"><span>03</span>Il mondo che lo rende possibile</a></li>
+      <li><a href="#definizione"><span>04</span>Che cosa significa Impressionismo?</a></li>
+      <li><a href="#istante"><span>05</span>L’istante non è spontaneo</a></li>
+      <li><a href="#monet"><span>06</span>Un porto, un sole, un nome</a></li>
+      <li><a href="#metropoli"><span>07</span>La metropoli entra nell’occhio</a></li>
+      <li><a href="#stazione"><span>08</span>Luce, ferro, vapore</a></li>
+      <li><a href="#loisir"><span>09</span>Il tempo libero non è per tutti</a></li>
+      <li><a href="#donne"><span>10</span>Donne, sguardi, spazi consentiti</a></li>
+      <li><a href="#serie"><span>11</span>Lo stesso non è mai identico</a></li>
+      <li><a href="#atlante"><span>12</span>Atlante dello sguardo moderno</a></li>
+      <li><a href="#ritorno"><span>13</span>Ritorno all’immagine</a></li>
+    </ol></nav>
+    <button class="reset-state" id="resetState" type="button">Azzera tutto sul dispositivo</button>
+  </aside>
+
+  <aside class="notes-drawer" id="notesDrawer" hidden aria-labelledby="notesTitle">
+    <div class="menu-head"><p id="notesTitle">Taccuino trasversale</p><button id="notesClose" type="button" aria-label="Chiudi taccuino">×</button></div>
+    <p>Annota collegamenti, dubbi e dettagli. Il testo resta soltanto su questo dispositivo.</p>
+    <label for="generalNotes">Note personali</label>
+    <textarea id="generalNotes" rows="16" placeholder="La luce modifica…&#10;La città rende visibile…&#10;Resta escluso…"></textarea>
+    <p class="save-status" id="notesSave" role="status" aria-live="polite"></p>
+    <button class="lab-reset" id="notesReset" type="button">Azzera solo il taccuino</button>
+  </aside>
+  <div class="menu-scrim" id="menuScrim" hidden></div>
+  <p id="storageNotice" class="storage-notice" role="status" aria-live="polite" hidden></p>
+
+  <main id="contenuto">
+    <section class="opening tracked" id="prima" data-step="1" aria-labelledby="openingTitle">
+      <figure class="opening-art zoomable">
+        <img src="assets/images/impression-sunrise.webp" width="2200" height="1707" alt="Un porto immerso nella foschia: sagome industriali e imbarcazioni emergono da toni azzurro-verdi, mentre un piccolo sole arancione si riflette sull’acqua.">
+        <button class="open-image" type="button">Apri l’opera</button>
+      </figure>
+      <div class="opening-copy">
+        <p class="eyebrow">14 · Prima di sapere</p>
+        <h1 id="openingTitle">Quando la realtà diventa un <em>istante?</em></h1>
+        <p class="opening-lead">Per ora niente titolo, autore, data o movimento. L’immagine deve prima resistere al tuo sguardo.</p>
+        <div class="look-grid">
+          <p>Che ora del giorno potrebbe essere?</p><p>Che cosa è solido e che cosa si dissolve?</p><p>Il sole è più luminoso o soltanto più intenso nel colore?</p><p>Viene prima il porto, la luce o l’atmosfera?</p><p>Da dove osserviamo?</p><p>Sembra incompiuto o deliberatamente instabile?</p><p>Quanto potrebbe durare questa scena?</p><p>Che cosa continua a muoversi mentre guardi?</p>
+        </div>
+        <label class="note-label" for="openingNote"><span>Il tuo primo sguardo</span><small>Salvato soltanto sul dispositivo.</small></label>
+        <textarea id="openingNote" rows="9" placeholder="Potrebbe essere…&#10;Mi sembra stabile…&#10;Il sole…&#10;La scena potrebbe durare…&#10;Chiamo incompiuto…"></textarea>
+        <p class="save-status" id="openingSave" role="status" aria-live="polite"></p>
+        <a class="scroll-link" href="#passaggio">Entra nella durata ↓</a>
+      </div>
+    </section>
+
+    <section class="tracked section-pad transition" id="passaggio" data-step="2">
+      <div class="section-index"><span>02</span><p>Dal presente realistico alla percezione del presente</p></div>
+      <div class="split-heading"><div><p class="eyebrow">La domanda lasciata dal modulo 13</p><h2>Il presente è entrato nell’arte. <em>Ma non resta fermo.</em></h2></div><p>Il Realismo aveva chiesto chi e che cosa meritassero di essere rappresentati: lavoro, persone comuni, città, conflitto sociale. Ora il problema si sposta. Non basta scegliere che cosa guardare: occorre capire come il mondo appare mentre cambia.</p></div>
+      <div class="image-compare">
+        <figure class="zoomable"><img src="assets/images/daguerre-boulevard.webp" width="1600" height="1149" loading="lazy" alt="Il Boulevard du Temple in un dagherrotipo: la lunga esposizione rende la strada quasi vuota e conserva poche figure ferme."><button class="open-image" type="button">Apri il dagherrotipo</button><figcaption>Louis Daguerre, <i>Boulevard du Temple</i>, 1838. Il tempo tecnico cancella quasi tutto ciò che si muove.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/impression-sunrise.webp" width="2200" height="1707" loading="lazy" alt="Porto di Le Havre dipinto attraverso foschia, riflessi, sagome e un sole arancione."><button class="open-image" type="button">Apri il dipinto</button><figcaption>Claude Monet, <i>Impression, soleil levant</i>, 1872. Il tempo non svuota la scena: ne rende instabile l’apparizione.</figcaption></figure>
+      </div>
+      <div class="shift-table" role="region" aria-label="Spostamento dal Realismo all’Impressionismo"><table><thead><tr><th>Problema</th><th>Modulo 13 · Realismo</th><th>Modulo 14 · Impressionismo</th></tr></thead><tbody>
+        <tr><td>Presente</td><td>Chi vi entra e con quale dignità?</td><td>Quanto dura mentre lo osserviamo?</td></tr>
+        <tr><td>Scena</td><td>Evento e condizione sociale.</td><td>Evento percettivo nel tempo.</td></tr>
+        <tr><td>Osservatore</td><td>Prende posizione scegliendo il soggetto.</td><td>È situato in un luogo, in un momento e in un accesso sociale.</td></tr>
+        <tr><td>Verità</td><td>Non è una copia neutrale.</td><td>Non è separabile dalle condizioni del vedere.</td></tr>
+      </tbody></table></div>
+      <p class="bridge-question">Che cosa accade quando il presente, ormai entrato nell’arte, non può più essere trattenuto come una scena stabile?</p>
+    </section>
+
+    <section class="tracked section-pad iron" id="mondo" data-step="3">
+      <div class="section-index light"><span>03</span><p>Il mondo che rende possibile l’Impressionismo</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Cronologia e rete causale</p><h2>Nessun tubetto ha inventato un movimento. <em>Una rete moderna cambia il vedere.</em></h2></div><p>Boulevard, ferrovie, fotografia, colori trasportabili, guerre, esposizioni, mercato, stampe giapponesi e nuovi luoghi sociali interagiscono. Nessun nodo basta da solo e nessuna freccia è un destino.</p></div>
+      <div class="timeline" id="timeline" role="group" aria-label="Cronologia interattiva dell’Impressionismo"></div>
+      <article class="timeline-reading" id="timelineReading" aria-live="polite"></article>
+      <button class="lab-reset" id="timelineReset" type="button">Ripristina la cronologia</button>
+      <div class="causal-lab"><h3>Rete causale esplorabile</h3><p>Seleziona un nodo e osserva quali possibilità apre, senza trasformarlo in causa unica.</p><div class="causal-nodes" id="causalNodes"></div><article id="causalReading" class="lab-reading inverse" aria-live="polite"></article></div>
+      <button class="lab-reset" id="causalReset" type="button">Ripristina la rete</button>
+      <div class="network-equivalent"><h3>Alternativa testuale alla rete</h3><p>Città, mobilità, cultura visiva, materiali, istituzioni, crisi politica e mercato si condizionano reciprocamente. Le esposizioni indipendenti trasformano il rapporto con il pubblico; la ferrovia collega metropoli, periferie e luoghi di svago; fotografia e stampe giapponesi moltiplicano tagli e punti di vista; i materiali rendono alcune pratiche più agevoli, non obbligatorie.</p></div>
+    </section>
+
+    <section class="tracked section-pad terms" id="definizione" data-step="4">
+      <div class="section-index"><span>04</span><p>Che cosa significa davvero “Impressionismo”?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Una parola, molte realtà</p><h2>Non una ricetta di colori chiari. <em>Un problema moderno della visione.</em></h2></div><p>Il nome comprende un gruppo espositivo, una rete di artisti non uniformi, pratiche diverse, un’etichetta nata anche dall’ostilità critica e un modo nuovo di interrogare il rapporto fra percezione e tempo.</p></div>
+      <div class="term-layout"><div class="perspective-tabs" id="termTabs" role="tablist" aria-label="Significati dell’Impressionismo"></div><article class="term-reading" id="termReading" aria-live="polite"></article></div>
+      <button class="lab-reset" id="termReset" type="button">Ripristina i significati</button>
+      <div class="word-strip" aria-label="Distinzioni lessicali"><p><b>Impressione</b><span>prima organizzazione dell’esperienza</span></p><p><b>Sensazione</b><span>risposta dei sensi</span></p><p><b>Percezione</b><span>esperienza interpretata e situata</span></p><p><b>Istante</b><span>tempo scelto e costruito</span></p><p><b>Atmosfera</b><span>condizione che modifica ciò che appare</span></p><p><b>Modernità</b><span>ritmi, luoghi e rapporti del presente</span></p><p><b><i>En plein air</i></b><span>pratica importante, non regola assoluta</span></p><p><b>Gruppo</b><span>alleanza espositiva, non stile unico</span></p></div>
+      <div class="myth-grid" id="mythGrid" aria-label="Formule da mettere alla prova"></div>
+    </section>
+
+    <section class="tracked section-pad instant" id="istante" data-step="5">
+      <div class="section-index light"><span>05</span><p>Laboratorio: l’istante non è spontaneo</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Costruisci una particolare esperienza del tempo</p><h2>Ogni impressione dipende da decisioni.</h2></div><p>Modifica la stessa scena. Le variazioni non sono filtri casuali: ogni parametro corrisponde a una scelta percettiva, tecnica o sociale spiegata nel testo.</p></div>
+      <div class="instant-lab">
+        <figure class="instant-stage zoomable" id="instantStage"><img src="assets/images/impression-sunrise.webp" width="2200" height="1707" loading="lazy" alt="Impression, soleil levant usato come base di un laboratorio dichiaratamente didattico sulle scelte che costruiscono un istante."><div class="instant-crop" aria-hidden="true"></div><div class="instant-weather" aria-hidden="true"></div><div class="instant-figures" aria-hidden="true"></div><button class="open-image" type="button">Apri l’originale senza simulazione</button></figure>
+        <div><div id="instantControls" class="parameter-controls"></div><article id="instantReading" class="lab-reading inverse" aria-live="polite"></article><p class="simulation-note">Simulazione concettuale: non imita né altera l’opera originale.</p><button class="lab-reset" id="instantReset" type="button">Azzera il laboratorio</button></div>
+      </div>
+    </section>
+
+    <section class="tracked section-pad monet" id="monet" data-step="6">
+      <div class="section-index light"><span>06</span><p>Monet: un porto, un sole, un nome diventato movimento</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Le Havre · 1872 / esposizione · 1874</p><h2>L’opera non rinuncia alla precisione. <em>Sposta la precisione sulle relazioni.</em></h2></div><p>Porto industriale, foschia, acqua, barche, riflessi e un piccolo segnale arancione convivono senza fondersi in un’immagine stabile. Il titolo fornì alla critica una parola; non creò da solo il gruppo.</p></div>
+      <div class="analysis-lab">
+        <figure class="analysis-stage monet-stage zoomable" id="monetStage"><img src="assets/images/impression-sunrise.webp" width="2200" height="1707" loading="lazy" alt="Il dipinto di Monet analizzato attraverso aree didattiche dedicate al porto, alla foschia, al sole, all’acqua, alle barche e all’orizzonte."><div class="monet-overlays" aria-hidden="true"><span class="port"></span><span class="mist"></span><span class="sun"></span><span class="water"></span><span class="boats"></span><span class="horizon"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="monetButtons"></div><button class="lab-reset" id="monetReset" type="button">Azzera l’analisi</button><article class="lab-reading inverse" id="monetReading" aria-live="polite"></article><p class="equivalent" id="monetEquivalent">Nessuno strato attivo.</p></div>
+      </div>
+      <div class="name-card"><p class="eyebrow">25 aprile 1874</p><h3>Louis Leroy usa “impressionisti” per colpire ciò che giudica incompiuto.</h3><p>La recensione satirica pubblicata su <i>Le Charivari</i> lega polemicamente il titolo di Monet alla mostra della Société anonyme. Il termine circola e cambia valore, ma gli artisti non diventano per questo un blocco uniforme.</p></div>
+    </section>
+
+    <section class="tracked section-pad city" id="metropoli" data-step="7">
+      <div class="section-index"><span>07</span><p>La metropoli entra nell’occhio</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Boulevard des Capucines · 1873–1874</p><h2>Dall’alto la folla diventa ritmo. <em>Il balcone è anche una distanza sociale.</em></h2></div><p>Monet osserva dal numero 35 del boulevard, nell’edificio di Nadar che ospiterà la mostra del 1874. Il taglio rialzato rende percepibili circolazione e velocità; protegge però l’osservatore e nasconde demolizioni, lavoro e biografie.</p></div>
+      <div class="city-lab">
+        <figure class="city-stage zoomable" id="cityStage"><img src="assets/images/boulevard-capucines.webp" width="1631" height="2200" loading="lazy" alt="Boulevard parigino visto dall’alto: alberi, edifici, marciapiedi e folla sono resi con segni frammentati."><div class="city-overlays" aria-hidden="true"><span class="balcony"></span><span class="flow"></span><span class="crowd"></span><span class="facades"></span><span class="blind"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="cityButtons"></div><article class="lab-reading" id="cityReading" aria-live="polite"></article><p class="equivalent" id="cityEquivalent">Nessuno strato attivo.</p><button class="lab-reset" id="cityReset" type="button">Azzera lo sguardo urbano</button></div>
+      </div>
+      <div class="viewpoint-question"><h3>Che cosa vede un punto panoramico?</h3><div id="viewpointChoices" class="choice-grid"></div><p id="viewpointSummary" class="equivalent" aria-live="polite"></p></div>
+    </section>
+
+    <section class="tracked section-pad station" id="stazione" data-step="8">
+      <div class="section-index light"><span>08</span><p>La stazione: luce, ferro, vapore</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Gare Saint-Lazare · ciclo del 1877</p><h2>La tecnologia non è soltanto un oggetto. <em>Trasforma spazio, ritmo e atmosfera.</em></h2></div><p>Monet dipinge dodici vedute note della stazione. La struttura di ferro e vetro organizza la luce; il vapore rende incerti i confini; i binari collegano centro, periferie e luoghi di svago. Otto tele furono pronte per la terza mostra del gruppo.</p></div>
+      <div class="station-lab">
+        <figure class="station-stage zoomable" id="stationStage"><img src="assets/images/gare-saint-lazare.webp" width="2000" height="1487" loading="lazy" alt="Una locomotiva entra nella Gare Saint-Lazare sotto una copertura di ferro e vetro; vapore e luce riempiono lo spazio."><div class="station-overlays" aria-hidden="true"><span class="iron"></span><span class="steam"></span><span class="tracks"></span><span class="crowd"></span><span class="light"></span><span class="threshold-mark"></span></div><button class="open-image" type="button">Apri senza diagramma</button></figure>
+        <div><div class="layer-buttons" id="stationButtons"></div><article class="lab-reading inverse" id="stationReading" aria-live="polite"></article><p class="equivalent" id="stationEquivalent">Nessuno strato attivo.</p><button class="lab-reset" id="stationReset" type="button">Azzera la stazione</button></div>
+      </div>
+      <div class="system-strip"><span>industria</span><i>↔</i><span>mobilità</span><i>↔</i><span>tempo misurato</span><i>↔</i><span>periferie</span><i>↔</i><span>svago</span></div>
+    </section>
+
+    <section class="tracked section-pad leisure" id="loisir" data-step="9">
+      <div class="section-index"><span>09</span><p>Il tempo libero non è libero per tutti</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Bal du moulin de la Galette · 1876</p><h2>La luce danza sui corpi. <em>Il lavoro resta ai bordi dell’immagine.</em></h2></div><p>Amici dell’artista, frequentatori, moda, consumo e sociabilità costruiscono un’immagine della modernità festiva. La scena fu lavorata soprattutto sul posto e completata in studio: l’effetto di immediatezza è una composizione.</p></div>
+      <div class="leisure-grid">
+        <figure class="zoomable"><img src="assets/images/moulin-galette.webp" width="2400" height="1784" loading="lazy" alt="Una folla elegante conversa e danza sotto gli alberi; chiazze di luce attraversano abiti e volti."><button class="open-image" type="button">Apri il ballo</button><figcaption>Pierre-Auguste Renoir, <i>Bal du moulin de la Galette</i>, 1876, Musée d’Orsay.</figcaption></figure>
+        <div><h3>Interroga la festa</h3><p>Seleziona ciò che vuoi rendere visibile. Ogni domanda incrina l’idea di una “modernità felice” accessibile a tutti.</p><div id="leisureChecks" class="question-checks"></div><article id="leisureReading" class="lab-reading" aria-live="polite"></article><button class="lab-reset" id="leisureReset" type="button">Azzera le domande</button></div>
+      </div>
+      <div class="labor-behind"><article><b>Chi può essere qui?</b><p>Il loisir presuppone tempo, reddito, abiti, trasporto e possibilità di occupare lo spazio pubblico.</p></article><article><b>Chi lo rende possibile?</b><p>Servizio, manutenzione, produzione e cura sostengono la festa senza necessariamente occuparne il centro.</p></article><article><b>Chi resta anonimo?</b><p>La folla produce ritmo, ma può trasformare individui e lavoratori in segni senza storia.</p></article></div>
+    </section>
+
+    <section class="tracked section-pad women" id="donne" data-step="10">
+      <div class="section-index light"><span>10</span><p>Donne, sguardi e spazi consentiti</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Morisot e Cassatt</p><h2>Essere visibili non significa muoversi liberamente.</h2></div><p>Le artiste partecipano alle mostre e trasformano l’Impressionismo dall’interno. La loro esperienza sociale condiziona accessi, soggetti e punti di vista senza ridurre le opere a documenti biografici o a una “versione femminile” del movimento.</p></div>
+      <div class="women-tabs" id="womenTabs" role="tablist" aria-label="Confronto fra Morisot e Cassatt"></div>
+      <div class="women-work" id="womenWork" aria-live="polite"></div>
+      <div class="gaze-lab"><h3>Costruisci la relazione dello sguardo</h3><p>Seleziona una posizione per ciascuna domanda.</p><div id="gazeControls" class="gaze-controls"></div><article id="gazeSummary" class="lab-reading inverse" aria-live="polite"></article><button class="lab-reset" id="gazeReset" type="button">Azzera la relazione</button></div>
+    </section>
+
+    <section class="tracked section-pad series" id="serie" data-step="11">
+      <div class="section-index"><span>11</span><p>Dipingere lo stesso soggetto perché non è mai lo stesso</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Covoni · 1890–1891</p><h2>Il soggetto resta. <em>L’apparizione cambia.</em></h2></div><p>Le serie appartengono a una fase più tarda. Monet lavora davanti al motivo, passa da una tela all’altra e rielabora in studio. La ripetizione non dimostra spontaneità: rende confrontabili tempo, clima, luce e superficie.</p></div>
+      <div class="series-lab">
+        <div class="series-view"><figure class="zoomable"><img id="seriesImage" src="assets/images/stacks-summer.webp" width="1800" height="1067" loading="lazy" alt="Due grandi covoni alla fine dell’estate, in una luce calda."><button class="open-image" type="button">Apri la versione</button><figcaption id="seriesCaption">Fine dell’estate · 1890–1891</figcaption></figure><div class="series-buttons" id="seriesButtons" role="tablist" aria-label="Tre versioni dei covoni"></div></div>
+        <article class="series-reading" id="seriesReading" aria-live="polite"></article>
+      </div>
+      <div class="series-matrix" id="seriesMatrix" role="region" aria-label="Confronto sincronizzato delle tre versioni"></div>
+      <button class="lab-reset" id="seriesReset" type="button">Ripristina la serie</button>
+      <p class="decisive">Se il soggetto resta lo stesso ma ogni apparizione è diversa, dov’è la sua realtà?</p>
+    </section>
+
+    <section class="tracked section-pad atlas" id="atlante" data-step="12">
+      <div class="section-index light"><span>12</span><p>Atlante comparativo: che cosa è cambiato nello sguardo?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Cinque immagini, venti categorie</p><h2>Non cercare uno stile vincente. <em>Segui ciò che ogni immagine rende possibile e ciò che esclude.</em></h2></div><p>Seleziona una categoria: il confronto passa dal tempo tecnico del dagherrotipo all’istante di Monet, dalla metropoli alla sfera domestica, fino alla ripetizione seriale.</p></div>
+      <div class="compare-categories" id="compareCategories"></div>
+      <div class="compare-grid" id="compareGrid"></div>
+      <button class="lab-reset" id="compareReset" type="button">Ripristina l’atlante</button>
+    </section>
+
+    <section class="tracked section-pad return" id="ritorno" data-step="13">
+      <div class="section-index"><span>13</span><p>Ritorno all’immagine</p></div>
+      <div class="return-grid">
+        <figure class="zoomable"><img src="assets/images/impression-sunrise.webp" width="2200" height="1707" loading="lazy" alt="Impression, soleil levant ripresentato senza sovrapposizioni alla fine del percorso."><button class="open-image" type="button">Riapri l’opera</button><figcaption>Claude Monet, <i>Impression, soleil levant</i>, 1872, olio su tela, 50 × 65 cm, Musée Marmottan Monet, Parigi.</figcaption></figure>
+        <div><p class="eyebrow">Il primo sguardo resta visibile</p><blockquote id="openingMemory">Non hai ancora scritto un’annotazione.</blockquote><label class="note-label" for="returnNote"><span>Il tuo secondo sguardo</span><small>Usa ciò che hai davvero osservato.</small></label><textarea id="returnNote" rows="13" placeholder="All’inizio chiamavo incompiuto…&#10;Ora riconosco come scelta…&#10;L’istante è costruito perché…&#10;Il porto appartiene alla realtà sociale quando…&#10;Il mio punto di vista…&#10;Resta fuori dall’immagine…&#10;Questa realtà non è stabile perché…"></textarea><p class="save-status" id="returnSave" role="status" aria-live="polite"></p></div>
+      </div>
+      <article id="personalSynthesis" class="personal-synthesis" aria-live="polite"></article>
+
+      <div class="threshold"><p class="eyebrow">Soglia verso il modulo 15</p><h2>Registrare il visibile è ancora sufficiente?</h2><p>Se la realtà cambia a ogni istante e dipende dal modo in cui viene percepita, l’arte dovrà cercare una struttura, una durata o una verità che l’occhio non consegna già pronta.</p><a href="../../index.html#m15">Vai alla soglia del modulo 15 →</a></div>
+
+      <section class="quiz-section" aria-labelledby="quizTitle"><div class="quiz-head"><div><p class="eyebrow">Verifica con recupero</p><h2 id="quizTitle">Dodici nuclei, nessuna risposta lasciata indietro</h2></div><div><progress id="quizMeter" max="12" value="0" aria-label="Avanzamento verifica"></progress><span id="quizCount">Domanda 1 di 12</span></div></div><div id="quizArea" aria-live="polite"></div></section>
+
+      <details class="sources"><summary>Fonti storico-artistiche e registro delle immagini</summary>
+        <p>Le schede istituzionali fondano dati e interpretazioni. Wikimedia Commons è usato come deposito tecnico soltanto per riproduzioni dichiarate in pubblico dominio; le immagini dell’Art Institute sono CC0. Tutti i file necessari sono conservati localmente.</p>
+        <div class="source-list">
+          <article><h3>Claude Monet · <i>Impression, soleil levant</i>, 1872</h3><p>Olio su tela, 50 × 65 cm, Musée Marmottan Monet, Parigi. File locale: <code>impression-sunrise.webp</code>. <a href="https://www.marmottan.fr/en/notice/4014/">Scheda del museo</a> · <a href="https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Claude Monet · <i>Boulevard des Capucines</i>, 1873–1874</h3><p>Olio su tela, 80,3 × 60,3 cm, Nelson-Atkins Museum of Art, Kansas City. File locale: <code>boulevard-capucines.webp</code>. <a href="https://nelson-atkins.org/fpc/impressionism/626/">Approfondimento del museo</a> · <a href="https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Boulevard_des_Capucines_-_Google_Art_Project.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Claude Monet · <i>Arrivo del treno dalla Normandia, Gare Saint-Lazare</i>, 1877</h3><p>Olio su tela, 60,3 × 80,2 cm, Art Institute of Chicago. File locale: <code>gare-saint-lazare.webp</code>. <a href="https://www.artic.edu/artworks/16571/arrival-of-the-normandy-train-gare-saint-lazare">Scheda e immagine Open Access</a> · <a href="https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Saint-Lazare_Station_-_Google_Art_Project.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Pierre-Auguste Renoir · <i>Bal du moulin de la Galette</i>, 1876</h3><p>Olio su tela, 131 × 175 cm, Musée d’Orsay, Parigi. File locale: <code>moulin-galette.webp</code>. <a href="https://www.musee-orsay.fr/fr/oeuvres/bal-du-moulin-de-la-galette-497">Scheda del museo</a> · <a href="https://commons.wikimedia.org/wiki/File:Auguste_Renoir_-_Dance_at_Le_Moulin_de_la_Galette_-_Google_Art_Project.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Berthe Morisot · <i>Le Berceau / La culla</i>, 1872</h3><p>Olio su tela, 56 × 46,5 cm, Musée d’Orsay, Parigi. File locale: <code>morisot-cradle.webp</code>. <a href="https://www.musee-orsay.fr/en/artworks/le-berceau-1132">Scheda del museo</a> · <a href="https://commons.wikimedia.org/wiki/File:Berthe_Morisot_-_The_Cradle_-_Google_Art_Project.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Mary Cassatt · <i>In the Loge</i>, 1878</h3><p>Olio su tela, 81,3 × 66 cm, Museum of Fine Arts, Boston. File locale: <code>cassatt-in-the-loge.webp</code>. <a href="https://www.mfa.org/news/boston-loves-impressionism-results">Contesto del museo</a> · <a href="https://commons.wikimedia.org/wiki/File:Mary_Stevenson_Cassatt_-_In_the_Loge_-_Google_Art_Project.jpg">riproduzione</a>, pubblico dominio.</p></article>
+          <article><h3>Claude Monet · serie dei covoni, 1890–1891</h3><p><i>Fine dell’estate</i>, <i>Fine del giorno, autunno</i> e <i>Tramonto, effetto di neve</i>, Art Institute of Chicago. File locali: <code>stacks-summer.webp</code>, <code>stacks-autumn.webp</code>, <code>stacks-snow.webp</code>. <a href="https://www.artic.edu/artworks/64818/stacks-of-wheat-end-of-summer">Estate</a> · <a href="https://www.artic.edu/artworks/14624/stacks-of-wheat-end-of-day-autumn">Autunno</a> · <a href="https://www.artic.edu/artworks/81545/stacks-of-wheat-sunset-snow-effect">Neve</a>. Dati e immagini CC0 / pubblico dominio.</p></article>
+          <article><h3>Louis Daguerre · <i>Boulevard du Temple</i>, 1838</h3><p>Dagherrotipo, Münchner Stadtmuseum. File locale: <code>daguerre-boulevard.webp</code>, già verificato nel modulo 13. <a href="https://www.metmuseum.org/essays/daguerre-1787-1851-and-the-invention-of-photography">Contesto storico</a> · <a href="https://commons.wikimedia.org/wiki/File:Boulevard_du_Temple_by_Daguerre.jpg">riproduzione</a>, pubblico dominio.</p></article>
+        </div>
+        <h3>Fonti per il contesto</h3>
+        <ul class="context-sources">
+          <li><a href="https://www.nga.gov/stories/articles/1874-birth-impressionism">National Gallery of Art · 1874: The Birth of Impressionism</a></li>
+          <li><a href="https://www.musee-orsay.fr/en/program/whats-on/exhibitions/paris-1874-inventing-impressionism">Musée d’Orsay · Paris 1874: Inventing Impressionism</a></li>
+          <li><a href="https://www.metmuseum.org/essays/claude-monet-1840-1926">Metropolitan Museum of Art · Claude Monet</a></li>
+          <li><a href="https://www.nga.gov/artworks/46654-rouen-cathedral-west-facade-sunlight">National Gallery of Art · Monet e la serie di Rouen</a></li>
+          <li><a href="https://www.musee-orsay.fr/en/artworks/la-gare-saint-lazare-10897">Musée d’Orsay · La Gare Saint-Lazare</a></li>
+          <li><a href="https://www.musee-orsay.fr/fr/magazine/2025-03-02/berthe-morisot-1841-1895-130-ans-apres-sa-mort-portrait-dune-pionniere-qui-defie-les-conventions">Musée d’Orsay · Berthe Morisot, pioniera</a></li>
+        </ul>
+      </details>
+
+      <nav class="module-nav" aria-label="Navigazione fra moduli"><a href="../13-realismo/">← 13 · Realismo</a><a href="../../index.html#m15">15 · Postimpressionismo (spazio predisposto) →</a></nav>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption" hidden>
+    <div class="lightbox-bar"><p id="lightboxCaption"></p><div><button id="zoomOut" type="button" aria-label="Riduci immagine">−</button><button id="zoomReset" type="button" aria-label="Ripristina ingrandimento">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci immagine">+</button><button id="lightboxClose" type="button" aria-label="Chiudi immagine">×</button></div></div>
+    <div class="lightbox-stage" id="lightboxStage"><img id="lightboxImage" src="assets/images/impression-sunrise.webp" width="2200" height="1707" alt=""></div>
+  </div>
+</body>
+</html>
