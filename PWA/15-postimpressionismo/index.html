@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#172f2a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="La realtà non basta più: PWA didattica sul Postimpressionismo come pluralità di sistemi, strutture, intensità e simboli.">
+  <title>15 · La realtà non basta più — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="topbar">
+    <a class="back" href="../../index.html#m15"><span aria-hidden="true">←</span> Storia dello sguardo</a>
+    <div class="top-actions">
+      <span id="progressText">0 di 13 tappe</span>
+      <button id="notesButton" type="button" aria-expanded="false" aria-controls="notesDrawer">Taccuino</button>
+      <button id="menuButton" type="button" aria-expanded="false" aria-controls="chapterMenu">Indice</button>
+    </div>
+    <progress id="readingProgress" max="13" value="0" aria-label="Avanzamento nel modulo"></progress>
+  </header>
+
+  <aside class="chapter-menu" id="chapterMenu" hidden aria-label="Indice delle tredici sezioni">
+    <div class="drawer-head"><p>La realtà non basta più</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#prima"><span>01</span>Che cosa non torna?</a></li>
+      <li><a href="#passaggio"><span>02</span>Dall’istante alla costruzione</a></li>
+      <li><a href="#mondo"><span>03</span>Il mondo delle ricerche</a></li>
+      <li><a href="#termine"><span>04</span>Un nome venuto dopo</a></li>
+      <li><a href="#laboratorio"><span>05</span>Quattro operazioni</a></li>
+      <li><a href="#seurat"><span>06</span>Seurat · sistematizzare</a></li>
+      <li><a href="#cezanne"><span>07</span>Cézanne · costruire</a></li>
+      <li><a href="#vangogh"><span>08</span>Van Gogh · intensificare</a></li>
+      <li><a href="#gauguin"><span>09</span>Gauguin · simbolizzare</a></li>
+      <li><a href="#altrove"><span>10</span>L’altrove nella storia</a></li>
+      <li><a href="#risposte"><span>11</span>Quattro risposte</a></li>
+      <li><a href="#atlante"><span>12</span>Atlante della realtà</a></li>
+      <li><a href="#ritorno"><span>13</span>Ritorno all’immagine</a></li>
+    </ol></nav>
+    <button class="danger-button" id="resetState" type="button">Azzera tutto sul dispositivo</button>
+  </aside>
+
+  <aside class="notes-drawer" id="notesDrawer" hidden aria-labelledby="notesTitle">
+    <div class="drawer-head"><p id="notesTitle">Taccuino trasversale</p><button id="notesClose" type="button" aria-label="Chiudi taccuino">×</button></div>
+    <p>Annota relazioni, obiezioni e domande. Il testo resta soltanto su questo dispositivo.</p>
+    <label for="generalNotes">Note personali</label>
+    <textarea id="generalNotes" rows="16" placeholder="Una deformazione può…&#10;Il colore costruisce…&#10;Resta invisibile…"></textarea>
+    <p class="save-status" id="notesSave" role="status" aria-live="polite"></p>
+    <button class="reset-button" id="notesReset" type="button">Azzera solo il taccuino</button>
+  </aside>
+  <div class="scrim" id="menuScrim" hidden></div>
+  <p id="storageNotice" class="storage-notice" role="status" aria-live="polite" hidden></p>
+
+  <main id="contenuto">
+    <section class="opening tracked" id="prima" data-step="1" aria-labelledby="openingTitle">
+      <figure class="opening-art zoomable">
+        <img src="assets/images/basket.webp" width="2600" height="2081" alt="Una natura morta con mele, una bottiglia, un cesto inclinato, un piatto di biscotti e una tovaglia bianca su un tavolo dai bordi non allineati.">
+        <div class="hotspots" id="openingHotspots" aria-label="Zone di osservazione dell’opera"></div>
+        <button class="open-image" type="button">Apri l’opera senza guide</button>
+      </figure>
+      <div class="opening-copy">
+        <p class="eyebrow">15 · Prima di sapere</p>
+        <h1 id="openingTitle">Che cosa <em>non torna</em> in questa immagine?</h1>
+        <p class="opening-lead">Niente titolo, autore o data. Cerca le incongruenze senza chiamarle subito errori.</p>
+        <div class="question-cloud"><p>I bordi del tavolo coincidono?</p><p>Il cesto può restare in equilibrio?</p><p>Da quale altezza vedi piatto e mele?</p><p>La bottiglia è davvero verticale?</p><p>La tovaglia unisce o spezza lo spazio?</p><p>Che cosa convince nonostante tutto?</p></div>
+        <div class="observation-panel"><h2>Rileva, non risolvere</h2><p>Attiva le zone che ti sembrano problematiche. I marcatori nominano soltanto ciò che hai guardato.</p><div id="openingChecks" class="choice-grid"></div><p id="openingFinding" class="lab-reading" aria-live="polite"></p><button class="reset-button" id="openingReset" type="button">Azzera questa rilevazione</button></div>
+        <label class="note-label" for="openingNote"><span>Il tuo primo sguardo</span><small>Salvato localmente.</small></label>
+        <textarea id="openingNote" rows="8" placeholder="Mi sembra incoerente… eppure regge perché…"></textarea>
+        <p class="save-status" id="openingSave" role="status" aria-live="polite"></p>
+        <a class="scroll-link" href="#passaggio">Metti alla prova lo sguardo ↓</a>
+      </div>
+    </section>
+
+    <section class="section-pad tracked passage" id="passaggio" data-step="2">
+      <div class="section-index"><span>02</span><p>Dall’istante impressionista alla costruzione dell’immagine</p></div>
+      <div class="split-heading"><div><p class="eyebrow">La domanda lasciata dal modulo 14</p><h2>Se ogni apparizione cambia, <em>che cosa tiene insieme il quadro?</em></h2></div><p>L’Impressionismo non viene cancellato. Ha reso instabili luce, tempo e posizione dell’osservatore. Altri artisti ereditano proprio questa instabilità e le chiedono struttura, metodo, intensità o memoria.</p></div>
+      <div class="paired-works">
+        <figure class="zoomable"><img src="assets/images/monet-stacks.webp" width="1800" height="1067" loading="lazy" alt="Due covoni immersi in una luce calda, con ombre fredde e pennellate visibili."><button class="open-image" type="button">Apri Monet</button><figcaption>Claude Monet, <i>Meules, fin de l’été</i>, 1890–1891. Riutilizzo documentato dal modulo 14.</figcaption></figure>
+        <figure class="zoomable"><img src="assets/images/basket.webp" width="2600" height="2081" loading="lazy" alt="Natura morta di Cézanne con oggetti costruiti da piani e punti di osservazione non perfettamente compatibili."><button class="open-image" type="button">Apri Cézanne</button><figcaption>Paul Cézanne, <i>The Basket of Apples</i>, circa 1893, Art Institute of Chicago.</figcaption></figure>
+      </div>
+      <div class="shift-matrix" role="region" aria-label="Confronto fra due problemi pittorici"><table><thead><tr><th>Domanda</th><th>Monet</th><th>Cézanne</th></tr></thead><tbody><tr><td>Che cosa cambia?</td><td>L’apparizione con luce e atmosfera.</td><td>Le relazioni mentre l’occhio torna sulle cose.</td></tr><tr><td>Tempo</td><td>Una serie confronta istanti diversi.</td><td>Un quadro trattiene osservazioni successive.</td></tr><tr><td>Punto di vista</td><td>Situato, mai neutrale.</td><td>Situato e non necessariamente unico.</td></tr><tr><td>Nuovo problema</td><td>Come appare?</td><td>Che cosa lo tiene insieme?</td></tr></tbody></table></div>
+      <p class="thesis-line">“Oltre l’impressione” non significa fuori dalla realtà: significa che la realtà non arriva già organizzata sulla tela.</p>
+    </section>
+
+    <section class="section-pad tracked dark-section" id="mondo" data-step="3">
+      <div class="section-index inverse"><span>03</span><p>Il mondo che rende possibili queste ricerche</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Cronologia senza nascita miracolosa</p><h2>Artisti, teorie, viaggi, mostre, <em>mercato e potere.</em></h2></div><p>Le ricerche si sovrappongono e non hanno lo stesso inizio. Seleziona una data; poi attraversa la rete per vedere quali condizioni e mediazioni la collegano alle opere.</p></div>
+      <div class="timeline" id="timeline" role="group" aria-label="Cronologia interattiva 1874–1910"></div>
+      <article class="timeline-reading inverse-card" id="timelineReading" aria-live="polite"></article>
+      <button class="reset-button pale" id="timelineReset" type="button">Ripristina la cronologia</button>
+      <div class="network-lab"><h3>La rete, non il genio isolato</h3><p>Scegli un nodo. Le connessioni non sono frecce di progresso: indicano occasioni, conflitti e circolazioni.</p><div class="network-nodes" id="historyNodes"></div><article id="historyReading" class="lab-reading inverse-card" aria-live="polite"></article></div>
+      <details class="text-equivalent"><summary>Alternativa testuale alla rete</summary><p>Mostre indipendenti, teorie del colore, lettere, viaggi, riproduzioni, critica, mercanti, collezionisti e dominio coloniale modificano ciò che gli artisti possono vedere, produrre e far circolare. Nessun nodo causa da solo il Postimpressionismo.</p></details>
+    </section>
+
+    <section class="section-pad tracked term-section" id="termine" data-step="4">
+      <div class="section-index"><span>04</span><p>Che cosa significa davvero “Postimpressionismo”?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Un’etichetta retrospettiva</p><h2>Prima le opere. <em>Poi il contenitore.</em></h2></div><p>Roger Fry diffuse il termine nel 1910 con la mostra londinese <i>Manet and the Post-Impressionists</i>. Il nome rende visibile una costellazione, ma rischia di uniformarla.</p></div>
+      <div class="term-map" id="termMap" role="group" aria-label="Mappa critica dei termini"></div>
+      <article class="term-reading" id="termReading" aria-live="polite"></article>
+      <div class="myth-panel"><h3>Non significa…</h3><div id="mythButtons" class="choice-grid"></div><p id="mythReading" class="lab-reading" aria-live="polite"></p></div>
+      <article class="canon-card"><p class="eyebrow">Il canone si complica</p><h3>Anna Boch: artista, rete espositiva, collezionista</h3><p>Membro del gruppo belga Les XX, espose nel circuito che accolse il Neoimpressionismo e acquistò <i>La vigna rossa</i> di Van Gogh. Non è una comparsa decorativa: mostra che la storia passa anche da artiste-collezioniste capaci di esporre, riconoscere e far circolare opere.</p></article>
+    </section>
+
+    <section class="section-pad tracked lab-section" id="laboratorio" data-step="5">
+      <div class="section-index"><span>05</span><p>Laboratorio centrale · quattro modi per andare oltre la registrazione</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Una scena didattica, non un falso dipinto</p><h2>Costruisci una verità <em>per relazioni.</em></h2></div><p>Agisci sullo schema astratto. Ogni controllo modifica una decisione visiva e spiega ciò che rende possibile e ciò che sacrifica.</p></div>
+      <div class="concept-lab">
+        <div class="scene-wrap"><svg id="conceptScene" viewBox="0 0 800 520" role="img" aria-labelledby="sceneTitle sceneDesc"><title id="sceneTitle">Scena astratta trasformabile</title><desc id="sceneDesc">Un tavolo schematico, una finestra, tre forme e piani colorati. I controlli modificano continuità dei segni, stabilità, struttura, colore, semplificazione, memoria e contorno.</desc><rect class="scene-bg" x="18" y="18" width="764" height="484" rx="8"/><path class="scene-window" d="M500 70h190v145H500z M595 70v145 M500 143h190"/><path class="scene-table" d="M95 305 L650 265 L735 420 L150 455 Z"/><g class="scene-objects"><ellipse cx="310" cy="322" rx="76" ry="54"/><rect x="426" y="238" width="52" height="108" rx="10"/><path d="M520 333l63-90 72 112z"/></g><g class="scene-memory"><path d="M132 108c70-60 140 50 210-8"/><circle cx="238" cy="160" r="31"/></g><g class="scene-marks"></g></svg><p class="simulation-label">Schema concettuale originale · non imita alcuna opera storica</p></div>
+        <form class="lab-controls" id="conceptControls"><label>Continuità dei tocchi <input id="labTouches" type="range" min="0" max="4" step="1"></label><label>Stabilità del punto di vista <input id="labView" type="range" min="0" max="4" step="1"></label><label>Organizzazione dei piani <input id="labPlanes" type="range" min="0" max="4" step="1"></label><label>Tensione cromatica <input id="labColor" type="range" min="0" max="4" step="1"></label><label>Semplificazione delle forme <input id="labSimplify" type="range" min="0" max="4" step="1"></label><label>Memoria / immaginazione <input id="labMemory" type="range" min="0" max="4" step="1"></label><label>Ritmo e contorno <input id="labOutline" type="range" min="0" max="4" step="1"></label><fieldset><legend>Operazione privilegiata</legend><div class="operation-radios"><label><input type="radio" name="operation" value="system"> Sistema</label><label><input type="radio" name="operation" value="structure"> Struttura</label><label><input type="radio" name="operation" value="intensity"> Intensità</label><label><input type="radio" name="operation" value="symbol"> Simbolo</label></div></fieldset></form>
+      </div>
+      <article id="conceptReading" class="lab-reading" aria-live="polite"></article><button class="reset-button" id="conceptReset" type="button">Ripristina il laboratorio</button>
+    </section>
+
+    <section class="section-pad tracked seurat-section" id="seurat" data-step="6">
+      <div class="section-index"><span>06</span><p>Seurat · quando l’istante diventa sistema</p></div>
+      <div class="artist-heading"><p class="operation-tag system">Sistematizzare</p><h2>Una domenica costruita <em>per anni.</em></h2><p>Una scena di svago diventa grande formato, sequenza di studi, ritmo quasi cerimoniale e superficie organizzata. La teoria del colore è una risorsa storica: non un algoritmo che dipinge al posto dell’artista.</p></div>
+      <div class="art-analysis">
+        <figure class="zoomable layered-figure" id="seuratStage"><img src="assets/images/grande-jatte.webp" width="2600" height="1747" loading="lazy" alt="Numerose figure ferme trascorrono una domenica sulla riva della Senna, organizzate in profili, verticali, ombre e tocchi di colore separati."><div class="analysis-overlay" aria-hidden="true"><span data-layer="rhythm"></span><span data-layer="space"></span><span data-layer="edge"></span><span data-layer="leisure"></span></div><button class="open-image" type="button">Apri l’opera</button><figcaption>Georges Seurat, <i>A Sunday on La Grande Jatte—1884</i>, 1884–1886; bordo dipinto 1888–1889, Art Institute of Chicago.</figcaption></figure>
+        <div><div id="seuratLayers" class="layer-buttons" role="group" aria-label="Livelli di analisi della Grande Jatte"></div><article id="seuratReading" class="lab-reading" aria-live="polite"></article><p id="seuratEquivalent" class="equivalent"></p><button class="reset-button" id="seuratReset" type="button">Togli tutte le guide</button></div>
+      </div>
+      <div class="study-compare"><figure class="zoomable"><img src="assets/images/grande-jatte-study.webp" width="1959" height="1332" loading="lazy" alt="Studio preparatorio della Grande Jatte con pennellate più larghe, figure e paesaggio ancora in fase di definizione."><button class="open-image" type="button">Apri lo studio</button><figcaption>Georges Seurat, <i>Study for “A Sunday on La Grande Jatte”</i>, 1884, The Metropolitan Museum of Art.</figcaption></figure><div><h3>Regola / eccezione</h3><p>Seleziona prima ciò che obbedisce a un ordine e poi ciò che lo incrina.</p><div id="ruleException" class="choice-grid"></div><article id="ruleReading" class="lab-reading" aria-live="polite"></article><button class="reset-button" id="ruleReset" type="button">Azzera regola/eccezione</button></div></div>
+    </section>
+
+    <section class="section-pad tracked cezanne-section" id="cezanne" data-step="7">
+      <div class="section-index"><span>07</span><p>Cézanne · costruire una durata con punti di vista incompatibili</p></div>
+      <div class="artist-heading"><p class="operation-tag structure">Costruire</p><h2>L’opera iniziale <em>rivela il proprio lavoro.</em></h2><p><i>The Basket of Apples</i>, circa 1893. Le indagini tecniche mostrano un impianto preparatorio seguito con aggiustamenti limitati: l’instabilità non è un incidente da correggere, ma una tensione deliberatamente mantenuta.</p></div>
+      <div class="art-analysis reverse">
+        <figure class="zoomable layered-figure" id="cezanneStage"><img src="assets/images/basket.webp" width="2600" height="2081" loading="lazy" alt="Il Cesto di mele di Cézanne, con tavolo inclinato, bottiglia, tovaglia, piatto, biscotti e frutta costruiti da relazioni cromatiche."><svg class="guide-overlay" viewBox="0 0 1000 800" aria-hidden="true"><path data-guide="edges" d="M65 585L555 575 M560 520L980 430"/><path data-guide="bottle" d="M518 120L500 570"/><path data-guide="basket" d="M570 250L770 210L850 450"/><ellipse data-guide="plate" cx="250" cy="562" rx="145" ry="48"/><g data-guide="views"><circle cx="260" cy="110" r="22"/><path d="M260 135L230 510"/><circle cx="720" cy="100" r="22"/><path d="M720 125L680 460"/></g></svg><button class="open-image" type="button">Apri senza guide</button><figcaption>Paul Cézanne, <i>The Basket of Apples</i>, circa 1893, Art Institute of Chicago.</figcaption></figure>
+        <div><div id="cezanneGuides" class="layer-buttons" role="group" aria-label="Guide dei piani di Cézanne"></div><article id="cezanneReading" class="lab-reading" aria-live="polite"></article><label class="note-label" for="cezanneExplain"><span>Errore o costruzione?</span><small>Formula la tua spiegazione.</small></label><textarea id="cezanneExplain" rows="5" placeholder="Le incongruenze… ma l’insieme…"></textarea><p class="save-status" id="cezanneSave" role="status" aria-live="polite"></p><button class="reset-button" id="cezanneReset" type="button">Togli le guide</button></div>
+      </div>
+    </section>
+
+    <section class="section-pad tracked vangogh-section" id="vangogh" data-step="8">
+      <div class="section-index"><span>08</span><p>Van Gogh · il colore mette in relazione</p></div>
+      <div class="artist-heading"><p class="operation-tag intensity">Intensificare</p><h2>Una stanza reale, <em>un desiderio costruito.</em></h2><p>Nel 1888 Van Gogh scrive a Theo che il colore deve “fare il lavoro” e suggerire il riposo. La versione di Chicago del 1889 ripete la prima composizione: studio, lettere e decisioni, non un impulso diagnosticabile.</p></div>
+      <div class="art-analysis">
+        <figure class="zoomable"><img src="assets/images/bedroom.webp" width="2600" height="2040" loading="lazy" alt="La camera di Van Gogh ad Arles con letto, sedie, tavolino, quadri, pareti azzurre e prospettiva fortemente inclinata."><button class="open-image" type="button">Apri l’opera</button><figcaption>Vincent van Gogh, <i>The Bedroom</i>, 1889, Art Institute of Chicago.</figcaption></figure>
+        <div class="room-lab"><h3>Visibile · documentato · ipotizzato</h3><div class="room-schema" id="roomSchema" role="img" aria-label="Schema didattico separato della stanza"><span class="wall"></span><span class="floor"></span><span class="bed"></span><span class="chair one"></span><span class="chair two"></span><span class="window"></span><span class="lines"></span></div><div id="roomControls" class="choice-grid"></div><article id="roomReading" class="lab-reading" aria-live="polite"></article><button class="reset-button" id="roomReset" type="button">Ripristina lo schema</button></div>
+      </div>
+      <div class="evidence-strip"><p><b>Visibile:</b> contorni, inclinazioni, ombre ridotte, coppie cromatiche.</p><p><b>Documentato:</b> nelle lettere Van Gogh associa la semplificazione del colore all’idea di riposo.</p><p><b>Da non assolutizzare:</b> i pigmenti sono cambiati; il blu attuale include zone originariamente più lilla o violacee.</p></div>
+      <p class="thesis-line">Se la stanza viene trasformata per rendere visibile un desiderio di casa, è meno vera o diversamente vera?</p>
+    </section>
+
+    <section class="section-pad tracked gauguin-section" id="gauguin" data-step="9">
+      <div class="section-index"><span>09</span><p>Gauguin · dipingere ciò che gli occhi non vedono da soli</p></div>
+      <div class="artist-heading"><p class="operation-tag symbol">Simbolizzare</p><h2>Il sermone continua <em>dentro l’immagine.</em></h2><p>Donne bretoni, tronco diagonale e lotta biblica condividono la stessa superficie. Il rosso non “significa emozione” in astratto: separa il campo dalla natura osservata e unisce ascolto, memoria, fede e costruzione.</p></div>
+      <div class="art-analysis reverse">
+        <figure class="zoomable layered-figure" id="gauguinStage"><img src="assets/images/vision-sermon.webp" width="2600" height="2037" loading="lazy" alt="Donne bretoni con cuffie bianche assistono alla visione di Giacobbe che lotta con l’angelo su un campo rosso, separato da un tronco diagonale."><div class="analysis-overlay gauguin-overlay" aria-hidden="true"><span data-layer="women"></span><span data-layer="tree"></span><span data-layer="vision"></span><span data-layer="field"></span></div><button class="open-image" type="button">Apri l’opera</button><figcaption>Paul Gauguin, <i>Vision of the Sermon (Jacob Wrestling with the Angel)</i>, 1888, National Galleries of Scotland.</figcaption></figure>
+        <div><h3>Visibile / ricordato / immaginato / simbolizzato</h3><p>Ogni elemento può abitare più di un livello. Seleziona un elemento e attribuiscigli tutte le categorie che riesci a motivare.</p><div id="gauguinElements" class="layer-buttons"></div><div id="gauguinCategories" class="choice-grid"></div><article id="gauguinReading" class="lab-reading" aria-live="polite"></article><button class="reset-button" id="gauguinReset" type="button">Azzera questa lettura</button></div>
+      </div>
+    </section>
+
+    <section class="section-pad tracked colonial-section" id="altrove" data-step="10">
+      <div class="section-index inverse"><span>10</span><p>L’altrove non è fuori dalla storia</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Tahiti, colonia francese dal 1880</p><h2>Chi costruisce <em>il paradiso?</em></h2></div><p>Gauguin arrivò nel 1891 in un’isola già attraversata da amministrazione coloniale, missioni, commercio, malattie e modernizzazione. Cercò e inventò ciò che riteneva perduto, trasformando persone reali e fonti diverse in un “altrove” destinato anche al pubblico europeo.</p></div>
+      <figure class="wide-art zoomable"><img src="assets/images/where-from.webp" width="2600" height="957" loading="lazy" alt="Grande composizione orizzontale di Gauguin con figure tahitiane di età diverse immerse in un paesaggio, animali, frutti e un idolo blu sullo sfondo."><button class="open-image" type="button">Apri l’opera</button><figcaption>Paul Gauguin, <i>D’où venons-nous? Que sommes-nous? Où allons-nous?</i>, 1897–1898, Museum of Fine Arts, Boston.</figcaption></figure>
+      <div class="colonial-lab"><div><h3>Il quadro coloniale dello sguardo</h3><p>Apri ciascuna domanda e registra ciò che l’opera permette o impedisce di sapere.</p><div id="colonialQuestions" class="choice-grid"></div></div><article id="colonialReading" class="lab-reading inverse-card" aria-live="polite"></article></div>
+      <div class="power-note"><h3>Contestualizzare non assolve</h3><p>Le fonti documentano rapporti personali segnati da forti asimmetrie di età, genere e potere coloniale. Non possediamo però una voce equivalente delle persone rappresentate. L’assenza archivistica è parte del problema: l’artista nomina, scrive, vende e viene conservato; molte modelle restano senza un racconto proprio.</p></div>
+      <button class="reset-button pale" id="colonialReset" type="button">Azzera l’attività coloniale</button>
+    </section>
+
+    <section class="section-pad tracked answers-section" id="risposte" data-step="11">
+      <div class="section-index"><span>11</span><p>Quattro risposte, nessuna formula unica</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Comparatore sincronizzato</p><h2>La stessa crisi, <em>risposte incompatibili.</em></h2></div><p>Scegli una categoria. Il confronto mostra una somiglianza reale, una differenza decisiva, un rischio di semplificazione e una domanda aperta.</p></div>
+      <div id="answerCategories" class="category-scroller" role="tablist" aria-label="Categorie del confronto"></div>
+      <div class="four-grid" id="answerWorks"></div>
+      <article id="answerSynthesis" class="comparison-synthesis" aria-live="polite"></article>
+      <button class="reset-button" id="answersReset" type="button">Ripristina il confronto</button>
+      <div class="exchange-network"><h3>Rete degli scambi</h3><div id="exchangeNodes" class="network-nodes"></div><article id="exchangeReading" class="lab-reading" aria-live="polite"></article><details class="text-equivalent"><summary>Alternativa testuale</summary><p>Pissarro lavora con Cézanne e dialoga con Seurat e Signac; Van Gogh incontra a Parigi Neoimpressionismo e stampe giapponesi; Van Gogh e Gauguin lavorano insieme ad Arles; Gauguin e Bernard negoziano le idee di Sintetismo; lettere, critici, mercanti e collezionisti trasformano la ricezione.</p></details></div>
+    </section>
+
+    <section class="section-pad tracked atlas-section" id="atlante" data-step="12">
+      <div class="section-index"><span>12</span><p>Atlante · che cosa può fare un’immagine?</p></div>
+      <div class="split-heading"><div><p class="eyebrow">Moduli 13 · 14 · 15</p><h2>Nessuna scala del progresso. <em>Ogni guadagno ha un costo.</em></h2></div><p>Dal presente sociale alla percezione, poi alle costruzioni postimpressioniste: ogni opera rende visibile qualcosa e ne lascia altro fuori.</p></div>
+      <div id="atlasCategories" class="category-scroller" role="tablist" aria-label="Categorie dell’atlante"></div>
+      <div id="atlasWorks" class="atlas-grid"></div>
+      <article id="atlasReading" class="comparison-synthesis" aria-live="polite"></article>
+      <button class="reset-button" id="atlasReset" type="button">Ripristina l’atlante</button>
+      <div class="threshold"><p class="eyebrow">Soglia verso la Galleria IV</p><h3>Quando la forma rende visibile ciò che accade dentro di noi</h3><p>Se l’opera trasforma il mondo per mostrarne struttura, intensità e conflitto, che cosa accade quando questa trasformazione diventa linguaggio dell’interiorità?</p><a href="../../index.html#m16">Vai alla scheda del modulo 16 →</a></div>
+    </section>
+
+    <section class="section-pad tracked return-section" id="ritorno" data-step="13">
+      <div class="section-index inverse"><span>13</span><p>Ritorno all’immagine iniziale</p></div>
+      <div class="return-grid"><figure class="zoomable"><img src="assets/images/basket.webp" width="2600" height="2081" loading="lazy" alt="Il Cesto di mele di Cézanne ripresentato integralmente e senza sovrapposizioni."><button class="open-image" type="button">Apri l’opera</button><figcaption>Paul Cézanne, <i>The Basket of Apples</i>, circa 1893.</figcaption></figure><div><p class="eyebrow">Il tuo primo sguardo</p><blockquote id="openingMemory">Non hai ancora scritto la prima osservazione.</blockquote><label class="note-label" for="returnNote"><span>Seconda lettura</span><small>Che cosa avevi chiamato errore? Che cosa riconosci ora come decisione?</small></label><textarea id="returnNote" rows="9" placeholder="Ora vedo che… La costruzione regge perché… Resta fuori…"></textarea><p class="save-status" id="returnSave" role="status" aria-live="polite"></p><div id="finalOperations" class="choice-grid" aria-label="Operazioni più utili nella seconda lettura"></div></div></div>
+      <article class="personal-summary" id="personalSummary" aria-live="polite"><h2>La tua sintesi prenderà forma qui</h2><p>Completa attività e note: la sintesi userà soltanto le scelte realmente registrate.</p></article>
+      <button class="reset-button pale" id="returnReset" type="button">Azzera solo la seconda lettura</button>
+
+      <section class="quiz-section" aria-labelledby="quizTitle"><div class="quiz-head"><div><p class="eyebrow">Verifica con recupero</p><h2 id="quizTitle">Sedici nuclei, nessuna scorciatoia</h2></div><div><progress id="quizMeter" max="16" value="0" aria-label="Avanzamento verifica"></progress><span id="quizCount">Domanda 1 di 16</span></div></div><div id="quizArea" aria-live="polite"></div></section>
+
+      <section class="sources" aria-labelledby="sourcesTitle"><div><p class="eyebrow">Fonti e immagini</p><h2 id="sourcesTitle">Ogni affermazione delicata deve poter essere verificata.</h2><p>Le opere sono copie locali autentiche in pubblico dominio. Il registro esteso documenta dati, file, licenze, riusi e fonti interpretative.</p><a class="source-register" href="SOURCES.md">Apri il registro completo →</a></div><div class="source-list"><a href="https://www.artic.edu/artworks/111436/the-basket-of-apples">Art Institute · The Basket of Apples</a><a href="https://www.artic.edu/artworks/27992/a-sunday-on-la-grande-jatte-1884">Art Institute · La Grande Jatte</a><a href="https://www.metmuseum.org/art/collection/search/437658">The Met · Studio per La Grande Jatte</a><a href="https://www.artic.edu/artworks/28560/the-bedroom">Art Institute · The Bedroom</a><a href="https://vangoghletters.org/en/let705/38">Van Gogh Letters · lettera 705</a><a href="https://www.nationalgalleries.org/art-and-artists/4940">National Galleries · Vision of the Sermon</a><a href="https://www.nationalgallery.org.uk/exhibitions/past/the-credit-suisse-exhibition-gauguin-portraits/a-new-chapter-tahiti-and-the-marquesas-islands">National Gallery · Tahiti coloniale</a><a href="https://www.tate.org.uk/art/art-terms/p/post-impressionism">Tate · Post-impressionism</a><a href="https://www.metmuseum.org/essays/georges-seurat-1859-1891-and-neo-impressionism">The Met · Neoimpressionismo</a><a href="https://www.musee-orsay.fr/en/program/whats-on/exhibitions/presentation/cezanne-picasso-masterpieces-vollard-gallery">Musée d’Orsay · Vollard</a></div></section>
+
+      <div class="final-thesis"><p>La realtà non è scomparsa: è diventata una costruzione. Il passo successivo sarà chiedere che cosa accade quando questa costruzione rende visibile il conflitto interiore.</p></div>
+      <nav class="module-nav" aria-label="Navigazione fra moduli"><a href="../14-impressionismo/">← 14 · Impressionismo</a><a href="../../index.html#m15">Home · Modulo 15</a><a href="../../index.html#m16">16 · Espressionismo →</a></nav>
+    </section>
+  </main>
+
+  <footer><p><strong>Storia dello sguardo · Modulo 15</strong><br>Postimpressionismo — Oltre ciò che l’occhio registra</p><p>Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p><a href="#prima">Torna all’inizio ↑</a></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption" hidden>
+    <div class="lightbox-bar"><p id="lightboxCaption"></p><div><button id="zoomOut" type="button" aria-label="Riduci immagine">−</button><button id="zoomReset" type="button" aria-label="Ripristina ingrandimento">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci immagine">+</button><button id="lightboxClose" type="button" aria-label="Chiudi immagine">×</button></div></div>
+    <div class="lightbox-stage" id="lightboxStage"><img id="lightboxImage" src="assets/images/basket.webp" width="2600" height="2081" alt=""></div>
+  </div>
+</body>
+</html>
