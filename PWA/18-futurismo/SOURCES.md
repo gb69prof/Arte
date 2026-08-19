@@ -70,7 +70,7 @@ Consultazione e verifica: 19 agosto 2026. Le immagini sono locali; nessuna opera
 ### Immagini riusate dai moduli precedenti
 
 - `juan-legua.webp`: Juan Gris, *Juan Legua*, 1911, The Metropolitan Museum of Art; fonte, licenza e trasformazioni in [`../17-cubismo/SOURCES.md`](../17-cubismo/SOURCES.md). Copia locale 1851 × 2200 px.
-- `cezanne-basket.webp`: Paul Cézanne, *The Basket of Apples*, circa 1893, Art Institute of Chicago; fonte, licenza e trasformazioni in [`../15-postimpressionismo/SOURCES.md`](../15-postimpressionismo/SOURCES.md). Copia locale 2600 × 2081 px.
+- `cezanne-basket.webp`: Paul Cézanne, *The Basket of Apples*, circa 1893, Art Institute of Chicago; fonte, licenza e trasformazioni in [`../15-postimpressionismo/SOURCES.md`](../15-postimpressionismo/SOURCES.md). Copia locale ridotta proporzionalmente a 1800 × 1441 px, WebP qualità 78.
 - `munch-scream.webp`: Edvard Munch, *Skrik / L’urlo*, 1893, Nasjonalmuseet; fonte, licenza e trasformazioni in [`../16-espressionismo/SOURCES.md`](../16-espressionismo/SOURCES.md). Copia locale 1773 × 2200 px.
 - `kirchner.webp`: Ernst Ludwig Kirchner, *Straße, Dresden*, 1908/1919, MoMA; fonte e condizioni in [`../16-espressionismo/SOURCES.md`](../16-espressionismo/SOURCES.md). Usata soltanto nell’atlante testuale e conservata per coerenza documentaria.
 - `kandinsky.webp`: Vasily Kandinsky, *Improvisation 27 (Garden of Love II)*, 1912, The Metropolitan Museum of Art; fonte e licenza in [`../16-espressionismo/SOURCES.md`](../16-espressionismo/SOURCES.md). Usata nell’atlante testuale e conservata per coerenza documentaria.
