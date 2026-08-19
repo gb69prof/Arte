@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Dada e Surrealismo</title><desc id="desc">Due ruote dentate rosse e turchesi attraversate da una freccia su fondo scuro.</desc>
+  <rect width="512" height="512" rx="92" fill="#151418"/>
+  <circle cx="190" cy="230" r="112" fill="none" stroke="#c52f2d" stroke-width="42" stroke-dasharray="48 18"/>
+  <circle cx="342" cy="278" r="82" fill="none" stroke="#54d8c8" stroke-width="34" stroke-dasharray="34 14"/>
+  <path d="M68 404 420 92l-18 92 80-8-352 312 18-92z" fill="#f5eddd"/>
+  <circle cx="190" cy="230" r="26" fill="#f5eddd"/><circle cx="342" cy="278" r="20" fill="#f5eddd"/>
+</svg>
