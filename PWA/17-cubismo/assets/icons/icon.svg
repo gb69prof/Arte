@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Icona astratta del modulo sul Cubismo">
+  <rect width="512" height="512" fill="#24231f"/>
+  <path d="M52 92 286 48l174 132-64 270-270 14L52 92Z" fill="#d4a84f"/>
+  <path d="m120 66 240 60-74 330-184-92Z" fill="#4c5c4f" opacity=".9"/>
+  <path d="m66 250 338-132 42 276-282 58Z" fill="#8f4d32" opacity=".82"/>
+  <path d="m132 132 240 48-38 202-180 12Z" fill="none" stroke="#f2eadb" stroke-width="22"/>
+  <text x="165" y="318" fill="#f2eadb" font-family="Georgia,serif" font-size="184" font-weight="700">17</text>
+</svg>

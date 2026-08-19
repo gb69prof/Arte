@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#24231f">
+  <meta name="description" content="La fine dell’unico punto di vista: laboratorio interattivo sul Cubismo, fra vedute, segni, materiali, reti e conoscenza.">
+  <title>17 · La fine dell’unico punto di vista — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="sideNav" aria-expanded="false"><span aria-hidden="true">☰</span><span>Indice</span></button>
+    <a class="project" href="../../index.html"><span aria-hidden="true">S</span><b>Storia dello sguardo</b></a>
+    <p><span>Galleria IV</span><strong>17 / 25</strong></p>
+  </header>
+
+  <aside class="side-nav" id="sideNav" aria-label="Indice del modulo" aria-hidden="true" inert>
+    <div class="side-head"><p>Galleria IV · Frammentare il reale</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#s1"><span>01</span>Prima di sapere</a></li><li><a href="#s2"><span>02</span>La soglia dall’Espressionismo</a></li>
+      <li><a href="#s3"><span>03</span>Il mondo storico</a></li><li><a href="#s4"><span>04</span>Una parola costruisce</a></li>
+      <li><a href="#s5"><span>05</span>Laboratorio del punto di vista</a></li><li><a href="#s6"><span>06</span>Cézanne, senza destino</a></li>
+      <li><a href="#s7"><span>07</span>Picasso, Braque e il racconto</a></li><li><a href="#s8"><span>08</span>Perdere per conoscere</a></li>
+      <li><a href="#s9"><span>09</span>La realtà entra nel quadro</a></li><li><a href="#s10"><span>10</span>I Cubismi</a></li>
+      <li><a href="#s11"><span>11</span>Spazio, tempo, simultaneità</a></li><li><a href="#s12"><span>12</span>Atlante</a></li>
+      <li><a href="#s13"><span>13</span>Secondo sguardo</a></li>
+    </ol></nav>
+    <div class="side-actions"><a href="#verifica">Verifica finale</a><button id="resetAll" class="danger" type="button">Azzera il modulo</button></div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <main id="contenuto">
+    <section class="threshold section-dark" id="s1" data-section="1" aria-labelledby="s1-title">
+      <div class="threshold-copy">
+        <p class="kicker">01 · Prima di sapere</p>
+        <h1 id="s1-title">Il volto è stato spezzato<br>o non ha mai avuto <em>un solo lato?</em></h1>
+        <p class="lead">Niente autore, titolo o movimento. Prima separa ciò che riconosci da ciò che ricostruisci.</p>
+        <blockquote>Quante informazioni deve conservare un’immagine perché continuiamo a riconoscere una persona?</blockquote>
+      </div>
+      <figure class="art-stage portrait-stage">
+        <div class="art-wrap" id="openingStage">
+          <img src="assets/images/juan-legua.webp" alt="Ritratto maschile costruito da piani bruni e grigi; volto, capelli, pipa e giacca sono riconoscibili ma discontinui." width="1851" height="2200">
+          <button class="marker m-hair" data-marker="capelli" aria-pressed="false" aria-label="Osserva capelli e profilo"><span>1</span></button>
+          <button class="marker m-face" data-marker="volto" aria-pressed="false" aria-label="Osserva i piani del volto"><span>2</span></button>
+          <button class="marker m-pipe" data-marker="pipa" aria-pressed="false" aria-label="Osserva la pipa"><span>3</span></button>
+          <button class="marker m-jacket" data-marker="giacca" aria-pressed="false" aria-label="Osserva giacca e fondo"><span>4</span></button>
+        </div>
+        <figcaption><span class="concealed">Opera non ancora rivelata</span><button class="view-art" data-image="assets/images/juan-legua.webp" data-caption="Opera iniziale, ancora senza titolo: osservala integralmente." type="button">Ingrandisci l’opera</button></figcaption>
+      </figure>
+      <div class="observation-grid">
+        <div class="clue-card" id="markerReadout" aria-live="polite"><b>Scegli una zona</b><p>Un marcatore mostra un dato; non fornisce ancora una spiegazione.</p></div>
+        <label class="notebook"><span>Prima ipotesi · che cosa riconosci e che cosa deduci?</span><textarea id="initialNote" rows="5" placeholder="Descrivi indizi, piani, continuità e interruzioni senza nominare ancora uno stile."></textarea><small>Salvato soltanto su questo dispositivo.</small></label>
+      </div>
+    </section>
+
+    <section class="panel" id="s2" data-section="2" aria-labelledby="s2-title">
+      <header class="section-title"><p class="kicker">02 · La soglia dall’Espressionismo</p><h2 id="s2-title">La realtà non viene “superata”.<br><em>Cambia il problema.</em></h2></header>
+      <div class="paired-art">
+        <figure><button class="image-button view-art" data-image="assets/images/munch-scream.webp" data-caption="Edvard Munch, L’urlo, 1893. Riuso dal modulo 16." type="button"><img src="assets/images/munch-scream.webp" alt="Figura frontale sul ponte, paesaggio e cielo attraversati da linee ondulate." width="1773" height="2200"></button><figcaption><b>Munch</b><span>Figura e spazio sono trasformati per rendere visibile una tensione.</span></figcaption></figure>
+        <figure><button class="image-button view-art" data-image="assets/images/juan-legua.webp" data-caption="Juan Gris, Juan Legua, 1911. L’identità sarà rivelata nella sezione 13." type="button"><img src="assets/images/juan-legua.webp" alt="Ritratto maschile discontinuo costruito da piani bruni e grigi." width="1851" height="2200"></button><figcaption><b>Opera iniziale</b><span>La figura non è soltanto deformata: viene resa come relazione fra indizi e piani.</span></figcaption></figure>
+      </div>
+      <div class="shift-lab" role="group" aria-labelledby="shift-title"><h3 id="shift-title">Distingui le operazioni</h3><div class="choice-row" id="shiftChoices">
+        <button type="button" data-shift="deformare">Deformare</button><button type="button" data-shift="frammentare">Frammentare</button><button type="button" data-shift="comprimere">Comprimere</button><button type="button" data-shift="moltiplicare">Moltiplicare</button><button type="button" data-shift="segno">Trasformare in segno</button>
+      </div><div class="result-box" id="shiftResult" aria-live="polite">Scegli un’operazione: la stessa parola non produce lo stesso effetto nelle due opere.</div></div>
+      <div class="critical-note"><b>Niente formula “emozione contro ragione”</b><p>Munch costruisce uno spazio pensato; Gris produce un’immagine capace di inquietare la certezza dello sguardo. Le differenze riguardano problemi e operazioni, non due facoltà umane separate.</p></div>
+    </section>
+
+    <section class="panel section-mineral" id="s3" data-section="3" aria-labelledby="s3-title">
+      <header class="section-title"><p class="kicker">03 · Il mondo storico</p><h2 id="s3-title">Nessuna causa unica.<br><em>Una rete di condizioni.</em></h2><p>Parigi, mostre, fotografie, merci e colonialismo non “producono” il Cubismo: ne definiscono il campo storico.</p></header>
+      <div class="timeline" id="timeline" role="list" aria-label="Cronologia interattiva del Cubismo">
+        <button type="button" role="listitem" data-year="1890"><b>1890–1906</b><span>Cézanne, fotografia, cinema e stampa trasformano la cultura visiva.</span></button>
+        <button type="button" role="listitem" data-year="1907"><b>1907</b><span>Retrospettiva Cézanne; Demoiselles; museo del Trocadéro.</span></button>
+        <button type="button" role="listitem" data-year="1908"><b>1908</b><span>Braque espone da Kahnweiler; circola la parola “cubi”.</span></button>
+        <button type="button" role="listitem" data-year="1910"><b>1909–10</b><span>Picasso e Braque lavorano in confronto serrato.</span></button>
+        <button type="button" role="listitem" data-year="1911"><b>1911</b><span>I cubisti dei Salon rendono pubblica la controversia.</span></button>
+        <button type="button" role="listitem" data-year="1912"><b>1912</b><span><i>Du “Cubisme”</i>, Section d’Or e primi papiers collés.</span></button>
+        <button type="button" role="listitem" data-year="1913"><b>1913</b><span>Armory Show: ricezione internazionale e scandalo.</span></button>
+        <button type="button" role="listitem" data-year="1914"><b>1914</b><span>La guerra interrompe reti, mobilita artisti, sequestra gallerie.</span></button>
+      </div>
+      <article class="timeline-detail" id="timelineDetail" aria-live="polite"><p>Scegli una data: appariranno evento, relazione e limite causale.</p></article>
+      <div class="relation-map" aria-labelledby="relation-title"><h3 id="relation-title">Condizioni, incontri, scambi, ricezioni</h3><div class="network" id="historyNetwork">
+        <button type="button" data-node="parigi">Parigi</button><button type="button" data-node="media">Fotografia e stampa</button><button type="button" data-node="mercato">Gallerie e mercato</button><button type="button" data-node="salons">Salon</button><button type="button" data-node="colonie">Colonialismo e musei</button><button type="button" data-node="guerra">Guerra</button>
+      </div><p id="networkText" class="equivalent">Attiva un nodo per leggere che cosa rende possibile e che cosa non spiega.</p></div>
+    </section>
+
+    <section class="panel" id="s4" data-section="4" aria-labelledby="s4-title">
+      <header class="section-title"><p class="kicker">04 · Una parola costruisce un movimento</p><h2 id="s4-title">Prima i “cubi”.<br><em>Poi il Cubismo.</em></h2></header>
+      <div class="term-map"><div class="term-tabs" role="tablist" aria-label="Reti storiche del termine Cubismo">
+        <button role="tab" aria-selected="true" aria-controls="termPanel" data-term="etichetta" type="button">L’etichetta</button><button role="tab" aria-selected="false" aria-controls="termPanel" data-term="galleria" type="button">La galleria</button><button role="tab" aria-selected="false" aria-controls="termPanel" data-term="salon" type="button">I Salon</button><button role="tab" aria-selected="false" aria-controls="termPanel" data-term="critici" type="button">Critici e libri</button><button role="tab" aria-selected="false" aria-controls="termPanel" data-term="pubblico" type="button">Il pubblico</button>
+      </div><article id="termPanel" class="term-panel" role="tabpanel" tabindex="0"></article></div>
+      <div class="merchant-grid">
+        <article><p class="eyebrow">Picasso e Braque</p><h3>Il laboratorio riservato</h3><p>Daniel-Henry Kahnweiler acquistava e presentava opere in galleria. La relativa distanza dai Salon favorì un lavoro sperimentale poco esposto al grande pubblico, ma dipendente da una rete commerciale precisa.</p></article>
+        <article><p class="eyebrow">Metzinger, Gleizes, Delaunay, Léger</p><h3>Il movimento visibile</h3><p>Gli artisti dei Salon esposero collettivamente e alimentarono la discussione pubblica. L’etichetta unificò pratiche che non coincidevano.</p></article>
+        <article><p class="eyebrow">1912–1913</p><h3>La teoria circola</h3><p><i>Du “Cubisme”</i> di Gleizes e Metzinger e <i>Les peintres cubistes</i> di Apollinaire non registrano soltanto un fatto: contribuiscono a costruirne i confini.</p></article>
+      </div>
+    </section>
+
+    <section class="panel lab-panel section-dark" id="s5" data-section="5" aria-labelledby="s5-title">
+      <header class="section-title"><p class="kicker">05 · Laboratorio del punto di vista</p><h2 id="s5-title">Più vedute significano<br><em>più verità?</em></h2><p class="simulation-label">Schema astratto originale: non imita alcuna opera storica.</p></header>
+      <div class="viewpoint-layout">
+        <div class="viewpoint-stage" id="viewpointStage" aria-label="Oggetto astratto regolabile costruito da piani, contorni, indizi e lettere">
+          <div class="plane p1" aria-hidden="true"></div><div class="plane p2" aria-hidden="true"></div><div class="plane p3" aria-hidden="true"></div><div class="plane p4" aria-hidden="true"></div><div class="plane p5" aria-hidden="true"></div>
+          <span class="lab-letter l1" aria-hidden="true">JOU</span><span class="lab-letter l2" aria-hidden="true">7</span><span class="lab-clue c1" aria-hidden="true"></span><span class="lab-clue c2" aria-hidden="true"></span>
+          <p>SCHEMA · apparizione / memoria / segno</p>
+        </div>
+        <form class="controls" id="viewpointControls">
+          <label>Angolo di osservazione <output for="angle">0°</output><input id="angle" name="angle" type="range" min="-35" max="35" value="0"></label>
+          <label>Numero delle vedute <output for="views">2</output><input id="views" name="views" type="range" min="1" max="5" value="2"></label>
+          <label>Profondità <output for="depth">45%</output><input id="depth" name="depth" type="range" min="0" max="100" value="45"></label>
+          <label>Sovrapposizione <output for="overlap">45%</output><input id="overlap" name="overlap" type="range" min="0" max="100" value="45"></label>
+          <label>Trasparenza <output for="transparency">25%</output><input id="transparency" name="transparency" type="range" min="0" max="80" value="25"></label>
+          <label>Continuità del contorno <output for="contour">60%</output><input id="contour" name="contour" type="range" min="0" max="100" value="60"></label>
+          <label>Quantità degli indizi <output for="clues">2</output><input id="clues" name="clues" type="range" min="0" max="4" value="2"></label>
+          <label>Lettere e segni <output for="letters">1</output><input id="letters" name="letters" type="range" min="0" max="2" value="1"></label>
+          <label>Successione delle osservazioni <output for="time">2</output><input id="time" name="time" type="range" min="1" max="5" value="2"></label>
+          <button class="secondary" type="button" data-reset="viewpoint">Ripristina laboratorio</button>
+        </form>
+      </div>
+      <div class="lab-analysis" id="viewpointAnalysis" aria-live="polite"></div>
+    </section>
+
+    <section class="panel" id="s6" data-section="6" aria-labelledby="s6-title">
+      <header class="section-title"><p class="kicker">06 · Cézanne: costruire non significa già essere cubisti</p><h2 id="s6-title">Un riferimento letto<br><em>dopo, non un destino.</em></h2></header>
+      <div class="art-analysis">
+        <figure><button class="image-button view-art" data-image="assets/images/cezanne-basket.webp" data-caption="Paul Cézanne, Il cesto di mele, circa 1893. Riuso dal modulo 15." type="button"><img src="assets/images/cezanne-basket.webp" alt="Natura morta con cesto, bottiglia, piatto, biscotti e tovaglia; tavolo e oggetti presentano aggiustamenti spaziali non perfettamente coerenti." width="2600" height="2081"></button><figcaption><b>Paul Cézanne, <i>Il cesto di mele</i>, circa 1893</b><span>Art Institute of Chicago. Riuso documentato dal modulo 15.</span></figcaption></figure>
+        <div><p>Il Salon d’Automne del 1907 presentò una grande retrospettiva di Cézanne. Gli artisti più giovani vi lessero pennellate costruttive, solidità e aggiustamenti dello spazio. Ma Cézanne non stava eseguendo un programma cubista futuro.</p><div class="layer-tabs" id="cezanneLayers" role="group" aria-label="Livelli di lettura di Cézanne"><button type="button" data-cezanne="visibile">Visibile</button><button type="button" data-cezanne="opera">Nell’opera di Cézanne</button><button type="button" data-cezanne="ricezione">Nella ricezione</button><button type="button" data-cezanne="limite">Limite</button></div><div class="result-box" id="cezanneResult" aria-live="polite">Scegli un livello: ciò che Cézanne fece e ciò che altri vi lessero non coincidono.</div></div>
+      </div>
+      <div class="quote-note"><b>“Cilindro, sfera e cono”</b><p>La formula proviene da una lettera a Émile Bernard del 15 aprile 1904. Isolata dal contesto è diventata una ricetta geometrica; nella lettera è legata allo studio della natura, alla prospettiva e alla sensazione. Una frase ricevuta non è un manifesto cubista.</p></div>
+    </section>
+
+    <section class="panel section-paper" id="s7" data-section="7" aria-labelledby="s7-title">
+      <header class="section-title"><p class="kicker">07 · Picasso, Braque e la frattura del racconto eroico</p><h2 id="s7-title">Due artisti in confronto.<br><em>Molte fonti diseguali.</em></h2></header>
+      <div class="rights-callout"><div><p class="eyebrow">Scelta giuridica esplicita</p><h3>Qui le opere protette non vengono copiate.</h3><p><i>Les Demoiselles d’Avignon</i> e le opere cubiste di Picasso e Braque sono indispensabili alla storia, ma le loro riproduzioni non sono automaticamente riutilizzabili su una PWA aperta. Le schede ufficiali restano consultabili fuori dalla lezione.</p></div><div class="source-links"><a href="https://www.moma.org/collection/works/79766" target="_blank" rel="noopener">MoMA · <i>Les Demoiselles d’Avignon</i> ↗</a><a href="https://www.moma.org/collection/works/79048" target="_blank" rel="noopener">MoMA · Braque, <i>Man with a Guitar</i> ↗</a><a href="https://www.moma.org/calendar/exhibitions/1767" target="_blank" rel="noopener">MoMA · <i>Picasso and Braque</i> ↗</a></div></div>
+      <div class="two-column"><div><h3>Collaborazione, confronto, competizione</h3><p>Tra 1908 e 1914 Picasso e Braque visitarono reciprocamente gli studi, valutarono il lavoro dell’altro e svilupparono soluzioni tanto vicine da rendere talvolta difficile l’attribuzione. La guerra spezzò questa collaborazione: Braque fu mobilitato, Picasso no.</p><p>Raccontare il Cubismo come invenzione solitaria di Picasso cancella Braque, le reti e le condizioni materiali che fecero circolare le opere.</p></div><div><h3><i>Demoiselles</i>: una soglia discussa</h3><p>Il dipinto comprime cinque corpi in uno spazio disgiunto. Fonti iberiche, africane, oceaniche ed europee entrano nell’opera attraverso musei, fotografie, collezioni e canali coloniali. Parlare di “scoperta” europea rovescerebbe la storia: quegli oggetti possedevano già forme, funzioni e autori.</p></div></div>
+      <div class="evidence-lab"><h3>Classificatore critico</h3><p>Assegna ogni frase al suo livello. “Discusso” segnala una ricostruzione fondata ma non conclusiva.</p><div id="evidenceStatements"></div><p id="evidenceScore" class="feedback" aria-live="polite"></p><button class="secondary" type="button" data-reset="evidence">Azzera classificazione</button></div>
+    </section>
+
+    <section class="panel" id="s8" data-section="8" aria-labelledby="s8-title">
+      <header class="section-title"><p class="kicker">08 · Cubismo analitico</p><h2 id="s8-title">Perdere informazioni<br><em>per costruire conoscenza.</em></h2></header>
+      <div class="paired-art analytic-pair">
+        <figure><button class="image-button view-art" data-image="assets/images/juan-legua.webp" data-caption="Juan Gris, Juan Legua, 1911, The Metropolitan Museum of Art." type="button"><img src="assets/images/juan-legua.webp" alt="Ritratto di Juan Legua costruito da piani scuri; volto, pipa e giacca affiorano per indizi." width="1851" height="2200"></button><figcaption><b>Juan Gris, <i>Juan Legua</i>, 1911</b><span>Il volto resta riconoscibile grazie a pochi indizi selezionati.</span></figcaption></figure>
+        <figure><button class="image-button view-art" data-image="assets/images/violin-cards.webp" data-caption="Juan Gris, Violino e carte da gioco su un tavolo, 1913." type="button"><img src="assets/images/violin-cards.webp" alt="Natura morta verticale in toni bruni: profili di violino, carte, tavolo e piani si attraversano." width="1435" height="2200"></button><figcaption><b>Juan Gris, <i>Violino e carte da gioco su un tavolo</i>, 1913</b><span>Linee curve, numeri e bordi non ricompongono un unico spazio continuo.</span></figcaption></figure>
+      </div>
+      <div class="clue-lab"><div><h3>Ricostruisci senza indovinare</h3><p>Attiva gli indizi nell’ordine che ritieni più informativo. Il risultato registrerà la tua strategia, non assegnerà un punteggio.</p><div class="choice-row" id="clueChoices"><button type="button" data-clue="curva">Curva del violino</button><button type="button" data-clue="corde">Corde</button><button type="button" data-clue="carte">Numeri delle carte</button><button type="button" data-clue="tavolo">Bordo del tavolo</button><button type="button" data-clue="ombre">Passaggi figura/fondo</button></div><button class="secondary" type="button" data-reset="clues">Azzera percorso</button></div><div class="result-box" id="clueResult" aria-live="polite">Nessun indizio selezionato: prova a osservare quale parte guida il riconoscimento.</div></div>
+      <div class="critical-note"><b>Analitico non significa scansione completa</b><p>La tavolozza ridotta, lo spazio poco profondo e il passaggio fra figura e fondo eliminano molte informazioni. L’immagine non mostra “tutti i lati”: organizza resti, convenzioni e relazioni.</p></div>
+    </section>
+
+    <section class="panel section-collage" id="s9" data-section="9" aria-labelledby="s9-title">
+      <header class="section-title"><p class="kicker">09 · Cubismo sintetico e collage</p><h2 id="s9-title">Una cosa, l’immagine di una cosa<br>o <em>un segno?</em></h2></header>
+      <div class="paired-art synthetic-pair">
+        <figure><button class="image-button view-art" data-image="assets/images/breakfast.webp" data-caption="Juan Gris, La colazione, 1915, Centre Pompidou." type="button"><img src="assets/images/breakfast.webp" alt="Natura morta cubista colorata con bottiglia, tazza, giornale, tavolo e piani decorativi." width="1756" height="2200"></button><figcaption><b>Juan Gris, <i>La colazione</i>, 1915</b><span>Oggetti, lettere, superfici e finti materiali restano ambigui.</span></figcaption></figure>
+        <figure><button class="image-button view-art" data-image="assets/images/checkerboard.webp" data-caption="Juan Gris, Bicchiere e scacchiera, circa 1917, National Gallery of Art." type="button"><img src="assets/images/checkerboard.webp" alt="Composizione orizzontale di piani ocra e verdi con bicchieri, scacchiera e lettere." width="2200" height="1641"></button><figcaption><b>Juan Gris, <i>Bicchiere e scacchiera</i>, circa 1917</b><span>La scacchiera è insieme motivo, superficie e indizio di un oggetto.</span></figcaption></figure>
+      </div>
+      <div class="collage-lab"><div class="concept-collage" id="collageStage" aria-label="Collage concettuale astratto regolabile"><span class="frag f-paper" data-frag="paper" aria-hidden="true"></span><span class="frag f-wood" data-frag="wood" aria-hidden="true"></span><span class="frag f-type" data-frag="type" aria-hidden="true">JOUR</span><span class="frag f-draw" data-frag="draw" aria-hidden="true"></span><span class="frag f-shadow" data-frag="shadow" aria-hidden="true"></span><p>SCHEMA ORIGINALE · nessuna opera imitata</p></div><div><h3>Costruisci un problema, non un pastiche</h3><div class="choice-row" id="collageChoices"><button type="button" data-fragment="paper">Carta reale</button><button type="button" data-fragment="wood">Finto legno</button><button type="button" data-fragment="type">Lettere</button><button type="button" data-fragment="draw">Contorno disegnato</button><button type="button" data-fragment="shadow">Ombra dipinta</button></div><div class="result-box" id="collageResult" aria-live="polite">Aggiungi un elemento: ogni scelta cambierà lo statuto di ciò che guardi.</div><button class="secondary" type="button" data-reset="collage">Svuota collage</button></div></div>
+      <div class="quote-note"><b>Il materiale quotidiano non resta neutro</b><p>Giornali, carte da parati, etichette e tela cerata portano nel quadro produzione industriale, commercio, notizie e tipografia. Il collage mette in crisi l’idea di “purezza” della pittura e anche quella di autore come creatore dal nulla.</p></div>
+    </section>
+
+    <section class="panel" id="s10" data-section="10" aria-labelledby="s10-title">
+      <header class="section-title"><p class="kicker">10 · I Cubismi oltre la coppia Picasso–Braque</p><h2 id="s10-title">Una costellazione.<br><em>Differenze che contano.</em></h2></header>
+      <div class="plural-gallery">
+        <figure><button class="image-button view-art" data-image="assets/images/blanchard.webp" data-caption="María Blanchard, Composizione cubista, 1916–1919, Museo Reina Sofía." type="button"><img src="assets/images/blanchard.webp" alt="Composizione verticale di piani verdi, azzurri, ocra e arancio; una carta decorata e profili di oggetti organizzano la superficie." width="1623" height="2200"></button><figcaption><b>María Blanchard, <i>Composizione cubista</i>, 1916–1919</b><span>Olio e collage su tela, 154 × 114 cm. Museo Reina Sofía, AD00176.</span></figcaption></figure>
+        <figure><button class="image-button view-art" data-image="assets/images/delaunay.webp" data-caption="Robert Delaunay, Dramma politico, 1914, National Gallery of Art." type="button"><img src="assets/images/delaunay.webp" alt="Composizione verticale di dischi colorati e figure frammentate; un uomo in giacca scura sembra inclinarsi fra curve concentriche." width="1711" height="2200"></button><figcaption><b>Robert Delaunay, <i>Dramma politico</i>, 1914</b><span>Figura pubblica, colore e simultaneità spingono la ricerca oltre una formula unica.</span></figcaption></figure>
+      </div>
+      <div class="blanchard-feature"><div><p class="eyebrow">Il canone come selezione materiale</p><h3>María Blanchard non è una nota a margine.</h3><p>Formatasi fra Madrid e Parigi, espose con reti cubiste e sviluppò una sintesi personale di piani e colore. Genere, precarietà economica e disabilità influirono sulle condizioni della sua carriera e ricezione; non spiegano psicologicamente la forma dei dipinti.</p><p>La sua marginalizzazione dimostra che il canone dipende anche da mercato, archivi, esposizioni, biografie disponibili e aspettative su chi possa incarnare l’avanguardia.</p></div><div class="network plural-network" id="pluralNetwork"><button type="button" data-plural="gris">Juan Gris</button><button type="button" data-plural="blanchard">María Blanchard</button><button type="button" data-plural="salons">Metzinger e Gleizes</button><button type="button" data-plural="leger">Fernand Léger</button><button type="button" data-plural="delaunay">Robert e Sonia Delaunay</button><button type="button" data-plural="market">Mercanti e mostre</button></div><p id="pluralText" class="equivalent" aria-live="polite">Seleziona un nodo: vicinanza non significa identità stilistica.</p></div>
+    </section>
+
+    <section class="panel section-mineral" id="s11" data-section="11" aria-labelledby="s11-title">
+      <header class="section-title"><p class="kicker">11 · Spazio, tempo e simultaneità</p><h2 id="s11-title">Analogie possibili.<br><em>Equivalenze da rifiutare.</em></h2><p>Memoria, successione e simultaneità costruita sono problemi visivi. Non dimostrano da sole Einstein, Bergson o una “quarta dimensione”.</p></header>
+      <div class="compare-controls"><label for="compareCategory">Confronta per categoria</label><select id="compareCategory"><option value="spazio">Spazio</option><option value="tempo">Tempo</option><option value="punto">Punto di vista</option><option value="profondita">Profondità</option><option value="riconoscibilita">Riconoscibilità</option><option value="materia">Materia</option><option value="segno">Segno</option><option value="spettatore">Spettatore</option><option value="sociale">Realtà sociale</option><option value="mercato">Mercato</option><option value="colonialismo">Colonialismo</option><option value="autore">Idea di autore</option></select></div>
+      <div class="compare-grid" id="compareGrid"></div><div class="comparison-synthesis" id="compareSynthesis"></div>
+      <div class="critical-note"><b>Regola di metodo</b><p>Un’analogia culturale può essere feconda senza diventare una causa. Per affermare un rapporto storico servono documenti di lettura, incontro o circolazione; la somiglianza fra concetti non basta.</p></div>
+    </section>
+
+    <section class="panel atlas-section" id="s12" data-section="12" aria-labelledby="s12-title">
+      <header class="section-title"><p class="kicker">12 · Atlante</p><h2 id="s12-title">Che cosa si guadagna?<br><em>Che cosa si perde?</em></h2></header>
+      <div class="atlas-tabs" role="tablist" aria-label="Atlante delle trasformazioni"><button role="tab" aria-selected="true" data-atlas="cezanne" type="button">Cézanne</button><button role="tab" aria-selected="false" data-atlas="munch" type="button">Munch / Kirchner</button><button role="tab" aria-selected="false" data-atlas="kandinsky" type="button">Kandinsky</button><button role="tab" aria-selected="false" data-atlas="pair" type="button">Picasso / Braque</button><button role="tab" aria-selected="false" data-atlas="gris" type="button">Gris</button><button role="tab" aria-selected="false" data-atlas="plural" type="button">Blanchard / Gleizes</button></div>
+      <article class="atlas-card" id="atlasCard" aria-live="polite"></article>
+      <div class="atlas-strip" aria-label="Opere riutilizzate per l’atlante"><img src="assets/images/cezanne-basket.webp" alt="Dettaglio del Cesto di mele di Cézanne" width="2600" height="2081"><img src="assets/images/kirchner.webp" alt="Dettaglio di Strada, Dresda di Kirchner" width="2000" height="1509"><img src="assets/images/kandinsky.webp" alt="Dettaglio di Improvvisazione 27 di Kandinsky" width="2200" height="1880"><img src="assets/images/blanchard.webp" alt="Dettaglio della Composizione cubista di Blanchard" width="1623" height="2200"></div>
+      <div class="threshold-next"><p>Nessuna risposta annulla la precedente: ogni operazione conserva e sacrifica informazioni diverse.</p><blockquote>Se il Cubismo moltiplica le relazioni che costruiscono un oggetto, che cosa accade quando non è più l’oggetto a dover essere ricomposto, ma il movimento stesso invade il corpo, la città e il tempo?</blockquote><a href="../../index.html#m18">Vai alla sola scheda del modulo 18 · Futurismo →</a></div>
+    </section>
+
+    <section class="panel return-section" id="s13" data-section="13" aria-labelledby="s13-title">
+      <header class="section-title"><p class="kicker">13 · Ritorno all’opera iniziale</p><h2 id="s13-title">Ora sai il nome.<br><em>Resta da guardare.</em></h2></header>
+      <div class="return-grid"><figure><button class="image-button view-art" data-image="assets/images/juan-legua.webp" data-caption="Juan Gris, Juan Legua, 1911, olio su tela, 55,2 × 46,2 cm, The Metropolitan Museum of Art, 1999.363.27." type="button"><img src="assets/images/juan-legua.webp" alt="Juan Legua di Juan Gris: ritratto maschile con pipa, giacca e volto costruiti da piani bruni e grigi." width="1851" height="2200"></button><figcaption><b>Juan Gris, <i>Juan Legua</i>, 1911</b><span>Olio su tela, 55,2 × 46,2 cm. The Metropolitan Museum of Art, 1999.363.27.</span></figcaption></figure><div class="reflection"><div class="echo"><b>La tua prima nota</b><p id="initialEcho">Non hai ancora scritto un’ipotesi iniziale.</p><p id="markerEcho"></p></div><label class="notebook"><span>Seconda lettura · distingui vedere, riconoscere, ricordare, ricostruire, interpretare e documentare</span><textarea id="finalNote" rows="7" placeholder="Che cosa puoi ora descrivere con maggiore precisione? Che cosa resta un’interpretazione?"></textarea></label><button id="buildSynthesis" class="primary" type="button">Genera la sintesi delle mie azioni</button><div id="personalSynthesis" class="personal-synthesis" aria-live="polite"></div></div></div>
+    </section>
+
+    <section class="panel quiz-section" id="verifica" aria-labelledby="quiz-title">
+      <header class="section-title"><p class="kicker">Verifica finale · padronanza</p><h2 id="quiz-title">Sedici nuclei.<br><em>Nessuno sacrificabile.</em></h2><p>Il percorso si completa quando ogni nucleo è compreso. Una risposta errata apre microlezione e domanda diversa di recupero.</p></header>
+      <div class="mastery"><div><b id="masteryCount">0 / 16 nuclei</b><span>La media non sostituisce ciò che manca.</span></div><div class="mastery-track" aria-hidden="true"><span id="masteryBar"></span></div></div>
+      <nav class="quiz-nav" id="quizNav" aria-label="Nuclei della verifica"></nav><article class="quiz-card" id="quizCard"></article>
+      <div class="quiz-complete" id="quizComplete" hidden><h3>Tutti i nuclei sono stati compresi.</h3><p>Hai distinto visione, conoscenza, segno, materia e storia senza trasformare il Cubismo in una formula.</p></div>
+    </section>
+  </main>
+
+  <footer class="module-footer"><a href="../16-espressionismo/">← 16 · Espressionismo</a><a href="../../index.html">Home del percorso</a><a href="../../index.html#m18">18 · Futurismo (scheda) →</a><p>Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxCaption"><div class="lightbox-bar"><p id="lightboxCaption"></p><div><button id="zoomOut" type="button" aria-label="Riduci immagine">−</button><button id="zoomReset" type="button">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci immagine">+</button><button id="lightboxClose" type="button" aria-label="Chiudi immagine">×</button></div></div><div class="lightbox-viewport"><img id="lightboxImage" alt=""></div></dialog>
+</body>
+</html>
