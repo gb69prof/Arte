@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#17191b">
+  <meta name="description" content="Il mondo dentro di noi: laboratorio interattivo sull’Espressionismo, fra forma, città, corpo, guerra e potere.">
+  <title>16 · Il mondo dentro di noi — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="sideNav" aria-expanded="false"><span aria-hidden="true">☰</span><span>Indice</span></button>
+    <a class="project" href="../../index.html"><span aria-hidden="true">S</span><b>Storia dello sguardo</b></a>
+    <p><span>Galleria IV</span><strong>16 / 25</strong></p>
+  </header>
+
+  <aside class="side-nav" id="sideNav" aria-label="Indice del modulo" aria-hidden="true" inert>
+    <div class="side-head"><p>Galleria IV · Frammentare il reale</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav>
+      <ol>
+        <li><a href="#s1"><span>01</span>Prima di sapere</a></li><li><a href="#s2"><span>02</span>La soglia dal modulo 15</a></li>
+        <li><a href="#s3"><span>03</span>Il mondo storico</a></li><li><a href="#s4"><span>04</span>Una parola, molte ricerche</a></li>
+        <li><a href="#s5"><span>05</span>Mettere sotto pressione</a></li><li><a href="#s6"><span>06</span>Munch: il grido</a></li>
+        <li><a href="#s7"><span>07</span>Brücke: città e sguardo</a></li><li><a href="#s8"><span>08</span>Blaue Reiter: relazioni</a></li>
+        <li><a href="#s9"><span>09</span>Vienna: corpo e identità</a></li><li><a href="#s10"><span>10</span>Guerra e potere</a></li>
+        <li><a href="#s11"><span>11</span>Nessuna formula unica</a></li><li><a href="#s12"><span>12</span>Atlante</a></li>
+        <li><a href="#s13"><span>13</span>Secondo sguardo</a></li>
+      </ol>
+    </nav>
+    <div class="side-actions"><a href="#verifica">Verifica finale</a><button id="resetAll" class="danger" type="button">Azzera il modulo</button></div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <main id="contenuto">
+    <section class="threshold section-dark" id="s1" data-section="1" aria-labelledby="s1-title">
+      <div class="threshold-copy">
+        <p class="kicker">01 · Prima di sapere</p>
+        <h1 id="s1-title">Il mondo sta gridando<br>o siamo <em>noi?</em></h1>
+        <p class="lead">Niente titolo, autore o diagnosi. Prima osserva come l’immagine costruisce la tensione.</p>
+        <blockquote>È la figura a deformare il mondo o è il mondo a deformare la figura?</blockquote>
+      </div>
+      <figure class="art-stage portrait-stage">
+        <div class="art-wrap" id="screamStage">
+          <img src="assets/images/scream.webp" alt="Una figura frontale con le mani al volto è su un ponte diagonale; dietro, due persone e un paesaggio attraversato da linee ondulate." width="1773" height="2200">
+          <button class="marker m-sky" data-marker="cielo" aria-pressed="false" aria-label="Osserva le linee del cielo"><span>1</span></button>
+          <button class="marker m-bridge" data-marker="ponte" aria-pressed="false" aria-label="Osserva ponte e profondità"><span>2</span></button>
+          <button class="marker m-figure" data-marker="figura" aria-pressed="false" aria-label="Osserva figura, mani, bocca e occhi"><span>3</span></button>
+          <button class="marker m-walkers" data-marker="passanti" aria-pressed="false" aria-label="Osserva le figure sullo sfondo"><span>4</span></button>
+        </div>
+        <figcaption><span class="concealed">Opera non ancora rivelata</span><button class="view-art" data-image="assets/images/scream.webp" data-caption="Opera iniziale, ancora senza titolo: guardala integra." type="button">Ingrandisci l’opera</button></figcaption>
+      </figure>
+      <div class="observation-grid">
+        <div class="clue-card" id="markerReadout" aria-live="polite"><b>Scegli una zona</b><p>I marcatori guidano l’osservazione, non assegnano un significato.</p></div>
+        <label class="notebook"><span>Prima ipotesi · dove nasce la tensione?</span><textarea id="initialNote" rows="5" placeholder="Descrivi linee, spazio, figure. Evita per ora parole come angoscia o follia."></textarea><small>Salvato soltanto su questo dispositivo.</small></label>
+      </div>
+    </section>
+
+    <section class="panel" id="s2" data-section="2" aria-labelledby="s2-title">
+      <header class="section-title"><p class="kicker">02 · Dalla realtà costruita al conflitto interiore</p><h2 id="s2-title">La realtà non scompare.<br><em>Cambia la domanda.</em></h2></header>
+      <div class="paired-art">
+        <figure><button class="image-button view-art" data-image="assets/images/bedroom.webp" data-caption="Vincent van Gogh, La camera da letto, 1889. Riuso dal modulo 15." type="button"><img src="assets/images/bedroom.webp" alt="Camera con letto, sedie, quadri e finestra costruita da contorni netti e colori non naturalistici." width="2600" height="2040"></button><figcaption><b>Van Gogh</b><span>Lo spazio è trasformato per costruire una relazione vissuta con la stanza.</span></figcaption></figure>
+        <figure><button class="image-button view-art" data-image="assets/images/scream.webp" data-caption="Edvard Munch, L’urlo, 1893. Il titolo sarà discusso nella sezione 6." type="button"><img src="assets/images/scream.webp" alt="Figura sul ponte e paesaggio ondulato dell’opera iniziale." width="1773" height="2200"></button><figcaption><b>Munch</b><span>Lo spazio non contiene soltanto la figura: sembra attraversarla e metterla sotto pressione.</span></figcaption></figure>
+      </div>
+      <div class="shift-lab" role="group" aria-labelledby="shift-title"><h3 id="shift-title">Sposta il problema, non costruire una genealogia</h3><div class="choice-row" id="shiftChoices">
+        <button type="button" data-shift="spazio">Spazio</button><button type="button" data-shift="colore">Colore</button><button type="button" data-shift="ricezione">Ricezione</button><button type="button" data-shift="conflitto">Conflitto</button>
+      </div><div class="result-box" id="shiftResult" aria-live="polite">Scegli una categoria per confrontare le due opere.</div></div>
+      <div class="critical-note"><b>Attenzione alla scorciatoia</b><p>Van Gogh non “diventa” espressionista perché artisti successivi lo leggono come riferimento. Una ricezione seleziona e trasforma il passato; non dimostra un destino già scritto.</p></div>
+    </section>
+
+    <section class="panel section-mineral" id="s3" data-section="3" aria-labelledby="s3-title">
+      <header class="section-title"><p class="kicker">03 · Il mondo che rende possibili queste immagini</p><h2 id="s3-title">Non basta dire:<br><em>“crisi del Novecento”.</em></h2><p>Contesto storico, esperienza individuale, scelta formale e lettura successiva non sono la stessa cosa.</p></header>
+      <div class="timeline" id="timeline" role="list" aria-label="Cronologia interattiva dell’Espressionismo">
+        <button type="button" role="listitem" data-year="1892"><b>1892–93</b><span>Munch espone a Berlino; <i>L’urlo</i> prende forma.</span></button>
+        <button type="button" role="listitem" data-year="1905"><b>1905</b><span>Quattro studenti fondano Die Brücke a Dresda.</span></button>
+        <button type="button" role="listitem" data-year="1909"><b>1909</b><span>Nasce la Neue Künstlervereinigung München.</span></button>
+        <button type="button" role="listitem" data-year="1911"><b>1911</b><span>Prima mostra del Blaue Reiter; reti di riviste e gallerie.</span></button>
+        <button type="button" role="listitem" data-year="1912"><b>1912</b><span>Esce l’almanacco <i>Der Blaue Reiter</i>.</span></button>
+        <button type="button" role="listitem" data-year="1913"><b>1913</b><span>Die Brücke si scioglie; il canone resta plurale.</span></button>
+        <button type="button" role="listitem" data-year="1914"><b>1914–18</b><span>La guerra interrompe, radicalizza, disperde percorsi.</span></button>
+        <button type="button" role="listitem" data-year="1937"><b>1937</b><span>Il nazismo costruisce la mostra dell’“arte degenerata”.</span></button>
+      </div>
+      <article class="timeline-detail" id="timelineDetail" aria-live="polite"><p>Scegli una data: appariranno insieme evento, condizione e limite dell’interpretazione.</p></article>
+      <div class="relation-map" aria-labelledby="relation-title"><h3 id="relation-title">Rete, non catena</h3><div class="network" id="historyNetwork">
+        <button type="button" data-node="metropoli">Metropoli</button><button type="button" data-node="istituzioni">Mostre e riviste</button><button type="button" data-node="gruppi">Gruppi</button><button type="button" data-node="colonie">Colonialismo</button><button type="button" data-node="guerra">Guerra</button><button type="button" data-node="musei">Musei e Stato</button>
+      </div><p id="networkText" class="equivalent">Attiva un nodo per leggere relazioni e limiti.</p></div>
+    </section>
+
+    <section class="panel" id="s4" data-section="4" aria-labelledby="s4-title">
+      <header class="section-title"><p class="kicker">04 · Che cosa chiamiamo Espressionismo?</p><h2 id="s4-title">Una parola.<br><em>Nessun blocco unitario.</em></h2></header>
+      <div class="term-map">
+        <div class="term-tabs" role="tablist" aria-label="Significati storici del termine">
+          <button role="tab" aria-selected="true" aria-controls="termPanel" data-term="parola" type="button">La parola</button><button role="tab" aria-selected="false" aria-controls="termPanel" data-term="brucke" type="button">Die Brücke</button><button role="tab" aria-selected="false" aria-controls="termPanel" data-term="reiter" type="button">Blaue Reiter</button><button role="tab" aria-selected="false" aria-controls="termPanel" data-term="vienna" type="button">Vienna</button><button role="tab" aria-selected="false" aria-controls="termPanel" data-term="canone" type="button">Il canone</button>
+        </div><article id="termPanel" class="term-panel" role="tabpanel" tabindex="0"></article>
+      </div>
+      <div class="werefkin-feature">
+        <figure><button class="image-button view-art" data-image="assets/images/werefkin.webp" data-caption="Marianne von Werefkin, Autoritratto I, circa 1910." type="button"><img src="assets/images/werefkin.webp" alt="Autoritratto frontale di Marianne von Werefkin, volto verde e giallo contro campi blu e rossi." width="1457" height="2200"></button><figcaption>Marianne von Werefkin, <i>Autoritratto I</i>, circa 1910</figcaption></figure>
+        <div><p class="eyebrow">Una rete resa invisibile</p><h3>Non “una donna da aggiungere”, ma una protagonista che cambia la mappa.</h3><p>Werefkin fondò nel 1909 con Jawlensky, Kandinsky e altri la Neue Künstlervereinigung München; nel suo “salotto rosa” si discutevano arte e politica. Il Blaue Reiter nacque due anni dopo anche dalla frattura interna a quella associazione.</p><p>Il canone centrato su pochi uomini cancella lavoro organizzativo, teoria, relazioni e conservazione. Gabriele Münter, inoltre, protesse molte opere durante il nazismo e nel 1957 ne donò oltre mille al Lenbachhaus.</p></div>
+      </div>
+    </section>
+
+    <section class="panel lab-panel section-dark" id="s5" data-section="5" aria-labelledby="s5-title">
+      <header class="section-title"><p class="kicker">05 · Laboratorio centrale</p><h2 id="s5-title">Mettere il mondo<br><em>sotto pressione.</em></h2><p class="simulation-label">Simulazione concettuale: non imita alcun dipinto storico.</p></header>
+      <div class="pressure-layout">
+        <div class="pressure-stage" id="pressureStage" aria-label="Scena astratta regolabile: tre figure dentro uno spazio attraversato da linee"><div class="field-lines" aria-hidden="true"></div><span class="abstract-figure f1" aria-hidden="true"></span><span class="abstract-figure f2" aria-hidden="true"></span><span class="abstract-figure f3" aria-hidden="true"></span><p class="stage-caption">SCHEMA · figura / spazio / ritmo</p></div>
+        <form class="controls" id="pressureControls">
+          <label>Inclinazione dello spazio <output for="tilt">0°</output><input id="tilt" name="tilt" type="range" min="-14" max="14" value="0"></label>
+          <label>Compressione <output for="compress">50%</output><input id="compress" name="compress" type="range" min="20" max="90" value="50"></label>
+          <label>Scala della figura <output for="scale">100%</output><input id="scale" name="scale" type="range" min="65" max="150" value="100"></label>
+          <label>Frattura del contorno <output for="fracture">20%</output><input id="fracture" name="fracture" type="range" min="0" max="100" value="20"></label>
+          <label>Ritmo e ripetizione <output for="rhythm">3</output><input id="rhythm" name="rhythm" type="range" min="1" max="8" value="3"></label>
+          <label>Contrasto fra campi <output for="contrast">50%</output><input id="contrast" name="contrast" type="range" min="20" max="100" value="50"></label>
+          <label>Distanza dello spettatore <output for="distance">50%</output><input id="distance" name="distance" type="range" min="0" max="100" value="50"></label>
+          <label>Isolamento / sovrapposizione <output for="overlap">0</output><input id="overlap" name="overlap" type="range" min="-50" max="50" value="0"></label>
+          <button class="secondary" type="button" data-reset="pressure">Ripristina laboratorio</button>
+        </form>
+      </div>
+      <div class="lab-analysis" id="pressureAnalysis" aria-live="polite"></div>
+    </section>
+
+    <section class="panel" id="s6" data-section="6" aria-labelledby="s6-title">
+      <header class="section-title"><p class="kicker">06 · Munch: chi sta davvero gridando?</p><h2 id="s6-title"><i>L’urlo</i>, 1893.<br><em>Documento e interpretazione.</em></h2></header>
+      <div class="art-analysis">
+        <figure><button class="image-button view-art" data-image="assets/images/scream.webp" data-caption="Edvard Munch, Skrik / L’urlo, 1893, tempera e pastello a cera su cartone, Nasjonalmuseet, Oslo." type="button"><img src="assets/images/scream.webp" alt="L’urlo di Munch: figura frontale sul ponte, due amici lontani, fiordo e cielo ondulati." width="1773" height="2200"></button><figcaption><b>Edvard Munch, <i>Skrik / L’urlo</i>, 1893</b><span>Tempera e pastello a cera su cartone, 91 × 73,5 cm. Nasjonalmuseet, Oslo, NG.M.00939.</span></figcaption></figure>
+        <div><h3>Non esiste un unico <i>Urlo</i></h3><p>Munch realizzò due dipinti, due pastelli e una litografia. La versione del Nasjonalmuseet, oggi considerata la prima dipinta, fu esposta a Berlino nel 1893 con il titolo <i>Disperazione</i>.</p><p>In un appunto del 1892 Munch raccontò una passeggiata, il cielo rosso, gli amici che proseguivano e un “grido infinito” che attraversava la natura. Il testo documenta un’intenzione e un’esperienza narrata; non trasforma il quadro in una cartella clinica.</p><div class="quote-note"><b>Tre piani distinti</b><ol><li>il testo privato dell’artista;</li><li>la forma visibile dell’immagine;</li><li>le letture critiche, cambiate nel tempo.</li></ol></div></div>
+      </div>
+      <div class="evidence-lab"><h3>Visibile / documentato / interpretato / non dimostrabile</h3><div id="evidenceStatements"></div><p id="evidenceScore" class="feedback" aria-live="polite"></p><button class="secondary" type="button" data-reset="evidence">Azzera classificazione</button></div>
+    </section>
+
+    <section class="panel section-city" id="s7" data-section="7" aria-labelledby="s7-title">
+      <header class="section-title"><p class="kicker">07 · Die Brücke</p><h2 id="s7-title">La città, il corpo<br>e <em>chi guarda.</em></h2></header>
+      <div class="wide-art"><figure><button class="image-button view-art" data-image="assets/images/kirchner.webp" data-caption="Ernst Ludwig Kirchner, Strada, Dresda, 1908, rielaborato nel 1919, MoMA." type="button"><img src="assets/images/kirchner.webp" alt="Scena di strada affollata; due donne in primo piano emergono tra figure compresse, colori rosa, verdi e blu e contorni angolari." width="2000" height="1509"></button><figcaption><b>Ernst Ludwig Kirchner, <i>Strada, Dresda</i></b><span>1908, rielaborato nel 1919; olio su tela, 150,5 × 200,4 cm. MoMA, 12.1951.</span></figcaption></figure></div>
+      <div class="two-column"><div><h3>Folla non significa comunità</h3><p>La strada rosa spinge le figure verso la superficie. Volti simili a maschere, verticali ravvicinate e direzioni divergenti trasformano l’attraversamento urbano in un sistema di prossimità senza incontro.</p><p>Le due figure eleganti in primo piano rinviano alla rispettabilità borghese e, secondo le letture museali, alla visibilità ambigua delle donne nella città moderna, dove moda, desiderio, commercio e sospetto sociale si sovrappongono.</p></div><div class="gaze-lab"><h3>Laboratorio dello sguardo metropolitano</h3><p>Assegna una posizione allo spettatore; la stessa folla cambia relazione.</p><div class="choice-row" id="gazeChoices"><button data-gaze="segue" type="button">Segue il flusso</button><button data-gaze="ostacola" type="button">Ostacola il passaggio</button><button data-gaze="osserva" type="button">Osserva da fuori</button><button data-gaze="osservato" type="button">È osservato</button></div><div id="gazeResult" class="result-box" aria-live="polite">Nessuna posizione è neutra: scegli dove collocarti.</div></div></div>
+      <div class="bridge-program"><figure><button class="image-button view-art" data-image="assets/images/bridge-program.webp" data-caption="Ernst Ludwig Kirchner, Programma della Brücke, xilografia, 1906." type="button"><img src="assets/images/bridge-program.webp" alt="Xilografia verticale con il programma della Brücke inciso in caratteri irregolari." width="604" height="1100"></button><figcaption>Programma della Brücke, xilografia, 1906</figcaption></figure><div><h3>Il “ponte” e la sua contraddizione</h3><p>Il programma del 1906 chiamava la nuova generazione a conquistare libertà di vita e azione. Xilografia, lavoro collettivo e rifiuto dell’accademia divennero strumenti di autorappresentazione.</p><p>Ma la libertà rivendicata dagli artisti conviveva con il diritto, dato per scontato, di appropriarsi di oggetti e immagini provenienti da territori coloniali. Le collezioni etnografiche europee non erano depositi neutrali: dipendevano da rapporti asimmetrici di potere.</p><details><summary>Apri il quadro coloniale</summary><p>Il Brücke-Museum conserva circa cento oggetti non europei raccolti da Schmidt-Rottluff, molti provenienti da ex territori coloniali tedeschi; oggi ne studia provenienza e circostanze di acquisizione con ricercatori e interlocutori delle regioni d’origine. “Primitivo” non descrive quei popoli: descrive una categoria costruita dallo sguardo europeo.</p></details></div></div>
+    </section>
+
+    <section class="panel" id="s8" data-section="8" aria-labelledby="s8-title">
+      <header class="section-title"><p class="kicker">08 · Der Blaue Reiter</p><h2 id="s8-title">Rendere visibili<br><em>relazioni non osservabili.</em></h2></header>
+      <div class="art-analysis reverse"><figure><button class="image-button view-art" data-image="assets/images/kandinsky.webp" data-caption="Vasily Kandinsky, Improvvisazione 27 (Giardino dell’amore II), 1912, The Metropolitan Museum of Art." type="button"><img src="assets/images/kandinsky.webp" alt="Campi chiari e colorati attraversati da segni scuri, curve, addensamenti e tre coppie abbracciate appena riconoscibili." width="2200" height="1880"></button><figcaption><b>Vasily Kandinsky, <i>Improvvisazione 27 (Giardino dell’amore II)</i>, 1912</b><span>Olio su tela, 120,3 × 140,3 cm. The Met, 49.70.1.</span></figcaption></figure><div><h3>Astrazione non vuol dire assenza di realtà</h3><p>Tre coppie abbracciate e forme serpentiformi restano riconoscibili, ma non organizzano da sole l’immagine. Linee, pause, masse e intervalli costruiscono un’esperienza di relazione.</p><p>Il Blaue Reiter non fu un gruppo con una tecnica unica: due mostre nel 1911–12 e l’almanacco pubblicato nel maggio 1912 crearono un nodo internazionale fra pittura, musica, arte popolare, opere di bambini e oggetti di culture non europee. Anche questa apertura rimase condizionata dallo sguardo coloniale del tempo.</p></div></div>
+      <div class="score-lab"><h3>Spartito visivo</h3><p>Costruisci un ritmo. Ogni cella attraversa quattro stati: pausa, impulso, contrasto, addensamento.</p><div id="visualScore" class="visual-score" role="group" aria-label="Spartito visivo di dodici celle"></div><div id="scoreText" class="result-box" aria-live="polite"></div><button class="secondary" type="button" data-reset="score">Svuota spartito</button></div>
+    </section>
+
+    <section class="panel section-vienna" id="s9" data-section="9" aria-labelledby="s9-title">
+      <header class="section-title"><p class="kicker">09 · Vienna</p><h2 id="s9-title">Il corpo non coincide<br>con <em>la sua immagine.</em></h2></header>
+      <div class="art-analysis"><figure><button class="image-button view-art" data-image="assets/images/schiele.webp" data-caption="Egon Schiele, Autoritratto con alchechengi, 1912, Leopold Museum." type="button"><img src="assets/images/schiele.webp" alt="Autoritratto di Schiele tagliato alle spalle: testa ruotata, sguardo laterale diretto, corpo scuro e rami di alchechengi rossi." width="2200" height="1782"></button><figcaption><b>Egon Schiele, <i>Autoritratto con alchechengi</i>, 1912</b><span>Olio e colore coprente su tavola, 32,2 × 39,8 cm. Leopold Museum, inv. 454.</span></figcaption></figure><div><h3>Una posa costruita, non un sintomo</h3><p>Il museo sottolinea l’equilibrio accurato: inclinazioni del volto e della spalla si rispondono, mentre i frutti rossi bilanciano la massa scura del corpo. Ciò che appare nervoso non è per questo involontario.</p><p>Nella Vienna della Secessione, autoritratto e nudo mettevano in discussione decoro, identità e norme sociali. Il vuoto non è assenza: costringe lo spettatore a misurare la distanza dal corpo.</p></div></div>
+      <div class="body-lab"><h3>Corpo visibile / posa / fonte / ipotesi</h3><div class="body-cards" id="bodyCards"><button type="button" data-body="visibile">La testa ruota, lo sguardo torna verso di noi.</button><button type="button" data-body="posa">Spalla, collo e frutti costruiscono contrappesi.</button><button type="button" data-body="fonte">Opera datata 1912, conservata al Leopold Museum.</button><button type="button" data-body="ipotesi">Il volto prova certamente paura.</button></div><p id="bodyResult" class="feedback" aria-live="polite">Tocca una frase per verificarne il livello.</p></div>
+    </section>
+
+    <section class="panel section-war" id="s10" data-section="10" aria-labelledby="s10-title">
+      <header class="section-title"><p class="kicker">10 · Guerra, lutto e potere sulle immagini</p><h2 id="s10-title">La guerra non crea<br><em>una forma automatica.</em></h2></header>
+      <div class="art-analysis reverse"><figure><button class="image-button view-art" data-image="assets/images/kollwitz.webp" data-caption="Käthe Kollwitz, Le madri, dal ciclo Guerra, 1922–23, xilografia." type="button"><img src="assets/images/kollwitz.webp" alt="Gruppo compatto di madri in xilografia nera: braccia e mani formano una barriera intorno ai bambini." width="2200" height="1935"></button><figcaption><b>Käthe Kollwitz, <i>Le madri</i>, dal ciclo <i>Guerra</i>, 1922–23</b><span>Xilografia; immagine ideata dopo la morte in guerra del figlio Peter e maturata in una posizione pacifista.</span></figcaption></figure><div><h3>Dal lutto privato a una forma pubblica</h3><p>Le mani non descrivono un episodio del fronte: costruiscono un muro fragile attorno ai bambini. Il nero della xilografia concentra protezione, paura e solidarietà senza affidarsi al colore.</p><p>L’entusiasmo del 1914, il fronte, le morti di Franz Marc e August Macke, il lutto e la Repubblica di Weimar produssero risposte differenti. La guerra modifica i percorsi; non spiega da sola l’Espressionismo, già attivo da anni.</p></div></div>
+      <div class="power-chain"><h3>Chi decide che cosa può essere visto?</h3><p>Ricostruisci la catena politica dell’immagine.</p><ol id="powerChain"><li><button type="button" data-step="1"><span>1</span>Opera nel museo</button></li><li><button type="button" data-step="2" disabled><span>2</span>Confisca politica</button></li><li><button type="button" data-step="3" disabled><span>3</span>Mostra propagandistica</button></li><li><button type="button" data-step="4" disabled><span>4</span>Pubblico guidato al disprezzo</button></li><li><button type="button" data-step="5" disabled><span>5</span>Vendita, dispersione o distruzione</button></li></ol><div id="powerDetail" class="result-box" aria-live="polite">Nel 1937 il regime nazista confiscò più di ventimila opere moderne dai musei tedeschi. Inizia dalla prima tappa.</div><button class="secondary" type="button" data-reset="power">Ripristina catena</button></div>
+    </section>
+
+    <section class="panel" id="s11" data-section="11" aria-labelledby="s11-title">
+      <header class="section-title"><p class="kicker">11 · Molte risposte</p><h2 id="s11-title">Nessuna formula<br><em>espressionista.</em></h2></header>
+      <div class="comparator"><label for="compareCategory">Scegli la lente del confronto</label><select id="compareCategory"><option value="spazio">Spazio</option><option value="colore">Colore</option><option value="corpo">Corpo e figura</option><option value="societa">Società e potere</option><option value="spettatore">Posizione dello spettatore</option><option value="spiritualita">Spiritualità</option><option value="guerra">Guerra e memoria</option><option value="canone">Canone e istituzioni</option></select><div id="compareGrid" class="compare-grid"></div><div id="compareSynthesis" class="critical-note"></div></div>
+      <div class="exchange-map"><h3>Rete degli scambi</h3><div class="network" id="exchangeNetwork"><button data-exchange="munch" type="button">Munch ↔ Berlino</button><button data-exchange="vangogh" type="button">Van Gogh ↔ ricezioni</button><button data-exchange="munich" type="button">Monaco ↔ Parigi/Russia</button><button data-exchange="women" type="button">Artiste ↔ reti</button><button data-exchange="market" type="button">Gallerie ↔ pubblico</button><button data-exchange="colonial" type="button">Europa ↔ colonie</button></div><p id="exchangeText" class="equivalent">Seleziona uno scambio: ogni freccia porta anche un’asimmetria.</p></div>
+    </section>
+
+    <section class="panel section-atlas" id="s12" data-section="12" aria-labelledby="s12-title">
+      <header class="section-title"><p class="kicker">12 · Atlante</p><h2 id="s12-title">Che cosa accade quando<br>la realtà <em>attraversa l’io?</em></h2></header>
+      <div class="atlas-controls" id="atlasControls" role="tablist" aria-label="Artisti nell’atlante"><button role="tab" aria-selected="true" data-atlas="cezanne" type="button">Cézanne</button><button role="tab" aria-selected="false" data-atlas="vangogh" type="button">Van Gogh</button><button role="tab" aria-selected="false" data-atlas="gauguin" type="button">Gauguin</button><button role="tab" aria-selected="false" data-atlas="munch" type="button">Munch</button><button role="tab" aria-selected="false" data-atlas="kirchner" type="button">Kirchner</button><button role="tab" aria-selected="false" data-atlas="kandinsky" type="button">Kandinsky</button><button role="tab" aria-selected="false" data-atlas="schiele" type="button">Schiele</button><button role="tab" aria-selected="false" data-atlas="kollwitz" type="button">Kollwitz</button></div><article class="atlas-card" id="atlasCard" role="tabpanel" tabindex="0"></article>
+      <div class="threshold-next"><p>Ogni trasformazione guadagna visibilità e perde qualcos’altro. Nessun passaggio “supera” quello precedente.</p><blockquote>Se l’Espressionismo trasforma il mondo per rendere visibile la tensione interiore, che cosa accade quando non è più soltanto l’io a incrinare la realtà, ma il punto di vista stesso si spezza e si moltiplica?</blockquote><a href="../../index.html#m17">Vai alla sola scheda del modulo 17 · Cubismo →</a></div>
+    </section>
+
+    <section class="panel section-return" id="s13" data-section="13" aria-labelledby="s13-title">
+      <header class="section-title"><p class="kicker">13 · Ritorno all’immagine iniziale</p><h2 id="s13-title">La stessa opera.<br><em>Uno sguardo che ora distingue.</em></h2></header>
+      <figure class="return-art"><button class="image-button view-art" data-image="assets/images/scream.webp" data-caption="Edvard Munch, L’urlo, 1893. Ora senza guide o sovrapposizioni." type="button"><img src="assets/images/scream.webp" alt="L’urlo di Munch riproposto integralmente senza marcatori." width="1773" height="2200"></button></figure>
+      <div class="return-grid"><div class="first-note"><h3>La tua prima osservazione</h3><blockquote id="initialEcho">Non hai ancora scritto un’ipotesi iniziale.</blockquote><p id="markerEcho"></p></div><label class="notebook"><span>Seconda lettura</span><textarea id="finalNote" rows="8" placeholder="Che cosa è visibile? Che cosa è documentato? Che cosa avevi supposto? Dove collochi ora il grido?"></textarea></label></div>
+      <div class="synthesis"><h3>La tua sintesi, fondata sulle azioni reali</h3><div id="personalSynthesis" class="result-box"></div><button id="buildSynthesis" type="button">Genera / aggiorna la sintesi</button></div>
+      <blockquote class="closing-thesis">Il mondo non è scomparso dentro l’io. È diventato il luogo nel quale spazio, corpo, colore e storia rendono visibile una tensione che l’apparenza da sola non riusciva a mostrare.</blockquote>
+    </section>
+
+    <section class="panel final-test" id="verifica" aria-labelledby="quiz-title">
+      <header class="section-title"><p class="kicker">Verifica finale · 16 nuclei irrinunciabili</p><h2 id="quiz-title">Non serve una media.<br><em>Ogni nucleo va compreso.</em></h2></header>
+      <div class="mastery" aria-live="polite"><span id="masteryCount">0 / 16 nuclei</span><div><i id="masteryBar"></i></div></div>
+      <div id="quizNav" class="quiz-nav" aria-label="Nuclei della verifica"></div>
+      <article id="quizCard" class="quiz-card"></article>
+      <div id="quizComplete" class="quiz-complete" hidden><h3>Hai attraversato tutti i nuclei.</h3><p>L’Espressionismo non è una diagnosi dell’artista: è una costellazione di costruzioni formali e storiche che rende visibile la tensione fra individuo e realtà.</p></div>
+    </section>
+
+    <section class="sources-strip" aria-label="Fonti e navigazione finale"><div><h2>Ricerca verificabile</h2><p>Opere autentiche, immagini locali, fonti museali e archivistiche. Nessuna immagine storica è generata.</p><a href="SOURCES.md">Consulta il registro completo delle fonti e delle immagini</a></div><label class="notebook compact"><span>Taccuino generale</span><textarea id="generalNote" rows="5" placeholder="Una relazione, un dubbio, una domanda da portare con te."></textarea></label></section>
+  </main>
+
+  <footer class="module-footer"><a href="../15-postimpressionismo/">← 15 · Postimpressionismo</a><a href="../../index.html">Home del percorso</a><a href="../../index.html#m17">17 · Cubismo (scheda) →</a><p>Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p></footer>
+
+  <dialog id="lightbox" class="lightbox" aria-labelledby="lightboxCaption"><div class="lightbox-bar"><p id="lightboxCaption"></p><div><button id="zoomOut" type="button" aria-label="Riduci immagine">−</button><button id="zoomReset" type="button" aria-label="Ripristina zoom">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci immagine">+</button><button id="lightboxClose" type="button" aria-label="Chiudi immagine">×</button></div></div><div class="lightbox-viewport"><img id="lightboxImage" alt=""></div></dialog>
+  <div class="storage-warning" id="storageWarning" role="status" hidden>Il salvataggio locale non è disponibile: puoi usare la lezione, ma le attività non resteranno dopo la chiusura.</div>
+</body>
+</html>

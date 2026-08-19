@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Icona astratta del modulo 16">
+  <rect width="512" height="512" rx="92" fill="#17191b"/>
+  <path d="M70 114 444 76 386 438 96 404Z" fill="#26292b" stroke="#d9d2c2" stroke-width="16"/>
+  <path d="M92 350 418 152M116 118 390 406" stroke="#ff5b37" stroke-width="26"/>
+  <path d="M82 248 430 282" stroke="#b8e229" stroke-width="22"/>
+  <circle cx="256" cy="258" r="82" fill="#342761" stroke="#d9d2c2" stroke-width="18"/>
+  <path d="M218 222c24-34 52-31 77 0M222 302c26 20 51 20 70 0" fill="none" stroke="#d9d2c2" stroke-width="18" stroke-linecap="round"/>
+</svg>
