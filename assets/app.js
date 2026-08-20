@@ -30,7 +30,8 @@ const liveModules = {
   "16": { href: "PWA/16-espressionismo/index.html", label: "modulo pubblicato" },
   "17": { href: "PWA/17-cubismo/index.html", label: "modulo pubblicato" },
   "18": { href: "PWA/18-futurismo/index.html", label: "modulo pubblicato" },
-  "19": { href: "PWA/19-dada-surrealismo/index.html", label: "nuovo modulo" }
+  "19": { href: "PWA/19-dada-surrealismo/index.html", label: "modulo pubblicato" },
+  "20": { href: "PWA/20-arte-totalitarismi/index.html", label: "nuovo modulo" }
 };
 
 document.querySelector("#galleries").innerHTML = galleries.map(g => `<article class="gallery ${g.color}"><div class="gallery-intro"><p class="roman">${g.roman}</p><div><p class="years">${g.years}</p><h3>${g.title}</h3><p class="thesis">${g.thesis}</p></div></div><ol class="module-list">${g.modules.map(([n,t,p,q,path]) => liveModules[n] ? `<li id="m${n}" class="module-live" data-label="${liveModules[n].label}"><a href="${liveModules[n].href}"><span class="module-number">${n}</span><div class="module-title"><strong>${t}</strong><span>${p}</span></div><p>${q}</p><span class="module-state">entra nella PWA</span><span class="module-arrow" aria-hidden="true">↗</span></a></li>` : `<li id="m${n}" data-future-path="${path}/"><span class="module-number">${n}</span><div class="module-title"><strong>${t}</strong><span>${p}</span></div><p>${q}</p><span class="module-state">spazio predisposto</span><span class="module-arrow" aria-hidden="true">↗</span></li>`).join("")}</ol></article>`).join("");

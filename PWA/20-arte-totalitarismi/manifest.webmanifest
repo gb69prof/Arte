@@ -1,0 +1,15 @@
+{
+  "name": "Quando il potere occupa le immagini — Storia dello sguardo",
+  "short_name": "Arte e potere",
+  "description": "Arte e totalitarismi: propaganda, consenso, censura, coercizione e responsabilità dello sguardo.",
+  "lang": "it",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#171715",
+  "theme_color": "#171715",
+  "icons": [
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
