@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Scatola seriale, simbolo del modulo Pop Art">
+  <rect width="512" height="512" rx="88" fill="#171516"/>
+  <path d="M84 104h344v304H84z" fill="#f5e8ca" stroke="#171516" stroke-width="18"/>
+  <path d="M84 104h344v78H84z" fill="#e63b2e"/>
+  <path d="M84 330h344v78H84z" fill="#27b6cb"/>
+  <circle cx="166" cy="255" r="50" fill="#ffd84a" stroke="#171516" stroke-width="14"/>
+  <circle cx="346" cy="255" r="50" fill="#ffd84a" stroke="#171516" stroke-width="14"/>
+  <path d="M226 216h60v78h-60z" fill="#f5e8ca" stroke="#171516" stroke-width="14"/>
+  <path d="M84 369h344" stroke="#171516" stroke-width="9"/>
+</svg>

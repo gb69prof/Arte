@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#171414">
+  <meta name="description" content="Quando l’immagine diventa merce: laboratorio interattivo sulla Pop Art fra consumo, pubblicità, ripetizione, appropriazione e mercato.">
+  <title>22 · Quando l’immagine diventa merce — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="sideNav" aria-expanded="false"><span aria-hidden="true">☰</span><span>Indice</span></button>
+    <a class="project" href="../../index.html"><span aria-hidden="true">S</span><b>Storia dello sguardo</b></a>
+    <p><span>Galleria V</span><strong>22 / 25</strong></p>
+  </header>
+
+  <aside class="side-nav" id="sideNav" aria-label="Indice del modulo" aria-hidden="true" inert>
+    <div class="side-head"><p>Galleria V · Le immagini che ci abitano</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#s1"><span>01</span>Che cosa sta vendendo?</a></li>
+      <li><a href="#s2"><span>02</span>Quando una cosa diventa immagine</a></li>
+      <li><a href="#s3"><span>03</span>Produzione, consumi, mass media</a></li>
+      <li><a href="#s4"><span>04</span>Prima della Pop</a></li>
+      <li><a href="#s5"><span>05</span>Londra: America da lontano</a></li>
+      <li><a href="#s6"><span>06</span>New York: dentro il sistema</a></li>
+      <li><a href="#s7"><span>07</span>Ripetere significa rendere uguale?</a></li>
+      <li><a href="#s8"><span>08</span>La merce sul piedistallo</a></li>
+      <li><a href="#s9"><span>09</span>Il lavoro invisibile</a></li>
+      <li><a href="#s10"><span>10</span>Celebrità, corpo, desiderio</a></li>
+      <li><a href="#s11"><span>11</span>Più lingue, più centri</a></li>
+      <li><a href="#s12"><span>12</span>Chi trasforma l’immagine in valore?</a></li>
+      <li><a href="#s13"><span>13</span>Anche noi consumiamo immagini</a></li>
+    </ol></nav>
+    <div class="side-actions"><a href="#verifica">Verifica finale</a><button id="resetAll" class="danger" type="button">Azzera il modulo</button></div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <main id="contenuto">
+    <section class="threshold" id="s1" data-section="1" aria-labelledby="s1-title">
+      <div class="threshold-copy">
+        <p class="kicker">01 · Prima osservazione</p>
+        <h1 id="s1-title">Che cosa sta cercando<br><em>di venderci?</em></h1>
+        <p class="lead">Nessun autore, luogo o data. Prima osserva come lo spazio organizza attenzione, scelta, quantità e desiderio.</p>
+        <blockquote>La merce è soltanto ciò che si compra, oppure anche il modo in cui impariamo a guardarla?</blockquote>
+      </div>
+      <figure class="opening-figure">
+        <div class="opening-stage" id="openingStage">
+          <img src="assets/images/self-service-arkdes.webp" alt="Fotografia in bianco e nero dell’interno di un negozio self-service: casse, carrelli, confezioni, cartelli, clienti, una commessa e una bambina sono ordinati nello spazio commerciale." width="1428" height="1600">
+          <button class="marker m-repeat" data-marker="ripetizione" aria-pressed="false" aria-label="Osserva la ripetizione"><span>1</span></button>
+          <button class="marker m-pack" data-marker="confezione" aria-pressed="false" aria-label="Osserva la confezione"><span>2</span></button>
+          <button class="marker m-brand" data-marker="marchio" aria-pressed="false" aria-label="Osserva il marchio"><span>3</span></button>
+          <button class="marker m-color" data-marker="colore" aria-pressed="false" aria-label="Osserva il colore"><span>4</span></button>
+          <button class="marker m-order" data-marker="disposizione" aria-pressed="false" aria-label="Osserva la disposizione"><span>5</span></button>
+          <button class="marker m-scale" data-marker="scala" aria-pressed="false" aria-label="Osserva quantità e scala"><span>6</span></button>
+          <button class="marker m-price" data-marker="prezzo" aria-pressed="false" aria-label="Cerca prezzo e promessa"><span>7</span></button>
+          <button class="marker m-body" data-marker="corpi" aria-pressed="false" aria-label="Osserva i corpi"><span>8</span></button>
+          <button class="marker m-view" data-marker="punto" aria-pressed="false" aria-label="Osserva il punto di vista"><span>9</span></button>
+          <button class="marker m-labor" data-marker="lavoro" aria-pressed="false" aria-label="Osserva il lavoro"><span>10</span></button>
+        </div>
+        <figcaption><span class="concealed">Documento non ancora rivelato</span><button class="view-art" data-image="assets/images/self-service-arkdes.webp" data-caption="Documento iniziale, ancora senza attribuzione: fotografia integrale, nessun ritaglio." type="button">Ingrandisci</button></figcaption>
+      </figure>
+      <div class="observation-grid">
+        <article class="receipt" id="markerReadout" aria-live="polite"><b>Scegli un marcatore</b><p>Descrivi ciò che l’immagine dispone prima di decidere che cosa “significa”.</p></article>
+        <label class="notebook"><span>Prima nota · chi decide dove cade il tuo sguardo?</span><textarea id="initialNote" rows="5" placeholder="Distingui ciò che vedi da ciò che stai attribuendo alla scena."></textarea><small>Salvata soltanto su questo dispositivo.</small></label>
+      </div>
+    </section>
+
+    <section class="panel image-section" id="s2" data-section="2" aria-labelledby="s2-title">
+      <header class="section-title"><p class="kicker">02 · Quando una cosa diventa immagine</p><h2 id="s2-title">Una lattina non è<br><em>la fotografia di una lattina.</em></h2><p>Oggetto, confezione, marchio, scaffale, pubblicità, riproduzione e opera possono riferirsi alla stessa cosa, ma hanno produttori, destinatari e promesse differenti.</p></header>
+      <div class="tab-row" id="imageTypes" role="tablist" aria-label="Confronta oggetto, immagine, merce e opera"></div>
+      <div class="compare-board">
+        <div class="package-stage" id="imageStage" role="img" aria-describedby="imageResult" aria-label="Diagramma astratto del passaggio da oggetto a immagine"><span class="pack-object"></span><span class="pack-label">STANDARD</span><span class="pack-code"></span></div>
+        <article id="imageResult" class="analysis-card" aria-live="polite"></article>
+      </div>
+      <div class="distinctions"><span>merce ≠ immagine della merce</span><span>originale ≠ unico</span><span>riconoscere ≠ comprendere</span><span>esporre ≠ neutralizzare</span></div>
+    </section>
+
+    <section class="panel chronology-section" id="s3" data-section="3" aria-labelledby="s3-title">
+      <header class="section-title"><p class="kicker">03 · Il mondo precedente</p><h2 id="s3-title">Non una catena di cause.<br><em>Una rete di condizioni.</em></h2><p>Tra 1947 e 1968 ricostruzione, produzione industriale, televisione, fumetto, pubblicità, Guerra fredda, differenze di classe e lavoro domestico non “producono” automaticamente la Pop Art.</p></header>
+      <div class="timeline" id="timeline" role="list" aria-label="Cronologia interattiva 1947–1968"></div>
+      <article class="analysis-card timeline-detail" id="timelineDetail" aria-live="polite"><p>Scegli un nodo per distinguere evento, condizione, istituzione, decisione e conseguenza.</p></article>
+      <div class="split-grid">
+        <div><h3>Rete delle condizioni</h3><div class="network" id="conditionNetwork" aria-label="Rete delle condizioni della società dei consumi"></div></div>
+        <article class="analysis-card" id="conditionResult" aria-live="polite"><b>Nessuna freccia unica</b><p>Seleziona un nodo: vedrai possibilità aperte, soggetti coinvolti e ciò che il nodo non spiega.</p></article>
+      </div>
+    </section>
+
+    <section class="panel before-section" id="s4" data-section="4" aria-labelledby="s4-title">
+      <header class="section-title"><p class="kicker">04 · Prima della Pop</p><h2 id="s4-title">Prendere una cosa comune<br><em>non basta a renderla Pop.</em></h2><p>Collage cubista, Dada, ready-made, assemblage, Neo-Dada e Pop modificano supporto, istituzioni e attribuzione in modi diversi.</p></header>
+      <div class="tab-row" id="precedentTabs" role="tablist" aria-label="Confronta precedenti e Pop Art"></div>
+      <div class="compare-board reverse">
+        <article id="precedentResult" class="analysis-card" aria-live="polite"></article>
+        <div class="precedent-stage" id="precedentStage" role="img" aria-describedby="precedentResult" aria-label="Diagramma astratto delle operazioni su oggetto e immagine"><span></span><i></i><b>?</b></div>
+      </div>
+      <p class="limit"><b>Soglia:</b> Johns e Rauschenberg riaprono bandiera, bersaglio, fotografia, oggetto e pittura; sono figure di passaggio, non una casella da assimilare senza resto alla Pop.</p>
+    </section>
+
+    <section class="panel london-section" id="s5" data-section="5" aria-labelledby="s5-title">
+      <header class="section-title"><p class="kicker">05 · Londra</p><h2 id="s5-title">Desiderare l’America<br><em>da lontano.</em></h2><p>Paolozzi, Hamilton, Boty e l’Independent Group leggono riviste, tecnologia, cinema, corpi e interni domestici come materiali già montati dall’industria culturale.</p></header>
+      <div class="source-links" aria-label="Opere autentiche da osservare">
+        <a href="https://www.tate.org.uk/art/artworks/paolozzi-i-was-a-rich-mans-plaything-t01462" target="_blank" rel="noopener"><span>1947</span><b>Paolozzi · <i>I was a Rich Man’s Plaything</i></b><small>Vedi l’opera alla Tate ↗</small></a>
+        <a href="https://www.whitechapelgallery.org/exhibitions/this-is-tomorrow/" target="_blank" rel="noopener"><span>1956</span><b>Hamilton e gruppo 2 · <i>This Is Tomorrow</i></b><small>Vedi archivio e contesto ↗</small></a>
+        <a href="https://www.tate.org.uk/art/artworks/boty-the-only-blonde-in-the-world-t07496" target="_blank" rel="noopener"><span>1963</span><b>Pauline Boty · <i>The Only Blonde in the World</i></b><small>Vedi l’opera alla Tate ↗</small></a>
+      </div>
+      <div class="lab-grid">
+        <form class="controls" id="collageControls">
+          <label>Scala <output for="collageScale">55%</output><input id="collageScale" type="range" min="20" max="100" value="55"></label>
+          <label>Ritaglio <output for="collageCrop">35%</output><input id="collageCrop" type="range" min="0" max="80" value="35"></label>
+          <label>Sovrapposizione <output for="collageLayers">4</output><input id="collageLayers" type="range" min="1" max="8" value="4"></label>
+          <label>Slogan<select id="collageSlogan"><option value="futuro">PROMESSA DI FUTURO</option><option value="corpo">CORPO PERFETTO</option><option value="casa">CASA EFFICIENTE</option><option value="tecnica">TECNOLOGIA FELICE</option></select></label>
+          <label>Corpo<select id="collageBody"><option value="centrale">Centrale</option><option value="frammento">Frammentato</option><option value="assente">Assente</option></select></label>
+          <label>Interno<select id="collageRoom"><option value="salotto">Salotto</option><option value="vetrina">Vetrina</option><option value="set">Set pubblicitario</option></select></label>
+          <button class="secondary" data-reset="collage" type="button">Ripristina montaggio</button>
+        </form>
+        <div><div class="collage-stage" id="collageStage" role="img" aria-describedby="collageResult" aria-label="Collage didattico astratto con forme e slogan originali"><span class="shape-a"></span><span class="shape-b"></span><span class="shape-c"></span><b id="collageWord">PROMESSA DI FUTURO</b><i class="body-symbol" aria-hidden="true"></i></div><article class="analysis-card" id="collageResult" aria-live="polite"></article></div>
+      </div>
+      <div class="tab-row" id="londonFigures" role="tablist" aria-label="Confronta i protagonisti britannici"></div>
+      <article class="analysis-card compact" id="londonResult" aria-live="polite"></article>
+      <p class="simulation-label">Laboratorio originale sulla grammatica commerciale: non ricostruisce né imita un’opera protetta.</p>
+    </section>
+
+    <section class="panel newyork-section" id="s6" data-section="6" aria-labelledby="s6-title">
+      <header class="section-title"><p class="kicker">06 · New York</p><h2 id="s6-title">L’immagine entra<br><em>nel sistema.</em></h2><p>Artisti, illustratori, fotografi, gallerie, musei, riviste, cinema e collezionisti formano un circuito. “Pop statunitense” non indica una sola risposta.</p></header>
+      <div class="system-network" id="systemNetwork" aria-label="Rete di artisti e istituzioni della Pop statunitense"></div>
+      <article class="analysis-card profile" id="systemResult" aria-live="polite"><p>Scegli un nodo per vedere problema, operazione, istituzione e limite.</p></article>
+      <div class="work-grid" aria-label="Opere autentiche collegate a fonti museali">
+        <a href="https://www.moma.org/collection/works/79809" target="_blank" rel="noopener"><b>Warhol</b><span><i>Campbell’s Soup Cans</i>, 1962</span><small>32 tele: vedere al MoMA ↗</small></a>
+        <a href="https://www.tate.org.uk/art/artworks/warhol-marilyn-diptych-t03093" target="_blank" rel="noopener"><b>Warhol</b><span><i>Marilyn Diptych</i>, 1962</span><small>Vedere alla Tate ↗</small></a>
+        <a href="https://www.tate.org.uk/art/artworks/lichtenstein-whaam-t00897" target="_blank" rel="noopener"><b>Lichtenstein</b><span><i>Whaam!</i>, 1963</span><small>Vedere alla Tate ↗</small></a>
+        <a href="https://www.moma.org/collection/works/79805" target="_blank" rel="noopener"><b>Rosenquist</b><span><i>F-111</i>, 1964–65</span><small>Vedere al MoMA ↗</small></a>
+        <a href="https://www.moma.org/collection/works/61054" target="_blank" rel="noopener"><b>Oldenburg</b><span><i>The Store</i>, 1961</span><small>Vedere al MoMA ↗</small></a>
+        <a href="https://www.moma.org/collection/works/80004" target="_blank" rel="noopener"><b>Wesselmann</b><span><i>Still Life #30</i>, 1963</span><small>Vedere al MoMA ↗</small></a>
+      </div>
+    </section>
+
+    <section class="panel serial-section" id="s7" data-section="7" aria-labelledby="s7-title">
+      <header class="section-title"><p class="kicker">07 · Serialità</p><h2 id="s7-title">Ripetere significa<br><em>rendere uguale?</em></h2><p>Numero, intervallo, errore, colore, orientamento, scala e distanza trasformano la serie. Industria, serie artistica e copia digitale non sono sinonimi.</p></header>
+      <div class="lab-grid reverse">
+        <div><div class="serial-stage" id="serialStage" role="img" aria-describedby="serialResult" aria-label="Serie di etichette astratte generate dai controlli"></div><article class="analysis-card" id="serialResult" aria-live="polite"></article></div>
+        <form class="controls" id="serialControls">
+          <label>Numero <output for="serialCount">12</output><input id="serialCount" type="range" min="2" max="30" value="12"></label>
+          <label>Intervallo <output for="serialGap">8</output><input id="serialGap" type="range" min="0" max="24" value="8"></label>
+          <label>Variazione <output for="serialVariation">20%</output><input id="serialVariation" type="range" min="0" max="100" value="20"></label>
+          <label>Errore <output for="serialError">10%</output><input id="serialError" type="range" min="0" max="100" value="10"></label>
+          <label>Scala <output for="serialScale">70%</output><input id="serialScale" type="range" min="35" max="100" value="70"></label>
+          <label>Consumo progressivo <output for="serialFade">25%</output><input id="serialFade" type="range" min="0" max="100" value="25"></label>
+          <label>Orientamento<select id="serialDirection"><option value="griglia">Griglia</option><option value="nastro">Nastro</option><option value="pila">Pila</option></select></label>
+          <label>Distanza<select id="serialDistance"><option value="vicina">Vicina</option><option value="media">Media</option><option value="lontana">Lontana</option></select></label>
+          <button class="secondary" data-reset="serial" type="button">Ripristina serie</button>
+        </form>
+      </div>
+      <p class="limit"><b>Attenzione:</b> ripetizione non significa automaticamente perdita dell’aura, critica politica o celebrazione della massa. La conclusione dipende dall’operazione e dal circuito.</p>
+    </section>
+
+    <section class="panel object-section" id="s8" data-section="8" aria-labelledby="s8-title">
+      <header class="section-title"><p class="kicker">08 · Oggetto e confezione</p><h2 id="s8-title">La merce sale<br><em>sul piedistallo.</em></h2><p>Quando scatola, cibo o vetrina cambiano materiale, scala e collocazione, l’oggetto non resta lo stesso. Ma il museo non cancella il supermercato: lo rende una memoria attiva.</p></header>
+      <div class="object-lab">
+        <div class="object-stage" id="objectStage" role="img" aria-describedby="objectResult" aria-label="Confezione astratta collocata in uno spazio modificabile"><div class="shelf"></div><div class="generic-box"><span>GENERICA</span><b>12</b><i>contenuto</i></div><div class="caption-strip">oggetto senza autore?</div></div>
+        <form class="controls" id="objectControls">
+          <label>Materiale<select id="objectMaterial"><option value="cartone">Cartone</option><option value="legno">Legno dipinto</option><option value="gesso">Gesso</option><option value="stoffa">Stoffa imbottita</option></select></label>
+          <label>Dimensione <output for="objectScale">100%</output><input id="objectScale" type="range" min="35" max="220" value="100"></label>
+          <label>Collocazione<select id="objectPlace"><option value="scaffale">Scaffale</option><option value="vetrina">Vetrina</option><option value="piedistallo">Piedistallo</option><option value="pavimento">Pavimento</option></select></label>
+          <label>Marchio<select id="objectBrand"><option value="visibile">Visibile</option><option value="coperto">Coperto</option><option value="inventato">Inventato</option></select></label>
+          <label>Prezzo<select id="objectPrice"><option value="merce">Prezzo della merce</option><option value="opera">Prezzo dell’opera</option><option value="assente">Non esposto</option></select></label>
+          <label>Didascalia<select id="objectCaption"><option value="prodotto">Scheda prodotto</option><option value="museo">Didascalia museale</option><option value="nessuna">Nessuna</option></select></label>
+          <button class="secondary" data-reset="object" type="button">Ripristina oggetto</button>
+        </form>
+      </div>
+      <article class="analysis-card" id="objectResult" aria-live="polite"></article>
+      <div class="source-links narrow"><a href="https://www.moma.org/collection/works/81384" target="_blank" rel="noopener"><b>Warhol · <i>Brillo Box (Soap Pads)</i>, 1964</b><small>Vedere al MoMA ↗</small></a><a href="https://www.moma.org/collection/works/81721" target="_blank" rel="noopener"><b>Oldenburg · <i>Pastry Case, I</i>, 1961–62</b><small>Vedere al MoMA ↗</small></a></div>
+      <p class="simulation-label">Il laboratorio non permette di “creare un Warhol” o “un Oldenburg”: isola relazioni fra materiale, scala, luogo e valore.</p>
+    </section>
+
+    <section class="panel source-section" id="s9" data-section="9" aria-labelledby="s9-title">
+      <header class="section-title"><p class="kicker">09 · Fumetto, stampa, fotografia</p><h2 id="s9-title">L’immagine ha già<br><em>una storia e dei lavoratori.</em></h2><p>L’autore celebrato dal museo può partire dal disegno di un fumettista, da una fotografia d’agenzia o da un annuncio costruito da grafici e copywriter. Trasformare non equivale a cancellare la provenienza.</p></header>
+      <div class="provenance-path" id="provenancePath" aria-label="Percorso interattivo dell’appropriazione"></div>
+      <article class="analysis-card" id="provenanceResult" aria-live="polite"><p>Scegli una tappa: chi produce, chi decide, chi viene nominato e chi scompare?</p></article>
+      <div class="case-study">
+        <div><p class="kicker">Caso · <i>Whaam!</i></p><h3>Non “fumetto anonimo”.</h3><p>La composizione di Lichtenstein deriva da più pannelli di fumetti di guerra della DC; la fonte principale è associata a <b>Irv Novick</b> e ad <i>All-American Men of War</i> n. 89 (1962). Scala, dipinto, colore, montaggio e contesto cambiano; la paternità del lavoro editoriale non per questo scompare.</p></div>
+        <div class="source-compare" id="sourceCompare" role="tablist" aria-label="Confronta provenienza e trasformazione"></div>
+        <p id="sourceCompareResult" class="receipt" aria-live="polite">Scegli un livello di confronto.</p>
+        <a href="https://www.tate.org.uk/tate-etc/issue-27-spring-2013/wow" target="_blank" rel="noopener">Tate · ricostruzione delle fonti di <i>Whaam!</i> ↗</a>
+      </div>
+      <p class="limit"><b>Né processo sommario né assoluzione automatica:</b> provenienza, trasformazione, attribuzione, diritto e asimmetria economica sono domande diverse.</p>
+    </section>
+
+    <section class="panel body-section" id="s10" data-section="10" aria-labelledby="s10-title">
+      <header class="section-title"><p class="kicker">10 · Celebrità, corpo, genere</p><h2 id="s10-title">Il corpo diventa<br><em>immagine consumabile.</em></h2><p>Posa, frammentazione, stereotipo, desiderio e vulnerabilità costruiscono figure pubbliche. Le artiste non sono un’appendice correttiva: cambiano la domanda rivolta allo spettatore.</p></header>
+      <div class="body-lab">
+        <div class="body-stage" id="bodyStage" role="img" aria-describedby="bodyResult" aria-label="Comparatore astratto di posa, frammentazione e ripetizione"><span class="silhouette"></span><span class="frame-a"></span><span class="frame-b"></span></div>
+        <div><div class="tab-row vertical" id="bodyTabs" role="tablist" aria-label="Confronta costruzioni del corpo"></div><div class="lens-switch"><button type="button" data-lens="soggetto" aria-pressed="true">Soggetto rappresentato</button><button type="button" data-lens="pubblica" aria-pressed="false">Immagine pubblica</button><button type="button" data-lens="spettatore" aria-pressed="false">Ruolo dello spettatore</button></div><article class="analysis-card" id="bodyResult" aria-live="polite"></article></div>
+      </div>
+      <div class="work-grid gender-works">
+        <a href="https://www.tate.org.uk/art/artworks/boty-the-only-blonde-in-the-world-t07496" target="_blank" rel="noopener"><b>Pauline Boty</b><span>Desiderio, celebrità, sguardo femminile</span><small>Vedere alla Tate ↗</small></a>
+        <a href="https://www.moma.org/collection/works/81180" target="_blank" rel="noopener"><b>Marisol</b><span>Figura sociale, oggetto trovato, ruolo</span><small>Vedere <i>The Family</i> al MoMA ↗</small></a>
+        <a href="https://www.moma.org/collection/works/221857" target="_blank" rel="noopener"><b>Rosalyn Drexler</b><span>Cinema, violenza, uomini e macchine</span><small>Vedere al MoMA ↗</small></a>
+        <a href="https://www.tate.org.uk/art/artworks/warhol-marilyn-diptych-t03093" target="_blank" rel="noopener"><b>Andy Warhol</b><span>Ripetizione, morte, esposizione</span><small>Vedere alla Tate ↗</small></a>
+      </div>
+    </section>
+
+    <section class="panel world-section" id="s11" data-section="11" aria-labelledby="s11-title">
+      <header class="section-title"><p class="kicker">11 · La Pop non parla con una sola lingua</p><h2 id="s11-title">Le immagini viaggiano.<br><em>I contesti le traducono.</em></h2><p>Londra, New York, Roma, Milano, Parigi, Düsseldorf, Tokyo, Bogotá e São Paulo non sono punti equivalenti di un’espansione americana.</p></header>
+      <div class="world-map" id="worldMap" role="img" aria-label="Mappa schematica policentrica della Pop e delle ricerche vicine"><svg viewBox="0 0 900 460" aria-hidden="true"><path d="M80 155C250 40 365 130 470 168S690 265 845 105"/><path d="M115 330C310 210 490 320 785 330"/><path d="M330 70C470 190 590 165 730 65"/></svg><div id="worldNodes"></div></div>
+      <article class="analysis-card profile" id="worldResult" aria-live="polite"><p>Scegli un centro: immagini importate, media locali, istituzioni e conflitti non coincidono.</p></article>
+      <div class="italy-focus">
+        <div><p class="kicker">Roma e Milano</p><h3>Marchi, manifesti, cinema, memoria politica</h3><p>Rotella strappa la pelle pubblicitaria della città; Schifano riduce marchi e schermi a campi ambigui; Festa riusa frammenti della tradizione; Angeli trasforma simboli politici e memoria urbana. La definizione “Pop italiana” aiuta soltanto se non cancella le differenze.</p></div>
+        <div class="italy-network" id="italyNetwork" role="tablist" aria-label="Rete della Pop italiana"></div>
+        <article class="analysis-card" id="italyResult" aria-live="polite"><p>Scegli un artista o un nodo istituzionale.</p></article>
+        <div class="source-links narrow"><a href="https://lagallerianazionale.com/en/mostra/mimmo-rotella-manifesto/" target="_blank" rel="noopener"><b>Galleria Nazionale · Mimmo Rotella</b><small>Décollage e processi fotomeccanici ↗</small></a><a href="https://www.moma.org/collection/artists/73106" target="_blank" rel="noopener"><b>MoMA · Mario Schifano</b><small>Archivio espositivo ↗</small></a></div>
+      </div>
+    </section>
+
+    <section class="panel value-section" id="s12" data-section="12" aria-labelledby="s12-title">
+      <header class="section-title"><p class="kicker">12 · Valore</p><h2 id="s12-title">Chi trasforma<br><em>un’immagine in valore?</em></h2><p>Il valore non è una sostanza nascosta nell’opera, ma non è neppure “soltanto marketing”: nasce da provenienza, lavoro, riconoscimento, istituzioni, scarsità, desiderio e conflitto.</p></header>
+      <div class="value-circuit"><span>immagine di massa</span><i></i><span>selezione artistica</span><i></i><span>galleria</span><i></i><span>museo</span><i></i><span>riproduzione</span><i></i><span>mercato</span></div>
+      <div class="lab-grid">
+        <form class="controls" id="valueControls">
+          <label>Provenienza<select id="valueProvenance"><option value="incerta">Incerta</option><option value="documentata">Documentata</option><option value="storica">Storica e continua</option></select></label>
+          <label>Diritto di riproduzione<select id="valueRights"><option value="chiuso">Chiuso</option><option value="negoziato">Negoziato</option><option value="aperto">Aperto</option></select></label>
+          <label>Tiratura <output for="valueEdition">500</output><input id="valueEdition" type="range" min="1" max="1000" value="500"></label>
+          <label>Dimensione <output for="valueScale">medio</output><input id="valueScale" type="range" min="0" max="2" value="1"></label>
+          <label>Firma<select id="valueSignature"><option value="assente">Assente</option><option value="presente">Presente</option><option value="certificata">Presente e certificata</option></select></label>
+          <label>Esposizione<select id="valueDisplay"><option value="nessuna">Nessuna</option><option value="galleria">Galleria</option><option value="museo">Museo</option><option value="retrospettiva">Retrospettiva</option></select></label>
+          <label>Copertura mediatica <output for="valueMedia">35%</output><input id="valueMedia" type="range" min="0" max="100" value="35"></label>
+          <label>Uso successivo<select id="valueUse"><option value="deposito">Deposito</option><option value="studio">Studio</option><option value="asta">Asta</option><option value="merch">Merchandising</option></select></label>
+          <button class="secondary" data-reset="value" type="button">Ripristina circuito</button>
+        </form>
+        <div><div class="value-stage" id="valueStage" role="img" aria-describedby="valueResult" aria-label="Etichetta di valore relazionale"><span>IMMAGINE</span><b id="valueIndex">42</b><i>indice relazionale, non prezzo</i></div><article class="analysis-card" id="valueResult" aria-live="polite"></article></div>
+      </div>
+    </section>
+
+    <section class="panel return-section" id="s13" data-section="13" aria-labelledby="s13-title">
+      <header class="section-title"><p class="kicker">13 · Secondo sguardo</p><h2 id="s13-title">Anche noi<br><em>consumiamo immagini.</em></h2><p>La fotografia iniziale non era una pubblicità né un’opera Pop. Era un documento di uno spazio in cui merce, immagine, lavoro e scelta venivano già organizzati insieme.</p></header>
+      <div class="reveal-grid">
+        <figure><button class="image-button view-art" type="button" data-image="assets/images/self-service-arkdes.webp" data-caption="Sune Sundahl, Interno di negozio self-service, Årsta (Stoccolma), prima del 1962. ArkDes, ARKM.1962-101-1781. Pubblico dominio; conversione WebP senza ritaglio."><img src="assets/images/self-service-arkdes.webp" alt="Interno di un negozio self-service a Årsta: carrelli, casse, cartelli, confezioni, clienti, una commessa e una bambina." width="1428" height="1600"></button><figcaption>ArkDes, ARKM.1962-101-1781 · Sune Sundahl · pubblico dominio</figcaption></figure>
+        <article class="reveal-card"><p class="kicker">Rivelazione</p><h3>Sune Sundahl<br><i>Interno di negozio self-service</i></h3><dl><div><dt>Data</dt><dd>Prima del 1962</dd></div><div><dt>Luogo</dt><dd>Årsta, Stoccolma, Svezia</dd></div><div><dt>Oggetto</dt><dd>Fotografia documentaria in bianco e nero</dd></div><div><dt>Archivio</dt><dd>ArkDes · Swedish Centre for Architecture and Design</dd></div><div><dt>Inventario</dt><dd>ARKM.1962-101-1781</dd></div><div><dt>Licenza</dt><dd>Pubblico dominio</dd></div><div><dt>File locale</dt><dd>1428 × 1600 px, WebP, nessun ritaglio</dd></div><div><dt>Trasformazione</dt><dd>Riduzione, conversione, rimozione metadati</dd></div></dl><p><b>Limite:</b> la fotografia documenta una disposizione commerciale e persone presenti; non prova da sola motivazioni, reddito, desideri, prezzi reali o ricezione.</p></article>
+      </div>
+      <div class="notes-return"><article><p class="kicker">La tua prima nota</p><p id="initialNoteEcho">Nessuna nota ancora.</p></article><label class="notebook"><span>Seconda lettura · denuncia, desiderio o funzionamento?</span><textarea id="finalNote" rows="6" placeholder="Non scegliere una formula morale: collega operazione, contesto, istituzioni e ambiguità."></textarea></label></div>
+      <div class="atlas"><h3>Atlante conclusivo</h3><div id="atlasGrid"></div><p id="atlasResult" class="receipt" aria-live="polite">Seleziona una voce per collegare forma, lavoro, circolazione e valore.</p></div>
+      <div class="synthesis"><div><p class="kicker">Sintesi delle azioni</p><h3>Non ciò che il sistema presume.<br>Ciò che hai realmente fatto.</h3></div><div><p id="personalSynthesis">Nessuna attività registrata.</p><button class="primary" id="buildSynthesis" type="button">Aggiorna la sintesi</button></div></div>
+
+      <section class="mastery" id="verifica" aria-labelledby="quizTitle">
+        <header><p class="kicker">Verifica finale · 16 nuclei</p><h3 id="quizTitle">Non una media.<br><em>Sedici comprensioni necessarie.</em></h3><div class="mastery-meter" aria-label="Avanzamento della verifica"><span id="masteryBar"></span></div><p id="masteryCount">0 / 16 nuclei</p></header>
+        <div class="quiz-card" id="quizCard"></div>
+        <div id="quizFeedback" aria-live="polite"></div>
+        <div class="quiz-complete" id="quizComplete" hidden><b>16 / 16</b><p>Hai superato tutti i nuclei, compresi gli eventuali recuperi.</p></div>
+      </section>
+
+      <blockquote class="closing">La Pop Art non si limita a rappresentare il consumo. Ci costringe a vedere che anche lo sguardo viene prodotto, distribuito e messo in valore.</blockquote>
+      <div class="next-module"><p>La soglia successiva</p><span>23</span><div><h3>L’opera può scomparire</h3><p>Se l’immagine può essere ripetuta, acquistata e consumata, l’opera ha ancora bisogno di essere un oggetto?</p></div><a href="../../index.html#m23">Arte concettuale e performance · scheda predisposta ↗</a></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-mark">S</div><p><strong>22 · Quando l’immagine diventa merce</strong><br>Pop Art — Consumo, pubblicità, ripetizione</p><p class="credits">Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p><nav aria-label="Navigazione fra moduli"><a href="../21-dopoguerra/index.html">← Modulo 21</a><a href="../../index.html">Home</a><a href="../../index.html#m23">Modulo 23 →</a></nav></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxCaption"><div class="lightbox-toolbar"><button id="zoomOut" type="button" aria-label="Riduci">−</button><button id="zoomReset" type="button">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci">+</button><button id="lightboxClose" type="button" aria-label="Chiudi">×</button></div><div class="lightbox-viewport"><img id="lightboxImage" alt=""></div><p id="lightboxCaption"></p></dialog>
+</body>
+</html>
