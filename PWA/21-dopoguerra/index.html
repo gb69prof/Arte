@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#121513">
+  <meta name="description" content="Dopo l’irrappresentabile: laboratorio interattivo sul dopoguerra fra materia, gesto, memoria e istituzioni.">
+  <title>21 · Dopo l’irrappresentabile — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="sideNav" aria-expanded="false"><span aria-hidden="true">☰</span><span>Indice</span></button>
+    <a class="project" href="../../index.html"><span aria-hidden="true">S</span><b>Storia dello sguardo</b></a>
+    <p><span>Galleria V</span><strong>21 / 25</strong></p>
+  </header>
+
+  <aside class="side-nav" id="sideNav" aria-label="Indice del modulo" aria-hidden="true" inert>
+    <div class="side-head"><p>Galleria V · Le immagini che ci abitano</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#s1"><span>01</span>Prima di sapere</a></li>
+      <li><a href="#s2"><span>02</span>Dall’immagine occupata alla ferita</a></li>
+      <li><a href="#s3"><span>03</span>Il 1945 non è un anno zero</a></li>
+      <li><a href="#s4"><span>04</span>Che cosa significa irrappresentabile?</a></li>
+      <li><a href="#s5"><span>05</span>La materia conserva qualcosa?</a></li>
+      <li><a href="#s6"><span>06</span>Il gesto è una traccia?</a></li>
+      <li><a href="#s7"><span>07</span>Non tutta l’astrazione è gesto</a></li>
+      <li><a href="#s8"><span>08</span>Aprire lo spazio</a></li>
+      <li><a href="#s9"><span>09</span>Italia: ricostruire significa scegliere</a></li>
+      <li><a href="#s10"><span>10</span>La figura non scompare</a></li>
+      <li><a href="#s11"><span>11</span>Non un solo centro</a></li>
+      <li><a href="#s12"><span>12</span>Chi organizza la libertà?</a></li>
+      <li><a href="#s13"><span>13</span>Secondo sguardo</a></li>
+    </ol></nav>
+    <div class="side-actions"><a href="#verifica">Verifica finale</a><button id="resetAll" class="danger" type="button">Azzera il modulo</button></div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <main id="contenuto">
+    <section class="threshold" id="s1" data-section="1" aria-labelledby="s1-title">
+      <div class="threshold-copy">
+        <p class="kicker">01 · Prima di sapere</p>
+        <h1 id="s1-title">È una superficie<br><em>o ciò che resta?</em></h1>
+        <p class="lead">Nessun autore, titolo, data o luogo. Prima vengono bordo, densità, apertura, materia e la posizione dalla quale osservi.</p>
+        <blockquote>Sto osservando un’immagine costruita oppure ciò che resta dopo una distruzione?</blockquote>
+      </div>
+      <figure class="art-stage">
+        <div class="art-wrap portrait" id="openingStage">
+          <img src="assets/images/schacht-berlin.webp" alt="Fotografia in bianco e nero: una grande cavità scura interrompe una superficie di macerie; travi, bordi spezzati e strutture urbane occupano lo sfondo." width="549" height="800">
+          <button class="marker m-support" data-marker="supporto" aria-pressed="false" aria-label="Osserva il supporto"><span>1</span></button>
+          <button class="marker m-edge" data-marker="bordo" aria-pressed="false" aria-label="Osserva il bordo"><span>2</span></button>
+          <button class="marker m-void" data-marker="vuoto" aria-pressed="false" aria-label="Osserva il vuoto"><span>3</span></button>
+          <button class="marker m-layer" data-marker="strati" aria-pressed="false" aria-label="Osserva gli strati"><span>4</span></button>
+          <button class="marker m-line" data-marker="direzione" aria-pressed="false" aria-label="Osserva la direzione"><span>5</span></button>
+          <button class="marker m-scale" data-marker="scala" aria-pressed="false" aria-label="Osserva la scala"><span>6</span></button>
+          <button class="marker m-light" data-marker="luce" aria-pressed="false" aria-label="Osserva luce e densità"><span>7</span></button>
+          <button class="marker m-view" data-marker="punto" aria-pressed="false" aria-label="Osserva il punto di vista"><span>8</span></button>
+        </div>
+        <figcaption><span class="concealed">Documento non ancora rivelato</span><button class="view-art" data-image="assets/images/schacht-berlin.webp" data-caption="Documento iniziale, ancora senza attribuzione: fotografia integrale, nessun ritaglio." type="button">Ingrandisci</button></figcaption>
+      </figure>
+      <div class="observation-grid">
+        <div class="clue-card" id="markerReadout" aria-live="polite"><b>Scegli un marcatore</b><p>Nomina ciò che è visibile prima di ricostruire un evento. Una frattura non racconta da sola la propria causa.</p></div>
+        <label class="notebook"><span>Prima nota · che cosa è accaduto a questa superficie?</span><textarea id="initialNote" rows="5" placeholder="Distingui ciò che puoi vedere da ciò che stai immaginando."></textarea><small>Salvata soltanto su questo dispositivo.</small></label>
+      </div>
+    </section>
+
+    <section class="panel bridge-section" id="s2" data-section="2" aria-labelledby="s2-title">
+      <header class="section-title"><p class="kicker">02 · Dall’immagine occupata all’immagine ferita</p><h2 id="s2-title">Dopo la propaganda,<br><em>l’immagine non torna innocente.</em></h2><p>Il modulo precedente mostrava immagini organizzate dal potere. Dopo il 1945 restano censura, fotografia, istituzioni e mercato; cambia la fiducia concessa alla rappresentazione.</p></header>
+      <div class="case-tabs" id="imageTypes" role="tablist" aria-label="Confronta sei tipi di immagine"></div>
+      <div class="compare-board">
+        <div class="abstract-document" id="imageTypeStage" role="img" aria-describedby="imageTypeResult"><span></span><span></span><span></span></div>
+        <article id="imageTypeResult" class="lab-analysis" aria-live="polite"></article>
+      </div>
+      <p class="limit"><b>Limite:</b> un documento non è trasparente, una testimonianza non è una fotografia totale, una rovina non indica da sola cause e responsabilità, un’opera astratta non è automaticamente più etica.</p>
+    </section>
+
+    <section class="panel chronology-section" id="s3" data-section="3" aria-labelledby="s3-title">
+      <header class="section-title"><p class="kicker">03 · Il 1945 non è un anno zero</p><h2 id="s3-title">La guerra finisce.<br><em>Le sue strutture non svaniscono.</em></h2><p>Liberazione, rimpatrio, processi, ricostruzione e memoria hanno tempi differenti. Fascismi, colonialismi, gerarchie e responsabilità continuano dentro nuove istituzioni.</p></header>
+      <div class="timeline" id="timeline" role="list" aria-label="Cronologia interattiva 1945–1964"></div>
+      <article class="timeline-detail" id="timelineDetail" aria-live="polite"><p>Scegli un nodo: ogni data sarà distinta come condizione, decisione, istituzione, processo o conseguenza.</p></article>
+      <div class="split-grid">
+        <div><h3>Rete non deterministica</h3><div class="network" id="postwarNetwork" aria-label="Rete delle condizioni del dopoguerra"></div></div>
+        <article class="lab-analysis" id="networkResult" aria-live="polite"><b>Nessuna freccia unica</b><p>Seleziona un nodo. Le scelte artistiche emergono dall’intreccio, non da una causa che determina uno stile.</p></article>
+      </div>
+      <div class="specificity"><article><b>Shoah</b><p>Genocidio degli ebrei d’Europa, organizzato da istituzioni, leggi, deportazioni e uccisione di massa naziste con collaborazioni differenti.</p></article><article><b>Hiroshima e Nagasaki</b><p>Bombardamenti atomici del 6 e 9 agosto 1945: decisioni militari e politiche, tecnologia, vittime, hibakusha e memorie conflittuali.</p></article><article><b>Guerra totale</b><p>Bombardamenti, occupazioni, combattimenti, sfollamenti e violenze contro civili: non sinonimo di genocidio.</p></article></div>
+    </section>
+
+    <section class="panel ethics-section" id="s4" data-section="4" aria-labelledby="s4-title">
+      <header class="section-title"><p class="kicker">04 · Che cosa significa irrappresentabile?</p><h2 id="s4-title">Non è un divieto.<br><em>È un problema di responsabilità.</em></h2><p>“Irrappresentabile” può indicare un limite etico o formale, non l’impossibilità di documentare. Adorno scrisse che «scrivere una poesia dopo Auschwitz è barbaro»; non decretò la fine dell’arte e in seguito riconobbe il diritto della sofferenza a esprimersi.</p></header>
+      <div class="classifier-layout"><div><h3>Quale limite?</h3><div class="classifier" id="unrepClassifier"></div><p class="equivalent" id="unrepFeedback" aria-live="polite"></p><button class="secondary" data-reset="unrep" type="button">Azzera classificatore</button></div><div><h3>Documento, memoria, spettacolo</h3><div class="classifier" id="ethicsClassifier"></div><p class="equivalent" id="ethicsFeedback" aria-live="polite"></p><button class="secondary" data-reset="ethics" type="button">Azzera classificatore</button></div></div>
+      <div class="principle"><span aria-hidden="true">≠</span><p><b>La difficoltà di rappresentare non annulla il dovere di documentare.</b> Impone provenienza, contesto, consenso, misura, finalità e attenzione a ciò che l’immagine non può dimostrare.</p></div>
+    </section>
+
+    <section class="panel matter-section" id="s5" data-section="5" aria-labelledby="s5-title">
+      <header class="section-title"><p class="kicker">05 · La materia conserva qualcosa?</p><h2 id="s5-title">La materia non parla<br><em>senza un’operazione e un contesto.</em></h2><p>“Informale” raccoglie ricerche diverse: Fautrier, Wols, Dubuffet, Hartung, Burri, Tàpies e Vedova non formano uno stile unico. Supporto, titolo, gesto, mostra e ricezione costruiscono il senso.</p></header>
+      <div class="lab-grid">
+        <form class="controls" id="matterControls">
+          <label>Supporto<select id="matterSupport"><option value="tela">Tela</option><option value="carta">Carta</option><option value="legno">Legno</option><option value="metallo">Metallo</option></select></label>
+          <label>Densità <output for="matterDensity">45%</output><input id="matterDensity" type="range" min="0" max="100" value="45"></label>
+          <label>Trasparenza <output for="matterOpacity">72%</output><input id="matterOpacity" type="range" min="20" max="100" value="72"></label>
+          <label>Sovrapposizione <output for="matterLayers">3</output><input id="matterLayers" type="range" min="1" max="7" value="3"></label>
+          <label>Erosione <output for="matterErosion">25%</output><input id="matterErosion" type="range" min="0" max="100" value="25"></label>
+          <label>Cucitura simbolica <output for="matterStitch">2</output><input id="matterStitch" type="range" min="0" max="6" value="2"></label>
+          <label>Bordo<select id="matterEdge"><option value="netto">Netto</option><option value="franto">Interrotto</option><option value="poroso">Poroso</option></select></label>
+          <label>Luce radente <output for="matterLight">40%</output><input id="matterLight" type="range" min="0" max="100" value="40"></label>
+          <button class="secondary" data-reset="matter" type="button">Ripristina laboratorio</button>
+        </form>
+        <div><div class="matter-stage" id="matterStage" role="img" aria-describedby="matterResult" aria-label="Diagramma astratto di strati e supporto"></div><article class="lab-analysis" id="matterResult" aria-live="polite"></article></div>
+      </div>
+      <div class="artist-links"><a href="https://fondazioneburri.org/alberto-burri/" target="_blank" rel="noopener">Vedere Burri alla Fondazione ↗</a><a href="https://www.centrepompidou.fr/en/ressources/personne/cbXr5B" target="_blank" rel="noopener">Vedere Dubuffet al Pompidou ↗</a><a href="https://fundaciotapies.org/en/antoni-tapies/" target="_blank" rel="noopener">Vedere Tàpies alla Fundació ↗</a></div>
+      <p class="simulation-label">Diagramma originale: analizza operazioni materiali; non imita opere protette.</p>
+    </section>
+
+    <section class="panel gesture-section" id="s6" data-section="6" aria-labelledby="s6-title">
+      <header class="section-title"><p class="kicker">06 · Il gesto è una traccia del corpo?</p><h2 id="s6-title">La traccia registra qualcosa.<br><em>Non registra tutto.</em></h2><p>Velocità, durata, gravità e distanza condizionano il segno. Film, fotografie e critica trasformano poi l’esecuzione in racconto. Pollock, Krasner e de Kooning non coincidono con il mito dell’artista istintivo.</p></header>
+      <div class="lab-grid reverse">
+        <div><svg class="gesture-stage" id="gestureStage" viewBox="0 0 640 420" role="img" aria-describedby="gestureResult" aria-label="Diagramma astratto di una traiettoria corporea"><rect width="640" height="420" rx="24"/><path id="gesturePath" d="M70 300 C180 70 300 350 570 120"/><g id="gestureDots"></g></svg><article class="lab-analysis" id="gestureResult" aria-live="polite"></article></div>
+        <form class="controls" id="gestureControls">
+          <label>Velocità <output for="gestureSpeed">50%</output><input id="gestureSpeed" type="range" min="0" max="100" value="50"></label>
+          <label>Durata <output for="gestureDuration">50%</output><input id="gestureDuration" type="range" min="0" max="100" value="50"></label>
+          <label>Ampiezza <output for="gestureRange">55%</output><input id="gestureRange" type="range" min="10" max="100" value="55"></label>
+          <label>Pressione <output for="gesturePressure">45%</output><input id="gesturePressure" type="range" min="10" max="100" value="45"></label>
+          <label>Ripetizione <output for="gestureRepeat">3</output><input id="gestureRepeat" type="range" min="1" max="9" value="3"></label>
+          <label>Pausa <output for="gesturePause">20%</output><input id="gesturePause" type="range" min="0" max="100" value="20"></label>
+          <label>Gravità<select id="gestureGravity"><option value="parete">Supporto verticale</option><option value="terra">Supporto a terra</option><option value="sospeso">Supporto sospeso</option></select></label>
+          <button class="secondary" data-reset="gesture" type="button">Ripristina movimento</button>
+        </form>
+      </div>
+      <div class="four-steps"><span><b>1</b> gesto eseguito</span><span><b>2</b> traccia lasciata</span><span><b>3</b> documento dell’azione</span><span><b>4</b> mito critico successivo</span></div>
+      <a class="institution-link" href="https://www.moma.org/calendar/galleries/5117" target="_blank" rel="noopener">Confronta Pollock, Krasner, de Kooning, Sterne e Still nelle schede MoMA ↗</a>
+    </section>
+
+    <section class="panel color-section" id="s7" data-section="7" aria-labelledby="s7-title">
+      <header class="section-title"><p class="kicker">07 · Non tutta l’astrazione è gesto</p><h2 id="s7-title">Il colore può chiedere<br><em>tempo, distanza, corpo.</em></h2><p>Rothko, Newman, Still e Frankenthaler costruiscono rapporti differenti fra campi, bordi e supporto. “Spirituale” e “sublime” sono interpretazioni, non proprietà automatiche del colore.</p></header>
+      <div class="lab-grid">
+        <form class="controls" id="colorControls">
+          <label>Estensione <output for="colorExtent">62%</output><input id="colorExtent" type="range" min="25" max="90" value="62"></label>
+          <label>Bordo<select id="colorEdge"><option value="poroso">Poroso</option><option value="netto">Netto</option><option value="irregolare">Irregolare</option></select></label>
+          <label>Luminosità <output for="colorLight">48%</output><input id="colorLight" type="range" min="20" max="80" value="48"></label>
+          <label>Scala <output for="colorScale">70%</output><input id="colorScale" type="range" min="35" max="100" value="70"></label>
+          <label>Distanza<select id="colorDistance"><option value="vicina">Vicina</option><option value="media">Media</option><option value="lontana">Lontana</option></select></label>
+          <label>Tempo di osservazione <output for="colorTime">30 s</output><input id="colorTime" type="range" min="5" max="90" value="30"></label>
+          <button class="secondary" data-reset="color" type="button">Ripristina campi</button>
+        </form>
+        <div><div class="color-stage" id="colorStage" role="img" aria-describedby="colorResult" aria-label="Diagramma astratto di campi cromatici"><span></span><span></span><i></i></div><article class="lab-analysis" id="colorResult" aria-live="polite"></article></div>
+      </div>
+      <p class="limit"><b>Limite:</b> grande scala non equivale a sublime; silenzio non equivale ad apoliticità; ricezione dello spettatore e intenzione dichiarata non coincidono.</p>
+    </section>
+
+    <section class="panel space-section" id="s8" data-section="8" aria-labelledby="s8-title">
+      <header class="section-title"><p class="kicker">08 · Bucare la superficie, aprire lo spazio</p><h2 id="s8-title">Il piano diventa<br><em>spessore, luce, ambiente.</em></h2><p>Fontana non “distrugge una tela per provocare”. Fori, tagli, neon e ambienti cercano uno spazio reale dentro l’era atomica, la radio, la televisione e le nuove immagini dell’universo.</p></header>
+      <div class="space-lab">
+        <div class="space-stage" id="spaceStage" role="img" aria-describedby="spaceResult" aria-label="Diagramma tridimensionale di una superficie aperta"><div class="wall"><div class="plane"><span class="aperture"></span></div></div><span class="light-beam"></span></div>
+        <form class="controls inline" id="spaceControls">
+          <label>Apertura <output for="spaceOpen">38%</output><input id="spaceOpen" type="range" min="0" max="100" value="38"></label>
+          <label>Spessore <output for="spaceDepth">28</output><input id="spaceDepth" type="range" min="4" max="60" value="28"></label>
+          <label>Retroilluminazione <output for="spaceLight">55%</output><input id="spaceLight" type="range" min="0" max="100" value="55"></label>
+          <label>Distanza dalla parete <output for="spaceWall">20</output><input id="spaceWall" type="range" min="0" max="60" value="20"></label>
+          <label>Punto di vista<select id="spaceView"><option value="frontale">Frontale</option><option value="obliquo">Obliquo</option><option value="laterale">Laterale</option></select></label>
+          <button class="secondary" data-reset="space" type="button">Ripristina spazio</button>
+        </form>
+        <article class="lab-analysis" id="spaceResult" aria-live="polite"></article>
+      </div>
+      <a class="institution-link" href="https://www.fondazioneluciofontana.it/en/lucio-fontana/biografia/" target="_blank" rel="noopener">Cronologia, manifesti e ambienti alla Fondazione Lucio Fontana ↗</a>
+      <p class="simulation-label">Diagramma dello spessore: non permette di “creare un Fontana”.</p>
+    </section>
+
+    <section class="panel italy-section" id="s9" data-section="9" aria-labelledby="s9-title">
+      <header class="section-title"><p class="kicker">09 · Italia: ricostruire significa scegliere</p><h2 id="s9-title">Realismo e astrazione<br><em>non distribuiscono automaticamente libertà e colpa.</em></h2><p>Fronte Nuovo delle Arti e Forma 1 attraversano antifascismo, PCI, formalismo, ricostruzione e mercato. Le divergenze non cancellano reti comuni e traiettorie individuali.</p></header>
+      <div class="italy-map" id="italyNetwork" aria-label="Rete interattiva dell’arte italiana del dopoguerra"></div>
+      <article class="profile-card" id="italyResult" aria-live="polite"><p>Scegli un artista, gruppo o istituzione: vedrai posizione documentata, conflitto e limite della prova.</p></article>
+      <div class="axis-note"><span>realismo</span><i aria-hidden="true"></i><span>astrazione</span><p>Non è una scala morale e non è una linea sulla quale ogni artista occupa un punto stabile.</p></div>
+      <a class="institution-link" href="https://www.labiennale.org/en/history-biennale-arte" target="_blank" rel="noopener">Riapertura del 1948 e Fronte Nuovo nella storia della Biennale ↗</a>
+    </section>
+
+    <section class="panel figure-section" id="s10" data-section="10" aria-labelledby="s10-title">
+      <header class="section-title"><p class="kicker">10 · La figura non scompare</p><h2 id="s10-title">Il corpo resta.<br><em>Non torna intatto.</em></h2><p>Giacometti, Bacon, Dubuffet e de Kooning persistono nella figura con operazioni differenti. L’Esistenzialismo può essere una ricezione; non spiega automaticamente ogni solitudine o deformazione.</p></header>
+      <div class="figure-lab">
+        <div class="figure-stage" id="figureStage" role="img" aria-describedby="figureResult" aria-label="Comparatore astratto della figura"><span class="figure-body"></span><span class="figure-frame"></span><span class="figure-fragment"></span></div>
+        <div class="figure-options" id="figureOptions" role="tablist" aria-label="Operazioni sulla figura"></div>
+        <article class="lab-analysis" id="figureResult" aria-live="polite"></article>
+      </div>
+      <div class="method-layers"><span>descrizione visiva</span><span>interpretazione</span><span>biografia</span><span>contesto</span><span>ricezione</span><span>limite</span></div>
+      <div class="artist-links"><a href="https://www.fondation-giacometti.fr/en" target="_blank" rel="noopener">Vedere Giacometti alla Fondazione ↗</a><a href="https://www.francis-bacon.com/artworks/paintings" target="_blank" rel="noopener">Vedere Bacon nell’archivio ufficiale ↗</a></div>
+    </section>
+
+    <section class="panel world-section" id="s11" data-section="11" aria-labelledby="s11-title">
+      <header class="section-title"><p class="kicker">11 · Il dopoguerra non ha un solo centro</p><h2 id="s11-title">Non una staffetta.<br><em>Una rete di traduzioni e squilibri.</em></h2><p>Parigi e New York restano potenti, ma Milano, Roma, Venezia, Kassel, Copenaghen, Amsterdam, Ashiya, Tokyo, São Paulo e Rio costruiscono scambi che non seguono una sola direzione.</p></header>
+      <div class="world-map" id="worldMap" role="img" aria-label="Mappa schematica policentrica"><svg viewBox="0 0 900 430" aria-hidden="true"><path d="M90 170C220 70 340 100 440 160S650 260 820 130"/><path d="M170 310C330 190 500 300 760 320"/><path d="M360 70C470 190 580 180 700 70"/></svg><div id="worldNodes"></div></div>
+      <article class="profile-card" id="worldResult" aria-live="polite"><p>Scegli una città. La rete mostrerà mostra, rivista, istituzione, traduzione e limite della documentazione.</p></article>
+      <div class="gutai-panel"><div><p class="kicker">Approfondimento · Gutai</p><h3>Materia, corpo, tecnologia, ambiente</h3><p>Fondato ad Ashiya nel 1954 sotto la guida di Jirō Yoshihara, Gutai non è “Espressionismo astratto giapponese”. Shiraga agisce con il corpo sospeso, Murakami attraversa la carta, Tanaka trasforma circuito e abito, Yoshihara organizza rivista e scambio internazionale.</p></div><div class="gutai-actions" id="gutaiActions" role="tablist" aria-label="Azioni e opere Gutai"></div><p id="gutaiResult" class="equivalent" aria-live="polite">Scegli un caso: operazione, ambiente, documentazione e limite resteranno distinti.</p><a href="https://ashiya-museum.jp/en-collection" target="_blank" rel="noopener">Collezione dell’Ashiya City Museum ↗</a></div>
+    </section>
+
+    <section class="panel institution-section" id="s12" data-section="12" aria-labelledby="s12-title">
+      <header class="section-title"><p class="kicker">12 · Chi organizza la libertà dell’arte?</p><h2 id="s12-title">La libertà esposta<br><em>ha selezionatori, fondi e didascalie.</em></h2><p>Un’opera nasce con intenzioni proprie, poi passa attraverso critici, gallerie, musei, biennali, prezzi, fotografie e Stati. Il Congress for Cultural Freedom ricevette sostegno occulto della CIA; questo non rende gli artisti agenti consapevoli.</p></header>
+      <div class="institution-network" id="institutionNetwork" aria-label="Circuito culturale del dopoguerra"></div>
+      <div class="lab-grid">
+        <form class="controls" id="institutionControls">
+          <label>Selezione<select id="instSelection"><option value="atelier">Dall’atelier</option><option value="critico">Dal critico</option><option value="museo">Dal museo</option><option value="stato">Dallo Stato</option></select></label>
+          <label>Finanziamento<select id="instFunding"><option value="privato">Privato dichiarato</option><option value="pubblico">Pubblico dichiarato</option><option value="occulto">Indiretto / occulto</option></select></label>
+          <label>Scala dell’esposizione<select id="instScale"><option value="galleria">Galleria</option><option value="museo">Museo</option><option value="biennale">Biennale internazionale</option></select></label>
+          <label>Luogo<select id="instPlace"><option value="newyork">New York</option><option value="venezia">Venezia</option><option value="kassel">Kassel</option><option value="tour">Mostra itinerante</option></select></label>
+          <label>Didascalia<select id="instCaption"><option value="formale">Formale</option><option value="biografica">Biografica</option><option value="liberta">“Arte della libertà”</option><option value="trauma">“Arte del trauma”</option></select></label>
+          <label>Pubblico<select id="instPublic"><option value="locale">Locale</option><option value="specialista">Specialista</option><option value="massa">Grande pubblico</option><option value="diplomatico">Diplomatico</option></select></label>
+          <label>Prezzo <output for="instPrice">medio</output><input id="instPrice" type="range" min="0" max="2" value="1"></label>
+          <label>Riproduzione<select id="instPhoto"><option value="nessuna">Nessuna</option><option value="rivista">Rivista</option><option value="stampa">Stampa internazionale</option></select></label>
+          <label>Uso successivo<select id="instUse"><option value="critica">Storia dell’arte</option><option value="mercato">Canone di mercato</option><option value="diplomazia">Diplomazia culturale</option></select></label>
+          <button class="secondary" data-reset="institution" type="button">Ripristina circuito</button>
+        </form>
+        <div><div class="circuit-stage" id="circuitStage" role="img" aria-describedby="institutionResult" aria-label="Diagramma del percorso istituzionale di un’opera"><span>opera</span><i></i><span>selezione</span><i></i><span>mostra</span><i></i><span>ricezione</span></div><article class="lab-analysis" id="institutionResult" aria-live="polite"></article></div>
+      </div>
+      <a class="institution-link" href="https://www.cia.gov/resources/csi/studies-in-intelligence/1995-2/origins-of-the-congress-of-cultural-freedom-1949-50-cultural-cold-war/" target="_blank" rel="noopener">Documento CIA sul Congress for Cultural Freedom ↗</a>
+    </section>
+
+    <section class="panel return-section" id="s13" data-section="13" aria-labelledby="s13-title">
+      <header class="section-title"><p class="kicker">13 · Secondo sguardo</p><h2 id="s13-title">La superficie<br><em>non era un’opera.</em></h2><p>Era già una selezione: luogo, momento, inquadratura, archivio, didascalia e riuso.</p></header>
+      <div class="reveal-grid">
+        <figure><button class="image-button view-art" type="button" data-image="assets/images/schacht-berlin.webp" data-caption="Otto Donath, Berlin, Tauentzienstraße, beschädigter U-Bahn-Schacht, 1945. Bundesarchiv, Bild 183-M1205-334. CC BY-SA 3.0 DE; conversione WebP senza ritaglio."><img src="assets/images/schacht-berlin.webp" alt="Pozzo della metropolitana danneggiato a Berlino: una cavità scura interrompe la sede; macerie e strutture urbane compaiono sullo sfondo." width="549" height="800"></button><figcaption>Bundesarchiv, Bild 183-M1205-334 / Donath, Otto / CC BY-SA 3.0 DE</figcaption></figure>
+        <article class="reveal-card"><p class="kicker">Rivelazione</p><h3>Otto Donath<br><i>Berlin, Tauentzienstraße, beschädigter U-Bahn-Schacht</i></h3><dl><div><dt>Data</dt><dd>1945</dd></div><div><dt>Oggetto</dt><dd>Fotografia documentaria in bianco e nero</dd></div><div><dt>Luogo</dt><dd>Tauentzienstraße, Berlino; sullo sfondo la Kaiser-Wilhelm-Gedächtniskirche</dd></div><div><dt>Archivio</dt><dd>Bundesarchiv, Allgemeiner Deutscher Nachrichtendienst – Zentralbild</dd></div><div><dt>Segnatura</dt><dd>Bild 183-M1205-334</dd></div><div><dt>Licenza</dt><dd>CC BY-SA 3.0 DE</dd></div><div><dt>File locale</dt><dd>549 × 800 px, WebP, nessun ritaglio</dd></div></dl><p><b>Limite:</b> documenta un luogo danneggiato, non prova da sola causa, cronologia del danno, responsabilità, esperienza degli abitanti o intenzione del fotografo.</p></article>
+      </div>
+      <div class="notes-return"><article><p class="kicker">La tua prima nota</p><p id="initialNoteEcho">Nessuna nota ancora.</p></article><label class="notebook"><span>Seconda lettura · che cosa puoi ora sostenere?</span><textarea id="finalNote" rows="6" placeholder="Distingui visibile, materia, traccia, contesto, archivio, memoria e ciò che non può essere dimostrato."></textarea></label></div>
+      <div class="atlas"><h3>Atlante conclusivo</h3><div id="atlasGrid"></div><p id="atlasResult" class="equivalent" aria-live="polite">Seleziona una voce per collegare forma, storia, istituzione e limite.</p></div>
+      <div class="synthesis"><div><p class="kicker">Sintesi delle azioni</p><h3>Non ciò che “sei diventato”.<br>Ciò che hai realmente fatto.</h3></div><div><p id="personalSynthesis">Nessuna attività registrata.</p><button class="primary" id="buildSynthesis" type="button">Aggiorna la sintesi</button></div></div>
+
+      <section class="mastery" id="verifica" aria-labelledby="quizTitle">
+        <header><p class="kicker">Verifica finale · 16 nuclei</p><h3 id="quizTitle">Non una media.<br><em>Sedici comprensioni necessarie.</em></h3><div class="mastery-meter" aria-label="Avanzamento della verifica"><span id="masteryBar"></span></div><p id="masteryCount">0 / 16 nuclei</p></header>
+        <div class="quiz-card" id="quizCard"></div>
+        <div id="quizFeedback" aria-live="polite"></div>
+        <div class="quiz-complete" id="quizComplete" hidden><b>16 / 16</b><p>Hai risposto correttamente a tutti i nuclei, compresi gli eventuali recuperi.</p></div>
+      </section>
+
+      <blockquote class="closing">L’arte non ripara la catastrofe. Può però impedire che la superficie torni a sembrare intatta.</blockquote>
+      <div class="next-module"><p>La soglia successiva</p><span>22</span><div><h3>Quando l’immagine diventa merce</h3><p>Se materia, gesto e vuoto hanno cercato una presenza irriducibile, che cosa accade quando immagini, oggetti e desideri vengono prodotti e ripetuti come merci?</p></div><a href="../../index.html#m22">Pop Art · scheda predisposta ↗</a></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-mark">S</div><p><strong>21 · Dopo l’irrappresentabile</strong><br>Dopoguerra — Materia, gesto, memoria</p><p class="credits">Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p><nav aria-label="Navigazione fra moduli"><a href="../20-arte-totalitarismi/index.html">← Modulo 20</a><a href="../../index.html">Home</a><a href="../../index.html#m22">Modulo 22 →</a></nav></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxCaption"><div class="lightbox-toolbar"><button id="zoomOut" type="button" aria-label="Riduci">−</button><button id="zoomReset" type="button">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci">+</button><button id="lightboxClose" type="button" aria-label="Chiudi">×</button></div><div class="lightbox-viewport"><img id="lightboxImage" alt=""></div><p id="lightboxCaption"></p></dialog>
+</body>
+</html>

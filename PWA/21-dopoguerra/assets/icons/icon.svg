@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Simbolo astratto del modulo Dopo l’irrappresentabile">
+  <rect width="512" height="512" rx="90" fill="#121513"/>
+  <path d="M116 88h280v336H116z" fill="#d8d1c0"/>
+  <path d="M116 258h112l42-52 44 104 82-42v156H116z" fill="#28302c"/>
+  <path d="M262 88v122l-32 42 40 36-18 136" fill="none" stroke="#66f1d3" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="270" cy="288" r="11" fill="#121513"/>
+</svg>
