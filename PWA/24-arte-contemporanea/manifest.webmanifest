@@ -1,0 +1,15 @@
+{
+  "name": "Chi decide che cosa è arte?",
+  "short_name": "Sguardo 24",
+  "description": "Arte contemporanea: mercato, identità, ambiente, piattaforme e intelligenza artificiale.",
+  "lang": "it",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f1eee5",
+  "theme_color": "#17212b",
+  "icons": [
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}

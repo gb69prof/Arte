@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Modulo 24, tavolo delle decisioni</title>
+  <desc id="desc">Griglia blu scuro con nodi arancioni e verdi collegati attorno al numero 24.</desc>
+  <rect width="512" height="512" rx="78" fill="#17212b"/>
+  <path d="M90 118h332M90 256h332M90 394h332M118 90v332M256 90v332M394 90v332" stroke="#ffffff" stroke-opacity=".18" stroke-width="8"/>
+  <circle cx="118" cy="118" r="30" fill="#e95420"/><circle cx="394" cy="118" r="30" fill="#c9f05d"/><circle cx="118" cy="394" r="30" fill="#c9f05d"/><circle cx="394" cy="394" r="30" fill="#1167d8"/>
+  <rect x="158" y="166" width="196" height="180" rx="22" fill="#fffdf6"/>
+  <text x="256" y="288" text-anchor="middle" font-family="Georgia,serif" font-size="118" font-weight="700" fill="#17212b">24</text>
+</svg>

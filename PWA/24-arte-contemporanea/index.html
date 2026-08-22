@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#17212b">
+  <meta name="description" content="Chi decide che cosa è arte? Modulo interattivo su istituzioni, mercato, identità, partecipazione, ambiente, digitale e intelligenza artificiale.">
+  <title>24 · Chi decide che cosa è arte? — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <button id="menuToggle" type="button" aria-controls="sideNav" aria-expanded="false"><span aria-hidden="true">☰</span><span>Indice</span></button>
+    <a class="project" href="../../index.html"><span aria-hidden="true">S</span><b>Storia dello sguardo</b></a>
+    <p><span>Galleria V</span><strong>24 / 25</strong></p>
+  </header>
+
+  <aside class="side-nav" id="sideNav" aria-label="Indice del modulo" aria-hidden="true" inert>
+    <div class="side-head"><p>Galleria V · Le immagini che ci abitano</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#s1"><span>01</span>Prima decisione</a></li>
+      <li><a href="#s2"><span>02</span>Quando comincia?</a></li>
+      <li><a href="#s3"><span>03</span>L’opera come rete</a></li>
+      <li><a href="#s4"><span>04</span>Il museo e il canone</a></li>
+      <li><a href="#s5"><span>05</span>Curatore e biennale</a></li>
+      <li><a href="#s6"><span>06</span>Prezzo e valore</a></li>
+      <li><a href="#s7"><span>07</span>Rappresentare chi?</a></li>
+      <li><a href="#s8"><span>08</span>Appropriazione e proprietà</a></li>
+      <li><a href="#s9"><span>09</span>Partecipazione</a></li>
+      <li><a href="#s10"><span>10</span>Geografie plurali</a></li>
+      <li><a href="#s11"><span>11</span>Ambiente</a></li>
+      <li><a href="#s12"><span>12</span>Digitale e IA</a></li>
+      <li><a href="#s13"><span>13</span>Chi ha deciso?</a></li>
+    </ol></nav>
+    <div class="side-actions"><a href="#verifica">Verifica finale</a><button id="resetAll" class="danger" type="button">Azzera il modulo</button></div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <main id="contenuto">
+    <section class="threshold" id="s1" data-section="1" aria-labelledby="s1-title">
+      <div class="threshold-copy">
+        <p class="kicker">01 · Prima decisione</p>
+        <h1 id="s1-title">È arte<br><em>oppure no?</em></h1>
+        <p class="lead">Nessun autore, luogo o contesto. Prima osserva; poi dichiara quali indizi stanno orientando il tuo giudizio.</p>
+        <blockquote>Una cosa diventa arte per ciò che è, per dove si trova o per chi la riconosce?</blockquote>
+      </div>
+      <figure class="opening-figure">
+        <div class="opening-stage">
+          <img src="assets/images/maryhill-visible-storage.webp" alt="Scaffalatura bianca piena di sculture figurative diverse per materiale, scala e stato di conservazione, disposte molto vicine fra loro." width="1280" height="853">
+          <button class="marker m-order" data-marker="ordine" type="button" aria-pressed="false" aria-label="Osserva l’ordine"><span>1</span></button>
+          <button class="marker m-label" data-marker="etichetta" type="button" aria-pressed="false" aria-label="Osserva le etichette"><span>2</span></button>
+          <button class="marker m-space" data-marker="spazio" type="button" aria-pressed="false" aria-label="Osserva lo spazio"><span>3</span></button>
+          <button class="marker m-value" data-marker="valore" type="button" aria-pressed="false" aria-label="Interroga il valore"><span>4</span></button>
+          <button class="marker m-exclusion" data-marker="esclusione" type="button" aria-pressed="false" aria-label="Cerca ciò che è escluso"><span>5</span></button>
+          <button class="marker m-photo" data-marker="fotografia" type="button" aria-pressed="false" aria-label="Interroga la fotografia"><span>6</span></button>
+        </div>
+        <figcaption><span class="concealed">Immagine non ancora identificata</span><button class="view-art" data-image="assets/images/maryhill-visible-storage.webp" data-caption="Fotografia iniziale non ritagliata; attribuzione e contesto nella sezione 13." type="button">Ingrandisci</button></figcaption>
+      </figure>
+      <div class="observation-grid">
+        <article class="receipt" id="markerReadout" aria-live="polite"><b>Scegli un marcatore</b><p>Separa il dato visibile dalla tua interpretazione.</p></article>
+        <form class="decision-card" id="initialDecisionForm">
+          <fieldset><legend>Che cosa pensi di vedere?</legend>
+            <label><input type="radio" name="initialKind" value="opera"> Un’unica opera</label>
+            <label><input type="radio" name="initialKind" value="collezione"> Una collezione esposta</label>
+            <label><input type="radio" name="initialKind" value="deposito"> Un deposito o inventario</label>
+            <label><input type="radio" name="initialKind" value="documento"> Un documento sul museo</label>
+          </fieldset>
+          <label class="notebook"><span>Prima nota · chi sta decidendo?</span><textarea id="initialNote" rows="4" placeholder="Formula un’ipotesi provvisoria e indica gli indizi."></textarea></label>
+          <button class="primary" type="submit">Registra la prima decisione</button>
+          <p id="initialDecisionResult" class="mini-result" aria-live="polite">Nessuna decisione registrata.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="panel" id="s2" data-section="2" aria-labelledby="s2-title">
+      <header class="section-title"><p class="kicker">02 · Periodizzare</p><h2 id="s2-title">Quando comincia<br><em>il contemporaneo?</em></h2><p>Non esiste una soglia neutra. Ogni data illumina una trasformazione e ne mette altre in ombra.</p></header>
+      <div class="period-tabs" id="periodTabs" role="tablist" aria-label="Periodizzazioni concorrenti"></div>
+      <article class="analysis-card" id="periodResult" aria-live="polite"><p>Scegli una soglia e osserva che cosa rende visibile e che cosa non spiega.</p></article>
+      <div class="period-claim">
+        <fieldset><legend>Quale affermazione è più rigorosa?</legend>
+          <button type="button" data-period-claim="living">Contemporaneo = artista vivente</button>
+          <button type="button" data-period-claim="date">Contemporaneo = dopo una data certa</button>
+          <button type="button" data-period-claim="problem">Contemporaneo = campo storico conteso</button>
+        </fieldset>
+        <article class="mini-result" id="periodClaimResult" aria-live="polite">Metti alla prova una definizione.</article>
+      </div>
+      <p class="limit"><b>Metodo:</b> secondo dopoguerra, anni Sessanta–Settanta, 1989, globalizzazione anni Novanta e presente digitale-ambientale non sono risposte intercambiabili: sono prospettive da motivare.</p>
+    </section>
+
+    <section class="panel" id="s3" data-section="3" aria-labelledby="s3-title">
+      <header class="section-title"><p class="kicker">03 · Dal modulo 23</p><h2 id="s3-title">L’opera è una rete.<br><em>Il potere anche.</em></h2><p>Idea, istruzione, esecuzione, documento e istituzione non coincidono. Ora chiediamo chi può attribuire, finanziare, diffondere, conservare o contestare.</p></header>
+      <div class="actor-network" id="actorNetwork" role="group" aria-label="Attori del sistema dell’arte"></div>
+      <article class="analysis-card" id="actorResult" aria-live="polite"><p>Scegli un attore: nessuno decide da solo, ma alcuni dispongono di risorse molto maggiori.</p></article>
+      <div class="case-lab">
+        <div><h3>Institutional Critique ≠ rifiuto del museo</h3><p>Da Hans Haacke e Marcel Broodthaers ad Andrea Fraser, la critica istituzionale rende visibili finanziamenti, linguaggi, ruoli e interessi che l’istituzione tende a presentare come neutrali.</p></div>
+        <fieldset><legend>Dove agisce la critica?</legend>
+          <button type="button" data-institution="outside">Soltanto fuori dal museo</button>
+          <button type="button" data-institution="inside">Anche dentro e attraverso il museo</button>
+          <button type="button" data-institution="destroy">Distruggendo ogni istituzione</button>
+        </fieldset>
+        <article id="institutionResult" class="mini-result" aria-live="polite">Scegli una tesi.</article>
+      </div>
+      <div class="source-links"><a href="https://www.tate.org.uk/art/art-terms/i/institutional-critique" target="_blank" rel="noopener"><b>Institutional Critique</b><small>Tate ↗</small></a><a href="https://www.moma.org/collection/artists/30910" target="_blank" rel="noopener"><b>Andrea Fraser</b><small>MoMA ↗</small></a><a href="../23-arte-concettuale-performance/index.html" target="_blank" rel="noopener"><b>Modulo 23</b><small>Idea, azione, documento ↗</small></a></div>
+    </section>
+
+    <section class="panel" id="s4" data-section="4" aria-labelledby="s4-title">
+      <header class="section-title"><p class="kicker">04 · Museo e canone</p><h2 id="s4-title">Esporre significa<br><em>anche escludere.</em></h2><p>Acquisizione, deposito, restauro, didascalia e disposizione costruiscono una storia visibile. Il canone non è una lista eterna: è il risultato di decisioni documentabili e contestabili.</p></header>
+      <div class="curator-lab">
+        <div class="inventory" id="curatorInventory" role="group" aria-label="Inventario curatoriale"></div>
+        <aside class="selection-panel"><p><b>Spazio disponibile:</b> 4 posti</p><p id="selectionCount">0 / 4 scelti</p><label>Criterio dichiarato<select id="curationCriterion"><option value="dialogue">Dialogo fra problemi</option><option value="history">Rilevanza storica documentata</option><option value="repair">Correzione di un’esclusione</option><option value="audience">Accessibilità per pubblici diversi</option></select></label><button class="primary" id="finalizeCuration" type="button">Chiudi la selezione</button></aside>
+      </div>
+      <article class="analysis-card" id="curationResult" aria-live="polite"><p>Seleziona quattro casi. Il laboratorio renderà visibili anche le esclusioni.</p></article>
+      <div class="museum-functions" id="museumFunctions" role="tablist" aria-label="Funzioni del museo"></div>
+      <article class="mini-result" id="museumFunctionResult" aria-live="polite">Scegli una funzione: ogni gesto conserva qualcosa e produce un limite.</article>
+      <div class="source-links"><a href="https://icom.museum/en/resources/standards-guidelines/code-of-ethics/" target="_blank" rel="noopener"><b>Codice etico dei musei</b><small>ICOM ↗</small></a><a href="https://asia.si.edu/research/provenance-program/" target="_blank" rel="noopener"><b>Provenienza e acquisizioni</b><small>Smithsonian ↗</small></a></div>
+    </section>
+
+    <section class="panel" id="s5" data-section="5" aria-labelledby="s5-title">
+      <header class="section-title"><p class="kicker">05 · Curatore, mostra, biennale</p><h2 id="s5-title">Cambiare cornice<br><em>cambia il significato.</em></h2><p>Titolo, accostamento e testo curatoriale non sono decorazioni: costruiscono relazioni. Biennale e documenta internazionalizzano il campo, ma portano con sé storie, selezioni e asimmetrie.</p></header>
+      <div class="frame-lab">
+        <form class="controls" id="frameControls"><label>Titolo della mostra<select id="showTitle"><option value="matter">Materie che resistono</option><option value="border">Confini e passaggi</option><option value="value">Che cosa vale?</option></select></label><label>Disposizione<select id="showLayout"><option value="dialogue">Dialogo</option><option value="hierarchy">Gerarchia</option><option value="conflict">Conflitto</option></select></label><label>Tono della didascalia<select id="showCaption"><option value="context">Contestuale</option><option value="formal">Solo formale</option><option value="market">Promozionale</option></select></label></form>
+        <div class="exhibition-stage" id="exhibitionStage" aria-label="Simulazione di allestimento"><article>A</article><article>B</article><article>C</article></div>
+        <article class="analysis-card" id="frameResult" aria-live="polite"></article>
+      </div>
+      <div class="comparison-cards"><button type="button" data-exhibition="venice"><b>Biennale di Venezia · dal 1895</b><span>Padiglioni nazionali, mostra internazionale, città e geopolitica.</span></button><button type="button" data-exhibition="documenta"><b>documenta · dal 1955</b><span>Ricostruzione culturale tedesca, mostra periodica, revisioni del canone.</span></button><button type="button" data-exhibition="counter"><b>Modelli contestati</b><span>Collettivi, piattaforme locali e pratiche che ridiscutono l’autore-curatore sovrano.</span></button></div>
+      <article class="mini-result" id="exhibitionResult" aria-live="polite">Confronta i modelli senza trasformarli in marchi equivalenti.</article>
+      <div class="source-links"><a href="https://www.labiennale.org/en/history-biennale-arte" target="_blank" rel="noopener"><b>Storia della Biennale Arte</b><small>La Biennale ↗</small></a><a href="https://documenta.de/en/about/documenta" target="_blank" rel="noopener"><b>Storia di documenta</b><small>documenta ↗</small></a></div>
+    </section>
+
+    <section class="panel" id="s6" data-section="6" aria-labelledby="s6-title">
+      <header class="section-title"><p class="kicker">06 · Mercato</p><h2 id="s6-title">Il prezzo decide<br><em>il valore?</em></h2><p>Il prezzo è un fatto economico; l’importanza storica è un giudizio argomentato; la visibilità è una distribuzione di attenzione. Possono influenzarsi, ma non sono sinonimi.</p></header>
+      <div class="market-lab"><form class="controls" id="marketControls"><label>Domanda nel circuito <output for="demand">55</output><input id="demand" type="range" min="0" max="100" value="55"></label><label>Rarità / controllo dell’offerta <output for="scarcity">45</output><input id="scarcity" type="range" min="0" max="100" value="45"></label><label>Provenienza documentata <output for="provenance">70</output><input id="provenance" type="range" min="0" max="100" value="70"></label><label>Visibilità istituzionale <output for="visibility">50</output><input id="visibility" type="range" min="0" max="100" value="50"></label><button class="primary" id="simulatePrice" type="button">Simula la pressione sul prezzo</button></form><article class="price-ticket" id="priceResult" aria-live="polite"><p>MODELLO DIDATTICO · NON FINANZIARIO</p><strong>—</strong><span>Nessuna stima monetaria: il modello mostra relazioni.</span></article></div>
+      <div class="value-compare" id="valueCompare" role="group" aria-label="Confronto fra prezzo, riconoscimento e valore storico"></div>
+      <article class="analysis-card" id="valueCompareResult" aria-live="polite"><p>Scegli una combinazione per smontare un’equivalenza automatica.</p></article>
+      <div class="distinctions"><span>mercato primario ≠ asta</span><span>galleria ≠ museo</span><span>prezzo ≠ canone</span><span>acquisto ≠ consenso</span></div>
+    </section>
+
+    <section class="panel" id="s7" data-section="7" aria-labelledby="s7-title">
+      <header class="section-title"><p class="kicker">07 · Accesso e rappresentazione</p><h2 id="s7-title">Chi può<br><em>rappresentare chi?</em></h2><p>La domanda riguarda accesso alle istituzioni, potere di parlare, condizioni dello sguardo e conseguenze. Non basta aggiungere nomi a un catalogo già costruito altrove.</p></header>
+      <div class="access-grid" id="accessGrid" role="tablist" aria-label="Casi di accesso e rappresentazione"></div>
+      <article class="analysis-card" id="accessResult" aria-live="polite"><p>Esplora un caso e separa presenza numerica, controllo del racconto e condizioni materiali.</p></article>
+      <div class="representation-lab"><fieldset><legend>Una comunità viene raccontata in mostra. Quale prima domanda fai?</legend><button type="button" data-representation="beauty">Le immagini sono belle?</button><button type="button" data-representation="voice">Chi ha deciso soggetti, contesto e restituzione?</button><button type="button" data-representation="fame">L’artista è abbastanza famoso?</button></fieldset><article class="mini-result" id="representationResult" aria-live="polite">Scegli una domanda.</article></div>
+      <div class="source-links"><a href="https://www.brooklynmuseum.org/objects/225300" target="_blank" rel="noopener"><b>Guerrilla Girls</b><small>Accesso e statistiche istituzionali · Brooklyn Museum ↗</small></a><a href="https://www.tate.org.uk/art/artists/zanele-muholi-18881" target="_blank" rel="noopener"><b>Zanele Muholi</b><small>Autorappresentazione e archivio · Tate ↗</small></a><a href="https://forensic-architecture.org/about/agency" target="_blank" rel="noopener"><b>Forensic Architecture</b><small>Ricerca collettiva ed evidenza pubblica ↗</small></a></div>
+    </section>
+
+    <section class="panel" id="s8" data-section="8" aria-labelledby="s8-title">
+      <header class="section-title"><p class="kicker">08 · Autore e proprietà</p><h2 id="s8-title">Riusare non significa<br><em>avere mano libera.</em></h2><p>Citazione, appropriazione, parodia, plagio e collaborazione si distinguono per uso concreto, trasformazione, attribuzione, diritti e rapporti di potere. La legge non esaurisce l’etica.</p></header>
+      <div class="case-deck" id="appropriationCases"></div>
+      <article class="analysis-card" id="appropriationResult" aria-live="polite"><p>Scegli un caso problematico: non tutte le giurisdizioni rispondono nello stesso modo.</p></article>
+      <div class="verdict-lab"><fieldset><legend>Valuta il caso selezionato con più lenti</legend><label><input type="checkbox" value="law"> Diritti e eccezioni applicabili</label><label><input type="checkbox" value="credit"> Attribuzione</label><label><input type="checkbox" value="power"> Asimmetria economica e culturale</label><label><input type="checkbox" value="harm"> Possibili danni</label><label><input type="checkbox" value="context"> Contesto e finalità</label></fieldset><button class="primary" id="evaluateReuse" type="button">Costruisci una valutazione</button><article id="reuseResult" class="mini-result" aria-live="polite">Nessuna lente ancora applicata.</article></div>
+      <p class="limit"><b>Limite necessario:</b> questa PWA non fornisce pareri legali. Mostra perché “è trasformativo” o “era già online” non sono autorizzazioni automatiche.</p>
+      <div class="source-links"><a href="https://www.wipo.int/en/web/podcasts/ip-matters/transcripts/ip-matters-11" target="_blank" rel="noopener"><b>Diritti e licenze</b><small>WIPO ↗</small></a><a href="https://www.copyright.gov/ai/" target="_blank" rel="noopener"><b>Copyright e IA</b><small>U.S. Copyright Office ↗</small></a></div>
+    </section>
+
+    <section class="panel" id="s9" data-section="9" aria-labelledby="s9-title">
+      <header class="section-title"><p class="kicker">09 · Pubblico</p><h2 id="s9-title">Partecipa<br><em>o viene usato?</em></h2><p>La partecipazione non è un bene automatico. Bisogna seguire regole, possibilità di rifiuto, lavoro, riconoscimento, documentazione e ciò che resta alla comunità.</p></header>
+      <div class="participation-cases" id="participationCases" role="tablist" aria-label="Scenari di arte partecipativa"></div>
+      <article class="analysis-card" id="participationResult" aria-live="polite"><p>Scegli uno scenario e individua chi controlla il processo.</p></article>
+      <div class="consent-matrix"><h3>Controllo del consenso</h3><div id="consentChecks"></div><article class="mini-result" id="consentResult" aria-live="polite">Verifica almeno tre condizioni.</article></div>
+      <div class="distinctions"><span>presenza ≠ consenso</span><span>partecipante ≠ coautore</span><span>visibilità ≠ beneficio</span><span>evento ≠ eredità</span></div>
+      <div class="source-links"><a href="https://www.tate.org.uk/research/tate-papers/34/participation-art-museum-new-models-public-engagement-tate-exchange" target="_blank" rel="noopener"><b>Partecipazione nel museo</b><small>Tate Papers ↗</small></a><a href="https://www.tate.org.uk/art/artists/santiago-sierra-6878/santiago-sierra-performance-and-controversy" target="_blank" rel="noopener"><b>Lavoro e controversia</b><small>Tate ↗</small></a></div>
+    </section>
+
+    <section class="panel" id="s10" data-section="10" aria-labelledby="s10-title">
+      <header class="section-title"><p class="kicker">10 · Mondo dell’arte</p><h2 id="s10-title">Globale non significa<br><em>senza disuguaglianze.</em></h2><p>Biennali, migrazioni e reti digitali moltiplicano i nodi; fondi, passaporti, lingue, collezionismo e infrastrutture continuano a distribuire opportunità in modo asimmetrico.</p></header>
+      <div class="world-map" id="worldMap" role="group" aria-label="Mappa policentrica dell’arte contemporanea"><svg viewBox="0 0 1000 500" aria-hidden="true"><path d="M70 255C220 80 350 395 505 220S800 125 940 275M150 390C360 190 610 450 870 175"/></svg></div>
+      <article class="analysis-card" id="worldResult" aria-live="polite"><p>Scegli un nodo: ogni luogo è associato a una condizione storica e istituzionale, non a uno stile regionale.</p></article>
+      <div class="route-lab"><fieldset><legend>Quale relazione vuoi seguire?</legend><button type="button" data-route="migration">Migrazione</button><button type="button" data-route="biennial">Biennale</button><button type="button" data-route="colonial">Colonialismo e restituzione</button><button type="button" data-route="funding">Finanziamento</button></fieldset><article class="mini-result" id="routeResult" aria-live="polite">Scegli una relazione: la mappa cambierà problema, non centro.</article></div>
+    </section>
+
+    <section class="panel" id="s11" data-section="11" aria-labelledby="s11-title">
+      <header class="section-title"><p class="kicker">11 · Ecologia</p><h2 id="s11-title">L’ambiente è tema<br><em>o materia politica?</em></h2><p>Rappresentare la crisi non basta a rendere sostenibile una pratica. Materiali, trasporti, energia, conservazione, sponsor, territorio e comunità appartengono alla stessa analisi.</p></header>
+      <div class="eco-lab"><form class="controls" id="ecoControls"><label><input type="checkbox" value="local"> Produzione e competenze locali</label><label><input type="checkbox" value="reuse"> Strutture riusabili</label><label><input type="checkbox" value="ship"> Trasporto consolidato e meno aereo</label><label><input type="checkbox" value="care"> Conservazione compatibile con l’opera</label><label><input type="checkbox" value="sponsor"> Trasparenza sulle sponsorizzazioni</label><label><input type="checkbox" value="community"> Restituzione al territorio</label><button class="primary" id="evaluateEco" type="button">Valuta il progetto</button></form><article class="eco-board" id="ecoResult" aria-live="polite"><p>Non è un calcolatore di emissioni. Seleziona decisioni verificabili e osserva i conflitti.</p></article></div>
+      <div class="eco-tensions" id="ecoTensions" role="tablist" aria-label="Contraddizioni ambientali"></div><article class="analysis-card" id="ecoTensionResult" aria-live="polite"><p>Scegli una contraddizione. Non esiste una classifica morale universale.</p></article>
+      <div class="source-links"><a href="https://www.serpentinegalleries.org/environmental-sustainability-statement/" target="_blank" rel="noopener"><b>Politica ambientale</b><small>Serpentine ↗</small></a><a href="https://galleryclimatecoalition.org/usr/library/documents/main/gcc_decarbonisation-action-plan_2021_final.pdf" target="_blank" rel="noopener"><b>Decarbonisation Action Plan</b><small>Gallery Climate Coalition ↗</small></a><a href="https://www.serpentinegalleries.org/whats-on/formafantasma-cambio/" target="_blank" rel="noopener"><b>Formafantasma · <i>Cambio</i></b><small>Serpentine ↗</small></a></div>
+    </section>
+
+    <section class="panel" id="s12" data-section="12" aria-labelledby="s12-title">
+      <header class="section-title"><p class="kicker">12 · Piattaforme, digitale, IA</p><h2 id="s12-title">La macchina non crea<br><em>da sola.</em></h2><p>Net Art, opere variabili, NFT e sistemi generativi rendono più visibili dipendenze da software, reti, contratti, archivi, dati, lavoro e selezione umana.</p></header>
+      <div class="digital-layers" id="digitalLayers" role="tablist" aria-label="Strati dell’opera digitale"></div>
+      <article class="analysis-card" id="digitalResult" aria-live="polite"><p>Scegli uno strato: possesso, accesso, esecuzione e conservazione non coincidono.</p></article>
+      <div class="ai-chain" id="aiChain" role="group" aria-label="Catena dell’autorialità nei sistemi generativi"></div>
+      <article class="chain-result" id="aiResult" aria-live="polite"><p>Attiva i nodi che hanno inciso sull’esito. “IA” non è un autore magico: è un’etichetta che rischia di nascondere la catena.</p></article>
+      <div class="digital-test"><fieldset><legend>Un NFT è…</legend><button type="button" data-nft="file">il file digitale stesso</button><button type="button" data-nft="token">un token con provenienza che rimanda a dati o contenuti</button><button type="button" data-nft="value">una garanzia di valore artistico</button></fieldset><article class="mini-result" id="nftResult" aria-live="polite">Scegli una definizione.</article></div>
+      <div class="source-links"><a href="https://www.tate.org.uk/research/reshaping-the-collectible/net-art-introduction" target="_blank" rel="noopener"><b>Le vite della Net Art</b><small>Tate ↗</small></a><a href="https://www.moma.org/magazine/articles/547" target="_blank" rel="noopener"><b>Che cosa significa NFT</b><small>MoMA ↗</small></a><a href="https://www.serpentinegalleries.org/whats-on/holly-herndon-mat-dryhurst-the-call/" target="_blank" rel="noopener"><b><i>The Call</i></b><small>Dataset corale e collaborazione · Serpentine ↗</small></a><a href="https://www.copyright.gov/ai/" target="_blank" rel="noopener"><b>Copyright e IA</b><small>U.S. Copyright Office ↗</small></a></div>
+    </section>
+
+    <section class="panel reveal-section" id="s13" data-section="13" aria-labelledby="s13-title">
+      <header class="section-title"><p class="kicker">13 · Seconda decisione</p><h2 id="s13-title">Chi ha<br><em>deciso?</em></h2><p>Ritorna all’immagine. La rivelazione non aggiunge soltanto un nome: sposta la domanda dall’oggetto visibile alla politica della visibilità.</p></header>
+      <div class="reveal-grid">
+        <figure><button class="image-button view-art" data-image="assets/images/maryhill-visible-storage.webp" data-caption="Joe Mabel, sculture nel deposito visibile del Maryhill Museum of Art, 23 ottobre 2022, CC BY-SA 4.0. Sculture dichiarate in pubblico dominio." type="button"><img src="assets/images/maryhill-visible-storage.webp" alt="Sculture conservate molto vicine su scaffali nel deposito visibile del Maryhill Museum of Art." width="1280" height="853"></button><figcaption>Conversione WebP senza ritaglio; colori e composizione non alterati.</figcaption></figure>
+        <article class="reveal-card"><p class="kicker">Non una mostra, non un’unica opera</p><h3>Un <i>deposito visibile</i>.</h3><p>Joe Mabel fotografò il 23 ottobre 2022 sculture conservate al Maryhill Museum of Art, nello Stato di Washington. La fotografia è CC BY-SA 4.0; le sculture sono indicate come pubblico dominio.</p><dl><div><dt>Fotografo</dt><dd>Joe Mabel</dd></div><div><dt>Luogo</dt><dd>Maryhill Museum of Art</dd></div><div><dt>Funzione</dt><dd>Conservare e rendere accessibile ciò che non occupa la sala principale</dd></div><div><dt>Conflitto</dt><dd>Visibilità, gerarchia, cura e spazio limitato</dd></div></dl><p>La fotografia non prova che gli oggetti siano “meno arte”. Mostra che il museo distribuisce visibilità: esposizione e deposito sono entrambe decisioni istituzionali.</p><a href="https://commons.wikimedia.org/wiki/File:Maryhill_Museum_-_sculptures_in_%27visible_storage%27_05.jpg" target="_blank" rel="noopener">Fonte e licenza dell’immagine ↗</a></article>
+      </div>
+      <div class="notes-return"><article><p class="kicker">La tua prima decisione</p><blockquote id="initialEcho">Non hai ancora registrato una prima decisione.</blockquote></article><label class="notebook"><span>Seconda nota · che cosa è cambiato?</span><textarea id="finalNote" rows="5" placeholder="Riformula: chi ha potere, chi ha responsabilità e quali conflitti restano?"></textarea><small>Salvata soltanto su questo dispositivo.</small></label></div>
+      <div class="power-table"><h3>Tavolo delle decisioni</h3><p>Distribuisci 100 punti di potere/responsabilità. Il totale non può superare 100.</p><div id="powerTable"></div><p id="powerTotal" class="mini-result" aria-live="polite">0 / 100 punti distribuiti.</p></div>
+      <div class="atlas"><h3>Atlante personale del riconoscimento</h3><p>Attiva soltanto i criteri che hai imparato a distinguere.</p><div id="atlasGrid"></div><article class="receipt" id="atlasResult" aria-live="polite"><p>Nessun criterio ancora scelto.</p></article></div>
+      <div class="synthesis"><div><p class="kicker">Sintesi dalle tue azioni</p><h3>Nessuna biografia inventata</h3><p>Il testo usa esclusivamente decisioni, laboratori e note realmente svolti.</p></div><article class="receipt" id="synthesisText" aria-live="polite"><p>Esplora il modulo per costruire la sintesi.</p></article></div>
+
+      <section class="mastery" id="verifica" aria-labelledby="mastery-title"><header><p class="kicker">Verifica finale · 16 nuclei</p><h3 id="mastery-title">Comprendere<br><em>le distinzioni.</em></h3><p id="masteryCount">0 / 16 compresi</p><div class="mastery-meter" aria-hidden="true"><span id="masteryBar"></span></div></header><div id="quizArea"></div><div id="quizComplete" class="quiz-complete" hidden><b>16 / 16</b><p>Tutti i nuclei sono stati compresi, direttamente o attraverso il recupero.</p></div></section>
+      <p class="closing">Lo statuto artistico nasce da una rete instabile di decisioni e conflitti. La rete non distribuisce a tutti lo stesso potere.</p>
+      <div class="next-module"><p>La domanda si sposta</p><span>25</span><div><h3>Chi guarda attraverso l’algoritmo?</h3><p>Arte digitale e IA — Autore, originale, futuro</p></div><a href="../../index.html#m25">Torna alla soglia predisposta ↗</a></div>
+    </section>
+  </main>
+
+  <footer><span>24 / 25</span><p><b>Chi decide che cosa è arte?</b><br>Arte contemporanea — Mercato, identità, ambiente</p><p class="credits">Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p><nav aria-label="Navigazione tra moduli"><a href="../23-arte-concettuale-performance/index.html">← Modulo 23</a><a href="../../index.html">Storia dello sguardo</a><a href="../../index.html#m25">Soglia 25 →</a></nav></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxCaption"><div class="lightbox-toolbar"><button id="zoomOut" type="button" aria-label="Riduci immagine">−</button><button id="zoomReset" type="button" aria-label="Dimensione iniziale">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci immagine">+</button><button id="lightboxClose" type="button" aria-label="Chiudi immagine">×</button></div><div class="lightbox-viewport"><img id="lightboxImage" alt=""></div><p id="lightboxCaption"></p></dialog>
+  <p class="storage-status" id="storageStatus" role="status" aria-live="polite" hidden></p>
+</body>
+</html>
