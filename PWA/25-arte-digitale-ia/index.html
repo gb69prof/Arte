@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101417">
+  <meta name="description" content="Chi guarda attraverso l’algoritmo? Arte digitale e IA: autore, originale, infrastrutture e responsabilità.">
+  <title>25 · Chi guarda attraverso l’algoritmo? — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/state.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="sideNav">☰ <span>Indice</span></button>
+    <a class="project" href="../../index.html"><span aria-hidden="true">S</span><b>Storia dello sguardo</b></a>
+    <p><span>Modulo conclusivo</span><b>25 / 25</b></p>
+  </header>
+  <div id="scrim" class="scrim" hidden></div>
+  <nav id="sideNav" class="side-nav" aria-label="Indice del modulo" aria-hidden="true" inert>
+    <button id="menuClose" type="button" aria-label="Chiudi indice">×</button>
+    <p>Chi guarda attraverso l’algoritmo?</p>
+    <ol>
+      <li><a href="#s1"><span>01</span>Prima decisione</a></li><li><a href="#s2"><span>02</span>Prima dell’IA</a></li>
+      <li><a href="#s3"><span>03</span>Materia</a></li><li><a href="#s4"><span>04</span>Opera-sistema</a></li>
+      <li><a href="#s5"><span>05</span>Rete</a></li><li><a href="#s6"><span>06</span>Sguardo algoritmico</a></li>
+      <li><a href="#s7"><span>07</span>Dataset</a></li><li><a href="#s8"><span>08</span>Generazione</a></li>
+      <li><a href="#s9"><span>09</span>Autore</a></li><li><a href="#s10"><span>10</span>Originale</a></li>
+      <li><a href="#s11"><span>11</span>Visibilità</a></li><li><a href="#s12"><span>12</span>Responsabilità</a></li>
+      <li><a href="#s13"><span>13</span>Seconda decisione</a></li><li><a href="#verifica"><span>✓</span>Verifica</a></li>
+    </ol>
+    <button id="resetAll" class="reset-all" type="button">Azzera soltanto il modulo 25</button>
+  </nav>
+
+  <main id="contenuto">
+    <section class="opening" id="s1" data-section="1" aria-labelledby="opening-title">
+      <div class="opening-copy">
+        <p class="kicker light">25 · Arte digitale e IA</p>
+        <h1 id="opening-title">Chi sta<br><em>guardando?</em></h1>
+        <p class="lead">Non chiederti ancora che cosa rappresenta. Interroga il modo in cui questa immagine è diventata visibile.</p>
+        <a href="#prima-decisione" class="down-link">Inizia dall’incertezza ↓</a>
+      </div>
+      <figure class="opening-figure">
+        <div class="image-frame">
+          <img src="assets/images/black-marble-2016.webp" alt="Una superficie scura attraversata da costellazioni e reti di luci dorate, con grandi zone quasi nere." width="1920" height="1080">
+          <button class="marker m1" data-marker="continuità" type="button" aria-pressed="false" aria-label="Osserva le continuità luminose"><span>1</span></button>
+          <button class="marker m2" data-marker="assenze" type="button" aria-pressed="false" aria-label="Osserva le zone assenti"><span>2</span></button>
+          <button class="marker m3" data-marker="bordi" type="button" aria-pressed="false" aria-label="Interroga i bordi"><span>3</span></button>
+          <button class="marker m4" data-marker="colore" type="button" aria-pressed="false" aria-label="Interroga il colore"><span>4</span></button>
+          <button class="marker m5" data-marker="scala" type="button" aria-pressed="false" aria-label="Interroga la scala"><span>5</span></button>
+          <button class="view-art" type="button" data-image="assets/images/black-marble-2016.webp" data-caption="Immagine iniziale senza attribuzione: ingrandiscila, ma sospendi il giudizio.">Ingrandisci</button>
+        </div>
+        <figcaption>Autore, titolo, funzione e tecnica sono sospesi fino alla sezione 13.</figcaption>
+      </figure>
+      <div class="annotation-readout" id="markerReadout" aria-live="polite"><b>Dato o interpretazione?</b><p>Scegli un marcatore. Descrivi ciò che è visibile prima di attribuirgli una causa.</p></div>
+    </section>
+
+    <section class="panel decision-panel" id="prima-decisione" aria-labelledby="decision-title">
+      <header class="section-title"><p class="kicker">01 · Prima decisione</p><h2 id="decision-title">Che tipo di<br><em>immagine è?</em></h2><p>Una classificazione provvisoria è utile soltanto se resta correggibile.</p></header>
+      <div class="decision-grid">
+        <fieldset id="initialKind"><legend>Classifica ciò che vedi</legend>
+          <label><input type="radio" name="initialKind" value="fotografia">Fotografia</label>
+          <label><input type="radio" name="initialKind" value="mappa">Mappa</label>
+          <label><input type="radio" name="initialKind" value="visualizzazione">Visualizzazione di dati</label>
+          <label><input type="radio" name="initialKind" value="opera digitale">Opera digitale</label>
+          <label><input type="radio" name="initialKind" value="immagine generata">Immagine generata</label>
+          <label><input type="radio" name="initialKind" value="documento">Documento</label>
+        </fieldset>
+        <div><p class="legend-like">Chi o che cosa l’ha realizzata?</p><div id="initialMaker" class="chip-set" role="group" aria-label="Ipotesi sul produttore">
+          <button type="button" data-maker="fotocamera">Fotocamera</button><button type="button" data-maker="persona">Persona</button>
+          <button type="button" data-maker="programma">Programma</button><button type="button" data-maker="sistema generativo">Sistema generativo</button>
+          <button type="button" data-maker="combinazione">Combinazione</button>
+        </div><article class="receipt" id="initialReceipt" aria-live="polite"><p>Nessuna ipotesi registrata.</p></article></div>
+        <label class="notebook"><span>Chi ritieni responsabile delle scelte visive?</span><textarea id="initialNote" rows="6" placeholder="Formula un’ipotesi e indica gli indizi, senza cercare ancora la risposta."></textarea><small>Resterà soltanto su questo dispositivo e tornerà nella conclusione.</small></label>
+      </div>
+    </section>
+
+    <section class="panel dark-panel" id="s2" data-section="2" aria-labelledby="s2-title">
+      <header class="section-title"><p class="kicker">02 · Genealogie</p><h2 id="s2-title">L’algoritmo viene<br><em>prima dell’IA.</em></h2><p>La storia non conduce inevitabilmente al modello generativo: procedure, segnali, regole, reti e interazioni aprono traiettorie differenti.</p></header>
+      <div id="timeline" class="timeline" role="list" aria-label="Cronologia problematica dell’arte digitale"></div>
+      <article id="timelineResult" class="lab-result inverse" aria-live="polite"><p>Scegli un nodo: ogni passaggio apre una possibilità e conserva un limite.</p></article>
+      <div class="lab-grid rule-lab">
+        <form class="controls" id="ruleControls"><h3>Laboratorio delle regole</h3><p>Questo è un generatore procedurale JavaScript: non apprende.</p>
+          <label>Ripetizioni <output for="ruleCount">7</output><input id="ruleCount" type="range" min="3" max="16" value="7"></label>
+          <label>Intervallo <output for="ruleGap">24</output><input id="ruleGap" type="range" min="8" max="60" value="24"></label>
+          <label>Casualità <output for="ruleRandom">18%</output><input id="ruleRandom" type="range" min="0" max="80" value="18"></label>
+          <label>Vincolo <select id="ruleConstraint"><option value="griglia">Griglia</option><option value="orbita">Orbita</option><option value="soglia">Soglia</option></select></label>
+          <button id="runRules" class="primary" type="button">Esegui le istruzioni</button>
+        </form>
+        <div><canvas id="ruleStage" width="760" height="430" role="img" aria-describedby="ruleText"></canvas><article class="lab-result" id="ruleText" aria-live="polite"><p>Modifica una regola e osserva che cosa resta sotto controllo.</p></article></div>
+      </div>
+      <div class="source-links"><a href="https://zkm.de/en/exhibition/2006/08/georg-nees-the-great-temptation" target="_blank" rel="noopener"><b>Georg Nees</b><small>ZKM · prima grafica generativa ↗</small></a><a href="https://whitney.org/exhibitions/harold-cohen-aaron" target="_blank" rel="noopener"><b>Harold Cohen · AARON</b><small>Whitney Museum ↗</small></a></div>
+    </section>
+
+    <section class="panel" id="s3" data-section="3" aria-labelledby="s3-title">
+      <header class="section-title"><p class="kicker">03 · Infrastrutture</p><h2 id="s3-title">Il digitale<br><em>ha un corpo.</em></h2><p>“Cloud” è una metafora comoda. Un’opera digitale attraversa materia, energia, logistica, lavoro e manutenzione.</p></header>
+      <div class="material-lab">
+        <div id="materialLayers" class="layer-controls" role="group" aria-label="Strati materiali del digitale"></div>
+        <div class="material-map" id="materialMap" role="img" aria-describedby="materialText"><span class="core">opera / servizio</span></div>
+      </div>
+      <article id="materialText" class="lab-result" aria-live="polite"><p>Attiva gli strati per smontare l’idea di immaterialità. Non viene calcolato un falso “costo per immagine”: contesto, hardware, modello, carico e mix energetico cambiano il risultato.</p></article>
+      <div class="case-strip"><article><b>Anatomy of an AI System</b><p>Kate Crawford e Vladan Joler ricostruiscono risorse planetarie, catene logistiche, dati e lavoro dietro un singolo assistente domestico.</p><a href="https://anatomyof.ai/" target="_blank" rel="noopener">Apri il progetto ↗</a></article><article><b>Lavoro invisibile</b><p>L’ILO documenta raccolta, annotazione e moderazione come lavoro umano incorporato nei sistemi automatizzati.</p><a href="https://www.ilo.org/resource/article/artificial-intelligence-illusion-how-invisible-workers-fuel-automated" target="_blank" rel="noopener">Leggi l’ILO ↗</a></article><article><b>Energia e variabili</b><p>L’IEA distingue crescita dei data center, efficienza, localizzazione e mix elettrico. I numeri vanno contestualizzati, non usati come slogan.</p><a href="https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary" target="_blank" rel="noopener">Dati IEA 2026 ↗</a></article></div>
+    </section>
+
+    <section class="panel grid-panel" id="s4" data-section="4" aria-labelledby="s4-title">
+      <header class="section-title"><p class="kicker">04 · Dall’immagine al sistema</p><h2 id="s4-title">Dove finisce<br><em>l’opera?</em></h2><p>Un file può essere una parte, non l’intero. Input, codice, esecuzione e interfaccia producono relazioni che il solo output non conserva.</p></header>
+      <div id="systemParts" class="system-parts" role="group" aria-label="Componenti di un’opera digitale"></div>
+      <article id="systemResult" class="lab-result" aria-live="polite"><p>Seleziona i componenti che ritieni indispensabili per riallestire un’opera interattiva.</p></article>
+      <div class="case-deck" id="caseDeck" role="tablist" aria-label="Casi di studio"></div>
+      <article id="caseResult" class="case-result" aria-live="polite"><p>Scegli un caso: la scheda è testuale perché le opere protette non sono incorporate.</p></article>
+    </section>
+
+    <section class="panel dark-panel" id="s5" data-section="5" aria-labelledby="s5-title">
+      <header class="section-title"><p class="kicker">05 · Quando la rete è il medium</p><h2 id="s5-title">Essere online non basta<br><em>per essere Net Art.</em></h2><p>La rete può distribuire un’immagine oppure costituire la struttura dell’opera: link, protocolli, server, partecipanti e tempo condiviso.</p></header>
+      <div id="networkKinds" class="classification-cards" role="group" aria-label="Classifica il rapporto con la rete"></div>
+      <article id="networkResult" class="lab-result inverse" aria-live="polite"><p>Classifica un caso per distinguere digitalizzazione, arte digitale e Net Art.</p></article>
+      <div class="conservation-lab"><div><p class="kicker light">Browser 1996 → oggi</p><h3>Il plug-in non esiste più. Che cosa preservi?</h3><p>Scegli fino a tre strategie. Nessuna conserva tutto.</p><div id="conservationChoices" class="chip-set inverse" role="group" aria-label="Strategie di conservazione"></div></div><article id="conservationResult" class="lab-result inverse" aria-live="polite"><p>La conservazione è una negoziazione documentata fra comportamento, aspetto, contesto e accesso.</p></article></div>
+      <div class="source-links inverse-links"><a href="https://artbase.rhizome.org/wiki/Q3933" target="_blank" rel="noopener"><b>Olia Lialina · 1996</b><small>Rhizome ArtBase ↗</small></a><a href="https://www.tate.org.uk/research/reshaping-the-collectible/net-art-dusty-navigational-pathways" target="_blank" rel="noopener"><b>Net Art nel museo</b><small>Tate · conservazione ↗</small></a><a href="https://www.tate.org.uk/research/collection-care-research/resurrecting-the-digital-past-access-to-artistic-content-on-cd-roms" target="_blank" rel="noopener"><b>Emulazione e migrazione</b><small>Tate ↗</small></a></div>
+    </section>
+
+    <section class="panel" id="s6" data-section="6" aria-labelledby="s6-title">
+      <header class="section-title"><p class="kicker">06 · Centro concettuale</p><h2 id="s6-title">Lo sguardo algoritmico<br><em>ordina prima di capire.</em></h2><p>Misurare, classificare, riconoscere, raccomandare e comprendere non sono cinque nomi della stessa operazione.</p></header>
+      <div class="ranking-lab">
+        <form id="rankingControls" class="controls"><h3>Simulatore trasparente</h3><p>Non è una vera IA: usa soltanto pesi JavaScript visibili.</p>
+          <label>Somiglianza formale <output for="rankForm">50</output><input id="rankForm" type="range" min="0" max="100" value="50"></label>
+          <label>Novità <output for="rankNovelty">35</output><input id="rankNovelty" type="range" min="0" max="100" value="35"></label>
+          <label>Popolarità <output for="rankPopularity">20</output><input id="rankPopularity" type="range" min="0" max="100" value="20"></label>
+          <label>Prossimità <output for="rankNear">45</output><input id="rankNear" type="range" min="0" max="100" value="45"></label>
+        </form>
+        <div><ol id="rankingList" class="ranking-list" aria-label="Classifica simulata"></ol><article id="rankingText" class="lab-result" aria-live="polite"></article></div>
+      </div>
+      <div class="concept-line" aria-label="Distinzioni concettuali"><span>vedere <b>ricevere segnali</b></span><span>misurare <b>produrre valori</b></span><span>classificare <b>assegnare categorie</b></span><span>riconoscere <b>associare pattern</b></span><span>comprendere <b>costruire senso situato</b></span></div>
+    </section>
+
+    <section class="panel grid-panel" id="s7" data-section="7" aria-labelledby="s7-title">
+      <header class="section-title"><p class="kicker">07 · Il dataset</p><h2 id="s7-title">Il sistema vede<br><em>ciò che abbiamo reso visibile.</em></h2><p>Raccolta, categorie e casi mancanti costruiscono il campo del riconoscibile prima che il modello produca un risultato.</p></header>
+      <div class="dataset-lab">
+        <div><h3>1. Costruisci un piccolo insieme</h3><p>Aggiungi forme astratte: i metadati sono fittizi e dichiarati.</p><button id="addDatasetItem" class="primary" type="button">Aggiungi un caso</button><div id="datasetItems" class="dataset-items"></div></div>
+        <div><h3>2. Etichetta i casi ambigui</h3><div id="ambiguityCards" class="ambiguity-cards"></div></div>
+      </div>
+      <div class="missing-lab"><h3>3. Cerca ciò che manca</h3><div id="missingChoices" class="chip-set" role="group" aria-label="Casi mancanti nel dataset"></div><article id="datasetResult" class="lab-result" aria-live="polite"><p>Costruisci, etichetta e poi controlla le assenze.</p></article></div>
+      <div class="case-strip"><article><b>Anna Ridler · Myriad (Tulips)</b><p>Diecimila fotografie scattate e classificate a mano rendono visibile il lavoro che solitamente precede l’apprendimento automatico.</p><a href="https://ars.electronica.art/export/en/humanizingtechnology/" target="_blank" rel="noopener">Ars Electronica ↗</a></article><article><b>Gender Shades</b><p>Joy Buolamwini e Timnit Gebru mostrano che prestazioni aggregate possono nascondere differenze fra gruppi e condizioni d’uso.</p><a href="https://www.media.mit.edu/projects/gender-shades/overview/" target="_blank" rel="noopener">MIT Media Lab ↗</a></article></div>
+    </section>
+
+    <section class="panel dark-panel" id="s8" data-section="8" aria-labelledby="s8-title">
+      <header class="section-title"><p class="kicker">08 · Generazione</p><h2 id="s8-title">Il prompt non contiene<br><em>tutta l’immagine.</em></h2><p>Training e inferenza sono fasi diverse. Dataset, pesi, filtri, interfaccia, parametri, seed e selezione distribuiscono il controllo.</p></header>
+      <div id="generativeChain" class="chain" role="group" aria-label="Catena di una immagine generativa"></div>
+      <article id="chainResult" class="lab-result inverse" aria-live="polite"><p>Attiva i nodi che incidono sull’esito. La parola “IA” non deve cancellare la catena.</p></article>
+      <div class="lab-grid generator-lab">
+        <form id="generatorControls" class="controls inverse-controls"><h3>Generatore originale</h3><p>Forme astratte, nessuna imitazione di artisti. Regole e seed sono dichiarati.</p>
+          <label>Prompt strutturato <select id="genPrompt"><option value="equilibrio">equilibrio instabile</option><option value="attrito">attrito fra griglie</option><option value="deriva">deriva controllata</option><option value="soglia">soglia e vuoto</option></select></label>
+          <label>Seed <input id="genSeed" type="number" min="1" max="9999" value="25"></label>
+          <label>Densità <output for="genDensity">5</output><input id="genDensity" type="range" min="2" max="12" value="5"></label>
+          <label>Variabilità <output for="genVariation">35%</output><input id="genVariation" type="range" min="0" max="100" value="35"></label>
+          <button id="generate" class="primary" type="button">Genera una esecuzione</button>
+        </form>
+        <div><canvas id="generatorStage" width="760" height="430" role="img" aria-describedby="generatorText"></canvas><article id="generatorText" class="lab-result inverse" aria-live="polite"><p>Stesso prompt non significa necessariamente stesso esito; stesso seed e stessi vincoli rendono invece l’esecuzione riproducibile in questo laboratorio.</p></article></div>
+      </div>
+    </section>
+
+    <section class="panel" id="s9" data-section="9" aria-labelledby="s9-title">
+      <header class="section-title"><p class="kicker">09 · Autorialità</p><h2 id="s9-title">L’autore non scompare.<br><em>Si distribuisce.</em></h2><p>Distribuire non significa rendere tutti equivalenti. Intenzione, lavoro, controllo, firma, rischio e ricavo seguono traiettorie diverse.</p></header>
+      <div class="authorship-lab"><div id="authorshipActors" class="actor-tabs" role="tablist" aria-label="Attori dell’autorialità"></div><div><p id="authorActorLabel" class="kicker">Seleziona un attore</p><div id="authorshipSliders" class="authorship-sliders"></div><article id="authorshipResult" class="lab-result" aria-live="polite"><p>Assegna il peso di almeno due dimensioni a un attore.</p></article></div></div>
+      <div class="case-strip"><article><b>Harold Cohen e AARON</b><p>Cohen descrive un rapporto collaborativo, ma programma, ricostruzioni, plotter e selezione mantengono responsabilità differenti.</p><a href="https://whitney.org/exhibitions/harold-cohen-aaron" target="_blank" rel="noopener">Whitney ↗</a></article><article><b>Studio Azzurro</b><p>I crediti di Tavoli distinguono ideazione, regia, fotografia, montaggio, sistemi interattivi, performer, suono e costruzione materiale.</p><a href="https://www.studioazzurro.com/opere/tavoli-perche-queste-mani-mi-toccano/" target="_blank" rel="noopener">Archivio ufficiale ↗</a></article><article><b>teamLab</b><p>Una firma collettiva riunisce discipline diverse; “collettivo” non deve trasformare il lavoro in un fondale anonimo.</p><a href="https://www.teamlab.art/about/" target="_blank" rel="noopener">Biografia ufficiale ↗</a></article></div>
+    </section>
+
+    <section class="panel grid-panel" id="s10" data-section="10" aria-labelledby="s10-title">
+      <header class="section-title"><p class="kicker">10 · Originale digitale</p><h2 id="s10-title">Un originale può avere<br><em>molte istanze.</em></h2><p>File, versione, edizione, esecuzione, certificato, token, licenza e accesso non sono sinonimi.</p></header>
+      <div id="originalClassifier" class="original-grid" role="group" aria-label="Classificatore dell’originale digitale"></div>
+      <article id="originalResult" class="lab-result" aria-live="polite"><p>Scegli uno scenario per identificare che cosa viene posseduto, eseguito o autorizzato.</p></article>
+      <div class="distinction-table" role="table" aria-label="Distinzioni dell’originale digitale"><div role="row"><b role="columnheader">Token</b><span role="cell">registrazione in un sistema distribuito</span></div><div role="row"><b role="columnheader">File</b><span role="cell">sequenza di dati conservata in un supporto</span></div><div role="row"><b role="columnheader">Contratto</b><span role="cell">definisce diritti e obblighi fra parti</span></div><div role="row"><b role="columnheader">Copyright</b><span role="cell">diritti stabiliti dalla legge applicabile</span></div><div role="row"><b role="columnheader">Provenienza</b><span role="cell">storia documentata di passaggi e trasformazioni</span></div></div>
+      <p class="callout">La blockchain può registrare una dichiarazione; non garantisce che la dichiarazione iniziale sia vera, che il file remoto duri o che il copyright sia stato trasferito.</p>
+    </section>
+
+    <section class="panel dark-panel" id="s11" data-section="11" aria-labelledby="s11-title">
+      <header class="section-title"><p class="kicker">11 · Piattaforme</p><h2 id="s11-title">Il feed non mostra il mondo.<br><em>Costruisce una priorità.</em></h2><p>“Personalizzato” significa che criteri, dati e obiettivi ordinano la visibilità. Qualcuno sale; qualcun altro scompare.</p></header>
+      <div class="feed-lab"><form id="feedControls" class="controls inverse-controls"><h3>Laboratorio del feed</h3>
+        <label>Rilevanza dichiarata <output for="feedRelevant">60</output><input id="feedRelevant" type="range" min="0" max="100" value="60"></label>
+        <label>Popolarità <output for="feedPopular">35</output><input id="feedPopular" type="range" min="0" max="100" value="35"></label>
+        <label>Novità <output for="feedNew">45</output><input id="feedNew" type="range" min="0" max="100" value="45"></label>
+        <label>Prossimità <output for="feedNear">25</output><input id="feedNear" type="range" min="0" max="100" value="25"></label>
+        <label>Interesse economico <output for="feedMoney">10</output><input id="feedMoney" type="range" min="0" max="100" value="10"></label>
+      </form><div><ol id="feedList" class="feed-list" aria-label="Feed simulato"></ol><article id="feedResult" class="lab-result inverse" aria-live="polite"></article></div></div>
+      <div class="platform-grid"><article><b>Ranking</b><p>Ordina contenuti secondo obiettivi traducibili in segnali.</p></article><article><b>Formato</b><p>Durata, proporzione e ritmo favoriti influenzano ciò che viene prodotto.</p></article><article><b>Moderazione</b><p>Regole e applicazione decidono accesso, rimozione e possibilità di ricorso.</p></article><article><b>Dipendenza</b><p>API, condizioni d’uso e chiusura del servizio possono cambiare l’opera.</p></article></div>
+    </section>
+
+    <section class="panel" id="s12" data-section="12" aria-labelledby="s12-title">
+      <header class="section-title"><p class="kicker">12 · Potere e futuro</p><h2 id="s12-title">La responsabilità non può<br><em>sciogliersi nella rete.</em></h2><p>Ogni possibilità tecnica incorpora scelte. Legge, etica, contestazione e progettazione responsabile restano piani connessi ma distinti.</p></header>
+      <div class="law-update"><p class="kicker light">Quadro verificato · 22 agosto 2026</p><h3>Che cosa è già applicabile?</h3><p>Nell’Unione europea l’AI Act è applicabile dal 2 agosto 2026 con eccezioni e scadenze differenziate; l’articolo 50 introduce obblighi di trasparenza per specifici contenuti e interazioni. Le regole per i modelli general-purpose sono applicabili dal 2 agosto 2025 e includono politica sul copyright e sintesi pubblica dei contenuti di addestramento. Non è una legge universale.</p><div class="source-links inverse-links"><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener"><b>AI Act · stato di applicazione</b><small>Commissione europea ↗</small></a><a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations" target="_blank" rel="noopener"><b>Articolo 50</b><small>Linee guida della Commissione ↗</small></a><a href="https://www.copyright.gov/ai/" target="_blank" rel="noopener"><b>Copyright e IA</b><small>U.S. Copyright Office · diritto USA ↗</small></a></div></div>
+      <div class="responsibility-lab"><div><h3>Progetta un sistema responsabile</h3><p>Per ogni area scegli una posizione. Le scelte sono salvate e formeranno il resoconto.</p><div id="responsibilityAreas" class="responsibility-areas"></div></div><article id="responsibilityResult" class="responsibility-result" aria-live="polite"><p>Un progetto responsabile deve dichiarare anche chi può contestarlo.</p></article></div>
+      <div class="provenance-lab"><h3>Provenienza non significa verità automatica</h3><div id="provenanceSteps" class="provenance-steps" role="group" aria-label="Catena di provenienza"></div><article id="provenanceResult" class="lab-result" aria-live="polite"><p>Costruisci una catena: acquisizione, trasformazioni e dichiarazioni possono essere registrate, ma vanno interpretate.</p></article></div>
+      <div class="future-grid"><article><b>Bias</b><p>Errore, distribuzione dei dati e progetto istituzionale vanno separati.</p></article><article><b>Sorveglianza</b><p>Riconoscere pattern può diventare controllo di persone e comportamenti.</p></article><article><b>Deepfake</b><p>Provenienza e marcatura aiutano, ma non sostituiscono contesto e giudizio.</p></article><article><b>Ambiente</b><p>Modello, hardware, durata, localizzazione, energia e riuso modificano l’impatto.</p></article><article><b>Apertura</b><p>“Open” può riguardare codice, pesi, dati o licenza: va specificato.</p></article><article><b>Ricorso</b><p>Una decisione contestabile distribuisce il potere diversamente da una scatola chiusa.</p></article></div>
+      <div class="source-links"><a href="https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence" target="_blank" rel="noopener"><b>Etica dell’IA</b><small>UNESCO ↗</small></a><a href="https://spec.c2pa.org/specifications/specifications/2.4/explainer/Explainer.html" target="_blank" rel="noopener"><b>Content Credentials</b><small>C2PA 2.4 · standard, non garanzia assoluta ↗</small></a><a href="https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary" target="_blank" rel="noopener"><b>Energia e IA</b><small>IEA 2026 ↗</small></a></div>
+    </section>
+
+    <section class="panel reveal-section" id="s13" data-section="13" aria-labelledby="s13-title">
+      <header class="section-title"><p class="kicker">13 · Seconda decisione</p><h2 id="s13-title">Chi ha<br><em>guardato?</em></h2><p>La rivelazione non sostituisce un’etichetta con un’altra: ricostruisce una catena di apparati e decisioni.</p></header>
+      <div class="reveal-grid"><figure><button class="image-button view-art" data-image="assets/images/black-marble-2016.webp" data-caption="NASA Goddard Space Flight Center, Black Marble 2016; dati Suomi NPP/VIIRS; ricerca Miguel Román; elaborazione Joshua Stevens. Uso secondo le linee guida NASA." type="button"><img src="assets/images/black-marble-2016.webp" alt="Mappa composita globale delle luci notturne della Terra nel 2016, costruita da dati satellitari." width="1920" height="1080"></button><figcaption>Ridimensionamento a 1920 × 1080 e conversione WebP; nessun montaggio o ritaglio.</figcaption></figure>
+        <article class="reveal-card"><p class="kicker light">NASA · Black Marble 2016</p><h3>Non una singola<br><em>fotografia.</em></h3><p>È una vista globale cloud-free costruita con dati del sensore VIIRS sul satellite Suomi NPP. Ogni pixel rappresenta circa 742 metri. I dati notturni vengono selezionati ed elaborati per ridurre nuvole e altri disturbi e rendere confrontabili le luci.</p><dl><div><dt>Apparato</dt><dd>Satellite Suomi NPP · sensore VIIRS</dd></div><div><dt>Ricerca</dt><dd>Miguel Román · NASA/GSFC</dd></div><div><dt>Elaborazione</dt><dd>Joshua Stevens · SSAI</dd></div><div><dt>Credito</dt><dd>NASA Goddard Space Flight Center</dd></div><div><dt>Rende visibile</dt><dd>Distribuzione persistente delle luci notturne</dd></div><div><dt>Non mostra da sola</dt><dd>Cause, accesso all’energia, disuguaglianze, fenomeni rimossi dal composito</dd></div></dl><a href="https://svs.gsfc.nasa.gov/30876/" target="_blank" rel="noopener">Scheda, dati e crediti NASA ↗</a></article></div>
+      <div class="before-after"><article><p class="kicker">La tua prima decisione</p><blockquote id="initialEcho">Non hai ancora formulato una prima ipotesi.</blockquote></article><label class="notebook"><span>Seconda nota · chi ha guardato?</span><textarea id="finalNote" rows="6" placeholder="Riformula la risposta distribuendo potere e responsabilità, senza dissolverli."></textarea><small>Il confronto usa soltanto ciò che hai scritto.</small></label></div>
+      <div class="power-table"><h3>Tavolo finale dello sguardo algoritmico</h3><p>Distribuisci al massimo 100 punti di potere/responsabilità. Un totale inferiore a 100 è ammesso: può rappresentare incertezza.</p><div id="powerTable"></div><p id="powerTotal" class="lab-result" aria-live="polite">0 / 100 punti distribuiti.</p></div>
+      <div class="atlas"><h3>Atlante personale</h3><p>Attiva soltanto le categorie che hai effettivamente messo in relazione durante il percorso.</p><div id="atlasGrid"></div><article id="atlasResult" class="lab-result" aria-live="polite"><p>Nessuna categoria ancora scelta.</p></article></div>
+      <div class="synthesis"><div><p class="kicker light">Sintesi dalle sole azioni</p><h3>Non inventa<br>ciò che non hai fatto.</h3></div><article id="synthesisText" aria-live="polite"><p>Esplora il modulo per costruire una sintesi personale verificabile.</p></article></div>
+
+      <section class="mastery" id="verifica" aria-labelledby="mastery-title"><header><p class="kicker light">Verifica finale · 16 nuclei</p><h3 id="mastery-title">Distinguere<br><em>per comprendere.</em></h3><p id="masteryCount">0 / 16 compresi</p><div class="mastery-meter" aria-hidden="true"><span id="masteryBar"></span></div></header><div id="quizArea"></div><div id="quizComplete" class="quiz-complete" hidden><b>16 / 16</b><p>Tutti i nuclei sono stati compresi, direttamente o attraverso il recupero.</p></div></section>
+      <p class="closing">Lo sguardo algoritmico non appartiene a una macchina isolata: nasce da una rete sociotecnica diseguale. L’autorialità può distribuirsi; la responsabilità no.</p>
+      <div class="circle-close"><p class="kicker light">Il percorso si chiude senza finire</p><h3>All’inizio chiedevamo quando nasce lo sguardo umano. Ora chiediamo quanto del nostro sguardo affidiamo alle macchine e quale responsabilità vogliamo conservarne.</h3><div><a href="../24-arte-contemporanea/index.html">← Modulo 24</a><a href="../../index.html">Tutte le 25 fratture</a><a href="../01-prima-dell-arte/index.html">Ritorna al modulo 01 ↻</a></div></div>
+    </section>
+  </main>
+
+  <footer><span>25 / 25</span><p><b>Chi guarda attraverso l’algoritmo?</b><br>Arte digitale e IA — Autore, originale, futuro</p><p class="credits">Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p><nav aria-label="Navigazione tra moduli"><a href="../24-arte-contemporanea/index.html">← Modulo 24</a><a href="../../index.html">Storia dello sguardo</a><a href="../01-prima-dell-arte/index.html">Modulo 01 ↻</a></nav></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxCaption"><div class="lightbox-toolbar"><button id="zoomOut" type="button" aria-label="Riduci immagine">−</button><button id="zoomReset" type="button" aria-label="Dimensione iniziale">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci immagine">+</button><button id="lightboxClose" type="button" aria-label="Chiudi immagine">×</button></div><div class="lightbox-viewport"><img id="lightboxImage" alt=""></div><p id="lightboxCaption"></p></dialog>
+  <p class="storage-status" id="storageStatus" role="status" aria-live="polite" hidden></p>
+</body>
+</html>

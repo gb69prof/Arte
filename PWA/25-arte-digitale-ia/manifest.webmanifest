@@ -1,0 +1,15 @@
+{
+  "name": "Chi guarda attraverso l’algoritmo?",
+  "short_name": "Sguardo 25",
+  "description": "Arte digitale e IA: autore, originale, infrastrutture e responsabilità.",
+  "lang": "it",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101417",
+  "theme_color": "#101417",
+  "icons": [
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
