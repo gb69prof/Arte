@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">L’opera può scomparire</title><desc id="desc">Un segno interrotto attraversa una griglia e lascia una traccia.</desc>
+  <rect width="512" height="512" rx="96" fill="#181b1a"/>
+  <g stroke="#7162d8" stroke-width="8" opacity=".65"><path d="M96 72v368M176 72v368M256 72v368M336 72v368M416 72v368M72 96h368M72 176h368M72 256h368M72 336h368M72 416h368"/></g>
+  <path d="M92 350c76-186 126 112 208-80 46-108 74-50 120-126" fill="none" stroke="#d7ff45" stroke-width="34" stroke-linecap="round" stroke-dasharray="180 34 96 26"/>
+  <circle cx="299" cy="270" r="29" fill="#f36c4f" stroke="#181b1a" stroke-width="10"/>
+</svg>

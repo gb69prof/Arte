@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#181b1a">
+  <meta name="description" content="L’opera può scomparire: percorso interattivo su arte concettuale e performance fra idea, istruzione, corpo, azione, documento e istituzioni.">
+  <title>23 · L’opera può scomparire — Storia dello sguardo</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-controls="sideNav" aria-expanded="false"><span aria-hidden="true">☰</span><span>Indice</span></button>
+    <a class="project" href="../../index.html"><span aria-hidden="true">S</span><b>Storia dello sguardo</b></a>
+    <p><span>Galleria V</span><strong>23 / 25</strong></p>
+  </header>
+
+  <aside class="side-nav" id="sideNav" aria-label="Indice del modulo" aria-hidden="true" inert>
+    <div class="side-head"><p>Galleria V · Le immagini che ci abitano</p><button id="menuClose" type="button" aria-label="Chiudi indice">×</button></div>
+    <nav><ol>
+      <li><a href="#s1"><span>01</span>Dov’è l’opera?</a></li>
+      <li><a href="#s2"><span>02</span>Idea, istruzione, esecuzione, documento</a></li>
+      <li><a href="#s3"><span>03</span>Il mondo precedente</a></li>
+      <li><a href="#s4"><span>04</span>Prima della “scomparsa”</a></li>
+      <li><a href="#s5"><span>05</span>L’idea può essere l’opera?</a></li>
+      <li><a href="#s6"><span>06</span>Eseguire un’istruzione</a></li>
+      <li><a href="#s7"><span>07</span>Quando l’opera accade</a></li>
+      <li><a href="#s8"><span>08</span>Il corpo non è neutro</a></li>
+      <li><a href="#s9"><span>09</span>L’evento e la fotografia</a></li>
+      <li><a href="#s10"><span>10</span>Politica, identità, spazio pubblico</a></li>
+      <li><a href="#s11"><span>11</span>Italia: materia, linguaggio, azione</a></li>
+      <li><a href="#s12"><span>12</span>Come si compra ciò che scompare?</a></li>
+      <li><a href="#s13"><span>13</span>Che cosa rimane?</a></li>
+    </ol></nav>
+    <div class="side-actions"><a href="#verifica">Verifica finale</a><button id="resetAll" class="danger" type="button">Azzera il modulo</button></div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <main id="contenuto">
+    <section class="threshold" id="s1" data-section="1" aria-labelledby="s1-title">
+      <div class="threshold-copy">
+        <p class="kicker">01 · Prima osservazione</p>
+        <h1 id="s1-title">Dov’è<br><em>l’opera?</em></h1>
+        <p class="lead">Nessun autore, titolo o contesto. Osserva prima ciò che la fotografia rende presente e ciò che lascia fuori campo.</p>
+        <blockquote>Se l’opera non coincide più con un oggetto stabile, dove esiste?</blockquote>
+      </div>
+      <figure class="opening-figure">
+        <div class="opening-stage" id="openingStage">
+          <img src="assets/images/john-cage-croes.webp" alt="Ritratto fotografico in bianco e nero, a mezzo busto, di un uomo anziano con giacca e maglia scure davanti a uno sfondo neutro." width="1280" height="850">
+          <button class="marker m-space" data-marker="spazio" aria-pressed="false" aria-label="Osserva lo spazio"><span>1</span></button>
+          <button class="marker m-body" data-marker="corpo" aria-pressed="false" aria-label="Osserva il corpo"><span>2</span></button>
+          <button class="marker m-gesture" data-marker="gesto" aria-pressed="false" aria-label="Cerca il gesto"><span>3</span></button>
+          <button class="marker m-time" data-marker="durata" aria-pressed="false" aria-label="Cerca la durata"><span>4</span></button>
+          <button class="marker m-public" data-marker="pubblico" aria-pressed="false" aria-label="Cerca il pubblico"><span>5</span></button>
+          <button class="marker m-object" data-marker="oggetto" aria-pressed="false" aria-label="Cerca l’oggetto"><span>6</span></button>
+          <button class="marker m-trace" data-marker="traccia" aria-pressed="false" aria-label="Osserva la traccia"><span>7</span></button>
+          <button class="marker m-photo" data-marker="fotografia" aria-pressed="false" aria-label="Interroga la fotografia"><span>8</span></button>
+        </div>
+        <figcaption><span class="concealed">Documento non ancora rivelato</span><button class="view-art" data-image="assets/images/john-cage-croes.webp" data-caption="Documento iniziale non ritagliato; attribuzione rivelata nella sezione 13." type="button">Ingrandisci</button></figcaption>
+      </figure>
+      <div class="observation-grid">
+        <article class="receipt" id="markerReadout" aria-live="polite"><b>Scegli un marcatore</b><p>Distingui ciò che vedi da ciò che immagini sia accaduto.</p></article>
+        <label class="notebook"><span>Prima nota · dove pensi che esista l’opera?</span><textarea id="initialNote" rows="5" placeholder="Scrivi un’ipotesi provvisoria: oggetto, azione, corpo, immagine, memoria…"></textarea><small>Salvata soltanto su questo dispositivo.</small></label>
+      </div>
+    </section>
+
+    <section class="panel" id="s2" data-section="2" aria-labelledby="s2-title">
+      <header class="section-title"><p class="kicker">02 · Distinguere</p><h2 id="s2-title">Cinque presenze,<br><em>non cinque sinonimi.</em></h2><p>Idea, istruzione, esecuzione, documento e istituzione possono concorrere alla stessa opera, ma nessuno di questi termini la esaurisce automaticamente.</p></header>
+      <div class="tab-row" id="workLayers" role="tablist" aria-label="Confronta gli strati dell’opera"></div>
+      <div class="compare-board"><div class="layer-stage" id="layerStage" role="img" aria-describedby="layerResult"><span>IDEA</span><span>ISTRUZIONE</span><span>ESECUZIONE</span><span>DOCUMENTO</span><span>ISTITUZIONE</span></div><article class="analysis-card" id="layerResult" aria-live="polite"></article></div>
+      <div class="distinctions"><span>opera ≠ oggetto</span><span>evento ≠ fotografia</span><span>istruzione ≠ esito unico</span><span>assenza ≠ immaterialità</span></div>
+    </section>
+
+    <section class="panel" id="s3" data-section="3" aria-labelledby="s3-title">
+      <header class="section-title"><p class="kicker">03 · Il mondo precedente</p><h2 id="s3-title">Non un anno zero.<br><em>Una costellazione.</em></h2><p>Tra il 1952 e il 1980 musica sperimentale, movimenti politici, nuovi media, femminismi, minimalismo e istituzioni aprono possibilità diverse. Non formano una marcia inevitabile.</p></header>
+      <div class="timeline" id="timeline" role="list" aria-label="Cronologia interattiva 1952–1980"></div>
+      <article class="analysis-card timeline-detail" id="timelineDetail" aria-live="polite"><p>Scegli un nodo per leggere evento, contesto e limite.</p></article>
+      <div class="split-grid"><div><h3>Rete delle condizioni</h3><div class="network" id="conditionNetwork" aria-label="Rete di condizioni e istituzioni"></div></div><article class="analysis-card" id="conditionResult" aria-live="polite"><b>Nessuna causa unica</b><p>Seleziona un nodo: mostra ciò che rende possibile e ciò che non determina.</p></article></div>
+    </section>
+
+    <section class="panel" id="s4" data-section="4" aria-labelledby="s4-title">
+      <header class="section-title"><p class="kicker">04 · Prima della “scomparsa”</p><h2 id="s4-title">Togliere, scegliere, accadere:<br><em>operazioni differenti.</em></h2><p>Ready-made, monocromo, vuoto, assemblage e forma minimale incrinano l’oggetto tradizionale senza diventare la stessa cosa.</p></header>
+      <div class="term-classifier"><div class="term-case" id="termCase" aria-live="polite"></div><div class="tab-row" id="termChoices" aria-label="Classifica l’operazione"></div><button class="secondary" id="nextTerm" type="button">Nuovo caso</button></div>
+      <div class="source-links">
+        <a href="https://www.moma.org/collection/works/81631" target="_blank" rel="noopener"><b>Duchamp · <i>Bicycle Wheel</i></b><small>Antecedente, non Conceptual Art anni Sessanta · MoMA ↗</small></a>
+        <a href="https://www.moma.org/collection/works/80528" target="_blank" rel="noopener"><b>Rauschenberg · <i>Erased de Kooning Drawing</i></b><small>Cancellazione come azione e attribuzione · MoMA ↗</small></a>
+        <a href="https://www.tate.org.uk/art/art-terms/m/minimalism" target="_blank" rel="noopener"><b>Minimalismo</b><small>Forma, fabbricazione, spazio e spettatore · Tate ↗</small></a>
+      </div>
+      <p class="limit"><b>“Dematerializzazione”:</b> la formula di Lucy Lippard e John Chandler è decisiva come categoria critica, ma non descrive una sparizione letterale della materia. Restano carta, corpi, registrazioni, contratti e lavoro.</p>
+    </section>
+
+    <section class="panel" id="s5" data-section="5" aria-labelledby="s5-title">
+      <header class="section-title"><p class="kicker">05 · Conceptual Art</p><h2 id="s5-title">L’idea può essere<br><em>l’opera?</em></h2><p>“Idea prima dell’oggetto” non significa che ogni oggetto sia irrilevante. Linguaggio, progetto, definizione, serialità e contesto assegnano ruoli diversi ai supporti.</p></header>
+      <div class="system-network" id="conceptNetwork" aria-label="Artisti e operazioni concettuali"></div>
+      <article class="analysis-card profile" id="conceptResult" aria-live="polite"><p>Scegli un caso: osserva che cosa viene deciso, delegato, materializzato e riconosciuto.</p></article>
+      <div class="spectrum-lab"><label>Quanto dipende dall’esecuzione?<input id="executionRange" type="range" min="0" max="100" value="50"><output for="executionRange" id="executionOutput">50%</output></label><div class="spectrum"><span>proposizione</span><i id="spectrumNeedle"></i><span>evento situato</span></div><article class="analysis-card" id="spectrumResult" aria-live="polite"></article></div>
+      <div class="work-grid">
+        <a href="https://www.moma.org/collection/works/81435" target="_blank" rel="noopener"><b>Joseph Kosuth</b><span><i>One and Three Chairs</i>, 1965</span><small>MoMA ↗</small></a>
+        <a href="https://www.moma.org/collection/terms/conceptual-art/language-and-art" target="_blank" rel="noopener"><b>LeWitt e linguaggio</b><span>Progetto, sistema, proposizione</span><small>MoMA ↗</small></a>
+        <a href="https://www.tate.org.uk/art/artists/lawrence-weiner-2129" target="_blank" rel="noopener"><b>Lawrence Weiner</b><span>Enunciato e possibile realizzazione</span><small>Tate ↗</small></a>
+        <a href="https://www.tate.org.uk/art/artists/art-language-902" target="_blank" rel="noopener"><b>Art &amp; Language</b><span>Produzione teorica e collaborazione</span><small>Tate ↗</small></a>
+      </div>
+    </section>
+
+    <section class="panel instruction-section" id="s6" data-section="6" aria-labelledby="s6-title">
+      <header class="section-title"><p class="kicker">06 · Laboratorio dell’istruzione</p><h2 id="s6-title">La stessa frase produce<br><em>lo stesso lavoro?</em></h2><p>Comporre un’istruzione significa distribuire decisioni. Eseguirla significa interpretare, tradurre, talvolta sbagliare.</p></header>
+      <div class="instruction-card"><p>ISTRUZIONE DIDATTICA ORIGINALE · 23/01</p><strong id="instructionText">Traccia una linea che registri trenta secondi senza rappresentare un oggetto.</strong><small>Non è un’opera storica e non imita un artista.</small></div>
+      <div class="lab-grid"><form class="controls" id="instructionControls"><label>Interprete<select id="instructionAgent"><option value="studente">Studente</option><option value="gruppo">Gruppo</option><option value="tecnico">Tecnico del museo</option><option value="algoritmo">Procedura automatica</option></select></label><label>Durata <output for="instructionDuration">30 s</output><input id="instructionDuration" type="range" min="5" max="120" value="30"></label><label>Margine decisionale <output for="instructionFreedom">45%</output><input id="instructionFreedom" type="range" min="0" max="100" value="45"></label><label>Errore / deviazione <output for="instructionError">10%</output><input id="instructionError" type="range" min="0" max="100" value="10"></label><label>Supporto<select id="instructionSupport"><option value="carta">Carta</option><option value="parete">Parete</option><option value="voce">Voce</option><option value="schermo">Schermo</option></select></label><button class="primary" id="executeInstruction" type="button">Esegui una variante</button><button class="secondary" data-reset="instruction" type="button">Ripristina laboratorio</button></form><div><div class="instruction-stage" id="instructionStage" role="img" aria-describedby="instructionResult" aria-label="Esito astratto dell’istruzione"></div><article class="analysis-card" id="instructionResult" aria-live="polite"></article></div></div>
+      <div class="variant-log"><h3>Confronta le esecuzioni</h3><div id="variantLog"><p>Nessuna variante ancora registrata.</p></div></div>
+    </section>
+
+    <section class="panel event-section" id="s7" data-section="7" aria-labelledby="s7-title">
+      <header class="section-title"><p class="kicker">07 · Evento</p><h2 id="s7-title">Quando l’opera<br><em>accade.</em></h2><p>Happening, event, action e performance sono termini utili ma porosi. Cambiano preparazione, durata, rapporto con il pubblico e possibilità di ripetizione.</p></header>
+      <div class="tab-row" id="eventTypes" role="tablist" aria-label="Confronta forme dell’evento"></div>
+      <article class="analysis-card" id="eventResult" aria-live="polite"></article>
+      <div class="presence-lab"><form class="controls" id="presenceControls"><label>Durata <output for="presenceDuration">20 min</output><input id="presenceDuration" type="range" min="1" max="240" value="20"></label><label>Copione<select id="presenceScript"><option value="aperto">Aperto</option><option value="score">Score essenziale</option><option value="preciso">Sequenza precisa</option></select></label><label>Ripetibilità<select id="presenceRepeat"><option value="unica">Evento dichiarato unico</option><option value="variabile">Ripetibile con variazioni</option><option value="delegata">Delegabile</option></select></label></form><div class="time-stage" id="timeStage"><span id="timeBody" aria-hidden="true"></span><div id="timeTrace"></div></div><article class="analysis-card" id="presenceResult" aria-live="polite"></article></div>
+      <div><h3>Chi è il pubblico?</h3><div class="audience-grid" id="audienceRoles"></div><article class="analysis-card" id="audienceResult" aria-live="polite"></article></div>
+      <div class="source-links"><a href="https://www.moma.org/collection/terms/fluxus" target="_blank" rel="noopener"><b>Fluxus</b><small>Event, oggetti, azioni quotidiane · MoMA ↗</small></a><a href="https://www.moma.org/interactives/exhibitions/2010/womeninflux/" target="_blank" rel="noopener"><b>Women in Flux</b><small>Score, performance, lavoro e archivio · MoMA ↗</small></a><a href="https://www.tate.org.uk/art/art-terms/p/performance-art" target="_blank" rel="noopener"><b>Performance art</b><small>Termine e storia · Tate ↗</small></a></div>
+    </section>
+
+    <section class="panel body-section" id="s8" data-section="8" aria-labelledby="s8-title">
+      <header class="section-title"><p class="kicker">08 · Corpo, genere, potere</p><h2 id="s8-title">Il corpo non è<br><em>un materiale neutro.</em></h2><p>Età, genere, razzializzazione, salute, reputazione e posizione sociale cambiano ciò che un gesto espone e il modo in cui viene ricevuto. Il rischio non è un valore estetico automatico.</p></header>
+      <div class="body-lab"><div class="body-stage" id="bodyStage" role="img" aria-describedby="bodyResult" aria-label="Schema astratto di corpo, sguardi e confini"><span class="body-shape"></span><i class="boundary"></i><b id="bodyWord">PRESENZA</b></div><div><div class="lens-switch" id="bodyLenses" aria-label="Lenti critiche"></div><article class="analysis-card" id="bodyResult" aria-live="polite"></article></div></div>
+      <div class="consent-lab"><h3>Il consenso è un processo, non una casella</h3><div id="consentSteps" class="consent-steps"></div><article class="analysis-card" id="consentResult" aria-live="polite"><p>Scegli un passaggio per verificare chi può decidere, interrompere e documentare.</p></article></div>
+      <div class="work-grid">
+        <a href="https://www.moma.org/collection/works/126438" target="_blank" rel="noopener"><b>Yoko Ono</b><span><i>Cut Piece</i>, 1964</span><small>MoMA ↗</small></a>
+        <a href="https://www.moma.org/collection/works/119929" target="_blank" rel="noopener"><b>Carolee Schneemann</b><span><i>Meat Joy</i>, 1964</span><small>MoMA ↗</small></a>
+        <a href="https://www.moma.org/artists/4693" target="_blank" rel="noopener"><b>Adrian Piper</b><span><i>Catalysis</i>, 1970–71</span><small>MoMA ↗</small></a>
+        <a href="https://www.moma.org/artists/3924" target="_blank" rel="noopener"><b>Ana Mendieta</b><span>Corpo, terra, traccia, fotografia</span><small>MoMA ↗</small></a>
+      </div>
+      <p class="limit"><b>Responsabilità:</b> questa sezione non ricostruisce azioni dolorose e non trasforma la vulnerabilità in spettacolo. Distingue condizioni, poteri e mediazioni.</p>
+    </section>
+
+    <section class="panel document-section" id="s9" data-section="9" aria-labelledby="s9-title">
+      <header class="section-title"><p class="kicker">09 · Evento e documentazione</p><h2 id="s9-title">La fotografia resta.<br><em>Ma non coincide.</em></h2><p>Una registrazione seleziona posizione, istante e formato. Può essere testimonianza, materiale d’opera, edizione autonoma, prova di autenticità o immagine promozionale.</p></header>
+      <div class="tab-row" id="documentTypes" role="tablist" aria-label="Confronta forme di documentazione"></div><article class="analysis-card" id="documentResult" aria-live="polite"></article>
+      <div class="trace-lab"><h3>Percorso della traccia</h3><div class="trace-path" id="tracePath"></div><article class="analysis-card" id="traceResult" aria-live="polite"></article></div>
+      <div class="provenance-lab"><h3>Chi costruisce l’attribuzione?</h3><div class="provenance-path" id="provenancePath"></div><article class="analysis-card" id="provenanceResult" aria-live="polite"><p>Segui la catena: ogni passaggio conserva qualcosa e ne perde altro.</p></article></div>
+    </section>
+
+    <section class="panel politics-section" id="s10" data-section="10" aria-labelledby="s10-title">
+      <header class="section-title"><p class="kicker">10 · Politica e geografie</p><h2 id="s10-title">Non un centro<br><em>e le sue periferie.</em></h2><p>Azioni e concettualismi emergono in condizioni locali diverse. Femminismi, segregazione razziale, dittature, colonialismo e modernizzazioni autoritarie modificano mezzi e rischi.</p></header>
+      <div class="world-map" id="worldMap" role="group" aria-label="Mappa policentrica delle pratiche"><svg viewBox="0 0 1000 500" aria-hidden="true"><path d="M90 245C220 90 385 410 505 220S790 110 930 275M170 370C360 190 610 450 850 180"/></svg></div>
+      <article class="analysis-card profile" id="worldResult" aria-live="polite"><p>Scegli un centro per vedere un problema situato, non una versione locale di New York.</p></article>
+      <div class="political-lenses"><h3>Che cosa cambia se cambia la lente?</h3><div class="lens-switch" id="politicalLenses"></div><article class="analysis-card" id="politicalResult" aria-live="polite"></article></div>
+      <div class="source-links"><a href="https://post.moma.org/conceptualism-dematerialization-arte-no-objetual-historicizing-the-60s-and-70s-in-latin-america/" target="_blank" rel="noopener"><b>Conceptualismi latinoamericani</b><small>MoMA post ↗</small></a><a href="https://www.museoreinasofia.es/en/activity/archives-commons-iv" target="_blank" rel="noopener"><b><i>Tucumán Arde</i>, 1968</b><small>Controinformazione e azione collettiva · Reina Sofía ↗</small></a><a href="https://www.moma.org/explore/inside_out/2013/01/30/exhibiting-fluxus-mapping-hi-red-center-in-tokyo-1955-1970-a-new-avant-garde-2/" target="_blank" rel="noopener"><b>Hi-Red Center</b><small>Azioni urbane e documentazione · MoMA ↗</small></a></div>
+    </section>
+
+    <section class="panel italy-section" id="s11" data-section="11" aria-labelledby="s11-title">
+      <header class="section-title"><p class="kicker">11 · Italia</p><h2 id="s11-title">Idea, materia, linguaggio,<br><em>azione.</em></h2><p>“Arte Povera”, ricerche concettuali, verbovisive e performative si incrociano, ma non sono sinonimi. Materia e idea non sono poli incompatibili.</p></header>
+      <div class="italy-network" id="italyNetwork" role="tablist" aria-label="Rete italiana"></div><article class="analysis-card profile" id="italyResult" aria-live="polite"><p>Scegli un nodo per distinguere operazione, contesto e limite dell’etichetta.</p></article>
+      <div class="source-links"><a href="https://www.tate.org.uk/art/artworks/manzoni-artists-shit-t07667" target="_blank" rel="noopener"><b>Piero Manzoni · <i>Merda d’artista</i>, 1961</b><small>Soglia: corpo, confezione, certificazione, mercato · Tate ↗</small></a><a href="https://www.castellodirivoli.org/en/the-public-collection-interpreted-and-expanded/" target="_blank" rel="noopener"><b>Arte Povera al Castello di Rivoli</b><small>Collezione, riattivazione, pluralità ↗</small></a><a href="https://awarewomenartists.com/en/artiste/ketty-la-rocca/" target="_blank" rel="noopener"><b>Ketty La Rocca</b><small>Linguaggio, mani, corpo e genere · AWARE ↗</small></a><a href="https://www.fabiomauri.com/en/opere/" target="_blank" rel="noopener"><b>Fabio Mauri</b><small>Ideologia, storia e performance · Studio Fabio Mauri ↗</small></a></div>
+    </section>
+
+    <section class="panel market-section" id="s12" data-section="12" aria-labelledby="s12-title">
+      <header class="section-title"><p class="kicker">12 · Proprietà e conservazione</p><h2 id="s12-title">Come si compra<br><em>ciò che scompare?</em></h2><p>Si possono acquisire oggetti, certificati, diritti di esecuzione, istruzioni, file, edizioni e responsabilità di trasmissione. Comprare non significa possedere ogni possibile manifestazione.</p></header>
+      <div class="certificate-lab"><form class="controls" id="certificateControls"><label>Nucleo acquisito<select id="certificateCore"><option value="istruzione">Istruzione firmata</option><option value="diritti">Diritto di esecuzione</option><option value="documento">Edizione fotografica</option><option value="insieme">Insieme di materiali e protocollo</option></select></label><label>Interprete futuro<select id="certificateInterpreter"><option value="formato">Formato dal museo</option><option value="scelto">Scelto dall’artista</option><option value="aperto">Aperto con criteri</option></select></label><label>Variabilità <output for="certificateVariation">35%</output><input id="certificateVariation" type="range" min="0" max="100" value="35"></label><label>Documentazione obbligatoria<select id="certificateDocs"><option value="minima">Registro minimo</option><option value="estesa">Foto, video e relazione</option><option value="orale">Trasmissione anche corpo-a-corpo</option></select></label><button class="primary" id="issueCertificate" type="button">Genera scheda di riallestimento</button></form><article class="certificate" id="certificateOutput" aria-live="polite"><p>SIMULAZIONE DIDATTICA</p><h3>Nessuna scheda generata</h3><small>Non è un certificato autentico e non crea diritti.</small></article></div>
+      <div><h3>Il circuito non sparisce</h3><div class="value-circuit" id="valueCircuit"></div><article class="analysis-card" id="valueResult" aria-live="polite"></article></div>
+      <div class="source-links"><a href="https://www.moma.org/explore/inside_out/2016/01/27/moma-collects-simone-fortis-dance-constructions/" target="_blank" rel="noopener"><b>Acquisire una performance</b><small>Diritti, istruzioni, video, interviste e trasmissione corporea · MoMA ↗</small></a><a href="https://www.guggenheim.org/conservation/the-variable-media-initiative" target="_blank" rel="noopener"><b>Variable Media Initiative</b><small>Preservare opere variabili e performative · Guggenheim ↗</small></a><a href="https://www.tate.org.uk/research/reshaping-the-collectible/research-approach-conservation" target="_blank" rel="noopener"><b>Reshaping the Collectible</b><small>Conservazione, documentazione, certificati · Tate ↗</small></a></div>
+    </section>
+
+    <section class="panel reveal-section" id="s13" data-section="13" aria-labelledby="s13-title">
+      <header class="section-title"><p class="kicker">13 · Secondo sguardo</p><h2 id="s13-title">Che cosa<br><em>rimane?</em></h2><p>Ritorna al documento iniziale. Sapere chi ritrae non trasforma la fotografia nell’opera che immagini: rende più precisa la distinzione.</p></header>
+      <div class="reveal-grid"><figure><button class="image-button view-art" data-image="assets/images/john-cage-croes.webp" data-caption="Rob C. Croes / Anefo, ritratto del compositore John Cage, 16 novembre 1988, Nationaal Archief, CC0." type="button"><img src="assets/images/john-cage-croes.webp" alt="Ritratto fotografico in bianco e nero di John Cage, ripreso a mezzo busto nel 1988." width="1280" height="850"></button><figcaption>Documento fotografico integrale, conversione WebP senza ritaglio.</figcaption></figure><article class="reveal-card"><p class="kicker">La rivelazione corregge l’ipotesi</p><h3>John Cage, <i>ma non un’opera di Cage.</i></h3><p>Rob C. Croes realizzò questo ritratto per Anefo il 16 novembre 1988. Il negativo è conservato dal Nationaal Archief con numero <b>934-3585</b> e licenza CC0.</p><dl><div><dt>Che cos’è</dt><dd>Una fotografia d’archivio</dd></div><div><dt>Che cosa documenta</dt><dd>La presenza di Cage davanti al fotografo</dd></div><div><dt>Che cosa non documenta</dt><dd>Una particolare esecuzione di <i>4′33″</i></dd></div><div><dt>Perché apre il percorso</dt><dd>Rende visibili presenza, assenza e attribuzione</dd></div></dl><a href="https://www.nationaalarchief.nl/onderzoeken/fotocollectie/ad6eae8c-d0b4-102d-bcf8-003048976d84" target="_blank" rel="noopener">Scheda del Nationaal Archief ↗</a></article></div>
+      <div class="notes-return"><article><p class="kicker">La tua prima ipotesi</p><blockquote id="initialEcho">Non hai ancora scritto la prima nota.</blockquote></article><label class="notebook"><span>Seconda nota · ora dove esiste l’opera?</span><textarea id="finalNote" rows="6" placeholder="Riformula senza ridurre tutto all’idea: quali supporti, corpi, relazioni e istituzioni restano?"></textarea><small>Salvata soltanto su questo dispositivo.</small></label></div>
+      <div class="atlas"><h3>Atlante di ciò che rimane</h3><p>Attiva soltanto le categorie che sai collegare a un’azione svolta nel modulo.</p><div id="atlasGrid"></div><article class="receipt" id="atlasResult" aria-live="polite"><p>Nessuna categoria ancora scelta.</p></article></div>
+      <div class="synthesis"><div><p class="kicker">Sintesi dalle tue azioni</p><h3>Non un testo prefabbricato</h3><p>La sintesi usa soltanto note, laboratori e scelte che hai realmente compiuto.</p></div><article class="receipt" id="synthesisText" aria-live="polite"><p>Esplora il modulo per costruire la sintesi.</p></article></div>
+
+      <section class="mastery" id="verifica" aria-labelledby="mastery-title"><header><p class="kicker">Verifica finale · 16 nuclei</p><h3 id="mastery-title">Capire, non<br><em>fare media.</em></h3><p id="masteryCount">0 / 16 compresi</p><div class="mastery-meter" aria-hidden="true"><span id="masteryBar"></span></div></header><div id="quizArea"></div><div id="quizComplete" class="quiz-complete" hidden><b>16 / 16</b><p>Hai compreso tutti i nuclei, direttamente o attraverso il recupero.</p></div></section>
+      <p class="closing">L’opera non è diventata “nulla”: ha distribuito la propria esistenza fra decisioni, corpi, tempi, documenti e istituzioni.</p>
+      <div class="next-module"><p>La domanda si sposta</p><span>24</span><div><h3>Chi decide che cosa è arte?</h3><p>Arte contemporanea — Mercato, identità, ambiente</p></div><a href="../../index.html#m24">Torna alla soglia predisposta ↗</a></div>
+    </section>
+  </main>
+
+  <footer><span>23 / 25</span><p><b>L’opera può scomparire</b><br>Arte concettuale e performance — Idea, corpo, azione</p><p class="credits">Materiali realizzati da gbprof e Libera (ChatGPT) tramite dialogo costante e progettazione comune, sotto la direzione di gbprof.</p><nav aria-label="Navigazione tra moduli"><a href="../22-pop-art/index.html">← Modulo 22</a><a href="../../index.html">Storia dello sguardo</a><a href="../../index.html#m24">Soglia 24 →</a></nav></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxCaption"><div class="lightbox-toolbar"><button id="zoomOut" type="button" aria-label="Riduci immagine">−</button><button id="zoomReset" type="button" aria-label="Dimensione iniziale">100%</button><button id="zoomIn" type="button" aria-label="Ingrandisci immagine">+</button><button id="lightboxClose" type="button" aria-label="Chiudi immagine">×</button></div><div class="lightbox-viewport" id="lightboxViewport"><img id="lightboxImage" alt=""></div><p id="lightboxCaption"></p></dialog>
+  <p class="storage-status" id="storageStatus" role="status" aria-live="polite" hidden></p>
+</body>
+</html>
