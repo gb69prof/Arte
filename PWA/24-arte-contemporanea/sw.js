@@ -1,6 +1,6 @@
 "use strict";
-// Build 2026-08-22b: aggiorna la shell mantenendo la chiave isolata richiesta.
-const CACHE="storia-sguardo-24-v1";
+// Build 2026-08-22c: rende disponibile la nuova soglia verso il modulo 25.
+const CACHE="storia-sguardo-24-v2";
 const SHELL=[
   "./","./index.html","./manifest.webmanifest","./assets/css/style.css?v=24b","./assets/js/app.js",
   "./assets/icons/icon.svg","./assets/icons/icon-192.png","./assets/icons/icon-512.png",

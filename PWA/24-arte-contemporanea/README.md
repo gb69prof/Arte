@@ -17,7 +17,7 @@ La verifica richiede la padronanza di sedici nuclei. Ogni errore apre spiegazion
 ## Tecnica
 
 - stato: `storia-sguardo-24-state`;
-- cache: `storia-sguardo-24-v1`;
+- cache: `storia-sguardo-24-v2`;
 - shell offline locale, nessuna dipendenza esterna necessaria al funzionamento;
 - immagini protette non incorporate: i casi contemporanei rimandano alle schede ufficiali;
 - progetto responsive, touch-first e accessibile da tastiera.
