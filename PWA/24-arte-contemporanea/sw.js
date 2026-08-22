@@ -1,4 +1,5 @@
 "use strict";
+// Build 2026-08-22b: aggiorna la shell mantenendo la chiave isolata richiesta.
 const CACHE="storia-sguardo-24-v1";
 const SHELL=[
   "./","./index.html","./manifest.webmanifest","./assets/css/style.css","./assets/js/app.js",
