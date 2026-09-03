@@ -27,9 +27,9 @@ function removeZoomBlocks(source) {
     .replace(/content=(['"])([^'"]*?),\s*\1/gi, "content=$1$2$1");
 }
 
-function deferStaticYouTube(source) {
+function deferStaticExternalIframes(source) {
   return source.replace(
-    /<iframe\b([^>]*?)\bsrc=(['"])(https:\/\/www\.youtube(?:-nocookie)?\.com\/embed\/[^'"]+)\2([^>]*)>/gi,
+    /<iframe\b([^>]*?)\bsrc=(['"])(https?:\/\/[^'"]+)\2([^>]*)>/gi,
     (whole, before, quote, url, after) => {
       if (/\bdata-gbprof-src\s*=/.test(whole)) return whole;
       const safeUrl = url.replace("www.youtube.com", "www.youtube-nocookie.com");
@@ -52,7 +52,7 @@ let changed = 0;
 for (const file of walk(root)) {
   const original = fs.readFileSync(file, "utf8");
   let source = removeZoomBlocks(original);
-  source = deferStaticYouTube(source);
+  source = deferStaticExternalIframes(source);
   source = addStandardAssets(source, file);
   if (source !== original) {
     fs.writeFileSync(file, source);

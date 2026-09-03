@@ -1,10 +1,10 @@
 # Audit automatico PWA
 
 HTML: 28 · manifest: 25
-Errori automatici: 1 · avvisi: 0
+Errori automatici: 0 · avvisi: 0
 
 ## Errori rilevati
-- PWA/01-prima-dell-arte/index.html: possibile tracker/cookie
+- Nessun errore rilevato dai controlli automatici.
 
 ## Avvisi
 - Nessun avviso.
