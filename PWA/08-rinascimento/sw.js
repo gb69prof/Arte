@@ -3,6 +3,10 @@
 const CACHE = "storia-sguardo-08-v1";
 const CACHE_PREFIX = "storia-sguardo-08-";
 const CORE = [
+  "../../pwa-common/gbprof-accessibility.css?v=1",
+  "../../pwa-common/gbprof-accessibility.js?v=1",
+  "../../privacy.html",
+  "../../accessibilita.html",
   "./", "./index.html", "./styles.css", "./app.js", "./manifest.webmanifest", "./sw.js",
   "./assets/icons/icon.svg", "./assets/icons/icon-192.png", "./assets/icons/icon-512.png",
   "./assets/images/opening-architecture.webp", "./assets/images/giotto-memory.webp"

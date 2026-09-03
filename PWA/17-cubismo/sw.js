@@ -1,5 +1,9 @@
 const CACHE = "storia-sguardo-17-v1";
 const APP_SHELL = [
+  "../../pwa-common/gbprof-accessibility.css?v=1",
+  "../../pwa-common/gbprof-accessibility.js?v=1",
+  "../../privacy.html",
+  "../../accessibilita.html",
   "./","./index.html","./manifest.webmanifest","./README.md","./SOURCES.md",
   "./assets/css/style.css","./assets/js/app.js",
   "./assets/icons/icon.svg","./assets/icons/icon-192.png","./assets/icons/icon-512.png",

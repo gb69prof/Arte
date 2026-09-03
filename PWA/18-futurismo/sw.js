@@ -3,6 +3,10 @@
 const CACHE = "storia-sguardo-18-v1";
 const PREFIX = "storia-sguardo-18-";
 const APP_SHELL = [
+  "../../pwa-common/gbprof-accessibility.css?v=1",
+  "../../pwa-common/gbprof-accessibility.js?v=1",
+  "../../privacy.html",
+  "../../accessibilita.html",
   "./",
   "./index.html",
   "./README.md",
