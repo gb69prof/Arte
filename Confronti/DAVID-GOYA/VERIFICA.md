@@ -27,6 +27,7 @@ Home: gb69prof/gbprof-home, unica modifica a index.html.
 ## Limiti della verifica
 - Non è stata effettuata una prova su iPad/iPhone fisico o su Safari. Touch simulato nel browser; cattura reale del puntatore e gesture native da verificare su dispositivo.
 - Cache e controllo del service worker verificati; non è stata effettuata una prova in modalità aereo reale. I video restano online per scelta progettuale.
+- Esportazione del taccuino: pulsante azionato, ma il browser remoto non ha restituito l’evento di download entro il timeout; scaricamento non confermato dal collaudo. Il salvataggio locale dopo ricaricamento è invece verificato.
 - Non è stato eseguito un collaudo con screen reader esterno o un'installazione su sistema operativo. Sono presenti semantica, alternative testuali, etichette, focus e navigazione da tastiera.
 - Trascrizioni video generate automaticamente e revisionate nei nomi; sincronizzazione sottotitoli approssimativa. Gli errori del materiale originario sono segnalati in note distinte.
 
