@@ -1,3 +1,35 @@
+# Aggiornamento didattico — 25 settembre 2026
+
+## Esito
+Pubblicata la lezione completa (otto capitoli, circa 2.100 parole comprese le note ai video), con i tre video integrali incorporati e disponibili subito. Sintesi e interpretazioni dei dettagli liberamente accessibili. Lettura chiara su fondo chiaro, indice, rimandi ai dettagli e ritorno al paragrafo, stampa della lezione.
+
+Commit della riorganizzazione: 0ed581afa7258187a2d2f0a35fe1779d59477193.
+Correzione della cache: 4dc7939641105f643600483169aac3ff2c7c4792.
+Deploy e controllo standard gbprof conclusi con successo per entrambi.
+
+## Verifiche effettive della nuova versione
+- Identità SHA-256 dei tre nuovi allegati con gli originali ricevuti in precedenza. Riutilizzate le copie video complete già pubblicate, H.264/AAC 960×540; durate 76,885 / 66,240 / 74,840 secondi.
+- Controlli HTML: ID unici, destinazioni degli anchor presenti, risorse locali esistenti, otto capitoli e tre video nativi. Nessun gate per lezione, sintesi o interpretazioni.
+- Sintassi JavaScript controllata con Node; audit dello standard PWA: zero errori e zero avvisi.
+- Browser Chrome sul sito pubblico: avvio e avanzamento confermati per tutti i video (osservati a circa 18, 13 e 17 secondi); nessun errore dei lettori; durata integrale confermata; pausa automatica del video precedente confermata.
+- Collegamento «Metti i due volti a confronto»: apre il confronto corretto, zoom David 450% / Goya 714%; ritorno al paragrafo #volti confermato.
+- Tutte le sei immagini nella pagina principale caricate dopo lo scorrimento. Le immagini della lezione hanno lazy loading e non si caricano finché lontane dal viewport.
+- Layout attraverso iframe di larghezza 390 / 768 / 1180 px, area interna effettiva 375 / 753 / 1165 px: nessun overflow orizzontale. Ispezione visiva della lezione desktop e mobile.
+- Cache v3: 24 risorse presenti e nessuna risorsa essenziale mancante. Risolto il riutilizzo di risorse HTTP vecchie durante la precache usando richieste con cache reload. Navigazione online aggiornata dalla rete, fallback alla lezione in cache quando offline.
+- Aggiornamento verificato anche nella sessione del browser che aveva aperto e memorizzato la versione precedente.
+- Nessun errore applicativo osservato; presenti messaggi dell’estensione del browser di test estranei al sito.
+- Anteprima della lezione verificata: docs/anteprima.jpg.
+
+## Limiti
+Nessuna prova su iPad/Safari fisico, nessuna modalità aereo reale e nessuna nuova prova di stampa su carta o screen reader. La verifica responsive usa iframe nel browser desktop. I video richiedono la rete; le trascrizioni sono disponibili offline. Sincronizzazione dei sottotitoli approssimativa. Il limite precedente sulla verifica del download del taccuino rimane invariato. Gli errori dei video originali sono segnalati in note accanto ai lettori.
+
+## Ambito
+Modificati soltanto file nella sottocartella Confronti/DAVID-GOYA. Pubblicazione con il workflow esistente; nessuna modifica diretta al server o all’infrastruttura. Chiave delle note locali conservata.
+
+---
+
+# Verifiche della versione precedente (24 settembre)
+
 # Verifica del progetto pubblicato — 24 settembre 2026
 
 URL verificato nel browser: https://gbprof.it/Arte/Confronti/DAVID-GOYA/
