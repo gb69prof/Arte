@@ -37,30 +37,12 @@ $('#focus-pair').addEventListener('click',()=>{const p=steps[current].pair;viewe
 $('#reset-pair').addEventListener('click',()=>Object.values(viewers).forEach(v=>v.reset()));
 $('#toggle-spots').addEventListener('click',e=>{showSpots=!showSpots;e.currentTarget.setAttribute('aria-pressed',showSpots);e.currentTarget.textContent=showSpots?'Nascondi i punti di osservazione':'Mostra i punti di osservazione';Object.values(viewers).forEach(v=>v.draw());});
 steps.forEach((s,i)=>{const b=el('button',{},String(i+1).padStart(2,'0')+' '+s.title);b.addEventListener('click',()=>renderStep(i,true));$('#steps').append(b);});
-function progress(){const n=steps.filter(s=>state.seen.includes(s.id)).length;$('#progress').textContent=n+' di 8 confronti esplorati';$$('#steps button').forEach((b,i)=>b.classList.toggle('done',state.seen.includes(steps[i].id)));$('#theory').hidden=n<8;$('#theory-lock').hidden=n===8;}
-function videoBlock(n,target){
- const v=videos[n];if(!v)return;
- const fullAvailable=steps.every(s=>state.seen.includes(s.id));
- const clip=v.clip&&!fullAvailable?v.clip:null;
- const wrap=el('details',{className:'video-block'});
- wrap.append(el('summary',{},(clip?clip.title:v.title)+' · '+(clip?clip.duration:v.duration)));
- wrap.append(el('p',{className:'video-note'},clip?'Estratto dal video originale: osserva il dettaglio e confrontalo con la lettura proposta. Il video completo, con le precisazioni, sarà disponibile dopo gli otto confronti.':v.note));
- const btn=el('button',{},'Carica il video');wrap.append(btn);
- btn.addEventListener('click',()=>{
-  const player=el('video',{controls:true,preload:'none',poster:`assets/video/poster-${n}.jpg`});
-  player.setAttribute('playsinline','');player.setAttribute('aria-label',clip?clip.title:v.title);
-  player.src='assets/video/'+(clip?clip.src:`video-${n}.mp4`);
-  const track=el('track',{kind:'captions',srclang:'it',label:'Italiano',src:'assets/video/'+(clip?clip.captions:`video-${n}.vtt`)});player.append(track);btn.replaceWith(player);
- });
- const transcript=clip?clip.text:v.text;
- if(transcript){const t=el('details',{className:'transcript'});t.append(el('summary',{},clip?'Leggi il contenuto dell’estratto':'Leggi la trascrizione del video'));t.append(el('p',{},transcript));wrap.append(t);}
- target.append(wrap);
-}
+function progress(){const n=steps.filter(s=>state.seen.includes(s.id)).length;$('#progress').textContent=n+' di 8 confronti esplorati';$$('#steps button').forEach((b,i)=>b.classList.toggle('done',state.seen.includes(steps[i].id)));}
 function renderStep(i,focus=false){$$('video').forEach(v=>v.pause());current=i;state.step=i;save();const s=steps[i];$$('#steps button').forEach((b,j)=>{b.classList.toggle('active',i===j);b.setAttribute('aria-current',i===j?'step':'false');});$('#step-number').textContent='CONFRONTO '+String(i+1).padStart(2,'0')+' / 08';$('#step-title').textContent=s.title;$('#step-subtitle').textContent=s.subtitle;$('#question').textContent=s.question;$('#choices').replaceChildren(el('legend',{className:'sr-only'},'Scegli un’ipotesi'));
  shuffle(s.choices.map((text,j)=>({text,j}))).forEach(c=>{const label=el('label'),input=el('input',{type:'radio',name:'hypothesis',value:String(c.j),checked:state.choices[s.id]===c.j});label.append(input,el('span',{},c.text));input.addEventListener('change',()=>{state.choices[s.id]=c.j;save();});$('#choices').append(label);});
- $('#note').value=state.notes[s.id]||'';$('#feedback').textContent='';$('#interpretation').hidden=!state.seen.includes(s.id);$('#reading-david').textContent=s.david;$('#reading-goya').textContent=s.goya;$('#relation').textContent=s.relation;$('#video-slot').replaceChildren();Object.entries(videos).filter(([n,v])=>v.step===s.id).forEach(([n])=>videoBlock(n,$('#video-slot')));$('#next').textContent=i===7?'Dai un nome alle differenze →':'Il prossimo confronto →';Object.values(viewers).forEach(v=>v.reset());progress();if(focus)$('#step-title').focus();}
+ $('#note').value=state.notes[s.id]||'';$('#feedback').textContent='';$('#interpretation').hidden=false;$('#reading-david').textContent=s.david;$('#reading-goya').textContent=s.goya;$('#relation').textContent=s.relation;$('#reading-return').href='#'+['marat','marat','volti','assassini','luce-spazio','luce-spazio','ideologia','fucilazione'][i];$('#video-slot').replaceChildren();Object.entries(videos).filter(([n,v])=>v.step===s.id).forEach(([n,v])=>$('#video-slot').append(el('a',{href:'#video-'+n,className:'detail-link'},'Guarda il video completo: '+v.title+' →')));$('#next').textContent=i===7?'Torna alla sintesi →':'Il prossimo confronto →';Object.values(viewers).forEach(v=>v.reset());progress();if(focus)$('#step-title').focus();}
 $('#note').addEventListener('input',e=>{state.notes[steps[current].id]=e.target.value;save();});
-$('#reveal').addEventListener('click',()=>{const s=steps[current],choice=state.choices[s.id];if(choice===undefined){$('#feedback').textContent='Scegli prima un’ipotesi: serve a confrontare la tua lettura con gli indizi.';return;}$('#feedback').textContent=choice===s.best?'L’ipotesi è sostenuta da questi indizi. Leggi il confronto e verifica la tua osservazione.':'Riguarda un dettaglio: '+s.recovery;$('#interpretation').hidden=false;if(!state.seen.includes(s.id))state.seen.push(s.id);save();progress();});
+$('#reveal').addEventListener('click',()=>{const s=steps[current],choice=state.choices[s.id];if(choice===undefined){$('#feedback').textContent='Per verificarti scegli un’ipotesi. La spiegazione qui sotto è sempre disponibile.';return;}$('#feedback').textContent=choice===s.best?'L’ipotesi è sostenuta da questi indizi. Leggi il confronto e verifica la tua osservazione.':'Riguarda un dettaglio: '+s.recovery;$('#interpretation').hidden=false;if(!state.seen.includes(s.id))state.seen.push(s.id);save();progress();});
 $('#next').addEventListener('click',()=>{if(current<7){renderStep(current+1,true);$('#lab-title').scrollIntoView();}else location.hash='conclusione';});
 [['Passato: morte avvenuta','cadaveri'],['Presente: morte imminente','uomo'],['Futuro: chi attende','attesa']].forEach(([name,answer],i)=>{const box=el('div'),label=el('label',{htmlFor:'time-'+i},name),select=el('select',{id:'time-'+i});select.dataset.answer=answer;select.add(new Option('Associa un gruppo…',''));shuffle([['uomo','L’uomo con la camicia bianca'],['attesa','Il gruppo dietro l’uomo'],['cadaveri','I corpi in primo piano']]).forEach(([value,text])=>select.add(new Option(text,value)));select.addEventListener('change',()=>{if(select.value){switchWork('goya');viewers.goya.focus(select.value);}});box.append(label,select);$('.time-fields').append(box);});
 $('#check-time').addEventListener('click',()=>{const a=$$('.time-fields select');const count=a.filter(s=>s.value===s.dataset.answer).length;$('#time-feedback').textContent=count===3?'3 su 3. La tela connette tre fasi della stessa violenza. Ricorda: tutti questi gruppi sono dipinti insieme nel 1814.':`${count} su 3. Riguarda: i corpi a terra mostrano il già avvenuto; l’uomo in bianco la morte imminente; chi avanza dietro di lui ciò che accadrà. Riprova le associazioni.`;});
@@ -70,7 +52,31 @@ $('#check-detail').addEventListener('click',()=>{if(!$('#recognize-work').value)
 $$('[data-save]').forEach(t=>{t.value=state.answers[t.id]||'';t.addEventListener('input',()=>{state.answers[t.id]=t.value;save();});});
 $('#export-notes').addEventListener('click',()=>{const lines=['DAVID E GOYA — IL MIO TACCUINO','',...steps.flatMap(s=>[s.title,`Ipotesi: ${s.choices[state.choices[s.id]]||'Non scelta'}`,state.notes[s.id]||'(Nessuna nota)','']),...Object.entries(state.answers).flatMap(([k,v])=>[k,v,''])];const url=URL.createObjectURL(new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'}));const a=el('a',{href:url,download:'David-Goya-taccuino.txt'});a.click();setTimeout(()=>URL.revokeObjectURL(url),5000);});
 $('#clear-notes').addEventListener('click',()=>{if(!confirm('Cancellare risposte e progressi di questo laboratorio dal dispositivo?'))return;state={notes:{},choices:{},seen:[],answers:{},step:0};save();$$('[data-save]').forEach(t=>t.value='');renderStep(0);$('#storage-status').textContent='Risposte e progressi cancellati.';});
-Object.entries(videos).filter(([n,v])=>v.step==='finale').forEach(([n])=>videoBlock(n,$('#final-video')));
+
 renderStep(current);newDetail();if(!storageOK)$('#storage-status').textContent='Il salvataggio nel browser non è disponibile: scarica il taccuino prima di chiudere.';
 if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js',{scope:'./'}).then(()=>navigator.serviceWorker.ready).then(()=>$('#offline-status').textContent='Opere, percorso e attività pronti per la lettura offline. Video e collegamenti esterni richiedono la rete.').catch(()=>$('#offline-status').textContent='Salvataggio offline non riuscito. Riapri il laboratorio con una connessione disponibile.');}else $('#offline-status').textContent='Questo browser non supporta la lettura offline della PWA.';
 let installPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;$('#install').hidden=false;});$('#install').addEventListener('click',async()=>{if(installPrompt){await installPrompt.prompt();installPrompt=null;$('#install').hidden=true;}});
+
+// The lesson and native video players are present in HTML, including without JS.
+$$('[data-transcript]').forEach(slot=>{
+ const t=el('details',{className:'transcript'});
+ t.append(el('summary',{},'Leggi la trascrizione del video'),el('p',{},videos[slot.dataset.transcript].text));slot.append(t);
+});
+$$('[data-compare]').forEach(link=>link.addEventListener('click',()=>{
+ renderStep(Number(link.dataset.compare));
+ const pair=steps[current].pair;viewers.david.focus(pair[0]);viewers.goya.focus(pair[1]);
+ $('#return-lesson').href='#'+link.dataset.return;
+ $('#return-lesson').textContent='← Torna al punto della lezione';
+}));
+$$('.lesson-video video').forEach(player=>{
+ const box=player.closest('.lesson-video'), button=box.querySelector('[data-play]'),status=box.querySelector('.video-status');
+ function syncButton(){button.textContent=(player.paused?'Riproduci':'Metti in pausa')+' il video '+player.id.split('-')[1];}
+ player.addEventListener('play',()=>{$$('video').forEach(other=>{if(other!==player)other.pause();});status.textContent='';syncButton();});
+ player.addEventListener('pause',syncButton);player.addEventListener('ended',syncButton);
+ player.addEventListener('error',()=>status.textContent='Video non disponibile. Controlla la connessione oppure usa il collegamento al filmato. Puoi leggere la trascrizione qui sotto.');
+ button.addEventListener('click',async()=>{
+  if(!player.paused){player.pause();return;}
+  try{await player.play();}catch{status.textContent='La riproduzione non è partita: usa il pulsante del lettore o apri il filmato dal collegamento. Per i video serve la connessione.';}
+ });
+});
+$('#print-lesson').addEventListener('click',()=>window.print());

@@ -1,5 +1,5 @@
 const CACHE_PREFIX='gbprof-david-goya-';
-const CACHE=CACHE_PREFIX+'v1';
+const CACHE=CACHE_PREFIX+'v2-lesson';
 const ASSETS=['./','./index.html','./styles.css','./app.js','./content.js','./videos.js','./manifest.webmanifest','./assets/images/david.jpg','./assets/images/goya.jpg','./assets/icons/icon.svg','./assets/icons/icon-192.png','./assets/icons/icon-512.png','./assets/video/video-1.vtt','./assets/video/video-2.vtt','./assets/video/video-3.vtt','./assets/video/clip-1.vtt','./assets/video/clip-2.vtt','./assets/video/poster-1.jpg','./assets/video/poster-2.jpg','./assets/video/poster-3.jpg','../../pwa-common/gbprof-accessibility.css?v=1','../../pwa-common/gbprof-accessibility.js?v=1','../../privacy.html','../../accessibilita.html'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith(CACHE_PREFIX)&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
