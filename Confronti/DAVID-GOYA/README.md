@@ -28,7 +28,7 @@ Materiali di partenza: discussione David-Goya e tre filmati di gbprof. Il 25 set
 Il video 2 inverte destra e sinistra: correzione visibile prima del player. Le altre semplificazioni sono segnalate separatamente, senza alterare i filmati. Trascrizioni originali e sottotitoli da trascrizione automatica revisionata nei nomi; sincronizzazione approssimativa.
 
 ## Offline e dati
-Cache: gbprof-david-goya-v2-lesson; eliminazione limitata al prefisso del progetto. Lezione, immagini, attività, trascrizioni e sottotitoli disponibili offline dopo il caricamento completo. MP4 esclusi dalla precache e dalle intercettazioni Range: richiedono la rete.
+Cache: gbprof-david-goya-v3-lesson; eliminazione limitata al prefisso del progetto. Lezione, immagini, attività, trascrizioni e sottotitoli disponibili offline dopo il caricamento completo. MP4 esclusi dalla precache e dalle intercettazioni Range: richiedono la rete.
 Chiave localStorage invariata: gbprof-david-goya-v1, per conservare le note esistenti. Nessun invio di risposte, account o analytics.
 
 ## Fonti e verifica
